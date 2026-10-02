@@ -32,9 +32,15 @@ jobs:
           lint: false
           use-github-cache: false
 
-      - name: Prepare the validation log directory
+      - name: Prepare the Windows toolchain path and validation logs
         shell: pwsh
-        run: New-Item -ItemType Directory -Path .lake -Force | Out-Null
+        run: |
+          $elanBin = Join-Path $env:USERPROFILE '.elan/bin'
+          if (-not (Test-Path -LiteralPath (Join-Path $elanBin 'lake.exe'))) {
+            throw 'The declared Lean installation did not provide lake.exe'
+          }
+          Add-Content -LiteralPath $env:GITHUB_PATH -Value $elanBin -Encoding utf8
+          New-Item -ItemType Directory -Path .lake -Force | Out-Null
 
       - name: Compile and verify foundations, migration and native forgetting
         shell: pwsh
