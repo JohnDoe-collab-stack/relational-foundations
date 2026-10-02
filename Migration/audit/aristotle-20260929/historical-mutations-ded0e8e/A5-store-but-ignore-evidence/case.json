@@ -1,0 +1,5 @@
+{
+  "id": "A5-store-but-ignore-evidence",
+  "clause": "A",
+  "purpose": "Keep stored witnesses but reconstruct their agreements from the already available role and realized occurrence."
+}

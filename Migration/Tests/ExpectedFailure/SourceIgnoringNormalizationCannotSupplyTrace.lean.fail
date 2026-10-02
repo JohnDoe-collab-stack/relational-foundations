@@ -1,0 +1,18 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- A trace produced for one source cannot be reused as the trace of every
+-- source.  The source is a genuine index of the reduction derivation.
+def sourceIgnoringNormalizationCannotSupplyTrace
+    {count : Nat} {state : CausalConstitutiveState}
+    {run : CausalConstitutiveExecutionHistory count state}
+    {roles : RelationalConstitutiveRoleHistory run}
+    {program : RoleIndexedProgram roles}
+    {reduction : ExecutedRoleReductionHistory program}
+    (normalization : ExecutedCausalNormalization reduction)
+    (chosen : RoleOccurrenceProfile roles) :
+    (source : RoleOccurrenceProfile roles) →
+      ExecutedRoleProfileReduction reduction source
+        (normalization.target chosen) :=
+  fun _source => normalization.trace chosen

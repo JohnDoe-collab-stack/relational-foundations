@@ -1,0 +1,51 @@
+name: Certified Lean validation
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: windows-latest
+    timeout-minutes: 45
+    steps:
+      - name: Check out the exact publication bytes
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+
+      - name: Check the delivered V2 manifest and receipts
+        shell: pwsh
+        run: pwsh -NoProfile -File scripts/check-forgetting-v2.ps1
+
+      - name: Install the declared Lean toolchain
+        uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865 # v1
+        with:
+          auto-config: false
+          build: false
+          test: false
+          lint: false
+          use-github-cache: false
+
+      - name: Compile and verify foundations, migration and native forgetting
+        shell: pwsh
+        run: pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1
+
+      - name: Save the validation receipts and diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: certified-lean-validation-${{ github.sha }}
+          if-no-files-found: warn
+          include-hidden-files: true
+          path: |
+            docs/manifest-forgetting-v2.json
+            docs/verification-forgetting-v2.json
+            Migration/verification-forgetting-v2.json
+            .lake/*forgetting-v2*.log
+            Migration/*forgetting-v2*.log

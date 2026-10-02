@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1320" viewBox="0 0 1800 1320" role="img" aria-labelledby="title description">
+  <title id="title">Relational Perimeter: endogenous operational decomposition</title>
+  <desc id="description">The computational layer connected to the four foundational Lean modules through the local import closure. One authoritative run constructs the measured entry, then recursively constructs a seeded root, extracts and filters candidates, opens two distinct alternatives, discovers a directed transport after failed decoys, compiles, validates and applies it, and transmits the retained output, next generation, decision history, provenance and seed to the next stage. Failure constructs no descendant stage.</desc>
+  <defs>
+    <linearGradient id="foundation" x1="0" x2="1">
+      <stop offset="0" stop-color="#edf7eb"/>
+      <stop offset="1" stop-color="#dcefd9"/>
+    </linearGradient>
+    <linearGradient id="causal" x1="0" x2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#dfeaff"/>
+    </linearGradient>
+    <linearGradient id="search" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff8e9"/>
+      <stop offset="1" stop-color="#ffebc7"/>
+    </linearGradient>
+    <linearGradient id="transport" x1="0" x2="1">
+      <stop offset="0" stop-color="#f5f1ff"/>
+      <stop offset="1" stop-color="#e8e2ff"/>
+    </linearGradient>
+    <linearGradient id="feedback" x1="0" x2="1">
+      <stop offset="0" stop-color="#eef9f4"/>
+      <stop offset="1" stop-color="#daf1e6"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#172033"/>
+    </marker>
+    <marker id="arrowFeedback" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#167255"/>
+    </marker>
+    <marker id="arrowFailure" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a43b45"/>
+    </marker>
+    <style>
+      text { font-family: Georgia, "Times New Roman", serif; fill: #10162b; }
+      .title { font-size: 31px; font-weight: 700; }
+      .subtitle { font-size: 17px; }
+      .section { font-size: 22px; font-weight: 700; }
+      .boxTitle { font-size: 17px; font-weight: 700; }
+      .body { font-size: 15px; }
+      .small { font-size: 13px; }
+      .note { font-size: 14px; font-style: italic; }
+      .panel { stroke-width: 1.5; }
+      .box { fill: #ffffff; stroke: #61708a; stroke-width: 1.25; }
+      .connector { fill: none; stroke: #172033; stroke-width: 1.7; }
+      .arrow { fill: none; stroke: #172033; stroke-width: 2; marker-end: url(#arrow); }
+      .feedbackArrow { fill: none; stroke: #167255; stroke-width: 2.6; marker-end: url(#arrowFeedback); }
+      .failureArrow { fill: none; stroke: #a43b45; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrowFailure); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1320" fill="#ffffff"/>
+  <text x="900" y="42" text-anchor="middle" class="title">Relational Perimeter: endogenous operational decomposition</text>
+  <text x="900" y="70" text-anchor="middle" class="subtitle">The computational architecture formalized in Lean — one executed causal chain, not a readout reconstruction</text>
+
+  <!-- Direct foundational bridge -->
+  <rect x="30" y="92" width="1740" height="188" rx="9" fill="url(#foundation)" stroke="#438b50" class="panel"/>
+  <text x="900" y="124" text-anchor="middle" class="section">Direct foundational bridge</text>
+  <text x="900" y="148" text-anchor="middle" class="body">The local import closure reaches the four foundational modules without an Alignment or persistence facade.</text>
+
+  <rect x="55" y="170" width="255" height="65" rx="6" class="box"/>
+  <text x="182" y="196" text-anchor="middle" class="boxTitle">SegmentedResidualRole</text>
+  <text x="182" y="219" text-anchor="middle" class="small">roles · residual determination</text>
+  <rect x="330" y="170" width="265" height="65" rx="6" class="box"/>
+  <text x="462" y="196" text-anchor="middle" class="boxTitle">AbstractSegmentedTurning</text>
+  <text x="462" y="219" text-anchor="middle" class="small">generation · boundary · regime</text>
+  <rect x="615" y="170" width="225" height="65" rx="6" class="box"/>
+  <text x="727" y="196" text-anchor="middle" class="boxTitle">ExactTypeTransport</text>
+  <text x="727" y="219" text-anchor="middle" class="small">two-sided carrier transport</text>
+  <rect x="860" y="170" width="255" height="65" rx="6" class="box"/>
+  <text x="987" y="196" text-anchor="middle" class="boxTitle">StrongPerimetralTurning</text>
+  <text x="987" y="219" text-anchor="middle" class="small">circular presentation · perimeter</text>
+  <rect x="1240" y="160" width="475" height="88" rx="7" fill="#f8fff7" stroke="#438b50" stroke-width="1.5"/>
+  <text x="1477" y="188" text-anchor="middle" class="boxTitle">ConstitutiveGeneration</text>
+  <text x="1477" y="212" text-anchor="middle" class="body">iterated relational history · produced endpoint</text>
+  <text x="1477" y="233" text-anchor="middle" class="small">depth readout · exact old/fresh occurrence split</text>
+  <path d="M 310 202 L 330 202" class="arrow"/>
+  <path d="M 462 235 L 462 260 L 987 260 L 987 235" class="arrow"/>
+  <path d="M 840 202 L 860 202" class="arrow"/>
+  <path d="M 1115 202 L 1240 202" class="arrow"/>
+  <path d="M 1477 248 L 1477 292 L 200 292 L 200 395" class="arrow"/>
+
+  <!-- Authoritative causal run -->
+  <rect x="30" y="305" width="1740" height="675" rx="9" fill="#fbfcff" stroke="#416fb2" class="panel"/>
+  <text x="900" y="338" text-anchor="middle" class="section">One authoritative causal run</text>
+  <text x="900" y="362" text-anchor="middle" class="body">executeConstitutiveResolution constructs the measured entry; executeConstitutiveExecutionHistory recursively supplies the public history and its data.</text>
+
+  <!-- Row 1 -->
+  <rect x="65" y="395" width="270" height="90" rx="7" fill="url(#causal)" stroke="#4b76b7" class="panel"/>
+  <text x="200" y="424" text-anchor="middle" class="boxTitle">Measured initialization</text>
+  <text x="200" y="448" text-anchor="middle" class="body">actual initialized endpoint</text>
+  <text x="200" y="469" text-anchor="middle" class="small">initializeConstitutiveHistory</text>
+
+  <rect x="385" y="395" width="270" height="90" rx="7" fill="url(#causal)" stroke="#4b76b7" class="panel"/>
+  <text x="520" y="424" text-anchor="middle" class="boxTitle">Initial threaded state</text>
+  <text x="520" y="448" text-anchor="middle" class="body">constructed from that endpoint</text>
+  <text x="520" y="466" text-anchor="middle" class="small">initialThreadedConstitutiveState</text>
+  <text x="520" y="480" text-anchor="middle" class="small">FromInitialization</text>
+
+  <rect x="705" y="395" width="270" height="90" rx="7" fill="url(#causal)" stroke="#4b76b7" class="panel"/>
+  <text x="840" y="424" text-anchor="middle" class="boxTitle">Seeded operational root</text>
+  <text x="840" y="448" text-anchor="middle" class="body">root built from transmitted seed</text>
+  <text x="840" y="469" text-anchor="middle" class="small">constructMeasuredOperationalRoot</text>
+
+  <rect x="1025" y="395" width="310" height="90" rx="7" fill="url(#search)" stroke="#b67d26" class="panel"/>
+  <text x="1180" y="424" text-anchor="middle" class="boxTitle">Candidate extraction</text>
+  <text x="1180" y="448" text-anchor="middle" class="body">executed on the seeded root</text>
+  <text x="1180" y="469" text-anchor="middle" class="small">runCandidateExtraction</text>
+
+  <rect x="1385" y="395" width="320" height="90" rx="7" fill="url(#search)" stroke="#b67d26" class="panel"/>
+  <text x="1545" y="424" text-anchor="middle" class="boxTitle">Provenance filtering</text>
+  <text x="1545" y="448" text-anchor="middle" class="body">produced provenance is consumed</text>
+  <text x="1545" y="469" text-anchor="middle" class="small">filterCandidatesByProvenance</text>
+
+  <path d="M 335 440 L 385 440" class="arrow"/>
+  <path d="M 655 440 L 705 440" class="arrow"/>
+  <path d="M 975 440 L 1025 440" class="arrow"/>
+  <path d="M 1335 440 L 1385 440" class="arrow"/>
+
+  <!-- Row 2 -->
+  <rect x="65" y="555" width="285" height="105" rx="7" fill="#fff2f3" stroke="#bc5e67" class="panel"/>
+  <text x="207" y="584" text-anchor="middle" class="boxTitle">Per-candidate opening</text>
+  <text x="207" y="608" text-anchor="middle" class="body">two distinct sibling states</text>
+  <text x="207" y="630" text-anchor="middle" class="small">tryMeasuredCandidate constructs left/right</text>
+  <text x="207" y="650" text-anchor="middle" class="small">after its freshness check</text>
+
+  <rect x="405" y="555" width="305" height="105" rx="7" fill="url(#search)" stroke="#b67d26" class="panel"/>
+  <text x="557" y="584" text-anchor="middle" class="boxTitle">Executed relation search</text>
+  <text x="557" y="608" text-anchor="middle" class="body">generated decoys genuinely fail</text>
+  <text x="557" y="630" text-anchor="middle" class="small">searchMeasuredRelationFromData</text>
+  <text x="557" y="650" text-anchor="middle" class="small">exploreRecordedCandidates records attempts</text>
+
+  <rect x="765" y="555" width="305" height="105" rx="7" fill="url(#transport)" stroke="#7063be" class="panel"/>
+  <text x="917" y="584" text-anchor="middle" class="boxTitle">Directed transformation</text>
+  <text x="917" y="608" text-anchor="middle" class="body">acts on arbitrary continuations</text>
+  <text x="917" y="630" text-anchor="middle" class="small">GeneratedStructuralFlipAtRelation</text>
+  <text x="917" y="650" text-anchor="middle" class="small">mapContinuation · no acceptance input</text>
+
+  <rect x="1125" y="555" width="280" height="105" rx="7" fill="url(#transport)" stroke="#7063be" class="panel"/>
+  <text x="1265" y="584" text-anchor="middle" class="boxTitle">Compile and validate</text>
+  <text x="1265" y="608" text-anchor="middle" class="body">code from that relation</text>
+  <text x="1265" y="630" text-anchor="middle" class="small">scheduleFromDiscovery</text>
+  <text x="1265" y="650" text-anchor="middle" class="small">validateStoredSchedule</text>
+
+  <rect x="1460" y="555" width="245" height="105" rx="7" fill="url(#transport)" stroke="#7063be" class="panel"/>
+  <text x="1582" y="584" text-anchor="middle" class="boxTitle">Execute and apply</text>
+  <text x="1582" y="608" text-anchor="middle" class="body">actual application output</text>
+  <text x="1582" y="630" text-anchor="middle" class="small">executeStoredSchedule</text>
+  <text x="1582" y="650" text-anchor="middle" class="small">applyDiscoveryExecution</text>
+
+  <path d="M 1545 485 L 1545 520 L 207 520 L 207 555" class="arrow"/>
+  <path d="M 350 607 L 405 607" class="arrow"/>
+  <path d="M 710 607 L 765 607" class="arrow"/>
+  <path d="M 1070 607 L 1125 607" class="arrow"/>
+  <path d="M 1405 607 L 1460 607" class="arrow"/>
+
+  <!-- Separate preservation law -->
+  <rect x="765" y="695" width="305" height="92" rx="7" fill="#f4efff" stroke="#7063be" stroke-width="1.5"/>
+  <text x="917" y="724" text-anchor="middle" class="boxTitle">Separate preservation proof</text>
+  <text x="917" y="749" text-anchor="middle" class="body">mapContinuation_accept</text>
+  <text x="917" y="771" text-anchor="middle" class="small">not an input to execution</text>
+  <rect x="1125" y="695" width="280" height="92" rx="7" fill="#f4efff" stroke="#7063be" stroke-width="1.5"/>
+  <text x="1265" y="724" text-anchor="middle" class="boxTitle">Certified absorption</text>
+  <text x="1265" y="749" text-anchor="middle" class="body">fullStepPreservation</text>
+  <text x="1265" y="771" text-anchor="middle" class="small">proves neither equality nor impossibility</text>
+  <path d="M 917 660 L 917 695" class="arrow"/>
+  <path d="M 1070 741 L 1125 741" class="arrow"/>
+
+  <!-- Row 3 feedback -->
+  <rect x="65" y="835" width="300" height="100" rx="7" fill="url(#feedback)" stroke="#37876a" class="panel"/>
+  <text x="215" y="864" text-anchor="middle" class="boxTitle">Produced retained state</text>
+  <text x="215" y="887" text-anchor="middle" class="small">application output is incorporated</text>
+  <text x="215" y="905" text-anchor="middle" class="small">next generation comes from the produced target</text>
+  <text x="215" y="925" text-anchor="middle" class="small">realizeNextOperationalState</text>
+
+  <rect x="420" y="835" width="340" height="100" rx="7" fill="url(#feedback)" stroke="#37876a" class="panel"/>
+  <text x="590" y="864" text-anchor="middle" class="boxTitle">Decision history and provenance</text>
+  <text x="590" y="889" text-anchor="middle" class="body">produced and stored in transmitted state</text>
+  <text x="590" y="912" text-anchor="middle" class="small">executedBranchDecision · provenanceRun</text>
+
+  <rect x="815" y="835" width="285" height="100" rx="7" fill="url(#feedback)" stroke="#37876a" class="panel"/>
+  <text x="957" y="864" text-anchor="middle" class="boxTitle">Seed read from produced state</text>
+  <text x="957" y="889" text-anchor="middle" class="body">causally formed, canonically valued</text>
+  <text x="957" y="912" text-anchor="middle" class="small">executedProducedSearchSeed</text>
+
+  <rect x="1155" y="835" width="300" height="100" rx="7" fill="url(#feedback)" stroke="#37876a" class="panel"/>
+  <text x="1305" y="864" text-anchor="middle" class="boxTitle">Next operational root</text>
+  <text x="1305" y="889" text-anchor="middle" class="body">constructed from transmitted seed</text>
+  <text x="1305" y="912" text-anchor="middle" class="small">measuredGeneratedExtractionFromSeed</text>
+
+  <path d="M 1582 660 L 1582 810 L 215 810 L 215 835" class="arrow"/>
+  <path d="M 365 885 L 420 885" class="feedbackArrow"/>
+  <path d="M 760 885 L 815 885" class="feedbackArrow"/>
+  <path d="M 1100 885 L 1155 885" class="feedbackArrow"/>
+  <path d="M 1455 885 L 1705 885 L 1705 505 L 1180 505 L 1180 485" class="feedbackArrow"/>
+  <text x="1610" y="866" text-anchor="middle" class="small" fill="#167255">next stage is conditioned</text>
+  <text x="1610" y="882" text-anchor="middle" class="small" fill="#167255">by produced material</text>
+
+  <!-- Failure and accounting gates -->
+  <rect x="30" y="1005" width="840" height="190" rx="9" fill="#fff4f4" stroke="#ad4750" class="panel"/>
+  <text x="450" y="1037" text-anchor="middle" class="section">Failure gate</text>
+  <rect x="70" y="1065" width="270" height="85" rx="7" class="box"/>
+  <text x="205" y="1094" text-anchor="middle" class="boxTitle">Discovery returns none</text>
+  <text x="205" y="1118" text-anchor="middle" class="body">concrete blocked witness</text>
+  <text x="205" y="1139" text-anchor="middle" class="small">and general quantified theorem</text>
+  <rect x="490" y="1065" width="330" height="85" rx="7" fill="#fffafa" stroke="#ad4750" stroke-width="1.3"/>
+  <text x="655" y="1094" text-anchor="middle" class="boxTitle">No descendant artifacts</text>
+  <text x="655" y="1118" text-anchor="middle" class="body">no stage · code · next state · next root</text>
+  <text x="655" y="1139" text-anchor="middle" class="small">no positive-length authoritative history</text>
+  <path d="M 340 1107 L 490 1107" class="failureArrow"/>
+  <text x="415" y="1095" text-anchor="middle" class="small" fill="#a43b45">failure stops formation</text>
+
+  <rect x="900" y="1005" width="870" height="190" rx="9" fill="#f4f8ff" stroke="#416fb2" class="panel"/>
+  <text x="1335" y="1037" text-anchor="middle" class="section">Measured and public evidence</text>
+  <rect x="935" y="1065" width="250" height="85" rx="7" class="box"/>
+  <text x="1060" y="1094" text-anchor="middle" class="boxTitle">Exact accounting</text>
+  <text x="1060" y="1118" text-anchor="middle" class="body">one owner per measured phase</text>
+  <text x="1060" y="1139" text-anchor="middle" class="small">authoritative attempts exact and strict</text>
+  <rect x="1210" y="1065" width="250" height="85" rx="7" class="box"/>
+  <text x="1335" y="1094" text-anchor="middle" class="boxTitle">Counterfactual separators</text>
+  <text x="1335" y="1118" text-anchor="middle" class="body">same permitted projection</text>
+  <text x="1335" y="1139" text-anchor="middle" class="small">different constituted outcome</text>
+  <rect x="1485" y="1065" width="250" height="85" rx="7" class="box"/>
+  <text x="1610" y="1094" text-anchor="middle" class="boxTitle">Public root</text>
+  <text x="1610" y="1118" text-anchor="middle" class="body">RelationalPerimeter</text>
+  <text x="1610" y="1139" text-anchor="middle" class="small">full production closure reachable</text>
+
+  <!-- Conceptual result -->
+  <rect x="30" y="1220" width="1740" height="72" rx="9" fill="url(#foundation)" stroke="#438b50" class="panel"/>
+  <text x="900" y="1250" text-anchor="middle" class="boxTitle">structural multiplicity ≠ operational independence</text>
+  <text x="900" y="1275" text-anchor="middle" class="body">The separation is decided during the computation, by the computation, from material the computation has produced.</text>
+</svg>

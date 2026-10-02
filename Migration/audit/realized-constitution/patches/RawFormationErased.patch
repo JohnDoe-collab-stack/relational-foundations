@@ -1,0 +1,30 @@
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
+@@ -44,7 +44,6 @@
+     (role : RelationalConstitutiveRoleStage run) where
+   position : OpeningRolePosition role
+   state : GeneratedStructuralBranchContext source.rootFormula
+-  formedAt : state = position.state role
+ 
+ /-- Canonical realization of a role position by its generated occurrence. -/
+ def roleOpeningOccurrenceAt
+@@ -54,8 +53,7 @@
+     (position : OpeningRolePosition role) :
+     RoleOpeningOccurrence role :=
+   { position := position
+-    state := position.state role
+-    formedAt := rfl }
++    state := position.state role }
+ 
+ /-- Forget only the realized state, retaining the occurrence's position. -/
+ def roleOpeningOccurrenceToPosition
+@@ -84,8 +82,7 @@
+         (roleOpeningOccurrenceToPosition occurrence) =
+       occurrence := by
+   cases occurrence with
+-  | mk position state formedAt =>
+-      cases formedAt
++  | mk position state =>
+       rfl
+ 
+ /-- Exact reversible realization between positions and occurrences. -/

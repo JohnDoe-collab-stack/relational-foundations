@@ -1,0 +1,6 @@
+import RelationalFoundations.NativeForgettingSeparationV1
+set_option genInjectivity false
+open RelationalFoundations.NativeForgettingV1 RelationalFoundations.TypedResources
+
+example : (observation ⟨1, 0⟩).inputs = [⟨.number, 0⟩, ⟨.truth, 1⟩] :=
+  (rfl : (observation ⟨1, 0⟩).inputs = [⟨.truth, 1⟩, ⟨.number, 0⟩])

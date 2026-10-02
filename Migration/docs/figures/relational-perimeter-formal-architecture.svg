@@ -1,0 +1,227 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="1120" viewBox="0 0 1800 1120" role="img" aria-labelledby="title description">
+  <title id="title">Relational Perimeter: foundations and formal architecture</title>
+  <desc id="description">Two complementary axes. The left column lists comparative foundational contexts. The right side presents the relational architecture formalized in Lean, from primitive presentation through classification, generation, exact realization, continuation, and the distinct interfaces of interpretation, admission, and satisfaction.</desc>
+  <defs>
+    <linearGradient id="header" x1="0" x2="1">
+      <stop offset="0" stop-color="#eaf5e7"/>
+      <stop offset="1" stop-color="#dcefd9"/>
+    </linearGradient>
+    <linearGradient id="blue" x1="0" x2="1">
+      <stop offset="0" stop-color="#eef6ff"/>
+      <stop offset="1" stop-color="#e0edff"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff2f3"/>
+      <stop offset="1" stop-color="#fde4e8"/>
+    </linearGradient>
+    <linearGradient id="green" x1="0" x2="1">
+      <stop offset="0" stop-color="#eef9ed"/>
+      <stop offset="1" stop-color="#e0f2df"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" x2="1">
+      <stop offset="0" stop-color="#f3f1ff"/>
+      <stop offset="1" stop-color="#e8e5ff"/>
+    </linearGradient>
+    <linearGradient id="sand" x1="0" x2="1">
+      <stop offset="0" stop-color="#fff9ed"/>
+      <stop offset="1" stop-color="#fff0d3"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#172033"/>
+    </marker>
+    <marker id="arrow-magenta" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#a42373"/>
+    </marker>
+    <style>
+      text { font-family: Georgia, "Times New Roman", serif; fill: #10162b; }
+      .title { font-size: 31px; font-weight: 700; }
+      .subtitle { font-size: 17px; }
+      .axis { font-size: 23px; font-weight: 700; }
+      .layer { font-size: 21px; font-weight: 700; }
+      .box-title { font-size: 17px; font-weight: 700; }
+      .body { font-size: 15px; }
+      .small { font-size: 13px; }
+      .note { font-size: 14px; font-style: italic; }
+      .panel { stroke-width: 1.5; }
+      .box { fill: #ffffff; stroke: #61708a; stroke-width: 1.2; }
+      .arrow { fill: none; stroke: #172033; stroke-width: 1.8; marker-end: url(#arrow); }
+      .residual { fill: none; stroke: #a42373; stroke-width: 2; stroke-dasharray: 8 6; marker-end: url(#arrow-magenta); }
+    </style>
+  </defs>
+
+  <rect width="1800" height="1120" fill="#ffffff"/>
+  <text x="900" y="42" text-anchor="middle" class="title">Relational Perimeter: foundations and formal architecture</text>
+  <text x="900" y="69" text-anchor="middle" class="subtitle">A comparative foundational context and the relational constitution formalized in Lean</text>
+
+  <!-- Axis 1: comparative context -->
+  <rect x="20" y="90" width="310" height="970" rx="8" fill="url(#blue)" stroke="#3280c8" class="panel"/>
+  <text x="175" y="125" text-anchor="middle" class="axis">Axis 1 — Foundations</text>
+  <text x="175" y="150" text-anchor="middle" class="body">comparative context, not a result</text>
+  <text x="175" y="171" text-anchor="middle" class="body">of the formalization</text>
+
+  <rect x="38" y="195" width="274" height="93" rx="6" class="box"/>
+  <text x="55" y="222" class="box-title">Classical set theories</text>
+  <text x="55" y="248" class="body">Sets, relations, functions</text>
+  <text x="55" y="270" class="small">e.g. ZF</text>
+
+  <rect x="38" y="305" width="274" height="105" rx="6" class="box"/>
+  <text x="55" y="332" class="box-title">Martin-Löf type theory</text>
+  <text x="55" y="358" class="body">Dependent types and terms</text>
+  <text x="55" y="380" class="body">as proofs</text>
+  <text x="55" y="400" class="small">MLTT</text>
+
+  <rect x="38" y="427" width="274" height="105" rx="6" class="box"/>
+  <text x="55" y="454" class="box-title">Calculi of constructions</text>
+  <text x="55" y="480" class="body">Universe hierarchies and</text>
+  <text x="55" y="502" class="body">dependent products</text>
+  <text x="55" y="522" class="small">CoC / ECC families</text>
+
+  <rect x="38" y="549" width="274" height="105" rx="6" class="box"/>
+  <text x="55" y="576" class="box-title">Inductive constructions</text>
+  <text x="55" y="602" class="body">Inductive types in a</text>
+  <text x="55" y="624" class="body">dependent type theory</text>
+  <text x="55" y="644" class="small">CIC; Coq/Rocq</text>
+
+  <rect x="38" y="671" width="274" height="105" rx="6" class="box"/>
+  <text x="55" y="698" class="box-title">Homotopy type theory</text>
+  <text x="55" y="724" class="body">Identity types, higher paths,</text>
+  <text x="55" y="746" class="body">univalence</text>
+  <text x="55" y="766" class="small">HoTT</text>
+
+  <rect x="38" y="793" width="274" height="105" rx="6" class="box"/>
+  <text x="55" y="820" class="box-title">Logic-enriched type theory</text>
+  <text x="55" y="846" class="body">Distinct type and proposition</text>
+  <text x="55" y="868" class="body">categories and judgements</text>
+  <text x="55" y="888" class="small">LTT</text>
+
+  <rect x="38" y="920" width="274" height="116" rx="6" fill="#f7fbff" stroke="#3280c8" stroke-width="1.2"/>
+  <text x="55" y="948" class="body">The architecture at right is</text>
+  <text x="55" y="970" class="body">formalized in Lean. Transport</text>
+  <text x="55" y="992" class="body">to another foundation remains</text>
+  <text x="55" y="1014" class="body">a comparative research question.</text>
+
+  <!-- Axis 2 header -->
+  <rect x="350" y="90" width="1430" height="82" rx="8" fill="url(#header)" stroke="#3c8f4e" class="panel"/>
+  <text x="1065" y="123" text-anchor="middle" class="axis">Axis 2 — Relational constitution</text>
+  <text x="1065" y="149" text-anchor="middle" class="subtitle">Formal architecture established in Lean; relations are primitive to the constitution</text>
+
+  <!-- Primitive presentation -->
+  <rect x="350" y="185" width="1430" height="150" rx="8" fill="url(#sand)" stroke="#c68a2c" class="panel"/>
+  <text x="1065" y="215" text-anchor="middle" class="layer">Primitive presentation P</text>
+  <text x="1065" y="238" text-anchor="middle" class="body">input data — given, not generated by the framework</text>
+
+  <rect x="375" y="255" width="245" height="60" rx="5" class="box"/>
+  <text x="497" y="279" text-anchor="middle" class="box-title">Primitive relational data</text>
+  <text x="497" y="301" text-anchor="middle" class="small">Compatible · Difference · Provenance</text>
+
+  <rect x="640" y="255" width="225" height="60" rx="5" class="box"/>
+  <text x="752" y="279" text-anchor="middle" class="box-title">Perimeter spine</text>
+  <text x="752" y="301" text-anchor="middle" class="small">initial node · successive witnesses</text>
+
+  <rect x="885" y="255" width="285" height="60" rx="5" fill="#fff4f3" stroke="#b65a58" stroke-width="1.2"/>
+  <text x="1027" y="279" text-anchor="middle" class="box-title">Primitive final junction</text>
+  <text x="1027" y="301" text-anchor="middle" class="small">P.finalJunction : P.Compatible …</text>
+
+  <rect x="1190" y="255" width="255" height="60" rx="5" class="box"/>
+  <text x="1317" y="279" text-anchor="middle" class="box-title">Pole-separation data</text>
+  <text x="1317" y="301" text-anchor="middle" class="small">endpoints · TotalLoop · obstruction</text>
+
+  <rect x="1465" y="255" width="290" height="60" rx="5" class="box"/>
+  <text x="1610" y="279" text-anchor="middle" class="box-title">Other primitive carriers</text>
+  <text x="1610" y="301" text-anchor="middle" class="small">Explicit · Implicit · Endpoint · …</text>
+
+  <!-- Parallel classification and generation -->
+  <path d="M 1065 335 L 1065 353 L 704 353 L 704 370" class="arrow"/>
+  <path d="M 1065 335 L 1065 353 L 1420 353 L 1420 370" class="arrow"/>
+
+  <rect x="350" y="370" width="710" height="145" rx="8" fill="url(#blue)" stroke="#597cc8" class="panel"/>
+  <text x="705" y="400" text-anchor="middle" class="layer">Classification: roles and requirements</text>
+  <rect x="375" y="420" width="205" height="72" rx="5" class="box"/>
+  <text x="477" y="446" text-anchor="middle" class="box-title">Non-closing positions</text>
+  <text x="477" y="470" text-anchor="middle" class="small">NonClosingPosition P.perimeter</text>
+  <rect x="600" y="420" width="190" height="72" rx="5" class="box"/>
+  <text x="695" y="446" text-anchor="middle" class="box-title">Closing place</text>
+  <text x="695" y="470" text-anchor="middle" class="small">FinalRequirement P</text>
+  <rect x="810" y="420" width="225" height="72" rx="5" class="box"/>
+  <text x="922" y="446" text-anchor="middle" class="box-title">Circular requirements</text>
+  <text x="922" y="468" text-anchor="middle" class="small">non-closing positions ⊕ closing place</text>
+
+  <rect x="1080" y="370" width="700" height="145" rx="8" fill="url(#rose)" stroke="#cc6873" class="panel"/>
+  <text x="1430" y="400" text-anchor="middle" class="layer">Free generation</text>
+  <text x="1430" y="420" text-anchor="middle" class="small">distinct from requirement classification and labelling</text>
+  <rect x="1105" y="438" width="185" height="54" rx="5" class="box"/>
+  <text x="1197" y="461" text-anchor="middle" class="box-title">Steps</text>
+  <text x="1197" y="481" text-anchor="middle" class="small">State → State → Type</text>
+  <rect x="1310" y="438" width="215" height="54" rx="5" class="box"/>
+  <text x="1417" y="461" text-anchor="middle" class="box-title">Dependent histories</text>
+  <text x="1417" y="481" text-anchor="middle" class="small">proof-relevant paths</text>
+  <rect x="1545" y="438" width="210" height="54" rx="5" class="box"/>
+  <text x="1650" y="461" text-anchor="middle" class="box-title">Occurrences</text>
+  <text x="1650" y="481" text-anchor="middle" class="small">indexed by a history</text>
+  <path d="M 1290 465 L 1310 465" class="arrow"/>
+  <path d="M 1525 465 L 1545 465" class="arrow"/>
+
+  <!-- Exact realization -->
+  <rect x="350" y="535" width="1430" height="150" rx="8" fill="url(#green)" stroke="#4d9959" class="panel"/>
+  <text x="1065" y="565" text-anchor="middle" class="layer">Exact realization — non-closing part only</text>
+  <text x="1065" y="588" text-anchor="middle" class="body">correspondence without identification of the two carriers</text>
+  <rect x="650" y="608" width="860" height="55" rx="6" class="box"/>
+  <text x="1080" y="641" text-anchor="middle" class="box-title">NonClosingPosition P.perimeter  ≃  History.Occurrence (perimeterDeployment P).history</text>
+  <path d="M 477 492 L 477 635 L 650 635" class="arrow"/>
+  <path d="M 1650 492 L 1650 635 L 1510 635" class="arrow"/>
+  <text x="375" y="657" class="note">FinalRequirement P is excluded from this correspondence.</text>
+  <text x="375" y="677" class="note">It will classify the new residual occurrence.</text>
+
+  <!-- Deployment and continuation -->
+  <rect x="350" y="705" width="1430" height="155" rx="8" fill="url(#violet)" stroke="#6b67c8" class="panel"/>
+  <text x="1065" y="735" text-anchor="middle" class="layer">Canonical perimeter and free continuation</text>
+  <rect x="390" y="760" width="310" height="70" rx="6" class="box"/>
+  <text x="545" y="786" text-anchor="middle" class="box-title">Canonical perimeter deployment</text>
+  <text x="545" y="810" text-anchor="middle" class="small">perimeterDeployment P : RootedGeneratedHistory P</text>
+  <rect x="810" y="760" width="310" height="70" rx="6" class="box"/>
+  <text x="965" y="786" text-anchor="middle" class="box-title">Free continuation</text>
+  <text x="965" y="810" text-anchor="middle" class="small">oneStepAfterPerimeter P : RootedGeneratedHistory P</text>
+  <rect x="1190" y="760" width="280" height="70" rx="6" class="box"/>
+  <text x="1330" y="786" text-anchor="middle" class="box-title">Residual occurrence</text>
+  <text x="1330" y="810" text-anchor="middle" class="small">new occurrence beyond the perimeter</text>
+  <rect x="1510" y="760" width="235" height="70" rx="6" class="box"/>
+  <text x="1627" y="786" text-anchor="middle" class="box-title">Residual labelling</text>
+  <text x="1627" y="810" text-anchor="middle" class="small">label = FinalRequirement P</text>
+  <path d="M 545 760 L 545 685 L 1065 685 L 1065 663" class="arrow"/>
+  <path d="M 700 805 L 810 805" class="arrow"/>
+  <text x="755" y="782" text-anchor="middle" class="small">generate</text>
+  <text x="755" y="798" text-anchor="middle" class="small">at endpoint</text>
+  <path d="M 1120 795 L 1190 795" class="arrow"/>
+  <path d="M 1470 795 L 1510 795" class="arrow"/>
+  <path d="M 695 492 L 695 525 L 1627 525 L 1627 760" class="residual"/>
+  <text x="1180" y="518" text-anchor="middle" class="small" fill="#a42373">faithful residual labelling</text>
+
+  <!-- Interfaces and results -->
+  <rect x="350" y="880" width="1430" height="150" rx="8" fill="#fbf6f1" stroke="#9b806a" class="panel"/>
+  <text x="1065" y="910" text-anchor="middle" class="layer">Distinct interfaces and established statuses</text>
+  <rect x="375" y="930" width="270" height="75" rx="6" class="box"/>
+  <text x="510" y="956" text-anchor="middle" class="box-title">Exact concrete realization</text>
+  <text x="510" y="980" text-anchor="middle" class="small">the free continuation remains realizable</text>
+  <rect x="665" y="930" width="270" height="75" rx="6" class="box"/>
+  <text x="800" y="956" text-anchor="middle" class="box-title">Structured interpretation</text>
+  <text x="800" y="980" text-anchor="middle" class="small">residual boundary and closing data</text>
+  <rect x="955" y="930" width="250" height="75" rx="6" class="box"/>
+  <text x="1080" y="956" text-anchor="middle" class="box-title">Totalization rejected</text>
+  <text x="1080" y="980" text-anchor="middle" class="small">initial pole-separation obstruction</text>
+  <rect x="1225" y="930" width="250" height="75" rx="6" class="box"/>
+  <text x="1350" y="956" text-anchor="middle" class="box-title">Not admitted</text>
+  <text x="1350" y="980" text-anchor="middle" class="small">outside CircularRefinement P</text>
+  <rect x="1495" y="930" width="260" height="75" rx="6" class="box"/>
+  <text x="1625" y="956" text-anchor="middle" class="box-title">Does not satisfy</text>
+  <text x="1625" y="980" text-anchor="middle" class="small">CircularSpecificationSatisfaction P</text>
+  <path d="M 955 830 L 955 865 L 510 865 L 510 930" class="arrow"/>
+  <path d="M 1330 830 L 1330 870 L 800 870 L 800 930" class="arrow"/>
+  <path d="M 800 1005 L 800 1020 L 1080 1020 L 1080 1005" class="arrow"/>
+  <path d="M 955 830 L 955 875 L 1350 875 L 1350 930" class="arrow"/>
+  <path d="M 955 830 L 955 870 L 1625 870 L 1625 930" class="arrow"/>
+
+  <!-- Footer -->
+  <rect x="350" y="1048" width="1430" height="52" rx="8" fill="url(#header)" stroke="#3c8f4e" class="panel"/>
+  <text x="1065" y="1071" text-anchor="middle" class="box-title">classification | generation | realization | interpretation | admission | satisfaction</text>
+  <text x="1065" y="1091" text-anchor="middle" class="small">Metatheoretical separation of interfaces and statuses — not a chain of typed inequalities in Lean</text>
+</svg>

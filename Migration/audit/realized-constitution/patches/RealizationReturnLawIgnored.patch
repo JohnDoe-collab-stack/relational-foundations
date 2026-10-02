@@ -1,0 +1,14 @@
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean
+@@ -173,10 +173,7 @@
+     {stage : RelationalOpeningStage State source next}
+     (identity : RelationallyConstitutedOccurrence stage) :
+     relationallyConstitutedOccurrence stage identity.position = identity := by
+-  change constituteRealizedOccurrence stage
+-    (stage.realize (stage.classify identity.realized)) = identity
+-  rw [stage.realize_classify identity.realized]
+-  exact identity.reconstitute
++  rfl
+ 
+ /-- Exact incorporation of actual occurrences into witnessed identities. -/
+ def RelationalOpeningStage.constitutedOccurrenceTransport

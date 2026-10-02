@@ -1,0 +1,3 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.SemanticImage
+open ConstitutiveSearch.SemanticImage
+example (description : Description) : description.SourceInvariant := True.intro

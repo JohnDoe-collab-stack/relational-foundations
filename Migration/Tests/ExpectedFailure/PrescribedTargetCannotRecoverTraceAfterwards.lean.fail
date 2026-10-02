@@ -1,0 +1,17 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- The target of a trace cannot be prescribed independently and justified
+-- afterwards: it is the target index produced together with that trace.
+def prescribedTargetCannotRecoverTraceAfterwards
+    {count : Nat} {state : CausalConstitutiveState}
+    {run : CausalConstitutiveExecutionHistory count state}
+    {roles : RelationalConstitutiveRoleHistory run}
+    {program : RoleIndexedProgram roles}
+    {reduction : ExecutedRoleReductionHistory program}
+    (normalization : ExecutedCausalNormalization reduction)
+    (prescribed : ExecutedOperationalTargetProfile reduction) :
+    (source : RoleOccurrenceProfile roles) →
+      ExecutedRoleProfileReduction reduction source prescribed :=
+  fun source => normalization.trace source

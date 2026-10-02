@@ -1,0 +1,31 @@
+name = "relational-perimeter"
+version = "0.1.0"
+defaultTargets = ["RelationalPerimeter"]
+
+[[lean_lib]]
+name = "RelationalPerimeter"
+roots = [
+  "SegmentedResidualRole",
+  "AbstractSegmentedTurning",
+  "ExactTypeTransport",
+  "StrongPerimetralTurning",
+  "RelationalPerimeter",
+]
+globs = [
+  "SegmentedResidualRole",
+  "AbstractSegmentedTurning",
+  "ExactTypeTransport",
+  "StrongPerimetralTurning",
+  "RelationalPerimeter",
+  "RelationalPerimeter.Computation.+",
+  "Tests.+",
+]
+
+[[require]]
+name = "relational-perimeter-foundations"
+path = ".."
+
+[[lean_lib]]
+name = "Constitution"
+roots = ["Constitution.PerimetralConstitution"]
+globs = ["Constitution.+"]

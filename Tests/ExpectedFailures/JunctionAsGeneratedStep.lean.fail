@@ -1,0 +1,4 @@
+import RelationalFoundations
+open RelationalFoundations Perimetral
+def invalidContinuation : OneStepContinuation presentation :=
+  ⟨Node.free 0, presentation.junction⟩

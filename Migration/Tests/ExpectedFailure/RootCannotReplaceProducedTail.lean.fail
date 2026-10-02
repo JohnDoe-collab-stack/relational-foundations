@@ -1,0 +1,9 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.CausalOperationalExecution
+open ConstitutiveSearch.EndogenousDecomposition
+example {depth count : Nat} {assignment : SequentialAssignment depth}
+    {state : ThreadedConstitutiveState depth assignment}
+    {context : ConstitutedOperationalPrefix (causalStateOfThreadedState state)}
+    (head : CausalOperationalHead state context)
+    (rootTail : CausalOperationalExecutionHistory (_count := count) state context) :
+    CausalOperationalExecutionHistory (_count := count + 1) state context :=
+  .step head.stage head.run head.production rootTail

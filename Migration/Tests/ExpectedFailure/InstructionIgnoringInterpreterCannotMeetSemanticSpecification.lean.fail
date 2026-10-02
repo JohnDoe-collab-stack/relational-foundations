@@ -1,0 +1,32 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+namespace RelationalPerimeter.Tests.ExpectedFailure
+
+-- A raw interpreter that uses `second` cannot satisfy the semantic output
+-- specification for an arbitrary, independently supplied `first` instruction.
+def instructionIgnoringInterpreter
+    {depth : Nat}
+    {assignment : SequentialAssignment depth}
+    {state : ThreadedConstitutiveState depth assignment}
+    {stage : SequentialStageRun depth assignment}
+    (run : ThreadedConstitutiveStageRun state stage)
+    (_first second : ConstitutiveNormalizerInstruction run)
+    (payload : LocalAcceptedPayload run false) :=
+  interpretConstitutiveNormalizerInstruction run second false payload
+
+theorem instructionIgnoringInterpreterCannotMeetFirstSpecification
+    {depth : Nat}
+    {assignment : SequentialAssignment depth}
+    {state : ThreadedConstitutiveState depth assignment}
+    {stage : SequentialStageRun depth assignment}
+    (run : ThreadedConstitutiveStageRun state stage)
+    (first second : ConstitutiveNormalizerInstruction run)
+    (payload : LocalAcceptedPayload run false) :
+    (instructionIgnoringInterpreter run first second payload).1 =
+      (first.toAcceptingTransport run).map
+        (leftPayloadAtScheduleSource run payload).1 :=
+  rfl
+
+end RelationalPerimeter.Tests.ExpectedFailure

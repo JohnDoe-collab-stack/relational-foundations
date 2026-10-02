@@ -1,0 +1,7 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- A caller cannot install a prescribed target as if the executed action had
+-- produced it.
+#check ActionProducedOperationalTarget.mk

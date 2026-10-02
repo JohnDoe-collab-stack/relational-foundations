@@ -1,0 +1,5 @@
+import RelationalFoundations.TypedResources
+open RelationalFoundations.TypedResources
+
+def invalidNumericInput : Operation [.truth] .truth :=
+  .test (Ref.head : Ref [.truth] .truth)

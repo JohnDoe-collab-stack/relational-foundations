@@ -1,0 +1,5 @@
+import RelationalFoundations.NativeForgettingSeparationV1
+set_option genInjectivity false
+open RelationalFoundations.NativeForgettingV1
+
+example : Matches shared prefixTwo := zero_matches

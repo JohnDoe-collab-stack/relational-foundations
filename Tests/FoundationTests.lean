@@ -1,0 +1,12 @@
+import RelationalFoundations
+import Tests.Separators
+import Tests.QuantityLaws
+import Tests.Completion
+import Tests.HistoricalSupport
+import Tests.OutputDriven
+import Tests.FeedbackCoverage
+import Tests.HeterogeneousFeedback
+import Tests.FiniteRuleConstruction
+import Tests.ReducedHeterogeneous
+import Tests.NativeForgettingV1
+set_option genInjectivity false

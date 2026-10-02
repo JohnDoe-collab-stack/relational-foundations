@@ -1,0 +1,4 @@
+import Tests.QuantityLaws
+open RelationalFoundations
+def invalidEquivalence : ConstitutiveEquiv QuantityTests.boolQuantity QuantityTests.unitQuantity :=
+  ExactTransport.reflexive Unit

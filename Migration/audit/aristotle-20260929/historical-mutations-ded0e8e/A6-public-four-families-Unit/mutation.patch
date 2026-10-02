@@ -1,0 +1,108 @@
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
+@@ -266,39 +266,36 @@
+ abbrev executedRoleSourceRelation
+     {source : CausalConstitutiveState}
+     {run : CausalConstitutiveStageExecution source}
+-    (observed : CausalConstitutiveState)
+-    (candidate : RelationalConstitutiveRoleStage run) : Type :=
+-  RoleSourceAgreement candidate.searchState observed
++    (_observed : CausalConstitutiveState)
++    (_candidate : RelationalConstitutiveRoleStage run) : Type :=
++  Unit
+ 
+ /-- Primitive formation relation between an executed role and one occurrence. -/
+ abbrev executedRoleFormationRelation
+     {source : CausalConstitutiveState}
+     {run : CausalConstitutiveStageExecution source}
+     (reference : RelationalConstitutiveRoleStage run)
+-    (candidate : RelationalConstitutiveRoleStage run)
+-    (occurrence : RoleOpeningOccurrence reference) : Type :=
+-  PLift (candidate = reference) ×
+-    RoleFormationAgreement reference occurrence.position occurrence.state
++    (_candidate : RelationalConstitutiveRoleStage run)
++    (_occurrence : RoleOpeningOccurrence reference) : Type :=
++  Unit
+ 
+ /-- Primitive target relation read by the executed relational role. -/
+ abbrev executedRoleTargetRelation
+     {source : CausalConstitutiveState}
+     {run : CausalConstitutiveStageExecution source}
+-    (candidate : RelationalConstitutiveRoleStage run)
+-    (observed : CausalConstitutiveState) : Type :=
+-  RoleTargetAgreement candidate.nextState observed
++    (_candidate : RelationalConstitutiveRoleStage run)
++    (_observed : CausalConstitutiveState) : Type :=
++  Unit
+ 
+ /-- Primitive provenance relation carried by one executed occurrence. -/
+ abbrev executedRoleProvenanceRelation
+     {source : CausalConstitutiveState}
+     {run : CausalConstitutiveStageExecution source}
+     (reference : RelationalConstitutiveRoleStage run)
+-    (provenance : List Var)
+-    (candidate : RelationalConstitutiveRoleStage run)
+-    (occurrence : RoleOpeningOccurrence reference) : Type :=
+-  RoleProvenanceAgreement provenance candidate.searchState.provenance ×
+-    PLift (candidate = reference) ×
+-    RoleFormationAgreement reference occurrence.position occurrence.state
++    (_provenance : List Var)
++    (_candidate : RelationalConstitutiveRoleStage run)
++    (_occurrence : RoleOpeningOccurrence reference) : Type :=
++  Unit
+ 
+ /--
+ One executed role as an exact relational opening.  Positions are independent
+@@ -320,8 +317,8 @@
+     ProvenanceRelation := executedRoleProvenanceRelation role
+     role := role
+     provenance := role.provenance
+-    sourceWitness := role.sourceWitness
+-    targetWitness := role.targetWitness
++    sourceWitness := ()
++    targetWitness := ()
+     positionDecEq := openingRolePositionDecEq role
+     positionFrontier := openingPositionFrontier role
+     positionComplete := openingPositionFrontier_complete role
+@@ -330,9 +327,8 @@
+     classify := roleOpeningOccurrenceToPosition
+     realize_classify := openingOccurrence_roundTrip
+     classify_realize := openingPosition_roundTrip role
+-    formationAgreement := fun _ => ⟨⟨rfl⟩, ⟨rfl⟩⟩
+-    provenanceAgreement := fun _ =>
+-      ⟨role.provenanceWitness, ⟨⟨rfl⟩, ⟨rfl⟩⟩⟩ }
++    formationAgreement := fun _ => ()
++    provenanceAgreement := fun _ => () }
+ 
+ /--
+ The constituted identity belonging to one executed relational role. The
+@@ -427,10 +423,10 @@
+     {role : RelationalConstitutiveRoleStage run}
+     {identity : RoleConstitutedOccurrence role}
+     {Motive : GeneratedStructuralBranchContext source.rootFormula → Sort u}
+-    (evidence : RoleConstitutionEvidence role identity)
++    (_evidence : RoleConstitutionEvidence role identity)
+     (value : Motive identity.realized.state) :
+     Motive (identity.position.state role) :=
+-  evidence.formationWitness.2.down ▸ value
++  identity.realized.formedAt ▸ value
+ 
+ /--
+ Dependent case analysis justified by the realized-occurrence return law.
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean
+@@ -207,11 +207,9 @@
+     {source : CausalConstitutiveState} {run : CausalConstitutiveStageExecution source}
+     {role : RelationalConstitutiveRoleStage run}
+     {o : RoleConstitutedOccurrence role}
+-    (evidence : RoleConstitutionEvidence role o) : LocalConstitution o :=
+-  ⟨evidence.sourceWitness.down,
+-    Eq.trans evidence.provenanceWitness.1.down
+-      (congrArg CausalConstitutiveState.provenance evidence.sourceWitness.down),
+-    evidence.formationWitness.2.down, evidence.targetWitness.down⟩
++    (_evidence : RoleConstitutionEvidence role o) : LocalConstitution o :=
++  ⟨role.searchStateExact, role.provenanceExact,
++    o.realized.formedAt, role.nextStateExact⟩
+ 
+ def ProfileConstitution :
+     {count : Nat} → {source : CausalConstitutiveState} →

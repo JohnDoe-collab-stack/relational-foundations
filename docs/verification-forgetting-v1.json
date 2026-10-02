@@ -1,0 +1,31 @@
+{
+  "status": "PASSED",
+  "protocol": "native-forgetting-v1",
+  "checkedAtUtc": "2026-10-02T21:17:21.7969935Z",
+  "scope": "Finite independently admitted native observe/act/reuse suffixes; typed live references and new evaluations",
+  "referenceReceipts": [
+    {
+      "path": "docs/verification-result.json",
+      "sha256": "595A7EECAAD6D94D0FA90A90D7A65B47BA4BFD505B82D0E132D16EA55F034A0E",
+      "checkedAtUtc": "2026-10-02T19:45:32.7062866Z"
+    },
+    {
+      "path": "Migration/verification-result.json",
+      "sha256": "14C88861DAF0790AB11C054A9AB720861F9A864451E2581C69281F8E24E0DF59",
+      "checkedAtUtc": "2026-10-02T19:45:49.1163813Z"
+    }
+  ],
+  "sourceFiles": 65,
+  "axiomAudit": "AUDIT_OK: 5659 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_EXECUTION_OK: 13 executable roots; 138 dependencies; scalar persistent fields; no history/support/replay dependencies",
+  "forgettingExecution": "FORGETTING_EXECUTION_V1_OK: 22 executable/data roots; 199 type/body dependencies; exactly two Nat fields; typed frontier and new certificates; no origin/history/support/replay inputs",
+  "existingExpectedFailures": 9,
+  "forgettingExpectedFailures": 3,
+  "expectedFailures": 12,
+  "totalExpectedFailures": 31,
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "comparison": "Skipped explicitly",
+  "migration": "MIGRATION_OK: 174 sources; CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies; 19 expected failures",
+  "reference": "Skipped explicitly",
+  "referenceReceiptsUnchanged": true
+}

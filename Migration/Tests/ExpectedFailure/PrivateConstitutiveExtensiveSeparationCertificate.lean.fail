@@ -1,0 +1,8 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- The scientific conclusion is exposed only through the canonical builder.
+-- An external caller cannot assemble the final certificate around a foreign
+-- stage relation or an unrelated reduction package.
+#check ConstitutiveExtensiveSeparationCertificate.mk

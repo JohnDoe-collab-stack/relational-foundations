@@ -1,0 +1,32 @@
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
+@@ -427,10 +427,10 @@
+     {role : RelationalConstitutiveRoleStage run}
+     {identity : RoleConstitutedOccurrence role}
+     {Motive : GeneratedStructuralBranchContext source.rootFormula → Sort u}
+-    (evidence : RoleConstitutionEvidence role identity)
++    (_evidence : RoleConstitutionEvidence role identity)
+     (value : Motive identity.realized.state) :
+     Motive (identity.position.state role) :=
+-  evidence.formationWitness.2.down ▸ value
++  identity.realized.formedAt ▸ value
+ 
+ /--
+ Dependent case analysis justified by the realized-occurrence return law.
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean
+@@ -207,11 +207,9 @@
+     {source : CausalConstitutiveState} {run : CausalConstitutiveStageExecution source}
+     {role : RelationalConstitutiveRoleStage run}
+     {o : RoleConstitutedOccurrence role}
+-    (evidence : RoleConstitutionEvidence role o) : LocalConstitution o :=
+-  ⟨evidence.sourceWitness.down,
+-    Eq.trans evidence.provenanceWitness.1.down
+-      (congrArg CausalConstitutiveState.provenance evidence.sourceWitness.down),
+-    evidence.formationWitness.2.down, evidence.targetWitness.down⟩
++    (_evidence : RoleConstitutionEvidence role o) : LocalConstitution o :=
++  ⟨role.searchStateExact, role.provenanceExact,
++    o.realized.formedAt, role.nextStateExact⟩
+ 
+ def ProfileConstitution :
+     {count : Nat} → {source : CausalConstitutiveState} →

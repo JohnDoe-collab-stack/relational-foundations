@@ -1,0 +1,37 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch
+open ConstitutiveSearch.Extensive
+open ConstitutiveSearch.EndogenousDecomposition
+open RelationalPerimeter.Computation.EndogenousOperationalDecomposition
+
+namespace RelationalPerimeter.Tests.ExpectedFailure
+
+def independentUnitRegime (input : Nat) :
+    ObligationRegime
+      (roleProfileFiniteCarrier
+        (constitutiveExtensiveSeparationEvidence input).roles) :=
+  { Obligation := Unit
+    decEq := fun left right => by
+      cases left
+      cases right
+      exact isTrue rfl
+    frontier := [()]
+    complete := fun obligation => by
+      cases obligation
+      exact .head []
+    nodup := .cons (fun _ member _ => nomatch member) .nil
+    carry := fun _ => ()
+    carry_surjective := fun obligation => by
+      cases obligation
+      exact ⟨defaultRoleOccurrenceProfile
+        (constitutiveExtensiveSeparationEvidence input).roles, rfl⟩ }
+
+-- The unrelated singleton is not the exact target-image regime computed by
+-- the executed normalization.
+theorem independentUnitRegimeCannotReplaceExecutedRegime (input : Nat) :
+    independentUnitRegime input =
+      executedConstitutiveObligationRegime input := by
+  rfl
+
+end RelationalPerimeter.Tests.ExpectedFailure

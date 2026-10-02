@@ -1,0 +1,3 @@
+# Preserve the exact bytes covered by the delivered validation manifests.
+# Text files remain readable and diffable; automatic EOL conversion is disabled.
+* -text

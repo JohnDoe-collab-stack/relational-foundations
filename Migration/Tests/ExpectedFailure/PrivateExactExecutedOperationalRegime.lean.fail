@@ -1,0 +1,7 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- A caller cannot package an unrelated singleton regime as the exact regime
+-- realized by the executed normalization.
+#check ExactExecutedOperationalRegime.mk

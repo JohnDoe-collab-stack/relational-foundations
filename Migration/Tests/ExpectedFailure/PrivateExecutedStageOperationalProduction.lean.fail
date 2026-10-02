@@ -1,0 +1,7 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- A caller cannot attach an arbitrary or future-dependent decomposition to an
+-- already completed stage and present it as the local production of that step.
+#check ExecutedStageOperationalProduction.mk

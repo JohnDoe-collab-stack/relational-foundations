@@ -1,0 +1,6 @@
+import RelationalFoundations.FiniteRuleInstances
+open RelationalFoundations
+def wrongHistory := History.extend (History.root : History HeterogeneousFeedback.Step (.ready 0) (.ready 0))
+  (HeterogeneousFeedback.Step.observe 0 false)
+def wrongComplete : (FiniteRuleInstances.heterogeneous 0).Complete wrongHistory :=
+  (FiniteRuleInstances.heterogeneous 0).complete wrongHistory ⟨True.intro, (rfl : false = false)⟩

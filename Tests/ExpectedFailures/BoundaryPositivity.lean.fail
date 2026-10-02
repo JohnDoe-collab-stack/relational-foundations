@@ -1,0 +1,6 @@
+import Tests.Separators
+open RelationalFoundations
+def invalidWitness :
+    (fun _ _ => Empty) Separators.uninhabitedBoundary.terminal
+      Separators.uninhabitedBoundary.initial :=
+  Separators.uninhabitedBoundary

@@ -1,0 +1,1019 @@
+{
+  "sourceRoot": "C:\\Users\\frederick\\Documents\\relational-perimeter",
+  "head": "4e0febf032821882069e7cfefd7e631fc8461d95",
+  "branch": "codex/constitutive-continuity-audit-20260930",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "E864304154C799DCEE913B5347AF8F85A00618B2956D2BD7E3E06F0CB8706041"
+    },
+    {
+      "path": ".github/workflows/constitution-dependency-probes.yml",
+      "sha256": "28BE1EA4CF939C1AD079B37C92271C4027D35E1759CC4ADC111A811ECF2C90AE"
+    },
+    {
+      "path": ".github/workflows/realized-constitution-implementation.yml",
+      "sha256": "FAB73927441DDDED556A211B127308D6C5A2D40B11CBC97E19EC486BEE19C0FB"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "C0333908A42A2053A89E15FF12E04BC0A3393B5702D7F7FF47B43ACF77CED7B5"
+    },
+    {
+      "path": "AbstractSegmentedTurning.lean",
+      "sha256": "4F751DF72732BFF8438DB58DD6D1529987C47A1BCEBB1C8B2CF1C9AB651BB459"
+    },
+    {
+      "path": "AI_AUTHORSHIP.md",
+      "sha256": "4239B16699141078086073EE91B578FF99A36F134FBCB2C6684DE1DA9F1E8F46"
+    },
+    {
+      "path": "ARISTOTLE_CAUSAL_NORMALIZATION_AUDIT_PROMPT.md",
+      "sha256": "3DE5B27C4986EB956CC3FA1CEAA7DCDE397DFCFD88B3B52D1C5E8C0487035717"
+    },
+    {
+      "path": "ARISTOTLE_CONSTITUTIVE_CONTINUITY_AUDIT_20260930.md",
+      "sha256": "11A26AA87E2360A158F057F59F3377B3407ABC972D47B80E314DC79141C5BC8E"
+    },
+    {
+      "path": "ARISTOTLE_CONSTITUTIVE_RELATIONAL_CAUSAL_SCIENTIFIC_AUDIT_PROMPT.md",
+      "sha256": "70C842CF15AB062677602E89452B82A3B7045921D419A225A18645F0FE9E72E9"
+    },
+    {
+      "path": "ARISTOTLE_EXACT_CAUSAL_TARGET_FINAL_AUDIT_PROMPT.md",
+      "sha256": "1827FE35E6478569C20B087652715CF7342947FBD57167E4115CD3B037E705EF"
+    },
+    {
+      "path": "ARISTOTLE_EXACT_RELATIONAL_CAUSAL_COMPLETION_AUDIT_PROMPT.md",
+      "sha256": "86E21F7D35E4D316A21C62212929AC604BCFF347B379498547554379E8DC5A75"
+    },
+    {
+      "path": "ARISTOTLE_EXACT_TARGET_AUDIT_PROMPT.md",
+      "sha256": "2CA50783CA40412821A11AA3692D521F2495D9E8517EEA525A9534298436A49D"
+    },
+    {
+      "path": "ARISTOTLE_EXPONENTIAL_WIDTH_PARAGRAPH_AUDIT_PROMPT.md",
+      "sha256": "7CA007A5474B7275FA42467D8A30E59186167AB0886AE3E6BC9E2DD3E74DDDD8"
+    },
+    {
+      "path": "ARISTOTLE_RELATIONAL_CONSTITUTION_SCIENTIFIC_AUDIT_PROMPT.md",
+      "sha256": "B40678FC5C97B7464B8148F815B5D61FA825390865D1A19E42FC850CBC8467D1"
+    },
+    {
+      "path": "ARISTOTLE_STAGEWISE_CAUSAL_REGIME_AUDIT_PROMPT.md",
+      "sha256": "37E03A717544E19A9B2842F0F9EA453AF3DB8AC361AF5CB51C0C74D9AEC7E15D"
+    },
+    {
+      "path": "audit/aristotle-20260929/correction-0291998/Correction_Aristotle_0291998.zip",
+      "sha256": "BCD8AF9D13291B118E5AB7C94B1060BB216B9C39F77732EF1B0253C4B8CA3F14"
+    },
+    {
+      "path": "audit/aristotle-20260929/correction-0291998/historique/RAPPORT_1ca8e89_ARISTOTLE.fr.md",
+      "sha256": "C4CA2269FC450AE1A46DEA89E42B8FB97A5A96F8A5D1D9FD91E31B111138C61E"
+    },
+    {
+      "path": "audit/aristotle-20260929/correction-0291998/historique/results-1ca8e89.json",
+      "sha256": "A4378A511292E1561D01BAB0990F4631F690969AD1355C12AE2BF0027475A09B"
+    },
+    {
+      "path": "audit/aristotle-20260929/correction-0291998/manifest.json",
+      "sha256": "5F569EAE218D229A987C05648E7B9AF3903A9D046B510893495399487FA65523"
+    },
+    {
+      "path": "audit/aristotle-20260929/correction-0291998/results.json",
+      "sha256": "231EF377788EBB43A093CCBE3A6DB62005C8C11C7B5076E263CE054D0DFDCAC3"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/bridge-verification.json",
+      "sha256": "018F226970A9D6BA7F23BC5DE0660FE96359D7B8E8E497294BE592AE9C281AA9"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/new-proof-axioms.log",
+      "sha256": "4925BBB6C3A1348C0DBE2470CEF00E4EFCA23C4C89EFEC0536D77BDFADBBDC3D"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/all-targets.log",
+      "sha256": "72B87CEC6745C2AD3A4E6BD86E31AC10E0B514001733D2AE3714D4CB6B3991F0"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/bash.log",
+      "sha256": "01382D649857C3508C1B0F2B0A70DC262AF2DA590369C8765383D5F217637C99"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/clean.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/powershell.log",
+      "sha256": "01382D649857C3508C1B0F2B0A70DC262AF2DA590369C8765383D5F217637C99"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/public-root.log",
+      "sha256": "A66DADBC82B9D2DCC6CC6B4EE5CD0AA5BC115584EFB772BE2C98A57DA53A867F"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/toolchain.log",
+      "sha256": "C9D01ED4CFFBAEDD43BAACAC1E2C1055AD09E49734E6E78AE8E346878273EC8E"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-logs/whitespace.log",
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "audit/aristotle-20260929/evidence/verified-source-sha256.json",
+      "sha256": "6F7ED95B6E5DCD53DF6F4D13858F64C0CD6CEE1B16EDE969E672715AEB90A6B2"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/applied.patch",
+      "sha256": "3CFF53B2EB3F90777C9001951493CBC301D3F1CF7C93827E01FA783C0D90B2F6"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/case.json",
+      "sha256": "674731916263F2D0746C8BBA7897D54167D31505F77416F853D1D444460D11C7"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/mutation.patch",
+      "sha256": "908A08ACA7242B8D34A08E64DFC7D607A98FDF03CC6E731ABCB30AAB4215F71E"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/result.json",
+      "sha256": "DDC5A02EC83C66F0ADD3E34321A506E18E30E1802A66E2F2282BCEFF63A6090C"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/applied.patch",
+      "sha256": "42E4D1895F786D5FF595159022F1E60215E64FBFF7E36096AFD8A67ADABA9201"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/case.json",
+      "sha256": "ADBE2E08614260431B540EACFB2EB88D04F4827F3BCD6A91E166CE97B51EBC88"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/mutation.patch",
+      "sha256": "B2EF11606B6D9F739209B592296A841A863E58ECDF9CD5E667444CFE716F32B2"
+    },
+    {
+      "path": "audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/result.json",
+      "sha256": "185675978AA6A3E1ACB2B534D8673673E32E31DA151CB747D841DDACFCA5D381"
+    },
+    {
+      "path": "audit/aristotle-20260929/preparation.json",
+      "sha256": "D405BA1E8912539478E64A6DA56C5C55FF568A92B2E9D53861EE656C910959BD"
+    },
+    {
+      "path": "audit/aristotle-20260929/PROMPT_AUDIT_ADVERSARIAL.md",
+      "sha256": "CBD0EC61516A6F421C8BAFBFECF20B03C393F0A2EA8EC94629A67F4B0B675764"
+    },
+    {
+      "path": "audit/realized-constitution/dependency-probes.json",
+      "sha256": "A9FF9095C8FBC2AACDECE610BA44438E5B99DE3894D5091E3737BF2E2C05BB3E"
+    },
+    {
+      "path": "audit/realized-constitution/IMPLEMENTATION.fr.md",
+      "sha256": "967A7963AF85B76DBDF0E2262D842EBE7D4B5018E1C59DF609D86B9482250440"
+    },
+    {
+      "path": "audit/realized-constitution/patches/FormationRecoveredFromRealization.patch",
+      "sha256": "EEA18FDC98DF2E6222C27C473E1AF899CDA6C9241563BE6A72F40D3FBAAB0F5D"
+    },
+    {
+      "path": "audit/realized-constitution/patches/FormationTransportIgnored.patch",
+      "sha256": "9E2B589CFC168BA5C923513644BFA484B9D97D3246E504FA93E1E3FFF03200BE"
+    },
+    {
+      "path": "audit/realized-constitution/patches/RawFormationErased.patch",
+      "sha256": "706620FF739A55EDAEAF8F5BD895CCED1FAA811E54B980A0CF07103B8D676978"
+    },
+    {
+      "path": "audit/realized-constitution/patches/RealizationReturnLawIgnored.patch",
+      "sha256": "A0324E700D54BE21B74D062AA6952285065FD1F3AE92E4778CEC499CADD257C8"
+    },
+    {
+      "path": "audit/realized-constitution/toolchain.txt",
+      "sha256": "39D03AACB50C6C17A897F733DD33C8F4B2822E62B7A08C19F1E30A17CEA719CF"
+    },
+    {
+      "path": "audit/realized-constitution/verification.json",
+      "sha256": "8B9B9802CDEDF116698F5EB1D60E6357EE2C3E223C33C8D861BFE22677139891"
+    },
+    {
+      "path": "CAUSAL_CONSTITUTIVE_END_TO_END_REPAIR.md",
+      "sha256": "66345BA74B5D96D2E58FA692220CD6957A3E21FAE5ABBCCB582AD853226DD247"
+    },
+    {
+      "path": "docs/conclusion-largeur-exponentielle-conservation-identites.fr.md",
+      "sha256": "F218E569F337D08D7CBB54EFBC0E07B92EF8B9EA460F6998EC73351A73B61764"
+    },
+    {
+      "path": "docs/decomposition-operationnelle-endogene.fr.md",
+      "sha256": "156F355E8BC265B96C5EBDD1C66A3EC3D93BBA595E7F2FBF573D53162EA66D77"
+    },
+    {
+      "path": "docs/endogenous-operational-decomposition.en.md",
+      "sha256": "15FECA301683ED65424D8EA61595968779DF99FB9C55453A75E7996C8D77E3F0"
+    },
+    {
+      "path": "docs/figures/constitutive-complexity-hierarchy.svg",
+      "sha256": "580FA4CAC8729DF87484B6652E884DAE1EAABFC6F98E69DCAB6317997EA1C70D"
+    },
+    {
+      "path": "docs/figures/constitutive-normalizer-succinctness.svg",
+      "sha256": "16880B8156342F816855AC59FEAD1FCECF94D59221B54885269377F45D0698B9"
+    },
+    {
+      "path": "docs/figures/endogenous-operational-decomposition.svg",
+      "sha256": "E59A2693686EAAF8620AF275BB9E36BE414BF0D23AB2041AC0484F5B2D2827DC"
+    },
+    {
+      "path": "docs/figures/endogenous-operational-stability.svg",
+      "sha256": "79AE8A24F7AABC63614921E769B5D51BA0EB6EE16B71E45CA5D01571E92F83EE"
+    },
+    {
+      "path": "docs/figures/relational-extensive-iff.svg",
+      "sha256": "28999BB4488424718295D9B5B3CE62A5D3734BC2DE7CEADD4783C8FC06C91AA2"
+    },
+    {
+      "path": "docs/figures/relational-perimeter-formal-architecture.svg",
+      "sha256": "574F5DF0872F4F6FE0B30BFA6F31A86AB989D4C958A81883943C5AA2D83ACCC2"
+    },
+    {
+      "path": "docs/plan-reconstruction-fondations-relationnelles.fr.md",
+      "sha256": "0FFC3B41DD49F701DA7566C98DFDFC935E370F1C662467F0383E4964CBC22088"
+    },
+    {
+      "path": "docs/positioning-and-scope.en.md",
+      "sha256": "D4C9CCE99413E1CDB08889F9F3F2E91F2B1E5E738B0FE44D2C61EB43A934819B"
+    },
+    {
+      "path": "docs/positionnement-et-portee.fr.md",
+      "sha256": "9CA079D0A4C1830431C71D929AC00DF1C16DDB01D6B09144D286B35889E086BB"
+    },
+    {
+      "path": "docs/primitive-relations-and-perimeter-constitution.en.md",
+      "sha256": "701BE3F87D6565E957025CED92FC12110A52C9524DFFEC2F293B71F1FC140288"
+    },
+    {
+      "path": "docs/relations-primitives-constitution-perimetre.fr.md",
+      "sha256": "2A11BDC57527256E614AD9E228FA1EA9496220FE54C1BBB3C39F74119F7A28FA"
+    },
+    {
+      "path": "EXACT_TARGET_FEASIBILITY.md",
+      "sha256": "03F338B4F48141E791C7EBBB112B0094A0E8754B1D081947C02A3F3C18ABF78A"
+    },
+    {
+      "path": "ExactTypeTransport.lean",
+      "sha256": "DDCAC9E058F3C738EFD92FD7951B5D88260CDE25B7905080512BBEBD4DADFCA0"
+    },
+    {
+      "path": "IMPLEMENTATION_PLAN_CONSTITUTIVE_CONTINUITY.md",
+      "sha256": "FD48E314955A2C4792CC86D17B75CC0F81CAEE5E588591F4990050BC26E9A65C"
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "558A6999B82D0FAC6C385DA1A5CABEB50A594D6ECC7996F0BE33014CFB68AFA8"
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "E6508544588892602BC41F4046CD28245737D88C3FBBBAF30DAD9BFAC115409F"
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "3AAC669C7A910EC2389F4E4F921B605ADF6EBF2D1E0C9B9CD0BE4D33F3F5DB71"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+    },
+    {
+      "path": "README.md",
+      "sha256": "B23C1B7E9B4D958C5BB2FD8FEA21438E5F58E1C5C4047FA3613FCC006913F412"
+    },
+    {
+      "path": "RelationalPerimeter.lean",
+      "sha256": "E2DB74465E5B1DAC3403FB558280AD246C249B45D56AB63BA7AA4F67916A281B"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveGeneration.lean",
+      "sha256": "F964101BE25B6978609FF7EF52FB1845F0D4101D7415DFDBCD2A48019D2C89CA"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontier.lean",
+      "sha256": "6E3308E010D298607842901AEBED1CC36795438C28DBB195C4E4C11DC15079BA"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontierNormalization.lean",
+      "sha256": "AABB4734312638AB6514866D796C6967CCDC3A1EFFA2D6081C4AF94BBB60F6B2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontierPreservation.lean",
+      "sha256": "47AED44D71B630B7D625B2248D76C68873C768B8384BDE70101473532CDD4919"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedRelationalTransport.lean",
+      "sha256": "05F32CD3A34F87C0C6EEBDC3EC34386F88DACE3D38E4DF409D6F76C78554A9C0"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedSplit.lean",
+      "sha256": "95145557ED2E06D5F4594C97B5042FF086FF1A505DCC17565D0D311970CB80DF"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/AcceptingTransport.lean",
+      "sha256": "DB99B79A3A6CA8508117EA81F822D4FB1BC9F7BBE624FEE8FDEF128D908DC66C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ClosureSearch.lean",
+      "sha256": "A8AD5F909BB52D866DC13FDE9FA0CDCDAD0444E98A6F269BF488379C42C9B58C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ComplexityInterface.lean",
+      "sha256": "9BC781921549950417624EA7B53154660CCA545B48A9736EBD2BDFE9F380ED9E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutedPrimitivePath.lean",
+      "sha256": "A7CB8164C30D19D3CF5451E69A67BA3F7D1FAA3AC67ED37C0A957EB2458B0368"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityComposition.lean",
+      "sha256": "F4FCAC57C38981C9831AF45B4239AA7EC351AF8B356A6EBDED1C951C94C0C273"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityInputPolynomial.lean",
+      "sha256": "91F1EA06EC97F83FADFC2AB992BBB56907F37D1B1310C4E61163F99A1D9BC264"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityPolynomial.lean",
+      "sha256": "DB30473C3DE3DEEB1B40AA0F8680DBD07FF71A3670C6B6B4F45EE363870ACF70"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityProfile.lean",
+      "sha256": "AB82281634B4C5CAFB66C2FE256944D1CB1D057C2B6BA41A719128DBA63013E2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveProjectionNonFactorization.lean",
+      "sha256": "DE2A2D54DB17F92EE937F2D025C8268198F3CA24D561545758FF28DDE167E1E2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveWidth.lean",
+      "sha256": "54943A47018CE05B5C767263060B2F8DBF19CE2A61EFF27C90142287FEA9D144"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ConstructivePrelude.lean",
+      "sha256": "6B3B45DBA179CB289B88F0C4921968F9C91E3977EF3A7EED503B27AC20F9E5BB"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ContinuationTransport.lean",
+      "sha256": "78A97090EC26896BED809018D34E48CD71484F9FD1D4711BF2429E72316B186C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalConstitutiveExecution.lean",
+      "sha256": "2092AA16D1ACF93A7FBEE8B2C05F6EFF0CEC273FE7ED463D0FEACA5DBD993EB9"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalFoundationBridge.lean",
+      "sha256": "82E766FBE07F1717BB635812CB7624291A2A4E2F96750BECC7A4EB21496607B9"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean",
+      "sha256": "701373008D5D651EE5ABFF8B2AD5A2BD1D17C63FBAC528187ED201A6A3D2E515"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveExtensiveSeparation.lean",
+      "sha256": "6C7C9A4B5259E5A964D6541CDD3C80DD5F83E770FF6929E676CD614C13DF82D6"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveFeedback.lean",
+      "sha256": "1A536FF784C793C409CEADC0B0E2488624F9CF9E835CA106912EA068EFB44AD5"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveFullStep.lean",
+      "sha256": "FE61CCA2968F8872574598C0F2E82CD3997B20489AB2C235404C82AAD42A8440"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveInterface.lean",
+      "sha256": "6164B52491228D663161BC3D4360A57BCF6F97CA3A6E600C3BBA947734FDB45D"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerCore.lean",
+      "sha256": "A03F063C44554DB8E45137DC81ADAFC3A9E91B284789BBE51D36A9096A26B3AE"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerProgram.lean",
+      "sha256": "EC7DDC6ADC53F933B24492F6D64DA8B94EA0A4792FCE9F3A18D092D962546681"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerSuccinctness.lean",
+      "sha256": "3B53D00A59F337B743DA44C2A80AE8A355C4433DF3D28A17A867F681D9BD0A75"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveOperationalStage.lean",
+      "sha256": "FB94AEBDF27DD2935C7867E46A7BF074F290D30BAB917C428F6B212EC6C5322E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveResolution.lean",
+      "sha256": "5D4ED8CE538313DAC637AE10836AD8C86DB1E24A4C2C000D498B1AEEDB6B4012"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveRoleCycle.lean",
+      "sha256": "8D9165C929F737D76FC301D2AF019CE8D247C786F0232BD7E056B7C72655E060"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/EndogenousDiscovery.lean",
+      "sha256": "762E90BA0754FCD76C28B08716AD5A0F65B08A13631CB2B9FC84BD66E03E261C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/EndogenousOperationalStability.lean",
+      "sha256": "2758D62B401BA007396E62D348F302EB4AF2C4CE98C3ED1216C9113365F11640"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean",
+      "sha256": "9E68930D1D897FC467CB15B56A5E25ED00A877C67FC4692B6D160A1D7445B08A"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedFeedbackBridge.lean",
+      "sha256": "93D595B8AC08C345834EB222A82A15C9FEE7099D900551123F0B0AFC9CBEC1ED"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedLocalSchedule.lean",
+      "sha256": "67D19099CF2BC54B11BA7874A10DE62A87FC805E99507B3D545987BFA4EB7F6F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOperationalReduction.lean",
+      "sha256": "AFB26A136571C698E7C7D2F3D9D15B88F5534554CEFE7937A5BD6A82DA9FE617"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOperationalReductionHistory.lean",
+      "sha256": "82643F90FFF3DF4CEB1C4D47AD5E0DBC7B2C2CCF8A4CD69E20C10C1F7DD15D2A"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOutputObligations.lean",
+      "sha256": "B4EFAFAF6E0A823B244525DE449D23203EFC3E762C9CF27125C125505EADFC3D"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedRoleIndexedReduction.lean",
+      "sha256": "C8B63558DE873A9E38F3A69C1C5C2DF34DC2FA8F484AE530A816261C45409A05"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExtensionalOperationalStability.lean",
+      "sha256": "4152C2FAF22454FC289A542DFFC63ECA5461FBCFD000E050F4CEBE055F260AA5"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GeneratedHistoryExecution.lean",
+      "sha256": "88E6C1CAF0299D38C40A571C4F8857937CE6E0CE5C9E07DB82269F9DA13DAFC2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GenericConcreteRefinement.lean",
+      "sha256": "F59B203AD5B277CC507ADC6F1BE1A62B8A3B43604FFC20422BD2A88CBC63C44E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GenericConstitutiveTraversal.lean",
+      "sha256": "7DFD0A449BFEA84F9F40BAFC2E12A578A5FEEB21315207025AE660F2E07D5A86"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/IndependentProfileAddressing.lean",
+      "sha256": "3453FD892E45A649E76E2358348552B0E38CD052FCFB3D83C24724A6F3D94C7C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/InstrumentedExecutionRealization.lean",
+      "sha256": "D838897FB4FC2F146E0E2CCFAB54C6F0FF8BFA169545150AF2609DFB46B7E13F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/IntegratedProjection.lean",
+      "sha256": "B18D160A85937DF2CCE88C04C67B620E42CDB7137B462212CB36763D2ADDE1F2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/LocalOperationalStatus.lean",
+      "sha256": "14024BC3741B02DFBAA0AB6929DC76A29B16264A6C636ADC9841893DD91F9A0D"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAccounting.lean",
+      "sha256": "F18993999836D8AF848633CC5950701689FD9F7685916A2FDA75EEA4DBDEBA9E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAssignment.lean",
+      "sha256": "BE06BE94A651FDFD2A8FBCFC2BEA9513A8B742B26546FD1B44DC244E906F4551"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAssignmentBounds.lean",
+      "sha256": "A0705A0B5BE52357D833110DC71711C1A90DB0296D58B8699EDBEB93316A1A51"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredComparison.lean",
+      "sha256": "D0582E7214D631D6B895045088836B0F942364335604333A58A332640A98AD4F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredComparisonBounds.lean",
+      "sha256": "35C6EF5CEB212F423FD5ADBF36ADC2C3A855ABCB22B85315EF031C3A90CC1166"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredDiscovery.lean",
+      "sha256": "A58F07F280A0C4E64E0C32CC031B8F32B6CCA379FBBBF89472ED34AF41F209B5"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredDiscoveryBounds.lean",
+      "sha256": "C4B6905D8B8CDFAF51FD8B54332FE222A2B777CE45DCA90ED439EBFF4AC91608"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredGeneration.lean",
+      "sha256": "9C533E122AB4B32DA7FC5ED0BC80508437D32E94E1C0697DD370F094360FFF92"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredRealization.lean",
+      "sha256": "C151EEA3F8267DE9BBC1857816AF1A5ED7E2036FFD27E8D098EC47857AC8E750"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredStateConstruction.lean",
+      "sha256": "D62C5207D8A3985686D92B07935B3CC01669099CCB4820947C363518A6E36EB2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredTransformation.lean",
+      "sha256": "E52944056DE1978B946E6CE1B5EA2F3AC92F10F1E6CF724A7475649491B9AB23"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/OperationalProjection.lean",
+      "sha256": "5B068C1327130A2AD147ABFA104723722A1FE4D503A7401F1D96E8CBAD2504D2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/PrefixLocalOperationalProduction.lean",
+      "sha256": "D0357D952EAB6466D0265A6B6BF07238E59379141245C4D5212851E17A418FDE"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/PublicRelationalExtensiveFamily.lean",
+      "sha256": "13F31E82E0EA4F43213E12CDF14DD114294F58424EFFE18034BF624EAED123F1"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RelationalConstitutiveRoles.lean",
+      "sha256": "5FEEA558405D4A19A8183F9923D33B7D13BB21DCE1D7D041174338C57A603302"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean",
+      "sha256": "D0B56B79A31761BECAD451C28174D289D881F7BBEDDBA5BA914F9102A5A17B55"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean",
+      "sha256": "19788628C45C70BFEAAFB341B9A5BAC92CC5D87ACB80646B0DCDB06342B8E08F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileArityTransport.lean",
+      "sha256": "2D6E99077ED914AB5DFC3B8F7CD3273DD8B7B3315E8DE9A999B7CB164D343736"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean",
+      "sha256": "8B2DEF00541B38517AB591E50CF25ED2DDEFCFF2D41E3CDDBDCBB2FDD3F0ED1F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseObligationPolicy.lean",
+      "sha256": "31AA0F5EA86C6B6642D193216EF956BAF4A2275DB74EEF5FC0A90E2370172A19"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseObligationRegime.lean",
+      "sha256": "0020981E43E10C89B4831A910B25D08902D48205AAB552C0D38B1D6507A05882"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean",
+      "sha256": "5396F1EA4B8155D7317B68B4AC44AD38C1165B6CD4263D39AD22FE437FA8038E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/SequentialHistory.lean",
+      "sha256": "2BCE627BAAE6B96032DBA115826D38D39D409637592866C5DB954B2314811E7A"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/SequentialResolution.lean",
+      "sha256": "F10344AD5D800B007AD3E8E3B5DFAD217C6C65EDF1CBC9151C26A24D639CDDC3"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/StoredLocalSchedule.lean",
+      "sha256": "C7E29BB904AAF635ACA90434978D17E52D9F5F77D3057ECDF8818BED8A221601"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ExactOperationalImage.lean",
+      "sha256": "F8F9479F5F49E7953816C429B7F1BCD7C281BFE614CC5EA7C7354BA1D74FED65"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/FiniteExtensiveAddressing.lean",
+      "sha256": "8F05BCF5272CF9F186885DA94E9B11152F5CB12D7AE651F54CCAD2AD6DF295B7"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/FrontierReduction.lean",
+      "sha256": "BB7CBD9C7FE75BA0D1A7A007F60FE3AC59E9F073D9F02B51B4300918D38321A6"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/IrreducibleFrontier.lean",
+      "sha256": "9B3F3F7964765974ED0F08BC8AACE48F3EF07199D00BC67BB1CCF0944F304F1C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/LocalSearchableCodeExecution.lean",
+      "sha256": "D6B71658030A3F3DBE25AFE048BD1E6DE1D847699492922B89681DF35EFA9991"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/MachineCostInterface.lean",
+      "sha256": "7C35A951FC2C8DFA1FB2FDEB55DE0EE3B433A3C9F18E271FBCFD126258913D07"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/OperationalFrontierStatus.lean",
+      "sha256": "4A29A2B239087101738AABF4A88A8486E43B191679D25E1B7AD0AE10CFCF6719"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/PolynomialCostEnvelope.lean",
+      "sha256": "AEA0FCC5831AB3171B9A5CF5BB1AC5EDEC775A23E015D123677934F202D9FE34"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/ProducedOutputImage.lean",
+      "sha256": "32A42B1A239860B269DC5124C1F5E1E81C6D0C010EE3AB4DC5A567CEBE24BC10"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean",
+      "sha256": "B2AC7C3E49AFFB3AB324273B10085CF80D7BA9FD5D5E004075EACDCB8AC9000A"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileFiniteCarrier.lean",
+      "sha256": "95E6B854A1CAC188213B43252B9895169EB6AD0E6D74C9499F94A2B749A1491F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/RelationalRoleExtensiveFamily.lean",
+      "sha256": "86EF92E6124E86B0F20EE0211D081135806750E5DB182F3D0A3605A411D07F1B"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/RelationalTransport.lean",
+      "sha256": "7A9A721F4903ED652A588F248D63084873C970A82DBB773608C1A0D9D077F310"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/RepresentationCost.lean",
+      "sha256": "B386CC8AC8FAD20FF03FA510982B5E81C40A3B7AC3EB6C48D233C3BF725B54F2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/AcceptedBinaryBranch.lean",
+      "sha256": "964D247E6C1472EF090BB1062590BF63E6B66BE3FEE40AFFD3572BE13054558F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/AcceptedSAT.lean",
+      "sha256": "735586F0E8C5522B9DACAB982992CB591D9F9C93B725CB3280877846419C1BCC"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/BinaryBranch.lean",
+      "sha256": "F06E52563610551B78CF548E93A3633D8CE92A2D6AFDD33D1A595D67F1DA6F85"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ConstraintTransport.lean",
+      "sha256": "14231A8ECCA9AC034B2D60E6899685CC63198DF3943CA89AED79360CFFFDC3A4"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyBitComplexity.lean",
+      "sha256": "4E03DF7249B69198843C4AC696E129DAA3B6E49C404E1600C6C7AE14D216E125"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyBitCosts.lean",
+      "sha256": "6DCCF4B42AC54D1C92F652CD90EB92C18D4F089FF6F902D74FB4888CEBE60B2A"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyComplexity.lean",
+      "sha256": "B387D0CF606B468997D199441FDA0A46D5BA4DDED82680D40870F28557CDD964"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyCosts.lean",
+      "sha256": "8ECB0BE3A177A009F47756434FF2F7E7FECBD43CF0BAB8B76BDE2FA0DFA9779F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyEqualityCosts.lean",
+      "sha256": "A21D13F0B68E1FB6F0B97B718B5B9E1C522B9866A09EC4C421B3317BE33F91EE"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyInputComplexity.lean",
+      "sha256": "CDA770EC56141C1195452DE3E585ED7522CD5881B7D9354956F60015B1F95DC3"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyNormalizationCosts.lean",
+      "sha256": "01C7F0A25080881832C7E1DD542CB211590928DCC94889369D5F62905985A74E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyPolynomialCosts.lean",
+      "sha256": "37159265C46DFE6F640BF41576396E842243713517FE7B6D0D27B08110E7EB80"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyProvenance.lean",
+      "sha256": "A2523C4BF682BBA63E4E97B3F52E61139D5FDDDA7AA878CE7FBF2E4E860AE074"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyRelationCosts.lean",
+      "sha256": "D65E554931BD0EF3F263174A6DFEC17F5F10A1100EEA828361A70783D482ABA2"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyResources.lean",
+      "sha256": "8251254CC0F0283FBC2E705CDFC77EB3B758599D9EA20EC090B90A68ECB5DC6C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyTransportCosts.lean",
+      "sha256": "0A02E9586CFD37CFF7AEB756C84528FF64E4713D043E3C46C7F791CA1F6B6734"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitStackedSymmetricFamily.lean",
+      "sha256": "A74BB094E44D59E87C0A386061B82E542D67D04C7A633540C38DCBFA4BD6F3E9"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GeneratedStructuralContext.lean",
+      "sha256": "3DCA8BB406F8D8DAFCA0C922722575053809D0F112BA129B8386E5263D709EC4"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GrowingDiscoveryBenchmark.lean",
+      "sha256": "8E73F5CF3F1149AC10C1ECC78DEB19D1F939B1002EB5B596D225A6DC17192718"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GrowingDiscoveryFamily.lean",
+      "sha256": "0A8420D488C26FC5A61712BC5D2889CBF9847CDE22D02B2FEE97ADA353C8A0AA"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ParametricSymmetricFamily.lean",
+      "sha256": "705603D28D91C577FBA5D7FFA40249509A61AF80830B3E4212187E44C7FBDBF1"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ParametricSymmetricTrajectory.lean",
+      "sha256": "0FD634435F14160CC873CAE2233E710E4364BB7EE058FD67560208850EEE6014"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ResidualFlipTransport.lean",
+      "sha256": "1AAEE562BDC9DF32D20B7A4AB6368AF8BA73BA4809D4475773010956B3B83FC0"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/RestrictionTransport.lean",
+      "sha256": "D5222EE2995051E1D2A3024BDA18207B596968628B38E4DDF6D98490D71A5E5C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/SecondAuditCausalBenchmark.lean",
+      "sha256": "4D49AA7E132543CFCDD44824888476659A43ECDA6B9A0ADCA93A60FD98E444BA"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralBranchContext.lean",
+      "sha256": "13D51CF6346A86DEBC3AE3D89F906BFB3126C07F60E5B10C1263E899CA3D399B"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean",
+      "sha256": "24200B2B49F44535795943DCE5E61ECB8755EC452385E0D2ECD27689B2C55C1E"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralProgress.lean",
+      "sha256": "9ABE926F5A7E36E00027456F4BBC70DBDEC2CC65B3D706B187ED1724D489DB94"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryConstitutedLocalSchedule.lean",
+      "sha256": "6ADC994FDC89CD181279FA628305E019CAF3BF4D2278377CFA8127467909BD1D"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryConstitutedLocalScheduleCore.lean",
+      "sha256": "88CFBC1548DBCCD8D737A186D1E8CBE0AAA73A1FA7B70B2C777FC677A76D059D"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryDerivedClosure.lean",
+      "sha256": "1F17329886A4FB82A143D60E3467518CC07D191E284DBA52F8F261E6BE5F68FB"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryDerivedClosureCore.lean",
+      "sha256": "92359A943C7EC5174AA80AC3D12A9E3647C350089F45A2B7F77E377A77C6AA61"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCode.lean",
+      "sha256": "AECF3F258F6E2FD2C54DE8BA96377D07492820B84C3C1ECA8A82003B918A570F"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCodeValidation.lean",
+      "sha256": "8DADF2C6A21A1DDD7DF1EF112A9A01A0F5AACEC4DE42CEDB4E27280B8D55DFD6"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCodeValidationCore.lean",
+      "sha256": "9B90B4715C2048D6AA9EBE5C54FA058EA9747DFA0EB60F686FCA2ED80AF5BF39"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SearchSystem.lean",
+      "sha256": "588DAFFC2D16F68DE28A88B01B8C830AA6313C6D7AD563AD3F98A42E49177894"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean",
+      "sha256": "B905902B7AB1A9B8751F16F04EB4A085FB957860BA5E8EB489987654082DF98C"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/SequentialPrimitiveExecution.lean",
+      "sha256": "DC2513A9A2B56D3CCFD21A49910203D5248604D418770EB5DBC50C615A2DB934"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/TransportClosure.lean",
+      "sha256": "88E7E0456C379383930B8C332E4E4C4B1AE2F400370D32825B099583304A1B98"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/ConstitutiveSearch/TransportCode.lean",
+      "sha256": "734703B267DD142A6DE0DB307012953D1E7F468587DEF1FB11806193C8593493"
+    },
+    {
+      "path": "RelationalPerimeter/Computation/EndogenousOperationalDecomposition.lean",
+      "sha256": "E5D6EE37B501C3C4BCF0A5C7C0E8AB9EBF49E44B38E6C89D0B5835874CF16AF8"
+    },
+    {
+      "path": "scripts/check-expected-failures.ps1",
+      "sha256": "2AE6AF008EFCBB9DC519852FA95943546771CE5529C26A74F960217E92892A49"
+    },
+    {
+      "path": "scripts/check-expected-failures.sh",
+      "sha256": "D5BEBCA868F7AD9FF0295F656F5196E551808FBD8B7D745D8B22BD3A5E0D822F"
+    },
+    {
+      "path": "scripts/check-import-boundaries.ps1",
+      "sha256": "CAD841E1AA2A92932AEA33C58F69929461C1D6DD60C4DE1D334378CACAED7B33"
+    },
+    {
+      "path": "scripts/check-import-boundaries.sh",
+      "sha256": "02E0CD3D3369D0E8AF94C5977D38BF24FE88B6F4425D8738C191F40BB0C714CC"
+    },
+    {
+      "path": "scripts/check-stratification.ps1",
+      "sha256": "C182B5CBB3B552F3E4A513D35B2309893D4C0CE5F1D6DD6A94F402E12DBE8F76"
+    },
+    {
+      "path": "scripts/check-stratification.sh",
+      "sha256": "B4408FB800B3CCB1D03EE59FD42AFBEDFEF62F6E9F4625024F1C159CEFCC2627"
+    },
+    {
+      "path": "scripts/constitutive-normalizer-core-import-boundaries.txt",
+      "sha256": "C1CB1DE2EC424F75CFA860607AAEC118FC1DCBD60196D10E8D26631B2916D4F5"
+    },
+    {
+      "path": "scripts/executed-history-import-boundaries.txt",
+      "sha256": "2AC33361EC8BC727028228DA447377D8B952F096C9A993CC0E8FDD55E82ACAFD"
+    },
+    {
+      "path": "scripts/expected-failures.tsv",
+      "sha256": "E98BD30D5BC80F948ED9AB064B99A7BBFEDE608B23F1D5529BB7499573A13CA9"
+    },
+    {
+      "path": "scripts/implement-realized-constitution.py",
+      "sha256": "58274E8E72C7621BAECC279CC4F57C0D2C011136454B5E739A2984C0793F1630"
+    },
+    {
+      "path": "scripts/import-boundaries.txt",
+      "sha256": "DECB9681437D9699FD53F1D4C185DF2DB4A77B4A93BA889FD2AC50B4BB9CB20C"
+    },
+    {
+      "path": "scripts/measured-accounting-import-boundaries.txt",
+      "sha256": "9D616F1D230BCA618BFFB74210D7C903483AC8AD6E07055FDF4331DA241C7BEE"
+    },
+    {
+      "path": "scripts/run-focused-constitution-probes.py",
+      "sha256": "E8761530E07E0868512BD9A5B2889078BF0C14A3E56FC6BC88E0C3084FFA01E5"
+    },
+    {
+      "path": "scripts/stratification.tsv",
+      "sha256": "2DF6E425693DA74542331C3ED3135BF8E1485DA713FE2F71DF2E76739A081C18"
+    },
+    {
+      "path": "scripts/test-expected-failure-gates.py",
+      "sha256": "C6DE565BCF52D9D9982C8461480EAB05E0B2CA6FE13828E1F989FC5588F99A92"
+    },
+    {
+      "path": "scripts/verify.ps1",
+      "sha256": "5A6E554EB4548E8F3841D6DD39E378F8C3B7AA859D8DBBD5F4309F40D382366F"
+    },
+    {
+      "path": "scripts/verify.sh",
+      "sha256": "541DE0A6096548ECBC71D41EB5897DFF899C4B135093D304F102A90AF8E7D949"
+    },
+    {
+      "path": "SegmentedResidualRole.lean",
+      "sha256": "C996D83B8B652A82993E13E2853D00B174E1A544AC571E441FFC48C097E11098"
+    },
+    {
+      "path": "StrongPerimetralTurning.lean",
+      "sha256": "AD6A8625392F47756730A4FC16EB29CB373A4C313FCFBF9DDE60DF05019984BC"
+    },
+    {
+      "path": "Tests/AristotleCorrectionRegression.lean",
+      "sha256": "6A3CFA5B9F025ABA8CEF6B0A4B39ABE14AB412C7207343290EBF2747ED026933"
+    },
+    {
+      "path": "Tests/ComputationalPhenomenonRegression.lean",
+      "sha256": "6006EDDB6E41ADB685DA426C168ECD35F7ADA84DE112D746BD11A2AF02FB4397"
+    },
+    {
+      "path": "Tests/ConstitutiveComplexityHierarchyRegression.lean",
+      "sha256": "507526C27D88863E78171424AC06B31580AF00F829C7EF1D0E5FBF71EB5DA9FF"
+    },
+    {
+      "path": "Tests/ConstitutiveContinuityRegression.lean",
+      "sha256": "AE3942C3244DD3E45EBF194A0227B9C9E927155ED435FDE2687B7807EC0059F6"
+    },
+    {
+      "path": "Tests/ConstitutiveExecutionRegression.lean",
+      "sha256": "AA289DED33ED2367DAEAA0DD4B7FDBAF7B1621EFAB887764D7881B31BC5B2C79"
+    },
+    {
+      "path": "Tests/ConstitutiveNormalizerSuccinctnessRegression.lean",
+      "sha256": "D2976BD186594BD29E6CB0CE458FA3A3D53900CCCA12A4CB84F37920149BA654"
+    },
+    {
+      "path": "Tests/ConstitutiveObjectiveRegression.lean",
+      "sha256": "93A91E6FA2D9ECC97FCC9B3C35813243AF76134E254D2622200BC28F35949A42"
+    },
+    {
+      "path": "Tests/DeepPreservationRegression.lean",
+      "sha256": "F072B1DC6ACC6F1BD331E21EE7E51A7F5D834502B633747E57B5AE12F73BE0E1"
+    },
+    {
+      "path": "Tests/EndogenousOperationalStabilityRegression.lean",
+      "sha256": "9D9B3DFA38899F3B9D6F249DA4BB00823CA817C2468A982698D2DD476435CBF0"
+    },
+    {
+      "path": "Tests/EndogenousWidthBridgeRegression.lean",
+      "sha256": "54E52A89BC135381B301BE75D821BF99392FD439BD51D20BB63AAF6379F27BF4"
+    },
+    {
+      "path": "Tests/ExpectedFailure/CanonicalSampleCannotPrescribeAction.lean.fail",
+      "sha256": "1FB65F9CA787DC80C74FC25106D244C1E310C31BC04D501C44D2D5837D6D1330"
+    },
+    {
+      "path": "Tests/ExpectedFailure/DiscoveredTransportCannotReplaceAuthoritativeInstruction.lean.fail",
+      "sha256": "A95864125BE9C75476458CAB77136DA0D021D0016D0DB94B803DBA6B0CE6EB27"
+    },
+    {
+      "path": "Tests/ExpectedFailure/ForeignInstructionProfileCannotBeReused.lean.fail",
+      "sha256": "B1CB9DDC74AD8403C03144DC39299D59F2177F987FBA3CDE362853D60757C005"
+    },
+    {
+      "path": "Tests/ExpectedFailure/FutureCannotProduceOwnHead.lean.fail",
+      "sha256": "F89A11AD93E51912AC172A96BCC69B3B4D894DD57B5EA2757D0BD46C9EE4739F"
+    },
+    {
+      "path": "Tests/ExpectedFailure/IndependentUnitRegimeCannotReplaceExecutedRegime.lean.fail",
+      "sha256": "D6309D7D576645F1A7413BF964E2F584E7D468002C769F3EAFEFCD8E15DE017F"
+    },
+    {
+      "path": "Tests/ExpectedFailure/InstructionIgnoringInterpreterCannotMeetSemanticSpecification.lean.fail",
+      "sha256": "775976217D662664EB803AC5BD91665DDA2152A261CF886711886FEEBC9834CF"
+    },
+    {
+      "path": "Tests/ExpectedFailure/MissingImageConstitution.lean.fail",
+      "sha256": "B11D95C53FC3DD15EC612ACE5B93B52215B5BB9FD61E98EC308F6AA08767ED15"
+    },
+    {
+      "path": "Tests/ExpectedFailure/MissingImagePreservation.lean.fail",
+      "sha256": "CF08939C2687CBA1F53E38B7D439171F6C4292F561C0769ED8D992CCF20A6B1D"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrescribedTargetCannotRecoverTraceAfterwards.lean.fail",
+      "sha256": "271A0CDB5E524B2F7737686DC870FE5560E3CFE1EC3445BB50748BEA735F1DA3"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateActionProducedOperationalTarget.lean.fail",
+      "sha256": "05760474D55B4D05439501C3B826D5A1706533AD0DE9C4F9B8B367C4659B9434"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateConstitutiveExtensiveSeparationCertificate.lean.fail",
+      "sha256": "2B105A9689AC90CC61351A3F381657AE6E5476E6A0063876904B8E27E9B242BE"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateConstitutiveNormalizerCertificate.lean.fail",
+      "sha256": "E4213D418C07F8277FA9B683B715BD54D0A4D4C90E6BBE7E40B4DE4A2C0ED35E"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateExactCausalExponentialTarget.lean.fail",
+      "sha256": "E002BF2B048CDD1BC701D167C4B521B13914ADD04CF8950724629A76B6FAD43A"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateExactExecutedOperationalRegime.lean.fail",
+      "sha256": "ACABFEB99335844B7F9B250BD424FEBB235F2C65C4CF0CBD059B49E474070997"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateExecutedCausalNormalization.lean.fail",
+      "sha256": "D3372F99DB7C3369F68F75E8FD0D443C12D01586E8D1AB2AED7F70D526D82ACD"
+    },
+    {
+      "path": "Tests/ExpectedFailure/PrivateExecutedStageOperationalProduction.lean.fail",
+      "sha256": "1AD373846B6AF2F65BD58E63F53743031BC03F923BBC2DE105900E89C4A09165"
+    },
+    {
+      "path": "Tests/ExpectedFailure/RetainedDecisionCannotReplaceTransformedDecision.lean.fail",
+      "sha256": "824D7F20075ED77CE41E185CFEFFC9E03B55CFA6C165A7C21E751291408684DC"
+    },
+    {
+      "path": "Tests/ExpectedFailure/RootCannotReplaceProducedTail.lean.fail",
+      "sha256": "F68D6E0E879EA05E7EDBF903A7BD3BE9732A4E115F1376CE2EE5102EB81CB35F"
+    },
+    {
+      "path": "Tests/ExpectedFailure/SourceIgnoringNormalizationCannotSupplyTrace.lean.fail",
+      "sha256": "EA31948969C7B0C05AAC17E6CF3308A1F4B36D61267FEF51467F269CC8957DFA"
+    },
+    {
+      "path": "Tests/ProductionTimelineRegression.lean",
+      "sha256": "1326848BFEF8E31C72EF7DA86D053965CF8346093F483989DDB74B0A609E5D9C"
+    },
+    {
+      "path": "Tests/PublicRootImport.lean",
+      "sha256": "6A153A32A6485A05CF793DD4EEDE5327A4BE8566E0E4EB3389B070595B9688C8"
+    },
+    {
+      "path": "Tests/RealizedConstitutionRegression.lean",
+      "sha256": "393EDE748D4024CEADD06CA46C7D4608B5C0A7F9ED4E6CCC24DD64EE71C7CD55"
+    },
+    {
+      "path": "Tests/RelationalExtensiveIffRegression.lean",
+      "sha256": "1B9D1EBA60F12B25E7E99E770DF8635D84D4A1047D8424FDFC00CC5673776DCE"
+    },
+    {
+      "path": "Tests/SemanticImageRegression.lean",
+      "sha256": "B89D7A1928EC47976F7F56CDE10A458F0418B8674F46B131BAA229E9A49093F4"
+    }
+  ]
+}

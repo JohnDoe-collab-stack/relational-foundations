@@ -1,0 +1,470 @@
+{
+  "target": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+  "tree": "9379b85f008b7618ca3336a4a2c8e7730edd3681",
+  "parent": "ded0e8ef4d343c091b66c80010c5a6827a589319",
+  "delivery_head": "13eed60eac867cacfc4d4a0fddca33334ea882ed",
+  "remote_main": "8a5e494e9ac2ee725ff9fdb03dfe08c8b1b30685",
+  "environment": {
+    "lean": "4.33.1 (819816b2e0a3bf405af45ae5c7af2491d8f5bee6)",
+    "lake": "5.0.0-src+819816b",
+    "pwsh": "absent (NOT RUN)"
+  },
+  "J": [
+    "01_lean_version exit=0 secs=0 cmd=lean --version",
+    "02_lake_version exit=0 secs=0 cmd=lake --version",
+    "03_lake_clean exit=0 secs=1 cmd=lake clean",
+    "04_build_root exit=0 secs=578 cmd=lake build +RelationalPerimeter",
+    "05_build_all exit=0 secs=84 cmd=lake build",
+    "06_verify_sh exit=0 secs=892 cmd=bash scripts/verify.sh",
+    "07_verify_ps1 exit=127 secs=0 cmd=pwsh -NoProfile -File scripts/verify.ps1",
+    "08_diff_check exit=0 secs=1 cmd=git diff --check",
+    "09_status exit=0 secs=0 cmd=git status --porcelain",
+    "10_rev_parse exit=0 secs=1 cmd=git rev-parse HEAD",
+    "DONE"
+  ],
+  "integrity": {
+    "sha256_before_after": "identical (208 files)",
+    "status_after": "clean"
+  },
+  "paragraphs": {
+    "P1": "QUALIFIED",
+    "P2": "QUALIFIED",
+    "P3": "VERIFIED",
+    "P4": "QUALIFIED"
+  },
+  "controls": {
+    "A": "QUALIFIED",
+    "B": "VERIFIED",
+    "C": "QUALIFIED",
+    "D": "QUALIFIED",
+    "E": "QUALIFIED",
+    "F": "QUALIFIED",
+    "G": "QUALIFIED",
+    "H": "VERIFIED",
+    "I": "QUALIFIED",
+    "J": "QUALIFIED"
+  },
+  "probes": [
+    "probes/B_carriers.lean",
+    "probes/H_I_probes.lean",
+    "probes/J_axiom_inventory.lean",
+    "probes/J_key_axioms.lean"
+  ],
+  "dev_variants": [
+    "dev/D1b.patch",
+    "dev/D2.patch",
+    "dev/F1.patch",
+    "dev/F4.patch"
+  ],
+  "mutations": [
+    {
+      "id": "H01-A6-on-parent",
+      "clause": "A",
+      "base_sha": "ded0e8ef4d343c091b66c80010c5a6827a589319",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=1045 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=122 cmd=lake build",
+        "04_verify_sh exit=0 secs=115 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/H01-A6-on-parent/final.patch",
+      "files": [
+        ".../RoleIndexedProfiles.lean                       | 42 ++++++++++------------",
+        " .../RoleProfileSemantics.lean                      |  8 ++---",
+        " 2 files changed, 22 insertions(+), 28 deletions(-)"
+      ]
+    },
+    {
+      "id": "H02-A5-on-parent",
+      "clause": "A",
+      "base_sha": "ded0e8ef4d343c091b66c80010c5a6827a589319",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=1033 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=118 cmd=lake build",
+        "04_verify_sh exit=0 secs=117 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/H02-A5-on-parent/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RoleIndexedProfiles.lean              | 4 ++--",
+        " .../EndogenousDecomposition/RoleProfileSemantics.lean             | 8 +++-----",
+        " 2 files changed, 5 insertions(+), 7 deletions(-)"
+      ]
+    },
+    {
+      "id": "M01-A6-unit-families",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=0 secs=1059 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=120 cmd=lake build",
+        "04_verify_sh exit=0 secs=113 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M01-A6-unit-families/final.patch",
+      "files": [
+        ".../RoleIndexedProfiles.lean                       | 42 ++++++++++------------",
+        " .../RoleProfileSemantics.lean                      |  8 ++---",
+        " 2 files changed, 22 insertions(+), 28 deletions(-)"
+      ]
+    },
+    {
+      "id": "M02-A5-ignore-evidence",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=1057 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=119 cmd=lake build",
+        "04_verify_sh exit=0 secs=113 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M02-A5-ignore-evidence/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RoleIndexedProfiles.lean              | 4 ++--",
+        " .../EndogenousDecomposition/RoleProfileSemantics.lean             | 8 +++-----",
+        " 2 files changed, 5 insertions(+), 7 deletions(-)"
+      ]
+    },
+    {
+      "id": "M03a-A-origin-source",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=1 secs=852 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=15 cmd=lake build",
+        "04_verify_sh exit=1 secs=189 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M03a-A-origin-source/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RelationalConstitutiveRoles.lean        | 6 +++---",
+        " 1 file changed, 3 insertions(+), 3 deletions(-)"
+      ]
+    },
+    {
+      "id": "M03b-A-origin-target",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=1 secs=858 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=17 cmd=lake build",
+        "04_verify_sh exit=1 secs=182 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=1 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M03b-A-origin-target/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RelationalConstitutiveRoles.lean        | 6 +++---",
+        " 1 file changed, 3 insertions(+), 3 deletions(-)"
+      ]
+    },
+    {
+      "id": "M03c-A-origin-provenance",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=1 secs=862 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=17 cmd=lake build",
+        "04_verify_sh exit=1 secs=182 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M03c-A-origin-provenance/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RelationalConstitutiveRoles.lean        | 6 +++---",
+        " 1 file changed, 3 insertions(+), 3 deletions(-)"
+      ]
+    },
+    {
+      "id": "M03d-A-origin-formation",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=1 secs=857 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=17 cmd=lake build",
+        "04_verify_sh exit=1 secs=182 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=1 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M03d-A-origin-formation/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/RoleIndexedProfiles.lean         | 12 ++++++------",
+        " 1 file changed, 6 insertions(+), 6 deletions(-)"
+      ]
+    },
+    {
+      "id": "M03e-A-origin-all",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=1 secs=850 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=14 cmd=lake build",
+        "04_verify_sh exit=1 secs=191 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M03e-A-origin-all/final.patch",
+      "files": [
+        ".../RelationalConstitutiveRoles.lean                   | 18 +++++++++---------",
+        " .../EndogenousDecomposition/RoleIndexedProfiles.lean   | 12 ++++++------",
+        " 2 files changed, 15 insertions(+), 15 deletions(-)"
+      ]
+    },
+    {
+      "id": "A-occ-raw-carrier",
+      "clause": "A",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "NOT RUN"
+    },
+    {
+      "id": "M04-C-head-from-completed-history",
+      "clause": "C",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=822 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=99 cmd=lake build",
+        "04_verify_sh exit=0 secs=91 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M04-C-head-from-completed-history/final.patch",
+      "files": [
+        ".../CausalOperationalExecution.lean                | 71 +++++++++++++++-------",
+        " 1 file changed, 48 insertions(+), 23 deletions(-)"
+      ]
+    },
+    {
+      "id": "M05-C-tail-from-root-state",
+      "clause": "C",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=1 secs=481 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=11 cmd=lake build",
+        "04_verify_sh exit=1 secs=44 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M05-C-tail-from-root-state/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/CausalOperationalExecution.lean            | 3 +--",
+        " 1 file changed, 1 insertion(+), 2 deletions(-)"
+      ]
+    },
+    {
+      "id": "M06-C-tail-with-independent-root-context",
+      "clause": "C",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=1 secs=483 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=14 cmd=lake build",
+        "04_verify_sh exit=1 secs=44 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M06-C-tail-with-independent-root-context/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/CausalOperationalExecution.lean             | 2 +-",
+        " 1 file changed, 1 insertion(+), 1 deletion(-)"
+      ]
+    },
+    {
+      "id": "M07-D-constant-canonical-action",
+      "clause": "D",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=1 secs=476 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=7 cmd=lake build",
+        "04_verify_sh exit=1 secs=40 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M07-D-constant-canonical-action/final.patch",
+      "files": [
+        ".../ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean  | 2 +-",
+        " 1 file changed, 1 insertion(+), 1 deletion(-)"
+      ]
+    },
+    {
+      "id": "M08-D-prescribed-target-with-equality",
+      "clause": "D",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=0 secs=611 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=102 cmd=lake build",
+        "04_verify_sh exit=0 secs=81 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M08-D-prescribed-target-with-equality/final.patch",
+      "files": [
+        ".../ExecutedRoleIndexedReduction.lean                      | 14 ++++++--------",
+        " Tests/RelationalExtensiveIffRegression.lean                |  7 +++++--",
+        " 2 files changed, 11 insertions(+), 10 deletions(-)"
+      ]
+    },
+    {
+      "id": "M09a-E-preservation-from-reduction",
+      "clause": "E",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=0 secs=615 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=101 cmd=lake build",
+        "04_verify_sh exit=0 secs=84 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M09a-E-preservation-from-reduction/final.patch",
+      "files": [
+        ".../ExecutedCausalNormalization.lean                       |  2 +-",
+        " .../EndogenousDecomposition/RoleProfileSemantics.lean      | 14 ++++++++++++++",
+        " 2 files changed, 15 insertions(+), 1 deletion(-)"
+      ]
+    },
+    {
+      "id": "M09b-E-separation-from-reduction",
+      "clause": "E",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=601 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=102 cmd=lake build",
+        "04_verify_sh exit=0 secs=70 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M09b-E-separation-from-reduction/final.patch",
+      "files": [
+        ".../EndogenousDecomposition/ExecutedCausalNormalization.lean  |  2 +-",
+        " .../EndogenousDecomposition/RoleProfileSemantics.lean         | 11 +++++++++++",
+        " 2 files changed, 12 insertions(+), 1 deletion(-)"
+      ]
+    },
+    {
+      "id": "E-deep-remove-guarantee-at-source",
+      "clause": "E",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "NOT RUN"
+    },
+    {
+      "id": "M10-F-independent-unit-regime",
+      "clause": "F",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SUBSTANTIVE REJECTION",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=1 secs=435 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=1 secs=92 cmd=lake build",
+        "04_verify_sh exit=1 secs=25 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M10-F-independent-unit-regime/final.patch",
+      "files": [
+        ".../ConstitutiveExtensiveSeparation.lean                  | 15 ++++++++++++++-",
+        " 1 file changed, 14 insertions(+), 1 deletion(-)"
+      ]
+    },
+    {
+      "id": "M11-F-authorization-ignored-guarantees-reconstructed",
+      "clause": "F",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=0 cmd=lake clean",
+        "02_build_root exit=0 secs=614 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=101 cmd=lake build",
+        "04_verify_sh exit=0 secs=82 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M11-F-authorization-ignored-guarantees-reconstructed/final.patch",
+      "files": [
+        ".../ExecutedCausalNormalization.lean               |  8 +++----",
+        " .../RoleProfileSemantics.lean                      | 25 ++++++++++++++++++++++",
+        " 2 files changed, 29 insertions(+), 4 deletions(-)"
+      ]
+    },
+    {
+      "id": "F-True-carried-guarantee",
+      "clause": "F",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "NOT RUN"
+    },
+    {
+      "id": "M12-F-G-constant-carry-to-anchor",
+      "clause": "F/G",
+      "base_sha": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+      "classification": "SURVIVES",
+      "commands": [
+        "01_lake_clean exit=0 secs=1 cmd=lake clean",
+        "02_build_root exit=0 secs=370 cmd=lake build +RelationalPerimeter",
+        "03_build_all exit=0 secs=53 cmd=lake build",
+        "04_verify_sh exit=0 secs=41 cmd=bash scripts/verify.sh",
+        "05_verify_ps1 NOT_RUN (pwsh absent)",
+        "06_diff_check exit=0 secs=0 cmd=git diff --check",
+        "DONE"
+      ],
+      "patch": "mutations/M12-F-G-constant-carry-to-anchor/final.patch",
+      "files": [
+        ".../ConstitutiveExtensiveSeparation.lean            |  8 ++++----",
+        " .../ExecutedCausalNormalization.lean                | 21 +++++++++------------",
+        " 2 files changed, 13 insertions(+), 16 deletions(-)"
+      ]
+    }
+  ],
+  "global_verdict": "EXACT TARGET REQUIRES CORRECTIONS"
+}

@@ -1,0 +1,27 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+namespace RelationalPerimeter.Tests.ExpectedFailure
+
+-- Profiles produced by different stored instructions are not definitionally
+-- the same carrier, even though both instruction-indexed alternatives have two
+-- constructors and therefore the same cardinality.
+theorem foreignInstructionProfileCannotBeReused
+    {depth count : Nat}
+    {assignment : SequentialAssignment depth}
+    {state : ThreadedConstitutiveState depth assignment}
+    {headStage : SequentialStageRun depth assignment}
+    {headRun : ThreadedConstitutiveStageRun state headStage}
+    {tailRun : ConstitutiveExecutionHistory
+      (count := count) headRun.nextRun.next}
+    {headRole : ThreadedConstitutiveRoleStage headRun}
+    {tailRoles : ThreadedConstitutiveRoleHistory
+      (count := count) tailRun}
+    (first second : ConstitutiveNormalizerInstruction headRun)
+    (tail : ConstitutiveNormalizerProgram tailRoles) :
+    (ConstitutiveNormalizerProgram.step headRole first tail).Profile =
+      (ConstitutiveNormalizerProgram.step headRole second tail).Profile :=
+  rfl
+
+end RelationalPerimeter.Tests.ExpectedFailure

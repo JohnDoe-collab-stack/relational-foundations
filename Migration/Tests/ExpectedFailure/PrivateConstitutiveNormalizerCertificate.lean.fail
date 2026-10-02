@@ -1,0 +1,6 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- This must remain inaccessible outside its defining module.
+#check ConstitutiveNormalizerSuccinctness.mk

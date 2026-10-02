@@ -1,0 +1,7 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- A caller cannot install an arbitrary source-indexed result as the executed
+-- normalization used by the public causal chain.
+#check ExecutedCausalNormalization.mk

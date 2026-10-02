@@ -1,0 +1,127 @@
+{
+  "id": "A5-store-but-ignore-evidence",
+  "clause": "A",
+  "purpose": "Keep stored witnesses but reconstruct their agreements from the already available role and realized occurrence.",
+  "frozen_commit": "ded0e8ef4d343c091b66c80010c5a6827a589319",
+  "commands": [
+    {
+      "name": "clean",
+      "command": [
+        "lake",
+        "clean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.064,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/clean.log"
+    },
+    {
+      "name": "public-root",
+      "command": [
+        "lake",
+        "build",
+        "+RelationalPerimeter"
+      ],
+      "exit_code": 0,
+      "seconds": 334.507,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [
+        "info: RelationalPerimeter.lean:55:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.independent_profile_addressing_requires_exponential_slots' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:56:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_program_code_size_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:57:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_code_metric_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:58:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_code_size_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:59:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_interpreter_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:60:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_returns_executed_codes' does not depend on any axioms",
+        "Build completed successfully (129 jobs)."
+      ],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/public-root.log"
+    },
+    {
+      "name": "all-targets",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 53.644,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:238:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.everyProgramStepConsumesStoredInstruction' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:239:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.rawInterpreterSeparatesDifferentInstructionActions' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:240:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.authoritativeInstructionProjectsToExecutedView' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:241:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.authoritativeInstructionHasTypedProjectionCollision' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:242:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.projectedViewDoesNotDetermineAuthoritativeAction' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:243:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.instrumentedWorkRemainsSeparate' does not depend on any axioms",
+        "Build completed successfully (140 jobs)."
+      ],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/all-targets.log"
+    },
+    {
+      "name": "bash-verifier",
+      "command": [
+        "bash",
+        "scripts/verify.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 11.047,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [
+        "info: Tests/PublicRootImport.lean:47:0: 'RelationalPerimeter.Tests.PublicRootImport.publicFamily' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:48:0: 'RelationalPerimeter.Tests.PublicRootImport.publicSuccinctnessEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:49:0: 'RelationalPerimeter.Tests.PublicRootImport.publicIndependentAddressingBound' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:50:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerProgramSize' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:51:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerMetricAgreement' does not depend on any axioms",
+        "Build completed successfully (140 jobs).",
+        "Verified 138 Lean files: build, constructivity, audit blocks, import boundaries, and migration boundaries are clean."
+      ],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/bash-verifier.log"
+    },
+    {
+      "name": "powershell-verifier",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "scripts/verify.ps1"
+      ],
+      "exit_code": 0,
+      "seconds": 9.345,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [
+        "info: Tests/PublicRootImport.lean:47:0: 'RelationalPerimeter.Tests.PublicRootImport.publicFamily' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:48:0: 'RelationalPerimeter.Tests.PublicRootImport.publicSuccinctnessEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:49:0: 'RelationalPerimeter.Tests.PublicRootImport.publicIndependentAddressingBound' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:50:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerProgramSize' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:51:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerMetricAgreement' does not depend on any axioms",
+        "Build completed successfully (140 jobs).",
+        "Verified 138 Lean files: build, constructivity, audit blocks, import boundaries, and migration boundaries are clean."
+      ],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/powershell-verifier.log"
+    },
+    {
+      "name": "diff-check",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.016,
+      "diagnostics": [],
+      "first_error": [],
+      "tail": [],
+      "log": "mutations/A5-store-but-ignore-evidence/logs/diff-check.log"
+    }
+  ],
+  "started": 1790693567.0277965,
+  "mutation_unchanged_during_commands": true,
+  "all_commands_pass": true,
+  "no_warning_or_axiom": true,
+  "elapsed": 408.655
+}

@@ -1,0 +1,78 @@
+name: Focused realized constitution dependency probes
+on:
+  push:
+    branches: [chatgpt/realized-constitution-implementation-20260929]
+    paths:
+      - scripts/run-focused-constitution-probes.py
+      - .github/workflows/constitution-dependency-probes.yml
+permissions:
+  contents: write
+concurrency:
+  group: focused-constitution-probes-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  probe:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Verify source identity and install the pinned compiler
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = chatgpt/realized-constitution-implementation-20260929
+          git merge-base --is-ancestor ef9e87bc8989b6bd45c782a94aa7e90d6dab60ab HEAD
+          git diff --exit-code ef9e87bc8989b6bd45c782a94aa7e90d6dab60ab HEAD -- RelationalPerimeter Tests
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          toolchain="$(tr -d '\r\n' < lean-toolchain)"
+          [[ "$toolchain" =~ ^leanprover/lean4:v([0-9]+\.[0-9]+\.[0-9]+)$ ]]
+          version="${BASH_REMATCH[1]}"
+          asset="lean-${version}-linux.tar.zst"
+          curl --fail --location --retry 3 "https://api.github.com/repos/leanprover/lean4/releases/tags/v${version}" -o "$RUNNER_TEMP/release.json"
+          digest="$(python3 -c 'import json,sys; r=json.load(open(sys.argv[1])); print(next(a["digest"] for a in r["assets"] if a["name"]==sys.argv[2]))' "$RUNNER_TEMP/release.json" "$asset")"
+          [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]
+          curl --fail --location --retry 3 "https://github.com/leanprover/lean4/releases/download/v${version}/${asset}" -o "$RUNNER_TEMP/$asset"
+          echo "${digest#sha256:}  $RUNNER_TEMP/$asset" | sha256sum --check
+          mkdir -p "$RUNNER_TEMP/pinned-lean"
+          tar --zstd -xf "$RUNNER_TEMP/$asset" --strip-components=1 -C "$RUNNER_TEMP/pinned-lean"
+          echo "$RUNNER_TEMP/pinned-lean/bin" >> "$GITHUB_PATH"
+          mkdir -p audit/realized-constitution/logs
+      - name: Compile the exact dependencies from a fresh checkout
+        shell: bash
+        run: |
+          set -euo pipefail
+          lake build +RelationalPerimeter.Computation.ConstitutiveSearch.RelationalProfileConstitution 2>&1 | tee audit/realized-constitution/logs/probe-core-dependencies.log
+          lake build +RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.RoleIndexedProfiles 2>&1 | tee audit/realized-constitution/logs/probe-role-dependencies.log
+      - name: Execute focused probes and record all outcomes
+        shell: bash
+        run: |
+          set +e
+          python3 scripts/run-focused-constitution-probes.py
+          result=$?
+          set -e
+          if [[ -f audit/realized-constitution/dependency-probes.json ]]; then
+            git add -- audit/realized-constitution/dependency-probes.json audit/realized-constitution/patches
+            if ! git diff --cached --quiet; then
+              git commit -m 'audit: record focused formation and realization dependency probes'
+              git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+            fi
+          fi
+          exit "$result"
+      - name: Record final source integrity
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p audit/realized-constitution
+          git diff --exit-code ef9e87bc8989b6bd45c782a94aa7e90d6dab60ab HEAD -- RelationalPerimeter Tests
+          git diff --check
+          git rev-parse HEAD > audit/realized-constitution/probe-head.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: focused-constitution-dependency-probes
+          path: audit/realized-constitution
+          retention-days: 14
+          if-no-files-found: error

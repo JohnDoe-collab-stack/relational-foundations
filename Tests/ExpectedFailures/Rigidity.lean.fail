@@ -1,0 +1,4 @@
+import Tests.Separators
+open RelationalFoundations
+def invalidRigid : Separators.trivialRealization.RoleRigid :=
+  Separators.trivialRealization.agreement

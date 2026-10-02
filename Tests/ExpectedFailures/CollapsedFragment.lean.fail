@@ -1,0 +1,10 @@
+import RelationalFoundations.FiniteRuleConstruction
+open RelationalFoundations
+def collapsedFragment : ExactTransport (Unit ⊕ Unit) Unit where
+  forward := fun _ => ()
+  backward := fun _ => .inl ()
+  forwardBackward := fun slot => by
+    cases slot with
+    | inl value => cases value; rfl
+    | inr value => exact (rfl : (Sum.inl () : Unit ⊕ Unit) = Sum.inl ())
+  backwardForward := fun value => by cases value; rfl

@@ -1,0 +1,2714 @@
+{
+  "code_commit": "02919988b97d959253b9104ec20372f39ca2f69d",
+  "code_tree": "55cadef8a0bf1c2a42606d83076ea844a62745c3",
+  "parent": "13eed60eac867cacfc4d4a0fddca33334ea882ed",
+  "scientific_baseline": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+  "branch": "chatgpt/aristotle-correction-20260929",
+  "reference": {
+    "case": "REFERENCE",
+    "base": "02919988b97d959253b9104ec20372f39ca2f69d",
+    "tree": "55cadef8a0bf1c2a42606d83076ea844a62745c3",
+    "commands": [
+      {
+        "name": "toolchain",
+        "command": [
+          "lean",
+          "--version"
+        ],
+        "exit_code": 0,
+        "seconds": 0.032,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "toolchain.stdout",
+        "stderr": "toolchain.stderr"
+      },
+      {
+        "name": "lake-version",
+        "command": [
+          "lake",
+          "--version"
+        ],
+        "exit_code": 0,
+        "seconds": 0.032,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "lake-version.stdout",
+        "stderr": "lake-version.stderr"
+      },
+      {
+        "name": "clean",
+        "command": [
+          "lake",
+          "clean"
+        ],
+        "exit_code": 0,
+        "seconds": 0.032,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "clean.stdout",
+        "stderr": "clean.stderr",
+        "remaining_oleans": 0
+      },
+      {
+        "name": "public-root",
+        "command": [
+          "lake",
+          "build",
+          "+RelationalPerimeter"
+        ],
+        "exit_code": 0,
+        "seconds": 281.336,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "public-root.stdout",
+        "stderr": "public-root.stderr"
+      },
+      {
+        "name": "all-targets",
+        "command": [
+          "lake",
+          "build"
+        ],
+        "exit_code": 0,
+        "seconds": 48.533,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "all-targets.stdout",
+        "stderr": "all-targets.stderr"
+      },
+      {
+        "name": "bash",
+        "command": [
+          "bash",
+          "scripts/verify.sh"
+        ],
+        "exit_code": 0,
+        "seconds": 13.156,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "bash.stdout",
+        "stderr": "bash.stderr"
+      },
+      {
+        "name": "powershell",
+        "command": [
+          "pwsh",
+          "-NoProfile",
+          "-File",
+          "scripts/verify.ps1"
+        ],
+        "exit_code": 0,
+        "seconds": 12.623,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "powershell.stdout",
+        "stderr": "powershell.stderr"
+      },
+      {
+        "name": "diff-check",
+        "command": [
+          "git",
+          "diff",
+          "--check"
+        ],
+        "exit_code": 0,
+        "seconds": 0.033,
+        "timeout": false,
+        "diagnostics": [],
+        "stdout": "diff-check.stdout",
+        "stderr": "diff-check.stderr"
+      }
+    ],
+    "integrity_unchanged": true,
+    "tracked_files": 234,
+    "status_after": "",
+    "all_pass": true
+  },
+  "gate_tests": [
+    {
+      "case": "baseline",
+      "surface": "bash",
+      "exit_code": 0,
+      "passed": true,
+      "fixture_calls": 19,
+      "log": "baseline-bash.log"
+    },
+    {
+      "case": "baseline",
+      "surface": "powershell",
+      "exit_code": 0,
+      "passed": true,
+      "fixture_calls": 19,
+      "log": "baseline-powershell.log"
+    },
+    {
+      "case": "unlisted",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "unlisted-bash.log"
+    },
+    {
+      "case": "unlisted",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "unlisted-powershell.log"
+    },
+    {
+      "case": "orphan",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "orphan-bash.log"
+    },
+    {
+      "case": "orphan",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "orphan-powershell.log"
+    },
+    {
+      "case": "duplicate",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "duplicate-bash.log"
+    },
+    {
+      "case": "duplicate",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "duplicate-powershell.log"
+    },
+    {
+      "case": "compiles",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "compiles-bash.log"
+    },
+    {
+      "case": "compiles",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "compiles-powershell.log"
+    },
+    {
+      "case": "wrong-diagnostic",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "wrong-diagnostic-bash.log"
+    },
+    {
+      "case": "wrong-diagnostic",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "wrong-diagnostic-powershell.log"
+    },
+    {
+      "case": "missing-file",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "missing-file-bash.log"
+    },
+    {
+      "case": "missing-file",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "missing-file-powershell.log"
+    },
+    {
+      "case": "interrupted",
+      "surface": "bash",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "interrupted-bash.log"
+    },
+    {
+      "case": "interrupted",
+      "surface": "powershell",
+      "exit_code": 1,
+      "passed": true,
+      "fixture_calls": 0,
+      "log": "interrupted-powershell.log"
+    }
+  ],
+  "mutations": [
+    {
+      "id": "M01-four-derived-families-Unit",
+      "control": "A",
+      "classification": "SURVIVES",
+      "interpretation": "Quatre familles aval remplacées par Unit ; la formation des occurrences et les données indexées sont conservées.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 321.717,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 45.82,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 12.248,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 15.691,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "06c03badaed2f386462e9926eeab01955cf5adbe3816f29b24a0d3485921fd87",
+      "first_diagnostic": null
+    },
+    {
+      "id": "M02-ignore-derived-evidence",
+      "control": "A",
+      "classification": "SURVIVES",
+      "interpretation": "Copie de preuve ignorée ; accord de formation repris depuis l’occurrence réalisée.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 314.593,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 54.351,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 17.126,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 13.007,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "7611df8cfe17f2c7e005e6a81edf9ad66c8755755f24f4127fc2b3a6935825de",
+      "first_diagnostic": null
+    },
+    {
+      "id": "A-raw-realized-carrier",
+      "control": "A",
+      "classification": "SURVIVES",
+      "interpretation": "Retour au porteur réalisé stage.Occurrence ; les témoins sont reconstruits depuis la même étape. Ce n’est pas un effacement de toute formation.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 314.689,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 53.815,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 16.533,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 13.107,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "5bbe27aef02f948715b98fe1c6664421f92692cd0132b958dc0f83c4a9e6c8bd",
+      "first_diagnostic": null
+    },
+    {
+      "id": "M05-root-tail",
+      "control": "C",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Suite repartant de la racine ; perte des indices imposés par l’état produit.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 223.289,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:213:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:227:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:261:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:298:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:308:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:537:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:549:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:551:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:553:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:564:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 4.988,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:213:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:227:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:261:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:298:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:308:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:537:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:549:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:551:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:553:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:564:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 10.002,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:213:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:227:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:261:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:298:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:308:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:537:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:549:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:551:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:553:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:564:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 9.046,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:213:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:227:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:261:4: 'change' tactic failed, pattern",
+            "\u001b[31;1merror: build failed\u001b[0m",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:298:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:308:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:537:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:549:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:551:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:553:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:564:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "dc8c0b555e5fac1720bd4dc8463caa9273d3d4ace5877973c4249712128dd697",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:213:67: Application type mismatch: The argument"
+    },
+    {
+      "id": "M06-root-context",
+      "control": "C",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Contexte racine substitué au contexte produit ; incompatibilité des indices de la suite.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 223.785,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:214:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:228:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:262:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:299:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:309:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:541:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:550:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:552:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:556:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:565:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:580:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 4.896,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:214:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:228:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:262:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:299:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:309:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:541:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:550:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:552:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:556:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:565:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:580:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 10.096,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:214:67: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:228:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:262:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:299:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:309:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:541:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:550:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:552:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:556:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:565:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:580:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 8.653,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:214:67: Application type mismatch: The argument",
+            "\u001b[31;1merror: build failed\u001b[0m",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:228:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:262:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:299:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:309:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:538:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:539:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:540:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_value' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:541:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:550:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionWithTrace' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:552:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:555:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:556:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:565:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:573:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRelationalConstitutiveRoles' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:574:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:575:0: 'ConstitutiveSearch.EndogenousDecomposition.publicRoleProfileFiniteCarrier_width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:576:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_distinctSeparateConservation' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:577:0: 'ConstitutiveSearch.EndogenousDecomposition.public_exponentialWidth_iff_exactRegimeCapacity' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:578:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:579:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:580:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_roles_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "8c198d0e88049e7b59231a1cfbb8379601be78fc66120f5e9e5e2ce2d6afe24f",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:214:67: Application type mismatch: The argument"
+    },
+    {
+      "id": "C-real-future-reordering",
+      "control": "C",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Exécution d’une véritable étape suivante avant la première décomposition. Le contrat chronologique est faux à deux étapes, même si la valeur finale est égale.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 218.203,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:244:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:278:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:295:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:302:65: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:304:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:313:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:315:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:325:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:557:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:568:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:587:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:594:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:595:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 3.676,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:244:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:278:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:295:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:302:65: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:304:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:313:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:315:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:325:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:557:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:568:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:587:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:594:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:595:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 8.087,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:244:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:278:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:295:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:302:65: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:304:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:313:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:315:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:325:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:557:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:568:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:587:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:594:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:595:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 5.782,
+          "timeout": false,
+          "diagnostics": [
+            "\u001b[31;1merror: build failed\u001b[0m",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:244:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:278:4: 'change' tactic failed, pattern",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:295:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:302:65: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:304:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:313:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:315:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:325:81: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:554:0: 'ConstitutiveSearch.EndogenousDecomposition.executeWithTrace_program_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:557:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecutionWithTrace_order' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:568:0: 'ConstitutiveSearch.EndogenousDecomposition.operationalProductionTimeline_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:570:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:571:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_head_independent' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:572:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_step' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:587:0: 'ConstitutiveSearch.EndogenousDecomposition.executeCausalOperationalExecutionHistory_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:594:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_instrumented_exact' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:595:0: 'ConstitutiveSearch.EndogenousDecomposition.publicCausalOperationalExecution_causalRun_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.033,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "8d868f01b5ffe64ff76c351e5066f172e25b06a66a9410aa9e7c3662c2dbd566",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean:244:4: 'change' tactic failed, pattern"
+    },
+    {
+      "id": "M07-action-constant",
+      "control": "D",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Action totale remplacée par une sortie canonique ; le contrat sur les continuations arbitraires n’est plus satisfait.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 196.983,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:115:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:126:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:169:4: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:342:8: 'change' tactic failed, pattern",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:373:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_left' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:376:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_executedOutput' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:387:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleHistory_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 3.777,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:115:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:126:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:169:4: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:342:8: 'change' tactic failed, pattern",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:373:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_left' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:376:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_executedOutput' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:387:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleHistory_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 7.484,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:115:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:126:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:169:4: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:342:8: 'change' tactic failed, pattern",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:373:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_left' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:376:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_executedOutput' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:387:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleHistory_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 6.283,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:115:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:126:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:169:4: Application type mismatch: The argument",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:342:8: 'change' tactic failed, pattern",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:373:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_left' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:376:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleStage_executedOutput' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:387:0: 'ConstitutiveSearch.EndogenousDecomposition.interpretCompiledRoleHistory_exact' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "\u001b[31;1merror: build failed\u001b[0m"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "a752df6d6627e310fc484d796cc6d1108fe1408ca4f6c52378b215d11dd3d488",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean:115:0: Not a definitional equality: the left-hand side"
+    },
+    {
+      "id": "M08-prescribed-canonical-target",
+      "control": "D",
+      "classification": "SURVIVES",
+      "interpretation": "Sortie canonique prescrite, puis accord avec l’action démontré. L’action totale reste inchangée.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 329.352,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 51.186,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 13.204,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 12.102,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedRoleIndexedReduction.lean",
+        "Tests/RelationalExtensiveIffRegression.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "0b60eed82ac23577dc4136cdc46c49534a53754989765a8c6ec98cbbd57248c7",
+      "first_diagnostic": null
+    },
+    {
+      "id": "M09a-reconstruct-preservation",
+      "control": "E",
+      "classification": "SURVIVES",
+      "interpretation": "Préservation reconstruite depuis les licences de la réduction ; la garantie n’est pas retirée à sa source.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 273.611,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 40.3,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 21.187,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 14.487,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "894961e87a4f278798b5e414d391ed88720f4851af51d23b13ac38a456584c8c",
+      "first_diagnostic": null
+    },
+    {
+      "id": "M09b-reconstruct-separation",
+      "control": "E",
+      "classification": "SURVIVES",
+      "interpretation": "Distinction reconstruite depuis ces mêmes licences ; les profils restent distincts.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 313.761,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 59.071,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 12.499,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 10.393,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "c8e994cbc2d1b5cf0dedc87e969849d16c6eded0292dbb08cac98738e3d87890",
+      "first_diagnostic": null
+    },
+    {
+      "id": "E-deep-formula-agreement",
+      "control": "E",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Accord de formule de la relation remplacé par True ; la carte structurelle reste définie mais le transport universel de l’acceptation n’est plus justifiable. Contre-modèle SAT compilé séparément.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.118,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 20.838,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:182:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:270:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.mapContinuation_accept' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:271:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.toAcceptingTransport' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:272:0: 'ConstitutiveSearch.SAT.generatedStructuralFlipAtAction' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:274:0: 'ConstitutiveSearch.SAT.normalizeGeneratedStructuralFrontierByFlip' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 0.366,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:182:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:270:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.mapContinuation_accept' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:271:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.toAcceptingTransport' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:272:0: 'ConstitutiveSearch.SAT.generatedStructuralFlipAtAction' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:274:0: 'ConstitutiveSearch.SAT.normalizeGeneratedStructuralFrontierByFlip' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 8.892,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:182:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:270:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.mapContinuation_accept' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:271:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.toAcceptingTransport' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:272:0: 'ConstitutiveSearch.SAT.generatedStructuralFlipAtAction' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:274:0: 'ConstitutiveSearch.SAT.normalizeGeneratedStructuralFrontierByFlip' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 6.033,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:182:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:270:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.mapContinuation_accept' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:271:0: 'ConstitutiveSearch.SAT.GeneratedStructuralFlipAtRelation.toAcceptingTransport' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:272:0: 'ConstitutiveSearch.SAT.generatedStructuralFlipAtAction' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:274:0: 'ConstitutiveSearch.SAT.normalizeGeneratedStructuralFrontierByFlip' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "\u001b[31;1merror: build failed\u001b[0m"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.004,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "42ba44684d149e7bb1c144f5796cfa72432fb56b9cfe24b7062ca9cf7a512aa6",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean:182:2: Type mismatch"
+    },
+    {
+      "id": "M11-reconstruct-authorization",
+      "control": "F",
+      "classification": "SURVIVES",
+      "interpretation": "Argument d’autorisation ignoré ; toutes ses garanties sont reconstruites depuis la réduction conservée.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 313.614,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 58.892,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 12.5,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 11.702,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.033,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "2f79fd96a94b706fadbafbb964f3445f968a8f10a70e792b114b155398b06f55",
+      "first_diagnostic": null
+    },
+    {
+      "id": "F-True-generic-guarantee",
+      "control": "F",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Spécification de l’obligation générique remplacée par True ; aucun run concret n’est disponible pour reconstruire les garanties universelles.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.067,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.066,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 197.405,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:104:59: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:109:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:145:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.transformPayload' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:146:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.sourceInvariant' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 3.577,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:104:59: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:109:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:145:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.transformPayload' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:146:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.sourceInvariant' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 7.284,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:104:59: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:109:2: Type mismatch",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:145:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.transformPayload' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:146:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.sourceInvariant' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 5.832,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:104:59: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:109:2: Type mismatch",
+            "\u001b[31;1merror: build failed\u001b[0m",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:145:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.transformPayload' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:146:0: 'ConstitutiveSearch.SemanticImage.AdmittedImageValue.sourceInvariant' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "0091a8d0dbe08ea3416fffaa2095e8e0b6dfdedc896e1a50014ee5a215437672",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean:104:59: Type mismatch"
+    },
+    {
+      "id": "F-True-public-reconstructed",
+      "control": "F",
+      "classification": "SURVIVES",
+      "interpretation": "Garantie portée par l’obligation concrète remplacée par True, puis reconstruite depuis la normalisation. À distinguer de la suppression dans l’interface générique.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 312.851,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 59.592,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 12.45,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 11.656,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveExtensiveSeparation.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "e141250a84378d3b88eba873cbf25b78d7c6149630d316fa772d3198e95478b6",
+      "first_diagnostic": null
+    },
+    {
+      "id": "G-pending-constant-carry",
+      "control": "G",
+      "classification": "REJECTED_IN_TEST",
+      "interpretation": "Toutes les ouvertures regroupées, même celles en attente : largeur deux et fibres exactes du cas sans transport sont perdues.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.064,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 1,
+          "seconds": 183.406,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:39:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:41:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:43:51: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:176:44: Application type mismatch: The argument",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:300:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.localFibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:301:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.pendingWidth' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:311:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.fibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:312:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:314:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.realize_carry' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:318:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.executed_width' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 1,
+          "seconds": 3.576,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:39:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:41:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:43:51: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:176:44: Application type mismatch: The argument",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:300:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.localFibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:301:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.pendingWidth' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:311:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.fibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:312:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:314:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.realize_carry' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:318:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.executed_width' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 1,
+          "seconds": 7.837,
+          "timeout": false,
+          "diagnostics": [
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:39:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:41:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:43:51: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:176:44: Application type mismatch: The argument",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:300:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.localFibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:301:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.pendingWidth' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:311:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.fibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:312:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:314:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.realize_carry' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:318:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.executed_width' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1",
+            "error: build failed"
+          ],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 1,
+          "seconds": 5.581,
+          "timeout": false,
+          "diagnostics": [
+            "\u001b[31;1merror: build failed\u001b[0m",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:39:2: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:41:0: Not a definitional equality: the left-hand side",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:43:51: Type mismatch",
+            "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:176:44: Application type mismatch: The argument",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:300:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.localFibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:301:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.pendingWidth' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:311:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.fibres' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:312:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.width' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:314:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.History.realize_carry' depends on axioms: [sorryAx]",
+            "info: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:318:0: 'ConstitutiveSearch.EndogenousDecomposition.RoleStatus.executed_width' depends on axioms: [sorryAx]",
+            "error: Lean exited with code 1"
+          ],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "cc61fc5d8941e4578a6d144e30f6bbed5aa908c47c2b4909ad03d94bd0c6fb58",
+      "first_diagnostic": "error: RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean:39:2: Type mismatch"
+    },
+    {
+      "id": "M12-constant-executed-carry",
+      "control": "F/G",
+      "classification": "SURVIVES",
+      "interpretation": "Portage constant vers l’ancrage dans l’instance convergente. Les traces sont transportées en utilisant la convergence déjà prouvée.",
+      "commands": [
+        {
+          "name": "toolchain",
+          "command": [
+            "lean",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "toolchain.stdout",
+          "stderr": "toolchain.stderr"
+        },
+        {
+          "name": "lake-version",
+          "command": [
+            "lake",
+            "--version"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "lake-version.stdout",
+          "stderr": "lake-version.stderr"
+        },
+        {
+          "name": "clean",
+          "command": [
+            "lake",
+            "clean"
+          ],
+          "exit_code": 0,
+          "seconds": 0.065,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "clean.stdout",
+          "stderr": "clean.stderr",
+          "remaining_oleans": 0
+        },
+        {
+          "name": "public-root",
+          "command": [
+            "lake",
+            "build",
+            "+RelationalPerimeter"
+          ],
+          "exit_code": 0,
+          "seconds": 263.919,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "public-root.stdout",
+          "stderr": "public-root.stderr"
+        },
+        {
+          "name": "all-targets",
+          "command": [
+            "lake",
+            "build"
+          ],
+          "exit_code": 0,
+          "seconds": 38.239,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "all-targets.stdout",
+          "stderr": "all-targets.stderr"
+        },
+        {
+          "name": "bash",
+          "command": [
+            "bash",
+            "scripts/verify.sh"
+          ],
+          "exit_code": 0,
+          "seconds": 11.846,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "bash.stdout",
+          "stderr": "bash.stderr"
+        },
+        {
+          "name": "powershell",
+          "command": [
+            "pwsh",
+            "-NoProfile",
+            "-File",
+            "scripts/verify.ps1"
+          ],
+          "exit_code": 0,
+          "seconds": 9.442,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "powershell.stdout",
+          "stderr": "powershell.stderr"
+        },
+        {
+          "name": "diff-check",
+          "command": [
+            "git",
+            "diff",
+            "--check"
+          ],
+          "exit_code": 0,
+          "seconds": 0.032,
+          "timeout": false,
+          "diagnostics": [],
+          "stdout": "diff-check.stdout",
+          "stderr": "diff-check.stderr"
+        }
+      ],
+      "integrity_unchanged": true,
+      "changed_files": [
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveExtensiveSeparation.lean",
+        "RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean"
+      ],
+      "prepared_patch_matches_final": true,
+      "patch_sha256": "ef59aac9d08c8958be15f98d335d01927dabfdd7c2e8c2d7e2c6205ec9b32f4f",
+      "first_diagnostic": null
+    }
+  ],
+  "counts": {
+    "mutations": 16,
+    "survives": 9,
+    "rejected_in_test": 7
+  },
+  "global_positive_audit_claimed": false,
+  "original_verdict": "EXACT TARGET REQUIRES CORRECTIONS",
+  "publication": "local commit only; no push in this delivery"
+}

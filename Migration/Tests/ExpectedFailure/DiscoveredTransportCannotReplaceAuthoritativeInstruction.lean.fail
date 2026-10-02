@@ -1,0 +1,22 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch
+open ConstitutiveSearch.EndogenousDecomposition
+
+namespace RelationalPerimeter.Tests.ExpectedFailure
+
+-- The collision returned by production is indexed by the authoritative
+-- instruction transport and cannot be retyped as a discovered-only collision.
+def forbiddenDiscoveredOnlyCollision
+    {depth : Nat}
+    {assignment : SequentialAssignment depth}
+    {state : ThreadedConstitutiveState depth assignment}
+    {stage : SequentialStageRun depth assignment}
+    (run : ThreadedConstitutiveStageRun state stage) :
+    AnchoredActionProjectionCollision
+      (ExecutedExtensionalSeparator.executedTransportProjection run)
+      (ExecutedExtensionalSeparator.executedTransportAction run)
+      (ExecutedExtensionalSeparator.discoveredTransport run) :=
+  ExecutedExtensionalSeparator.authoritativeInstructionActionProjectionCollision run
+
+end RelationalPerimeter.Tests.ExpectedFailure

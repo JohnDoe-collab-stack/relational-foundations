@@ -1,0 +1,15 @@
+--- a/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
++++ b/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean
+@@ -405,10 +405,10 @@
+     {role : RelationalConstitutiveRoleStage run}
+     {identity : RoleConstitutedOccurrence role}
+     {Motive : GeneratedStructuralBranchContext source.rootFormula → Sort u}
+-    (evidence : RoleConstitutionEvidence role identity)
++    (_evidence : RoleConstitutionEvidence role identity)
+     (value : Motive identity.realized.state) :
+     Motive (identity.position.state role) :=
+-  evidence.formationWitness.2.down ▸ value
++  identity.realized.formedAt ▸ value
+ 
+ /--
+ Dependent case analysis justified by the realized-occurrence return law.

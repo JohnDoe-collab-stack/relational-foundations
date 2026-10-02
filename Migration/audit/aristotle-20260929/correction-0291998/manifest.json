@@ -1,0 +1,34 @@
+{
+  "code_commit": "02919988b97d959253b9104ec20372f39ca2f69d",
+  "branch": "chatgpt/aristotle-correction-20260929",
+  "counts": {
+    "mutations": 16,
+    "survives": 9,
+    "rejected_in_test": 7
+  },
+  "reference_all_pass": true,
+  "gate_checks_passed": 16,
+  "published": false,
+  "files": {
+    "COMPTE_RENDU_CORRECTION_ARISTOTLE.fr.md": {
+      "bytes": 20103,
+      "sha256": "58df1856b71f189f814f231cd9658e0371106afeb3daa4fb37713fe2337e7ad9"
+    },
+    "results.json": {
+      "bytes": 146499,
+      "sha256": "231ef377788ebb43a093ccbe3a6db62005c8c11c7b5076e263ce054d0dfdcac3"
+    },
+    "correction.patch": {
+      "bytes": 134686,
+      "sha256": "8e24149f2b8a0e6d98a897492586e68efc915c74ba9f8ff136d7267d7d684339"
+    },
+    "Correction_Aristotle.bundle": {
+      "bytes": 26524,
+      "sha256": "96aaacfef67e33d1a90860c0a59094dc0d98fc041cffd47a72d5b2ebba9b4607"
+    },
+    "Correction_Aristotle_0291998.zip": {
+      "bytes": 3061464,
+      "sha256": "bcd8af9d13291b118e5ab7c94b1060bb216b9c39f77732ef1b0253c4b8ca3f14"
+    }
+  }
+}

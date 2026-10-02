@@ -1,0 +1,26 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.CausalOperationalExecution
+open ConstitutiveSearch.EndogenousDecomposition
+namespace FutureDependencyMutation
+mutual
+  def headFromOwnFuture
+      {depth : Nat} {assignment : SequentialAssignment depth}
+      (state : ThreadedConstitutiveState depth assignment)
+      (context : ConstitutedOperationalPrefix (causalStateOfThreadedState state))
+      (fresh : ThreadedStateFreshForNext state) : CausalOperationalHead state context :=
+    match historyFromFutureHead 2 state context fresh with
+    | .step stage run production _ => ⟨stage, run, production⟩
+  def historyFromFutureHead (count : Nat)
+      {depth : Nat} {assignment : SequentialAssignment depth}
+      (state : ThreadedConstitutiveState depth assignment)
+      (context : ConstitutedOperationalPrefix (causalStateOfThreadedState state))
+      (fresh : ThreadedStateFreshForNext state) :
+      CausalOperationalExecutionHistory (_count := count) state context :=
+    match count with
+    | 0 => .nil state context
+    | remaining + 1 =>
+        let head := headFromOwnFuture state context fresh
+        .step head.stage head.run head.production
+          (historyFromFutureHead remaining head.run.nextRun.next head.production.nextContext
+            (head.run.nextRun.fresh fresh))
+end
+end FutureDependencyMutation

@@ -1,0 +1,5 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.SemanticImage
+open ConstitutiveSearch.SemanticImage
+example (description : Description) (source : description.Source)
+    (payload : description.Payload source) (accepted : description.Accept source payload) :
+    description.TargetAccept (description.action source payload) := accepted

@@ -1,0 +1,7 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.SemanticImage
+open ConstitutiveSearch.SemanticImage
+example (description : Description)
+    (canonicalExact : ∀ source, description.action source (description.canonical source) =
+      description.produced source)
+    (source : description.Source) (payload : description.Payload source) :
+    description.action source payload = description.produced source := canonicalExact source

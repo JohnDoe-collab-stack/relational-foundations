@@ -1,0 +1,9 @@
+# The program-derived structural history may depend on the normalizer core,
+# but it must remain upstream of interpretation, addressing, stability, and
+# public succinctness layers.
+root RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.ExecutedOperationalReductionHistory
+forbidden RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.ConstitutiveNormalizerProgram
+forbidden RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.IndependentProfileAddressing
+forbidden RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.ExtensionalOperationalStability
+forbidden RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.EndogenousOperationalStability
+forbidden RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.ConstitutiveNormalizerSuccinctness

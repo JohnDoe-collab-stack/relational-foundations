@@ -1,0 +1,136 @@
+{
+  "commit": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+  "baseline": "ded0e8ef4d343c091b66c80010c5a6827a589319",
+  "commands": [
+    {
+      "name": "toolchain",
+      "command": [
+        "lean",
+        "--version"
+      ],
+      "exit_code": 0,
+      "seconds": 0.032,
+      "diagnostics": [],
+      "tail": [
+        "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)"
+      ],
+      "log": "verified-logs/toolchain.log"
+    },
+    {
+      "name": "clean",
+      "command": [
+        "lake",
+        "clean"
+      ],
+      "exit_code": 0,
+      "seconds": 0.064,
+      "diagnostics": [],
+      "tail": [],
+      "log": "verified-logs/clean.log"
+    },
+    {
+      "name": "public-root",
+      "command": [
+        "lake",
+        "build",
+        "+RelationalPerimeter"
+      ],
+      "exit_code": 0,
+      "seconds": 257.362,
+      "diagnostics": [],
+      "tail": [
+        "info: RelationalPerimeter.lean:56:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.executed_reduction_does_not_preserve_separate_obligations' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:57:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.independent_profile_addressing_requires_exponential_slots' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:58:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_program_code_size_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:59:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_code_metric_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:60:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_code_size_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:61:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_interpreter_exact' does not depend on any axioms",
+        "info: RelationalPerimeter.lean:62:0: 'RelationalPerimeter.Computation.EndogenousOperationalDecomposition.constitutive_normalizer_returns_executed_codes' does not depend on any axioms",
+        "Build completed successfully (130 jobs)."
+      ],
+      "log": "verified-logs/public-root.log"
+    },
+    {
+      "name": "all-targets",
+      "command": [
+        "lake",
+        "build"
+      ],
+      "exit_code": 0,
+      "seconds": 39.495,
+      "diagnostics": [],
+      "tail": [
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:237:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.programInterpretsItsExpansion' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:238:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.everyProgramStepConsumesStoredInstruction' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:239:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.rawInterpreterSeparatesDifferentInstructionActions' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:240:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.authoritativeInstructionProjectsToExecutedView' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:241:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.authoritativeInstructionHasTypedProjectionCollision' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:242:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.projectedViewDoesNotDetermineAuthoritativeAction' does not depend on any axioms",
+        "info: Tests/ConstitutiveComplexityHierarchyRegression.lean:243:0: 'RelationalPerimeter.Tests.ConstitutiveComplexityHierarchyRegression.instrumentedWorkRemainsSeparate' does not depend on any axioms",
+        "Build completed successfully (142 jobs)."
+      ],
+      "log": "verified-logs/all-targets.log"
+    },
+    {
+      "name": "bash",
+      "command": [
+        "bash",
+        "scripts/verify.sh"
+      ],
+      "exit_code": 0,
+      "seconds": 9.444,
+      "diagnostics": [],
+      "tail": [
+        "info: Tests/PublicRootImport.lean:46:0: 'RelationalPerimeter.Tests.PublicRootImport.publicEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:47:0: 'RelationalPerimeter.Tests.PublicRootImport.publicFamily' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:48:0: 'RelationalPerimeter.Tests.PublicRootImport.publicSuccinctnessEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:49:0: 'RelationalPerimeter.Tests.PublicRootImport.publicIndependentAddressingBound' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:50:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerProgramSize' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:51:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerMetricAgreement' does not depend on any axioms",
+        "Build completed successfully (142 jobs).",
+        "Verified 140 Lean files: build, constructivity, audit blocks, import boundaries, and migration boundaries are clean."
+      ],
+      "log": "verified-logs/bash.log"
+    },
+    {
+      "name": "powershell",
+      "command": [
+        "pwsh",
+        "-NoProfile",
+        "-File",
+        "scripts/verify.ps1"
+      ],
+      "exit_code": 0,
+      "seconds": 7.636,
+      "diagnostics": [],
+      "tail": [
+        "info: Tests/PublicRootImport.lean:46:0: 'RelationalPerimeter.Tests.PublicRootImport.publicEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:47:0: 'RelationalPerimeter.Tests.PublicRootImport.publicFamily' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:48:0: 'RelationalPerimeter.Tests.PublicRootImport.publicSuccinctnessEvidence' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:49:0: 'RelationalPerimeter.Tests.PublicRootImport.publicIndependentAddressingBound' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:50:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerProgramSize' does not depend on any axioms",
+        "info: Tests/PublicRootImport.lean:51:0: 'RelationalPerimeter.Tests.PublicRootImport.publicNormalizerMetricAgreement' does not depend on any axioms",
+        "Build completed successfully (142 jobs).",
+        "Verified 140 Lean files: build, constructivity, audit blocks, import boundaries, and migration boundaries are clean."
+      ],
+      "log": "verified-logs/powershell.log"
+    },
+    {
+      "name": "whitespace",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "seconds": 0.016,
+      "diagnostics": [],
+      "tail": [],
+      "log": "verified-logs/whitespace.log"
+    }
+  ],
+  "all_pass": true,
+  "unchanged_sources": true,
+  "head_after": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+  "status_after": ""
+}

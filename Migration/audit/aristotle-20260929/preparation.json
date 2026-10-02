@@ -1,0 +1,19 @@
+{
+  "scientific_target_commit": "02919988b97d959253b9104ec20372f39ca2f69d",
+  "target_tree": "55cadef8a0bf1c2a42606d83076ea844a62745c3",
+  "immediate_parent": "13eed60eac867cacfc4d4a0fddca33334ea882ed",
+  "previous_independent_audit_target": "1ca8e89ed02eacc71eb70efa1ccab84985fb8ace",
+  "main_observed_at_preparation": "8a5e494e9ac2ee725ff9fdb03dfe08c8b1b30685",
+  "merge_base": "8a5e494e9ac2ee725ff9fdb03dfe08c8b1b30685",
+  "branch": "chatgpt/aristotle-correction-20260929",
+  "canonical_prompt": "audit/aristotle-20260929/PROMPT_AUDIT_ADVERSARIAL.md",
+  "prompt_sha256": "cbd0ec61516a6f421c8bafbfecf20b03c393f0a2ea8ec94629a67f4b0b675764",
+  "scope": "Reaudit preparation only. Objective, original A-J controls and verdict criteria preserved. Author evidence is not an independent positive audit. Nine surviving variants remain disclosed. Historical publication-status fields in attached evidence are not modified.",
+  "evidence_sha256": {
+    "correction-0291998/Correction_Aristotle_0291998.zip": "bcd8af9d13291b118e5ab7c94b1060bb216b9c39f77732ef1b0253c4b8ca3f14",
+    "correction-0291998/manifest.json": "5f569eae218d229a987c05648e7b9af3903a9d046b510893495399487fa65523",
+    "correction-0291998/results.json": "231ef377788ebb43a093ccbe3a6db62005c8c11c7b5076e263ce054d0dfdcac3",
+    "correction-0291998/historique/results-1ca8e89.json": "a4378a511292e1561d01bab0990f4631f690969ad1355c12ae2bf0027475a09b",
+    "correction-0291998/historique/RAPPORT_1ca8e89_ARISTOTLE.fr.md": "c4ca2269fc450ae1a46dea89e42b8fb97a5a96f8a5d1d9fd91e31b111138c61e"
+  }
+}

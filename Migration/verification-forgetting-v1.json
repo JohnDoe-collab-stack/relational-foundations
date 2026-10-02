@@ -1,0 +1,13 @@
+{
+  "status": "PASSED",
+  "checkedAtUtc": "2026-10-02T21:15:53.3186066Z",
+  "sources": 174,
+  "publicSymbols": 806,
+  "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+  "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+  "publicAudits": 3400,
+  "expectedFailures": 19,
+  "stratification": "Verified stratification inventory: 154 production modules, all enforced, no orphan.",
+  "boundaries": "Four transitive import boundary manifests passed",
+  "protocol": "native-forgetting-v1"
+}

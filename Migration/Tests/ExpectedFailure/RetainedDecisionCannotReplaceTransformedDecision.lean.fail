@@ -1,0 +1,22 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch
+open ConstitutiveSearch.SAT
+open ConstitutiveSearch.EndogenousDecomposition
+
+namespace RelationalPerimeter.Tests.ExpectedFailure
+
+-- The retained case cannot be installed for a transformed source occurrence.
+def retainedDecisionCannotReplaceTransformedDecision
+    {source : CausalConstitutiveState}
+    {run : CausalConstitutiveStageExecution source}
+    {role : RelationalConstitutiveRoleStage run}
+    {atom : RoleStageAtom role}
+    (license : ExecutedRoleReductionLicense role atom) :
+    ExecutedRoleOccurrenceDecision license
+      license.transformedOccurrence
+      (transformedExecutedRoleOperationalTarget
+        (criterionPreservingAbsorption license)) :=
+  ExecutedRoleOccurrenceDecision.retained license.retainedAccepted
+
+end RelationalPerimeter.Tests.ExpectedFailure

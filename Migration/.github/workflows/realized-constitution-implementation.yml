@@ -1,0 +1,141 @@
+name: Realized constitution implementation
+on:
+  push:
+    branches: [chatgpt/realized-constitution-implementation-20260929]
+    paths:
+      - scripts/implement-realized-constitution.py
+      - scripts/probe-realized-constitution.py
+      - .github/workflows/realized-constitution-implementation.yml
+permissions:
+  contents: write
+concurrency:
+  group: realized-constitution-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  implement-and-verify:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+      - name: Verify the immutable baseline and branch isolation
+        shell: bash
+        run: |
+          set -euo pipefail
+          test "$GITHUB_REF_NAME" = chatgpt/realized-constitution-implementation-20260929
+          git merge-base --is-ancestor 5617ab4b09e5c0c044645737acd62973457b9a59 HEAD
+          test "$(git rev-parse 5617ab4b09e5c0c044645737acd62973457b9a59^)" = ea5a0e6aa91dab1c763c870e6e825a8581721f78
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+      - name: Apply the checked deterministic source repair
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 -m py_compile scripts/implement-realized-constitution.py
+          python3 scripts/implement-realized-constitution.py
+          git diff --check
+          git add -- RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean Tests/RealizedConstitutionRegression.lean
+          if ! git diff --cached --quiet; then
+            git commit -m 'repair: carry realized occurrences and canonical witnesses; transport actual payloads'
+            git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+          fi
+      - name: Install and authenticate the repository-pinned compiler
+        shell: bash
+        run: |
+          set -euo pipefail
+          toolchain="$(tr -d '\r\n' < lean-toolchain)"
+          [[ "$toolchain" =~ ^leanprover/lean4:v([0-9]+\.[0-9]+\.[0-9]+)$ ]]
+          version="${BASH_REMATCH[1]}"
+          asset="lean-${version}-linux.tar.zst"
+          curl --fail --location --retry 3 "https://api.github.com/repos/leanprover/lean4/releases/tags/v${version}" -o "$RUNNER_TEMP/lean-release.json"
+          digest="$(python3 -c 'import json,sys; r=json.load(open(sys.argv[1])); print(next(a["digest"] for a in r["assets"] if a["name"]==sys.argv[2]))' "$RUNNER_TEMP/lean-release.json" "$asset")"
+          [[ "$digest" =~ ^sha256:[0-9a-f]{64}$ ]]
+          curl --fail --location --retry 3 "https://github.com/leanprover/lean4/releases/download/v${version}/${asset}" -o "$RUNNER_TEMP/$asset"
+          echo "${digest#sha256:}  $RUNNER_TEMP/$asset" | sha256sum --check
+          mkdir -p "$RUNNER_TEMP/pinned-lean"
+          tar --zstd -xf "$RUNNER_TEMP/$asset" --strip-components=1 -C "$RUNNER_TEMP/pinned-lean"
+          echo "$RUNNER_TEMP/pinned-lean/bin" >> "$GITHUB_PATH"
+          mkdir -p audit/realized-constitution/logs
+          printf '%s\n%s\n' "$toolchain" "$digest" > audit/realized-constitution/toolchain.txt
+      - name: Clean builds and both unchanged repository verification scripts
+        id: checks
+        shell: bash
+        run: |
+          python3 - <<'PY'
+          import json, os, subprocess, time
+          from pathlib import Path
+          root = Path('audit/realized-constitution')
+          root.mkdir(parents=True, exist_ok=True)
+          (root/'logs').mkdir(exist_ok=True)
+          report = {
+            'baseline': '5617ab4b09e5c0c044645737acd62973457b9a59',
+            'tested_commit': subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip(),
+            'workflow_run': os.environ['GITHUB_RUN_ID'],
+            'commands': [],
+            'scope': 'Implementation and repository regression verification, not a completed A-J adversarial audit.'
+          }
+          commands = [
+            ('compiler', ['lean','--version']),
+            ('clean', ['lake','clean']),
+            ('public-root', ['lake','build','+RelationalPerimeter']),
+            ('all-targets', ['lake','build']),
+            ('bash-verification', ['bash','scripts/verify.sh']),
+            ('powershell-verification', ['pwsh','-NoProfile','-File','scripts/verify.ps1']),
+            ('whitespace', ['git','diff','--check'])
+          ]
+          failed = False
+          for name, command in commands:
+            start = time.monotonic()
+            with (root/'logs'/f'{name}.log').open('w') as out:
+              try:
+                result = subprocess.run(command, stdout=out, stderr=subprocess.STDOUT, timeout=1500)
+                code = result.returncode
+              except (subprocess.TimeoutExpired, FileNotFoundError) as exc:
+                out.write(str(exc)); code = 124 if isinstance(exc, subprocess.TimeoutExpired) else 127
+            text = (root/'logs'/f'{name}.log').read_text(errors='replace')
+            lines = text.splitlines()
+            errors = [line for line in lines if 'error:' in line or 'warning:' in line or 'failed' in line.lower()]
+            report['commands'].append({'name': name, 'command': command, 'exit_code': code, 'seconds': round(time.monotonic()-start,2), 'diagnostics': errors[:80], 'tail': lines[-35:]})
+            print(name, 'EXIT', code, flush=True)
+            for line in errors[:20]: print(line, flush=True)
+            (root/'verification.json').write_text(json.dumps(report, indent=2, ensure_ascii=False)+'\n')
+            subprocess.run(['git','add','audit/realized-constitution/verification.json','audit/realized-constitution/toolchain.txt'], check=True)
+            subprocess.run(['git','commit','-m',f'audit: record {name} for the isolated repair'], check=True)
+            subprocess.run(['git','push','origin',f'HEAD:refs/heads/{os.environ["GITHUB_REF_NAME"]}'], check=True)
+            if code:
+              failed = True
+              if name in ('compiler','clean','public-root','all-targets'):
+                report['remaining_commands'] = 'NOT RUN: prerequisite failed'
+                (root/'verification.json').write_text(json.dumps(report, indent=2, ensure_ascii=False)+'\n')
+                break
+          raise SystemExit(1 if failed else 0)
+          PY
+      - name: Run focused dependency probes when available
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -f scripts/probe-realized-constitution.py ]]; then
+            python3 scripts/probe-realized-constitution.py
+            git add -- audit/realized-constitution
+            git reset -- audit/realized-constitution/logs
+            if ! git diff --cached --quiet; then
+              git commit -m 'audit: record reproducible dependency probe outcomes'
+              git push origin "HEAD:refs/heads/$GITHUB_REF_NAME"
+            fi
+          fi
+      - name: Export complete logs and exact source patch
+        if: always()
+        shell: bash
+        run: |
+          mkdir -p audit/realized-constitution
+          git diff 5617ab4b09e5c0c044645737acd62973457b9a59 HEAD -- RelationalPerimeter Tests > audit/realized-constitution/source-repair.patch
+          git rev-parse HEAD > audit/realized-constitution/final-head.txt
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: realized-constitution-verification
+          path: audit/realized-constitution
+          retention-days: 14
+          if-no-files-found: error

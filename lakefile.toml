@@ -1,0 +1,13 @@
+name = "relational-perimeter-foundations"
+version = "0.1.0"
+defaultTargets = ["RelationalFoundations", "FoundationTests"]
+
+[[lean_lib]]
+name = "RelationalFoundations"
+roots = ["RelationalFoundations"]
+globs = ["RelationalFoundations", "RelationalFoundations.+"]
+
+[[lean_lib]]
+name = "FoundationTests"
+roots = ["Tests.FoundationTests"]
+globs = ["Tests.+"]

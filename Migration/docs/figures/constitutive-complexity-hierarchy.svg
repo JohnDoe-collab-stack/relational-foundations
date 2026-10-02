@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1480" height="1120" viewBox="0 0 1480 1120" role="img" aria-labelledby="title desc">
+  <title id="title">Constitutive complexity hierarchy</title>
+  <desc id="desc">The executed relational role history produces an authoritative typed program with n instructions. Each program instruction indexes its own binary alternative type. The program recursively generates a complete duplicate-free frontier of exactly two to the n profiles. If an interface requires every generated profile to remain independently addressable, it needs at least two to the n slots. The program interprets every accepted profile exactly, and its raw interpreter is sensitive to the stored instruction action. A separately specified state-and-quantity projection admits a collision anchored on the authoritative instruction and therefore cannot reconstruct its total action.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#edf3f7"/>
+    </linearGradient>
+    <linearGradient id="constitutive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#183b56"/>
+      <stop offset="1" stop-color="#245979"/>
+    </linearGradient>
+    <linearGradient id="program" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d706a"/>
+      <stop offset="1" stop-color="#15958a"/>
+    </linearGradient>
+    <linearGradient id="extensive" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#75470f"/>
+      <stop offset="1" stop-color="#a8691e"/>
+    </linearGradient>
+    <linearGradient id="addressing" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#693254"/>
+      <stop offset="1" stop-color="#914875"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="5" stdDeviation="7" flood-color="#17324a" flood-opacity="0.15"/>
+    </filter>
+    <marker id="arrow" markerUnits="userSpaceOnUse" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0 0 L9 4.5 L0 9 Z" fill="#40576a"/>
+    </marker>
+    <marker id="arrowSoft" markerUnits="userSpaceOnUse" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0 0 L8 4 L0 8 Z" fill="#708493"/>
+    </marker>
+    <style>
+      .title { font: 700 34px Inter, Segoe UI, sans-serif; fill: #17324a; }
+      .subtitle { font: 400 17px Inter, Segoe UI, sans-serif; fill: #526979; }
+      .layer { font: 700 21px Inter, Segoe UI, sans-serif; fill: #fff; }
+      .metric { font: 700 18px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #fff; }
+      .bodyLight { font: 400 16px Inter, Segoe UI, sans-serif; fill: #eef8fb; }
+      .body { font: 400 16px Inter, Segoe UI, sans-serif; fill: #334e60; }
+      .small { font: 400 14px Inter, Segoe UI, sans-serif; fill: #526979; }
+      .label { font: 700 14px Inter, Segoe UI, sans-serif; fill: #40576a; }
+      .sideTitle { font: 700 18px Inter, Segoe UI, sans-serif; fill: #29465b; }
+      .code { font: 600 14px ui-monospace, SFMono-Regular, Consolas, monospace; fill: #29465b; }
+    </style>
+  </defs>
+
+  <rect width="1480" height="1120" fill="url(#background)"/>
+  <text x="60" y="58" class="title">Constitutive complexity hierarchy</text>
+  <text x="60" y="89" class="subtitle">One typed production chain, followed by two explicitly delimited representation boundaries</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="130" width="850" height="160" rx="18" fill="url(#constitutive)"/>
+    <text x="98" y="170" class="layer">1 · Executed relational constitution</text>
+    <text x="98" y="207" class="bodyLight">Dependent role history; each stage carries its produced state, discovery, provenance,</text>
+    <text x="98" y="233" class="bodyLight">typed transport witness, and the exact code returned by execution.</text>
+    <text x="98" y="267" class="metric">exactly n = input + 1 executed stages</text>
+  </g>
+
+  <path d="M485 290 L485 354" stroke="#40576a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="505" y="328" class="label">buildConstitutiveNormalizerProgram</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="370" width="850" height="190" rx="18" fill="url(#program)"/>
+    <text x="98" y="410" class="layer">2 · Authoritative typed operational program</text>
+    <text x="98" y="447" class="bodyLight">One instruction per executed opening; each instruction is indexed by its actual endpoints.</text>
+    <text x="98" y="473" class="bodyLight">Its own Alternative type has two constructors, and its action is consumed by interpretation.</text>
+    <text x="98" y="499" class="bodyLight">The total action preserves acceptance on arbitrary continuations.</text>
+    <text x="98" y="535" class="metric">instructionCount = codeSize = compiledLocalSize = n</text>
+  </g>
+
+  <path d="M485 560 L485 634" stroke="#40576a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="505" y="598" class="label">program.profileFrontier · recursive expansion by indexed alternatives</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="650" width="850" height="185" rx="18" fill="url(#extensive)"/>
+    <text x="98" y="690" class="layer">3 · Complete extensive profile deployment</text>
+    <text x="98" y="727" class="bodyLight">StructuralObligation is the canonical program's Profile type. The frontier is complete,</text>
+    <text x="98" y="753" class="bodyLight">duplicate-free, and indexed by the instructions that produced its alternatives.</text>
+    <text x="98" y="779" class="bodyLight">Its cardinality depends only on instruction count: each indexed alternative has two cases.</text>
+    <text x="98" y="813" class="metric">profileWidth = 2^instructionCount = 2^n</text>
+  </g>
+
+  <path d="M485 835 L485 904" stroke="#40576a" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+  <text x="505" y="874" class="label">if every generated profile receives an injective finite slot</text>
+
+  <g filter="url(#shadow)">
+    <rect x="60" y="920" width="850" height="130" rx="18" fill="url(#addressing)"/>
+    <text x="98" y="962" class="layer">4 · Conditional independent finite addressing</text>
+    <text x="98" y="999" class="bodyLight">When every program-produced profile must remain independently recoverable:</text>
+    <text x="98" y="1032" class="metric">slotCount ≥ profileWidth = 2^n</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1010" y="350" width="410" height="245" rx="18" fill="#fff" stroke="#b8c7d1" stroke-width="2"/>
+    <text x="1040" y="392" class="sideTitle">Operational sufficiency</text>
+    <text x="1040" y="429" class="body">Every generated profile has a positively</text>
+    <text x="1040" y="455" class="body">constructed accepted payload indexed by</text>
+    <text x="1040" y="481" class="body">the same program. Interpretation consumes</text>
+    <text x="1040" y="507" class="body">the stored instruction action and is exact.</text>
+    <text x="1040" y="547" class="code">interpret(program, profile)</text>
+    <text x="1040" y="574" class="code">= canonical normalization</text>
+  </g>
+  <path d="M910 465 L994 465" stroke="#708493" stroke-width="3" fill="none" marker-end="url(#arrowSoft)"/>
+  <text x="920" y="448" class="label">exact interpreter</text>
+
+  <g filter="url(#shadow)">
+    <rect x="1010" y="665" width="410" height="260" rx="18" fill="#fff" stroke="#b8c7d1" stroke-width="2"/>
+    <text x="1040" y="707" class="sideTitle">Specified extensional projection</text>
+    <text x="1040" y="744" class="body">The state-and-quantity view is projected</text>
+    <text x="1040" y="770" class="body">from the authoritative instruction's total</text>
+    <text x="1040" y="796" class="body">action. The collision is anchored on that</text>
+    <text x="1040" y="822" class="body">instruction in the witness type itself.</text>
+    <line x1="1040" y1="845" x2="1390" y2="845" stroke="#d6e0e7" stroke-width="2"/>
+    <text x="1040" y="878" class="code">equal projection ≠ equal total action</text>
+    <text x="1040" y="904" class="body">Therefore this projection does not factor the action.</text>
+  </g>
+  <path d="M910 520 L960 520 L960 760 L994 760" stroke="#708493" stroke-width="3" fill="none" marker-end="url(#arrowSoft)"/>
+  <text x="972" y="646" class="label" transform="rotate(90 972 646)">downstream projection</text>
+
+  <text x="60" y="1092" class="small">Exact scope: a typed production order and a lower bound conditional on independent finite addressing; no universal time or memory lower bound.</text>
+</svg>

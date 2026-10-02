@@ -1,0 +1,140 @@
+{
+  "status": "PASSED",
+  "protocol": "native-forgetting-validation-v2",
+  "mathematicalProtocol": "native-forgetting-v1",
+  "checkedAtUtc": "2026-10-02T21:50:58.7479643Z",
+  "scope": "Finite independently admitted native observe/act/reuse suffixes",
+  "inputsVerifiedBefore": true,
+  "inputsVerifiedAfter": true,
+  "integrityTests": "VALIDATION_MANIFEST_V2_TESTS_OK: valid input/link accepted; 9 integrity rejections; equal-length source/script changes, missing/added files, duplicate/traversal/role and manifest-link corruption detected",
+  "sourceFiles": 65,
+  "axiomAudit": "AUDIT_OK: 5659 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_EXECUTION_OK: 13 executable roots; 138 dependencies; scalar persistent fields; no history/support/replay dependencies",
+  "forgettingExecution": "FORGETTING_EXECUTION_V1_OK: 22 executable/data roots; 199 type/body dependencies; exactly two Nat fields; typed frontier and new certificates; no origin/history/support/replay inputs",
+  "expectedFailures": 12,
+  "totalExpectedFailures": 31,
+  "referenceReceipts": [
+    {
+      "path": "Migration/verification-forgetting-v1.json",
+      "sha256": "6BA55E4C4BE717E01E052FF65E158A89A036509567778BE92D8AC80EF59136E0",
+      "checkedAtUtc": "2026-10-02T21:15:53.3186066Z"
+    },
+    {
+      "path": "Migration/verification-result.json",
+      "sha256": "14C88861DAF0790AB11C054A9AB720861F9A864451E2581C69281F8E24E0DF59",
+      "checkedAtUtc": "2026-10-02T19:45:49.1163813Z"
+    },
+    {
+      "path": "docs/verification-forgetting-v1.json",
+      "sha256": "D1D425A3C41C48DD9BE21C685C41CCF0DB443472C3BA347AF800D25887169325",
+      "checkedAtUtc": "2026-10-02T21:17:21.7969935Z"
+    },
+    {
+      "path": "docs/verification-result.json",
+      "sha256": "595A7EECAAD6D94D0FA90A90D7A65B47BA4BFD505B82D0E132D16EA55F034A0E",
+      "checkedAtUtc": "2026-10-02T19:45:32.7062866Z"
+    }
+  ],
+  "validationSteps": [
+    {
+      "name": "manifest-integrity-tests",
+      "file": "scripts/test-validation-manifest-v2.ps1",
+      "arguments": [],
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "completedAtUtc": "2026-10-02T21:49:57.8621655Z",
+      "outputSha256": "0A5AF05B2D61D47F20FF357AF1EA896EF338EC4ACB4E353219878A0C6FECEDAC"
+    },
+    {
+      "name": "foundation-and-migration",
+      "file": "scripts/verify.ps1",
+      "arguments": [
+        "-SkipComparison",
+        "-SkipReference",
+        "-ReportPath",
+        ".lake/verification-base-forgetting-v2.json",
+        "-MigrationReportPath",
+        ".lake/verification-migration-base-forgetting-v2.json",
+        "-LogTag",
+        "forgetting-v2"
+      ],
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "completedAtUtc": "2026-10-02T21:50:54.6249617Z",
+      "outputSha256": "F88E9AE4B5AB0D4C58A5CF112881F68D70B38DBFD3608481DEA51107CCD7DCD3"
+    },
+    {
+      "name": "forgetting-executable-audit",
+      "file": "scripts/AuditForgettingV1.lean",
+      "arguments": [
+        "lake",
+        "env",
+        "lean"
+      ],
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "completedAtUtc": "2026-10-02T21:50:56.3530002Z",
+      "outputSha256": "FE53624910433309FF9EB20F6F76E52793A0089DA077BA363A4AC25712762FF0"
+    },
+    {
+      "name": "ForgottenGlobalIdentityV1.lean.fail",
+      "file": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenGlobalIdentityV1.lean.fail",
+      "arguments": [
+        "lake",
+        "env",
+        "lean",
+        ".lake\\expected-failures-forgetting-v2\\ForgottenGlobalIdentityV1.lean"
+      ],
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "completedAtUtc": "2026-10-02T21:50:57.0381454Z",
+      "outputSha256": "F463391DF24AD4D23AEFD4C9099A0A7E4E844050002715AD447638FED470B428"
+    },
+    {
+      "name": "ForgottenReorderedInputsV1.lean.fail",
+      "file": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenReorderedInputsV1.lean.fail",
+      "arguments": [
+        "lake",
+        "env",
+        "lean",
+        ".lake\\expected-failures-forgetting-v2\\ForgottenReorderedInputsV1.lean"
+      ],
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "completedAtUtc": "2026-10-02T21:50:57.6633143Z",
+      "outputSha256": "9CD5EC12447382175085A53CB4C7CC91ABA1D2B8EBBF2869FF38118FC023F334"
+    },
+    {
+      "name": "ForgottenWrongSortV1.lean.fail",
+      "file": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenWrongSortV1.lean.fail",
+      "arguments": [
+        "lake",
+        "env",
+        "lean",
+        ".lake\\expected-failures-forgetting-v2\\ForgottenWrongSortV1.lean"
+      ],
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "completedAtUtc": "2026-10-02T21:50:58.2694813Z",
+      "outputSha256": "8C742AC2D0CB8DBE75BB978F9D90A30AB5335CEB8C725B4A1F241D6ACEA0A76F"
+    }
+  ],
+  "inputManifest": {
+    "path": "docs/manifest-forgetting-v2.json",
+    "sha256": "787EC2B0645ED3AF453DDDE4764A4E5122055299FE090DF93AF0A231141327E6",
+    "fileCount": 306
+  },
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "comparison": "Skipped explicitly",
+  "migration": "MIGRATION_OK: 174 sources; CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies; 19 expected failures",
+  "reference": "Skipped explicitly",
+  "existingExpectedFailures": 9,
+  "forgettingExpectedFailures": 3,
+  "migrationReceipt": {
+    "path": "Migration/verification-forgetting-v2.json",
+    "sha256": "815499701BA0D152165831F274A1413F8EA2E6C2F02BF1DEC8CC520CD9B4F160"
+  },
+  "reproduce": "pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1",
+  "checkSavedBundle": "pwsh -NoProfile -File scripts/check-forgetting-v2.ps1",
+  "bundleCheck": "VALIDATION_BUNDLE_V2_OK: 306 files; source/script/configuration digests and both receipts agree; four prior receipts preserved"
+}

@@ -1,0 +1,5 @@
+import RelationalFoundations.ReducedWeakening
+set_option genInjectivity false
+open RelationalFoundations.ReducedHeterogeneous
+
+example : Coherent (⟨0, 0, 7⟩ : Memory) := initial_coherent 0

@@ -1,0 +1,3 @@
+import RelationalFoundations
+open RelationalFoundations Perimetral
+def invalidExit : regime.Admission continuation.construction → False := presentation.junction

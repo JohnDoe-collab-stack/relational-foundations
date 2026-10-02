@@ -1,0 +1,7 @@
+import RelationalPerimeter
+
+open ConstitutiveSearch.EndogenousDecomposition
+
+-- The final scientific target cannot be assembled from numerical readouts or
+-- from an independently supplied regime.
+#check ExactCausalExponentialTarget.mk

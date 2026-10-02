@@ -1,0 +1,300 @@
+import RelationalPerimeter.Computation.ConstitutiveSearch.SAT.RestrictionTransport
+import RelationalPerimeter.Computation.ConstitutiveSearch.ConstitutiveWidth
+
+/-!
+# Structural transport between opposite SAT residual branches
+
+This module gives the first transport between the two residuals produced by one
+actual SAT OR split.
+
+The concrete structural relation is a polarity flip at the branched variable.
+It acts simultaneously on assignments and literals. Evaluation is proved
+invariant under that paired transformation. A residual relation is therefore
+witnessed by two structural facts only:
+
+* the target branch value is the Boolean opposite of the source value
+* the target residual CNF is exactly the source residual after flipping the
+  polarity of the selected variable
+
+No satisfiability query occurs in the relation, its search procedure, or the
+resulting continuation transport.
+-/
+
+namespace ConstitutiveSearch
+namespace SAT
+
+namespace Assignment
+
+/-- Flip exactly one Boolean variable in a total assignment. -/
+def flipAt (var : Var) (assignment : Assignment) : Assignment :=
+  fun query =>
+    if query = var then !(assignment query) else assignment query
+
+/-- The selected variable is Boolean-negated. -/
+theorem flipAt_selected
+    (var : Var)
+    (assignment : Assignment) :
+    flipAt var assignment var = !(assignment var) := by
+  unfold flipAt
+  rw [if_pos rfl]
+
+/-- Every other variable is preserved. -/
+theorem flipAt_other
+    (var query : Var)
+    (assignment : Assignment)
+    (different : query ≠ var) :
+    flipAt var assignment query = assignment query := by
+  unfold flipAt
+  rw [if_neg different]
+
+end Assignment
+
+namespace Literal
+
+/-- Flip the polarity of occurrences of one selected variable. -/
+def flipAt (var : Var) : Literal → Literal
+  | .positive query =>
+      if query = var then .negative query else .positive query
+  | .negative query =>
+      if query = var then .positive query else .negative query
+
+/-- Paired literal and assignment flipping preserves literal evaluation. -/
+theorem eval_flipAt
+    (var : Var)
+    (assignment : Assignment)
+    (literal : Literal) :
+    (flipAt var literal).eval (Assignment.flipAt var assignment) =
+      literal.eval assignment := by
+  cases literal with
+  | positive query =>
+      by_cases same : query = var
+      · subst query
+        have flippedLiteral :
+            flipAt var (.positive var) = .negative var := by
+          rw [flipAt, if_pos rfl]
+        rw [flippedLiteral]
+        dsimp [Literal.eval]
+        rw [Assignment.flipAt_selected]
+        cases assignment var <;> rfl
+      · have flippedLiteral :
+            flipAt var (.positive query) = .positive query := by
+          rw [flipAt, if_neg same]
+        rw [flippedLiteral]
+        dsimp [Literal.eval]
+        exact Assignment.flipAt_other var query assignment same
+  | negative query =>
+      by_cases same : query = var
+      · subst query
+        have flippedLiteral :
+            flipAt var (.negative var) = .positive var := by
+          rw [flipAt, if_pos rfl]
+        rw [flippedLiteral]
+        dsimp [Literal.eval]
+        exact Assignment.flipAt_selected var assignment
+      · have flippedLiteral :
+            flipAt var (.negative query) = .negative query := by
+          rw [flipAt, if_neg same]
+        rw [flippedLiteral]
+        dsimp [Literal.eval]
+        rw [Assignment.flipAt_other var query assignment same]
+
+end Literal
+
+namespace Clause
+
+/-- Flip one variable polarity throughout a clause. -/
+def flipAt (var : Var) : Clause → Clause
+  | [] => []
+  | literal :: rest => Literal.flipAt var literal :: flipAt var rest
+
+/-- Paired flipping preserves clause evaluation. -/
+theorem eval_flipAt
+    (var : Var)
+    (assignment : Assignment) :
+    (clause : Clause) →
+      eval (Assignment.flipAt var assignment) (flipAt var clause) =
+        eval assignment clause
+  | [] => rfl
+  | literal :: rest => by
+      dsimp [flipAt, eval]
+      rw [Literal.eval_flipAt]
+      rw [eval_flipAt var assignment rest]
+
+end Clause
+
+namespace Cnf
+
+/-- Flip one variable polarity throughout a CNF. -/
+def flipAt (var : Var) : Cnf → Cnf
+  | [] => []
+  | clause :: rest => Clause.flipAt var clause :: flipAt var rest
+
+end Cnf
+
+namespace Satisfies
+
+/-- Paired assignment/formula flipping preserves CNF satisfaction. -/
+theorem flipAt
+    {formula : Cnf}
+    {assignment : Assignment}
+    (satisfaction : Satisfies assignment formula)
+    (var : Var) :
+    Satisfies
+      (Assignment.flipAt var assignment)
+      (Cnf.flipAt var formula) := by
+  induction satisfaction with
+  | nil =>
+      exact .nil
+  | @cons clause rest headSatisfied tailSatisfied inductionHypothesis =>
+      have flippedHead :
+          Clause.eval
+              (Assignment.flipAt var assignment)
+              (Clause.flipAt var clause) = true := by
+        rw [Clause.eval_flipAt]
+        exact headSatisfied
+      exact .cons flippedHead inductionHypothesis
+
+end Satisfies
+
+/--
+Proof-relevant structural relation between two residual branches generated by
+flipping the branched variable. The explicit `Type` codomain keeps relation
+witnesses as constructive data rather than collapsing the interface to `Prop`.
+-/
+structure ResidualFlipRelation
+    (formula : Cnf)
+    (var : Var)
+    (source target : Bool) : Type where
+  targetIsOpposite : target = !source
+  residualIsFlip :
+    branchResidual formula var target =
+      Cnf.flipAt var (branchResidual formula var source)
+
+namespace ResidualFlipRelation
+
+/-- The branch value is transported to its Boolean opposite. -/
+theorem mappedValueExact
+    {formula : Cnf}
+    {var : Var}
+    {source target : Bool}
+    (relation : ResidualFlipRelation formula var source target)
+    (completion : ResidualBranchCompletion formula var source) :
+    Assignment.flipAt var completion.assignment var = target := by
+  calc
+    Assignment.flipAt var completion.assignment var =
+        !(completion.assignment var) :=
+      Assignment.flipAt_selected var completion.assignment
+    _ = !source := congrArg Bool.not completion.valueExact
+    _ = target := relation.targetIsOpposite.symm
+
+/--
+The structural flip relation acts on residual completion spaces without testing
+whether either branch is inhabited.
+-/
+def mapCompletion
+    {formula : Cnf}
+    {var : Var}
+    {source target : Bool}
+    (relation : ResidualFlipRelation formula var source target) :
+    ResidualBranchCompletion formula var source →
+      ResidualBranchCompletion formula var target :=
+  fun completion =>
+    let flippedAssignment := Assignment.flipAt var completion.assignment
+    let flippedSatisfaction :
+        Satisfies
+          flippedAssignment
+          (Cnf.flipAt var (branchResidual formula var source)) :=
+      completion.residualSatisfaction.flipAt var
+    let targetSatisfaction :
+        Satisfies
+          flippedAssignment
+          (branchResidual formula var target) :=
+      Eq.mp
+        (congrArg
+          (Satisfies flippedAssignment)
+          relation.residualIsFlip.symm)
+        flippedSatisfaction
+    { assignment := flippedAssignment
+      valueExact := relation.mappedValueExact completion
+      residualSatisfaction := targetSatisfaction }
+
+end ResidualFlipRelation
+
+/-- Completion family indexed by the Boolean branch value. -/
+def ResidualCompletionFamily
+    (formula : Cnf)
+    (var : Var) : Bool → Type :=
+  fun value => ResidualBranchCompletion formula var value
+
+/-- Generic relational action induced by structural residual flipping. -/
+def residualFlipAction
+    (formula : Cnf)
+    (var : Var) :
+    RelationalContinuationAction
+      (ResidualFlipRelation formula var)
+      (ResidualCompletionFamily formula var) :=
+  { act := fun relation completion =>
+      relation.mapCompletion completion }
+
+/--
+Executable search for the structural flip relation. Failure remains only search
+failure and is not promoted to semantic impossibility.
+-/
+def residualFlipSearch
+    (formula : Cnf)
+    (var : Var) :
+    RelationSearch (ResidualFlipRelation formula var) :=
+  { find := fun source target =>
+      if targetExact : target = !source then
+        if residualExact :
+            branchResidual formula var target =
+              Cnf.flipAt var (branchResidual formula var source) then
+          some
+            { targetIsOpposite := targetExact
+              residualIsFlip := residualExact }
+        else
+          none
+      else
+        none }
+
+/-- Reduce the two residual branches of one SAT OR using only structural flips. -/
+def reduceResidualBranches
+    (formula : Cnf)
+    (var : Var) :
+    PairFrontierReduction
+      (Completion := ResidualCompletionFamily formula var)
+      (residualFlipSearch formula var)
+      false
+      true :=
+  reducePair
+    (residualFlipSearch formula var)
+    (residualFlipAction formula var)
+    false
+    true
+
+/-- Derived width of the two-branch residual frontier after flip reduction. -/
+def residualBranchWidth
+    (formula : Cnf)
+    (var : Var) : Nat :=
+  (reduceResidualBranches formula var).width
+
+end SAT
+end ConstitutiveSearch
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms ConstitutiveSearch.SAT.Assignment.flipAt
+#print axioms ConstitutiveSearch.SAT.Assignment.flipAt_selected
+#print axioms ConstitutiveSearch.SAT.Assignment.flipAt_other
+#print axioms ConstitutiveSearch.SAT.Literal.flipAt
+#print axioms ConstitutiveSearch.SAT.Literal.eval_flipAt
+#print axioms ConstitutiveSearch.SAT.Clause.flipAt
+#print axioms ConstitutiveSearch.SAT.Clause.eval_flipAt
+#print axioms ConstitutiveSearch.SAT.Cnf.flipAt
+#print axioms ConstitutiveSearch.SAT.Satisfies.flipAt
+#print axioms ConstitutiveSearch.SAT.ResidualFlipRelation
+#print axioms ConstitutiveSearch.SAT.ResidualFlipRelation.mapCompletion
+#print axioms ConstitutiveSearch.SAT.residualFlipAction
+#print axioms ConstitutiveSearch.SAT.residualFlipSearch
+#print axioms ConstitutiveSearch.SAT.reduceResidualBranches
+#print axioms ConstitutiveSearch.SAT.residualBranchWidth
+/- AXIOM_AUDIT_END -/
