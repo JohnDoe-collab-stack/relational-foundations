@@ -12,10 +12,13 @@ Les outils requis sont Git, Lean via Elan et PowerShell 7. Le fichier `lean-tool
 git clone https://github.com/JohnDoe-collab-stack/relational-foundations.git
 cd relational-foundations
 pwsh -NoProfile -File scripts/check-forgetting-v2.ps1
+New-Item -ItemType Directory -Path .lake -Force | Out-Null
 pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1
 ```
 
 La première vérification contrôle les empreintes des 306 fichiers associés aux reçus livrés. La seconde compile le projet, audite les déclarations et les producteurs, exécute les rejets attendus et produit une nouvelle validation dans la copie locale.
+
+La création de `.lake` prépare le dossier des journaux avant la première exécution du protocole V2.
 
 ## Lire les résultats
 

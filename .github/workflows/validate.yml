@@ -32,6 +32,10 @@ jobs:
           lint: false
           use-github-cache: false
 
+      - name: Prepare the validation log directory
+        shell: pwsh
+        run: New-Item -ItemType Directory -Path .lake -Force | Out-Null
+
       - name: Compile and verify foundations, migration and native forgetting
         shell: pwsh
         run: pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1
