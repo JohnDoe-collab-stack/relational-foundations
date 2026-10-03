@@ -11,28 +11,29 @@ Le **tournant constitutif affirmatif** est une continuation effectivement engend
 Lean est fixé à `leanprover/lean4:v4.33.1`. La vérification utilise PowerShell 7 (`pwsh`). Aucun paquet Mathlib ni service externe n’est requis.
 
 ```powershell
-pwsh -NoProfile -File scripts/verify-validation-v4.ps1
+pwsh -NoProfile -File scripts/verify-validation-v5.ps1
 ```
 
-Cette commande crée son dossier de validation sur une copie fraîche. Elle fige les empreintes des entrées, construit et audite le socle et la copie migrée, contrôle les 806 symboles publics, la stratification et les quatre frontières d’import, puis vérifie les rejets du catalogue explicite. Elle contrôle séparément la syntaxe des producteurs, les preuves de perte d’information et les exécutions de test. Elle relit les reçus historiques sur l’instantané public `99f0801`, disponible dans un checkout Git complet. Chaque exécution produit de nouveaux reçus et sorties dans `.lake/validation-v4`.
+Cette commande crée son dossier de validation sur une copie fraîche. Elle fige les empreintes des entrées, construit et audite le socle et la copie migrée, contrôle les 806 symboles publics, la stratification et les quatre frontières d’import, puis vérifie les rejets du catalogue explicite. Elle contrôle séparément la syntaxe des producteurs, les preuves de perte d’information, les regroupements certifiés et les exécutions de test. Elle relit les reçus historiques sur les instantanés `99f0801` et `1887515`, disponibles dans un checkout Git complet. Chaque exécution produit de nouveaux reçus et sorties dans `.lake/validation-v5`.
 
 Pour contrôler les sources et les preuves du socle et de la migration :
 
 ```powershell
-pwsh -NoProfile -File scripts/verify-v4.ps1 -SkipComparison -SkipReference
+pwsh -NoProfile -File scripts/verify-v5.ps1 -SkipComparison -SkipReference
 ```
 
 Pour construire ou vérifier uniquement la bibliothèque générique :
 
 ```powershell
 lake build
-pwsh -NoProfile -File scripts/verify-v4.ps1 -SkipComparison -SkipReference -SkipMigration
+pwsh -NoProfile -File scripts/verify-v5.ps1 -SkipComparison -SkipReference -SkipMigration
 ```
 
-La compilation du projet computationnel complet peut prendre plusieurs minutes. Ses sources sont dans `Migration`; son unique dépendance est ce socle, par chemin local `..`. La [validation V4](docs/audit-corrections-v4.fr.md) décrit les preuves de coordonnées, le catalogue exhaustif et les contrôles Windows/Linux : `pwsh -NoProfile -File scripts/check-validation-v4.ps1`. Les scripts et reçus V1 à V3 restent des références historiques ; les comparaisons avec le dossier original relèvent de l’ancien protocole `scripts/verify.ps1`.
+La compilation du projet computationnel complet peut prendre plusieurs minutes. Ses sources sont dans `Migration`; son unique dépendance est ce socle, par chemin local `..`. La [validation V5](docs/validation-v5.fr.md) décrit les regroupements certifiés, le catalogue exhaustif et les contrôles Windows/Linux : `pwsh -NoProfile -File scripts/check-validation-v5.ps1`. Les scripts et reçus V1 à V4 restent des références historiques ; les comparaisons avec le dossier original relèvent de l’ancien protocole `scripts/verify.ps1`.
 
 ## Résultats et traçabilité
 
+- [Regroupements certifiés, projections et continuation](docs/regroupements-certifies.fr.md) ([English](docs/regroupements-certifies.en.md)) : normaliseur local exécutable, convergence, distinction entre lectures réunies et identifications composées, instances relationnelle et native fermées, conservation des données et composition historique. [Validation V5](docs/validation-v5.fr.md).
 - [Construction et fermeture des supports historiques](docs/fermeture-support-historique.fr.md) : fermeture générale sous conditions explicites, demandes issues des résultats précédents, conservation lors des prolongements et famille complète de producteurs locaux.
 - [Calcul, sortie et réemploi historique](docs/calcul-sortie-reemploi-historique.fr.md) : couverture exacte des histoires admissibles indépendamment définies, réalisation de toutes leurs obligations, réemploi par adresse, conservation et composition du support, garantie terminale extraite.
 - [Calcul hétérogène et réemploi historique typé](docs/calcul-heterogene-historique.fr.md) : ressources numériques et booléennes, décisions issues des résultats, références portant leur sorte, réalisation complète et continuation depuis le support existant.

@@ -1,0 +1,202 @@
+{
+  "basicReceiptSha256": "6CE6F7D612986289B2233EBA7516DC30188949A9832B96F9AF105F687739EFC5",
+  "inputIndexSha256": "F94F17E878A1080F4C06FBD0A73515784347DB50A08FA09DE08212ECD11F4986",
+  "status": "PASSED",
+  "platform": "Linux",
+  "cases": [
+    {
+      "name": "complete-real-bundle",
+      "verdict": "ACCEPTED"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/.adversarial.lean"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/.adversarial.log"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/.adversarial.txt"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/adversarial.log"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:adversarial.lean"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:notes.adversarial.txt"
+    },
+    {
+      "reason": "V5 evidence catalogue differs",
+      "verdict": "REJECTED",
+      "name": "extra:docs/validation-v5/Windows/logs/.adversarial.txt"
+    },
+    {
+      "reason": "V5 evidence catalogue differs",
+      "verdict": "REJECTED",
+      "name": "extra:docs/validation-v5/Windows/extra.log"
+    },
+    {
+      "reason": "V5 evidence catalogue differs",
+      "verdict": "REJECTED",
+      "name": "extra:docs/validation-v5/extra.lean"
+    },
+    {
+      "reason": "Validation input changed: RelationalFoundations/FiniteRuleCoordinates.lean",
+      "verdict": "REJECTED",
+      "name": "same-size:RelationalFoundations/FiniteRuleCoordinates.lean"
+    },
+    {
+      "reason": "Validation input changed: scripts/verify-validation-v5.ps1",
+      "verdict": "REJECTED",
+      "name": "same-size:scripts/verify-validation-v5.ps1"
+    },
+    {
+      "reason": "V5 evidence changed: docs/validation-v5/Windows/logs/coordinate-consumers.txt",
+      "verdict": "REJECTED",
+      "name": "same-size:docs/validation-v5/Windows/logs/coordinate-consumers.txt"
+    },
+    {
+      "reason": "V5 evidence changed: docs/validation-v5/Linux/receipt.json",
+      "verdict": "REJECTED",
+      "name": "same-size:docs/validation-v5/Linux/receipt.json"
+    },
+    {
+      "reason": "Validation input changed: docs/validation-v3/index.json",
+      "verdict": "REJECTED",
+      "name": "same-size:docs/validation-v3/index.json"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "missing:Tests/FiniteRuleCoordinates.lean"
+    },
+    {
+      "reason": "V5 evidence catalogue differs",
+      "verdict": "REJECTED",
+      "name": "missing:docs/validation-v5/Linux/logs/coordinate-consumers.txt"
+    },
+    {
+      "reason": "V5 bundle index differs",
+      "verdict": "REJECTED",
+      "name": "source-binding"
+    },
+    {
+      "reason": "V5 indexed receipt differs: Windows",
+      "verdict": "REJECTED",
+      "name": "receipt-binding"
+    },
+    {
+      "reason": "Invalid or duplicate evidence digest",
+      "verdict": "REJECTED",
+      "name": "duplicate-evidence"
+    },
+    {
+      "reason": "Invalid relative validation path: ../outside",
+      "verdict": "REJECTED",
+      "name": "evidence-path-escape"
+    },
+    {
+      "reason": "Linked validation entry: linked",
+      "verdict": "REJECTED",
+      "name": "linked-directory"
+    },
+    {
+      "name": "allowed-caches-and-git-metadata",
+      "verdict": "ACCEPTED"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:scripts/.adversarial.ps1"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/VisibleAdded.lean"
+    },
+    {
+      "reason": "Validation input catalogue differs from manifest",
+      "verdict": "REJECTED",
+      "name": "extra:Tests/nested/deep/extra.txt"
+    },
+    {
+      "reason": "Unmanifested validation input: Tests/FiniteRuleCoordinates.renamed.lean",
+      "verdict": "REJECTED",
+      "name": "rename-source"
+    },
+    {
+      "reason": "V5 evidence changed: docs/validation-v5/Windows/logs/migration-build.txt",
+      "verdict": "REJECTED",
+      "name": "same-size-internal-output"
+    },
+    {
+      "reason": "Validation input role differs: .gitattributes",
+      "verdict": "REJECTED",
+      "name": "manifest-role"
+    },
+    {
+      "reason": "Duplicate or case-colliding manifest path: .gitattributes",
+      "verdict": "REJECTED",
+      "name": "manifest-duplicate"
+    },
+    {
+      "reason": "Duplicate or case-colliding manifest path: .GITATTRIBUTES",
+      "verdict": "REJECTED",
+      "name": "manifest-case-collision"
+    },
+    {
+      "reason": "Invalid relative validation path: ../outside",
+      "verdict": "REJECTED",
+      "name": "manifest-parent"
+    },
+    {
+      "reason": "Invalid relative validation path: /outside",
+      "verdict": "REJECTED",
+      "name": "manifest-absolute"
+    },
+    {
+      "reason": "Validation input changed: .gitattributes",
+      "verdict": "REJECTED",
+      "name": "manifest-digest"
+    },
+    {
+      "reason": "Validation input changed: .gitattributes",
+      "verdict": "REJECTED",
+      "name": "manifest-size"
+    },
+    {
+      "reason": "V5 receipt scope differs: Windows",
+      "verdict": "REJECTED",
+      "name": "old-receipt-as-v5"
+    },
+    {
+      "reason": "V5 receipt scope differs: Windows",
+      "verdict": "REJECTED",
+      "name": "receipt-manifest-binding"
+    },
+    {
+      "reason": "Unbound V5 run outputs: Windows",
+      "verdict": "REJECTED",
+      "name": "indexed-output-without-receipt-binding"
+    },
+    {
+      "reason": "Case-colliding validation path: tests",
+      "verdict": "REJECTED",
+      "name": "filesystem-case-collision"
+    }
+  ],
+  "protocol": "complete-bundle-v5-integrity-tests"
+}

@@ -1,0 +1,10 @@
+FORGETTING_V4_SYNTAX_OK: 22 roots; 199 type/body dependencies; two Nat fields; forbidden-name scan only
+HIDDEN_ENCODING_V4_SYNTAX_ACCEPTED: 11 roots; 185 type/body dependencies; two Nat fields; forbidden-name scan only
+REPLAY_V4_SYNTAX_ACCEPTED: 7 roots; 124 type/body dependencies; two Nat fields; forbidden-name scan only
+FORGETTING_V4_SEMANTIC_WITNESSES_OK: 10 axiom-free declarations; no decoder correct on the declared erased-prefix families; all admitted finite continuations covered; encoding and local replay retain their origin
+'RelationalFoundations.NativeForgettingV1.origin_irrecoverable_from_prefixes' does not depend on any axioms
+'RelationalFoundations.NativeForgettingContract.first_decision_irrecoverable' does not depend on any axioms
+'RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.replay_tracks' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.origin_recoverable' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.colliding_prefixes_continue' does not depend on any axioms

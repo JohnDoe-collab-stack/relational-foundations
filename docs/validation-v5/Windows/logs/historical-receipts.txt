@@ -1,0 +1,1 @@
+HISTORICAL_RECEIPTS_V5_OK: V2 snapshot 99f0801 and V4 snapshot 1887515 independently verified; seven old receipts and 78 V3/V4 evidence files unchanged

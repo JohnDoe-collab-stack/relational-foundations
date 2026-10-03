@@ -1,0 +1,7 @@
+/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/NeutralEffective.lean:3:30: error: Type mismatch
+  Tagged.change false
+has type
+  Tagged false true
+but is expected to have type
+  Tagged true true
+'RelationalFoundations.CertifiedGrouping.Rules.confluence' does not depend on any axioms

@@ -1,0 +1,67 @@
+[
+  {
+    "sha256": "D1BB4874F34526641987E94DC5FD58709EC524B914219EF4C744F123CA7A79CC",
+    "module": "RelationalFoundations.GroupingTraces",
+    "bytes": 53789
+  },
+  {
+    "sha256": "5A86D63B21CAA79937F6842D3747E353F6ABD24A6FFE64AB63A41A6D4429E47B",
+    "module": "RelationalFoundations.CertifiedGrouping",
+    "bytes": 1503
+  },
+  {
+    "sha256": "C1EC649796DB6F15FB25106378589845FD035E929E5A3CC329ED23A27509D01C",
+    "module": "RelationalFoundations.GroupingNormalization",
+    "bytes": 14203
+  },
+  {
+    "sha256": "E331AA9B7D2539ACB5229AA5F16F9BA29E76E32FCA8CEC36177FF1CC20967754",
+    "module": "RelationalFoundations.GroupingProjections",
+    "bytes": 30019
+  },
+  {
+    "sha256": "D37DACA8BE7249FAD9419DAE9F7E49A2E7A58EC0DC3F6EBBE75D709AD06AD30B",
+    "module": "RelationalFoundations.BinaryGrouping",
+    "bytes": 121827
+  },
+  {
+    "sha256": "EDB2E7A8B1C8566B9B267724835672242C35524F42018CF948104694E59F2201",
+    "module": "RelationalFoundations.GroupingReindex",
+    "bytes": 22429
+  },
+  {
+    "sha256": "B89A2E2C354108D2CD38B202688AA8E35F097B79F613271BF0F6BA2F49376E29",
+    "module": "RelationalFoundations.GroupingImage",
+    "bytes": 30192
+  },
+  {
+    "sha256": "C506B07CA579936285264248D7115A5CBDF5593A909DECB6077103A906A6ED3E",
+    "module": "RelationalFoundations.GroupingContinuation",
+    "bytes": 32821
+  },
+  {
+    "sha256": "1C3537EB70E0F20B5E8A69C4F2F458E1D651402D5C916380A7147612D54B5741",
+    "module": "RelationalFoundations.HistoricalGrouping",
+    "bytes": 16162
+  },
+  {
+    "sha256": "CF487B2D177E8E7AA8EC371F7D6419B34AA35D57AF789447AABB3C373F21931D",
+    "module": "RelationalFoundations.GroupingInstances",
+    "bytes": 22745
+  },
+  {
+    "sha256": "4DC918BB2858A31806743F3933175A0C37935FCD55D15F2D0DCF709A9B63FDF2",
+    "module": "CertifiedRoleGrouping",
+    "bytes": 73144
+  },
+  {
+    "sha256": "459049895F5ABDD29B22D6919E4D90BB29B0C625F030EAED4E04F1157D51ECAA",
+    "module": "HistoricalRoleGrouping",
+    "bytes": 71448
+  },
+  {
+    "sha256": "51A4D1606E8A8991E0B31365B186E336D4FF7C47BBE59B59F9535F648E4C1731",
+    "module": "RoleGroupingSemantics",
+    "bytes": 10411
+  }
+]

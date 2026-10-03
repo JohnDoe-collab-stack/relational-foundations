@@ -15,6 +15,7 @@ import Tests.RuleScope
 import Tests.AuditCorrections
 import Tests.ForgettingAuditScope
 import Tests.FiniteRuleCoordinates
+import Tests.CertifiedGrouping
 set_option genInjectivity false
 
 /- AXIOM_AUDIT_BEGIN -/
@@ -23,4 +24,6 @@ set_option genInjectivity false
 #print axioms RelationalFoundations.ForgettingAuditScopeTests.replay_tracks
 #print axioms RelationalFoundations.CyclicSupportTests.cyclicComplete
 #print axioms RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable
+#print axioms RelationalFoundations.CertifiedGroupingTests.real_peak
+#print axioms RelationalFoundations.CertifiedGroupingTests.equal_target_different_transport
 /- AXIOM_AUDIT_END -/

@@ -1,0 +1,8 @@
+import Tests.CertifiedGrouping
+open RelationalFoundations.CertifiedGroupingTests
+example : taggedNorm.Coherent := tagged.confluence (RelationalFoundations.CertifiedGrouping.Trace.one (.change false)) (RelationalFoundations.CertifiedGrouping.Trace.one (.change true))
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.CertifiedGrouping.Rules.confluence
+/- AXIOM_AUDIT_END -/
+

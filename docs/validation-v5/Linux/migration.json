@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "checkedAtUtc": "2026-10-03T19:23:53.2552683Z",
+  "sources": 178,
+  "publicSymbols": 806,
+  "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+  "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+  "publicAudits": 3636,
+  "expectedFailures": 19,
+  "stratification": "Verified stratification inventory: 157 production modules, all enforced, no orphan.",
+  "boundaries": "Four transitive import boundary manifests passed"
+}

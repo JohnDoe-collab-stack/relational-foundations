@@ -1,0 +1,16 @@
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\ForgottenWrongSortV1.lean:5:72: error: Application type mismatch: The argument
+  Ref.head
+has type
+  Ref (?m.8 :: ?m.9) ?m.8
+but is expected to have type
+  Ref (Context RelationalFoundations.ReducedHeterogeneous.Phase.observed) Kind.number
+in the application
+  Operation.adjust (Ref.old ?m.7) Ref.head
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\ForgottenWrongSortV1.lean:5:65: error: Application type mismatch: The argument
+  Ref.head
+has type
+  Ref (?m.5 :: ?m.6) ?m.5
+but is expected to have type
+  Ref [Kind.number] Kind.truth
+in the application
+  Ref.head.old

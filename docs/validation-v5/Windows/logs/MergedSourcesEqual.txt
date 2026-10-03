@@ -1,0 +1,11 @@
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\MergedSourcesEqual.lean:3:24: error: Type mismatch
+  nevertheless_connected
+has type
+  RelationalFoundations.CertifiedGrouping.ProjectionFamily.Path
+    (RelationalFoundations.CertifiedGrouping.Binary.projection
+      (RelationalFoundations.CertifiedGrouping.Binary.enabled two))
+    low high
+of sort `Type` but is expected to have type
+  low = high
+of sort `Prop`
+'RelationalFoundations.CertifiedGrouping.Rules.confluence' does not depend on any axioms

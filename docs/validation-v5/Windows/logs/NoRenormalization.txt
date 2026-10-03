@@ -1,0 +1,7 @@
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\NoRenormalization.lean:3:92: error: Type mismatch
+  rfl
+has type
+  ?m.9 = ?m.9
+but is expected to have type
+  (Binary.rules (true, ())).normal (false, ()) = (false, ())
+'RelationalFoundations.CertifiedGrouping.Rules.confluence' does not depend on any axioms

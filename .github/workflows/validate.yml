@@ -24,12 +24,12 @@ jobs:
           persist-credentials: false
           fetch-depth: 0
 
-      - name: Check the delivered V4 manifest, receipts and outputs
+      - name: Check the delivered V5 manifest, receipts and outputs
         shell: pwsh
         run: |
-          pwsh -NoProfile -File scripts/check-validation-v4.ps1
+          pwsh -NoProfile -File scripts/check-validation-v5.ps1
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
-          pwsh -NoProfile -File scripts/test-validation-bundle-v4-coverage.ps1
+          pwsh -NoProfile -File scripts/test-validation-bundle-v5.ps1
 
       - name: Install the declared Lean toolchain
         uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865 # v1
@@ -51,9 +51,9 @@ jobs:
           }
           Add-Content -LiteralPath $env:GITHUB_PATH -Value $elanBin -Encoding utf8
 
-      - name: Compile and verify foundations, migration and native forgetting
+      - name: Compile and verify foundations, migration, grouping and native forgetting
         shell: pwsh
-        run: pwsh -NoProfile -File scripts/verify-validation-v4.ps1 -FrozenManifest docs/validation-v4/inputs.json
+        run: pwsh -NoProfile -File scripts/verify-validation-v5.ps1 -FrozenManifest docs/validation-v5/inputs.json
 
       - name: Save the validation receipts and diagnostics
         if: always()
@@ -63,5 +63,5 @@ jobs:
           if-no-files-found: warn
           include-hidden-files: true
           path: |
-            docs/validation-v4/
-            .lake/validation-v4/
+            docs/validation-v5/
+            .lake/validation-v5/

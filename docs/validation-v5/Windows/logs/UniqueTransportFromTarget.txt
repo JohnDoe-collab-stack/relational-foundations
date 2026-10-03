@@ -1,0 +1,14 @@
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\UniqueTransportFromTarget.lean:3:33: error: Type mismatch
+  tagged.confluence (RelationalFoundations.CertifiedGrouping.Trace.one (Tagged.change false))
+    (RelationalFoundations.CertifiedGrouping.Trace.one (Tagged.change true))
+has type
+  RelationalFoundations.CertifiedGrouping.Join tagged.Step true true
+of sort `Type` but is expected to have type
+  ∀ (first second : RelationalFoundations.CertifiedGrouping.Trace tagged.Step x✝ y✝) (data : taggedNorm.Payload x✝),
+    taggedNorm.transport first data = taggedNorm.transport second data
+of sort `Prop`
+the following variables have been introduced by the implicit lambda feature
+  x✝ : tagged.State
+  y✝ : tagged.State
+you can disable implicit lambdas using `@` or writing a lambda expression with `{}` or `[]` binder annotations.
+'RelationalFoundations.CertifiedGrouping.Rules.confluence' does not depend on any axioms

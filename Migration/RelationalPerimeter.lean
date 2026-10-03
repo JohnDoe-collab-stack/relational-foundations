@@ -5,6 +5,8 @@ import AbstractSegmentedTurning
 import ExactTypeTransport
 import StrongPerimetralTurning
 import RelationalPerimeter.Computation.EndogenousOperationalDecomposition
+import RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.HistoricalRoleGrouping
+import RelationalPerimeter.Computation.ConstitutiveSearch.EndogenousDecomposition.RoleGroupingSemantics
 
 /-!
 # Relational Perimeter
@@ -14,6 +16,8 @@ construction of endogenous operational decomposition.
 -/
 
 /- AXIOM_AUDIT_BEGIN -/
+#print axioms ConstitutiveSearch.EndogenousDecomposition.CertifiedRoleGrouping.exhaustive_width
+#print axioms ConstitutiveSearch.EndogenousDecomposition.CertifiedRoleGrouping.Historical.renormalized
 #print axioms RelationalPerimeter.Computation.EndogenousOperationalDecomposition.endogenous_production_and_width_separation
 #print axioms RelationalPerimeter.Computation.EndogenousOperationalDecomposition.extensive_multiplicity_does_not_force_full_operational_width
 #print axioms StrongPerimetralTurning.Example.examplePresentation

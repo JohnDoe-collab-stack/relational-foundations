@@ -1,0 +1,8 @@
+import Tests.CertifiedGrouping
+open RelationalFoundations.CertifiedGrouping RelationalFoundations.CertifiedGroupingTests
+example : (Binary.rules (n := .more .empty) (true, ())).normal (false, ()) = (false, ()) := rfl
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.CertifiedGrouping.Rules.confluence
+/- AXIOM_AUDIT_END -/
+

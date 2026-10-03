@@ -52,6 +52,11 @@ import RelationalFoundations.FiniteRuleScope
 import RelationalFoundations.HeterogeneousInvariants
 import RelationalFoundations.NativeForgettingContract
 import RelationalFoundations.TypedResourceOrder
+import RelationalFoundations.BinaryGrouping
+import RelationalFoundations.GroupingReindex
+import RelationalFoundations.GroupingImage
+import RelationalFoundations.HistoricalGrouping
+import RelationalFoundations.GroupingInstances
 
 /- AXIOM_AUDIT_BEGIN -/
 #print axioms RelationalFoundations.FiniteRuleCoordinates.resumed_composed_coordinates
@@ -60,4 +65,9 @@ import RelationalFoundations.TypedResourceOrder
 #print axioms RelationalFoundations.DependencyPaths.Coverage.ordered_roundtrip
 #print axioms RelationalFoundations.HeterogeneousInvariants.constructed_then_forgotten
 #print axioms RelationalFoundations.NativeForgettingContract.first_decision_irrecoverable
+#print axioms RelationalFoundations.CertifiedGrouping.Rules.normalize
+#print axioms RelationalFoundations.CertifiedGrouping.Rules.confluence
+#print axioms RelationalFoundations.CertifiedGrouping.Binary.composed_fibres
+#print axioms RelationalFoundations.CertifiedGrouping.Extension.obligation_composes
+#print axioms RelationalFoundations.CertifiedGrouping.Native.bridge
 /- AXIOM_AUDIT_END -/

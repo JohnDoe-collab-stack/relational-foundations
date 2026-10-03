@@ -1,0 +1,386 @@
+{
+  "protocol": "foundations-audit-validation-v5",
+  "receipts": [
+    {
+      "path": "docs/validation-v5/Windows/receipt.json",
+      "platform": "Windows",
+      "sha256": "2FE2B9A66AE839EAF43D6ECA6DEA31F959EB53823D1E615867F0F35BADDAEB0E"
+    },
+    {
+      "path": "docs/validation-v5/Linux/receipt.json",
+      "platform": "Linux",
+      "sha256": "71268333489041B72FA378C7B7CEE65F13FFC3FB860579E3E62C549CADE22EF9"
+    }
+  ],
+  "inputManifestSha256": "4AA88C49E6E09F4D37550F67FC88F3F9A6438D9D9C89F15C9C4EFC78F81BED12",
+  "schemaVersion": 5,
+  "files": [
+    {
+      "sha256": "6CE6F7D612986289B2233EBA7516DC30188949A9832B96F9AF105F687739EFC5",
+      "bytes": 3620,
+      "path": "docs/validation-v5/Linux-bundle-tests.basic.json"
+    },
+    {
+      "sha256": "B323191DD5C27F1846954C8257E9EAEEB7CAFE43274E6EF8905CD62B081EF2ED",
+      "bytes": 6157,
+      "path": "docs/validation-v5/Linux-bundle-tests.json"
+    },
+    {
+      "sha256": "C3381A2D9B5233C760554A2A683CFB406FD31FEEF57A8948FDB61D63CDC2DB87",
+      "bytes": 768,
+      "path": "docs/validation-v5/Linux/foundation.json"
+    },
+    {
+      "sha256": "CE801BBC684BA9D028F246A68E4E500BD1501067F2150C55B9501706B8F0A94E",
+      "bytes": 2351,
+      "path": "docs/validation-v5/Linux/grouping/GroupingMigrationAudit.lean"
+    },
+    {
+      "sha256": "007A06BE45D8A1CB6FCCFD0DCCFD8AEB956CE7EB235DD91836EB9AF298D1B560",
+      "bytes": 431,
+      "path": "docs/validation-v5/Linux/grouping/GroupingScalarAudit.lean"
+    },
+    {
+      "sha256": "681915D960893BDB9B512081B91C725EBAF7AF251859939943966E0AAD16C2D0",
+      "bytes": 28985,
+      "path": "docs/validation-v5/Linux/grouping/grouping-migration-audit.txt"
+    },
+    {
+      "sha256": "840BD9E8C653F4E95157FABD3EF04960AC630B08F4A05ABCD06E677ADFD09997",
+      "bytes": 468,
+      "path": "docs/validation-v5/Linux/grouping/grouping-migration-tests.txt"
+    },
+    {
+      "sha256": "3EC7865670C29E189206CCDEE17806FE219E6FC3A147091E6CD1D7B1FC7B75B3",
+      "bytes": 1569,
+      "path": "docs/validation-v5/Linux/grouping/grouping-runtime.txt"
+    },
+    {
+      "sha256": "4E9AE366E512D51E4B910CB4D1DC87E5DF82149EA20FEB7AD528453B5CA9262E",
+      "bytes": 194,
+      "path": "docs/validation-v5/Linux/grouping/grouping-scalar-audit.txt"
+    },
+    {
+      "sha256": "382E8B64C3205554BC244591DB9E4B162D12BC8CA73E2B1C47A5A90ACCBB3566",
+      "bytes": 2119,
+      "path": "docs/validation-v5/Linux/grouping/producer-code.json"
+    },
+    {
+      "sha256": "305D0DAF80FD57D79B2F41F119455FB43755FD24856A71942C6779D63729B62F",
+      "bytes": 281,
+      "path": "docs/validation-v5/Linux/logs/ForgottenGlobalIdentityV1.txt"
+    },
+    {
+      "sha256": "82556D3EA8D5EF5E9A557E8C77F36B6C7F9681E973A18EA6AA84C3980D9D4EB6",
+      "bytes": 417,
+      "path": "docs/validation-v5/Linux/logs/ForgottenReorderedInputsV1.txt"
+    },
+    {
+      "sha256": "DD0A61DC2368B3A1C25548B6149896820D4B487BD350DBF4F950F60AC9680964",
+      "bytes": 751,
+      "path": "docs/validation-v5/Linux/logs/ForgottenWrongSortV1.txt"
+    },
+    {
+      "sha256": "53B4E8051F80B50A16B3382BC7A7A03428DB06C3E41FE87DC4F8D88AB62F4676",
+      "bytes": 383,
+      "path": "docs/validation-v5/Linux/logs/FutureFromCurrent.txt"
+    },
+    {
+      "sha256": "4F0E3FBE0770C2530C50ADA6A5D8100695C98BA53FA3479201D544E6E4D04FAE",
+      "bytes": 569,
+      "path": "docs/validation-v5/Linux/logs/MergedSourcesEqual.txt"
+    },
+    {
+      "sha256": "B2393655827927BF70507FF0573BCF73FA2920325F81D4DADAF3B0EFBCDCE3BE",
+      "bytes": 352,
+      "path": "docs/validation-v5/Linux/logs/NeutralEffective.txt"
+    },
+    {
+      "sha256": "349B95A024DFC14AF559D9B737A086316C85889D69E8E553D1FE0E9819574762",
+      "bytes": 373,
+      "path": "docs/validation-v5/Linux/logs/NoRenormalization.txt"
+    },
+    {
+      "sha256": "4BBF9DF1FBB6CC2D8B9E1855C58ADD5476DB305377DFD38C1BB85CDF3BBF0A32",
+      "bytes": 998,
+      "path": "docs/validation-v5/Linux/logs/UniqueTransportFromTarget.txt"
+    },
+    {
+      "sha256": "D4C96F467E14F7A510A193C1E4C1E51CFA74D499F55BF16C0549D7B826DA3FD3",
+      "bytes": 31357,
+      "path": "docs/validation-v5/Linux/logs/certified-grouping.txt"
+    },
+    {
+      "sha256": "37E31478FECD5C3351617596B68A6E00904EECB8477325D3C280A9D947C57A54",
+      "bytes": 1631,
+      "path": "docs/validation-v5/Linux/logs/coordinate-consumers.txt"
+    },
+    {
+      "sha256": "85215D11F21788728EABCE2049620214A6A4B38BF94148AACF765C23FE17263B",
+      "bytes": 188,
+      "path": "docs/validation-v5/Linux/logs/executable-controls.txt"
+    },
+    {
+      "sha256": "BB19E868799885102F16C0D02DB847BE477BAB4E4E5D078D25D717AFCE903B6D",
+      "bytes": 307,
+      "path": "docs/validation-v5/Linux/logs/forbidden-dependency-rejected.txt"
+    },
+    {
+      "sha256": "9D7FCB2A489BD4555B18C06F76114633FAE0FB10010608344A8DCC981572E1CC",
+      "bytes": 1154,
+      "path": "docs/validation-v5/Linux/logs/forgetting-syntax-and-semantics.txt"
+    },
+    {
+      "sha256": "C3381A2D9B5233C760554A2A683CFB406FD31FEEF57A8948FDB61D63CDC2DB87",
+      "bytes": 768,
+      "path": "docs/validation-v5/Linux/logs/foundation-and-migration.txt"
+    },
+    {
+      "sha256": "66EBE4DD0B2F3A36F68E993A78733D14BC882F2F857158D69F09B10FE0412C65",
+      "bytes": 55741,
+      "path": "docs/validation-v5/Linux/logs/foundation-build.txt"
+    },
+    {
+      "sha256": "B0DFF9BF804776B2E76789CA2254EAA077F2813A12F99D8AD32CAE41AC240963",
+      "bytes": 152,
+      "path": "docs/validation-v5/Linux/logs/historical-receipts.txt"
+    },
+    {
+      "sha256": "13B2297F8439D12C91A57624D974F1D00E6481FF22D775B0ABD63EC3107B8745",
+      "bytes": 943,
+      "path": "docs/validation-v5/Linux/logs/local-replay-controls.txt"
+    },
+    {
+      "sha256": "1BAF815F6A19FA16125EF767A6DF532362B0F8E14BD055D9952F75E3C429FBCD",
+      "bytes": 114,
+      "path": "docs/validation-v5/Linux/logs/manifest-integrity-tests.txt"
+    },
+    {
+      "sha256": "91369D53376B044E4A7864D8AE9DA9F98810DD1531C762F965FF57E641699E9C",
+      "bytes": 736011,
+      "path": "docs/validation-v5/Linux/logs/migration-build.txt"
+    },
+    {
+      "sha256": "EC1E20E94F44D7852F96EFE3D4B313EA228FFB580C4BFFBBD502A2DE075377A6",
+      "bytes": 2669,
+      "path": "docs/validation-v5/Linux/logs/migration-protocol.txt"
+    },
+    {
+      "sha256": "D13B25ED3D7467096B66F267856912AE3838AE57E23196A7B27B342FD434E822",
+      "bytes": 650048,
+      "path": "docs/validation-v5/Linux/logs/migration-public-symbols.txt"
+    },
+    {
+      "sha256": "AFEDE4FBC42F8EBAA92520A28048AF03858B0FADC648FF9188343C726FCF2071",
+      "bytes": 286,
+      "path": "docs/validation-v5/Linux/logs/shape-rejected.txt"
+    },
+    {
+      "sha256": "3181A030B3334E6E5C703EA834C851DF90120A91BF8C889E2AED8960CAC503EE",
+      "bytes": 65,
+      "path": "docs/validation-v5/Linux/logs/source-audit-blocks.txt"
+    },
+    {
+      "sha256": "1461D4A7BBC817DAABE67D19162535233EB90BCE25DBEB4F6AC90E3DB66B4A50",
+      "bytes": 547,
+      "path": "docs/validation-v5/Linux/migration.json"
+    },
+    {
+      "sha256": "71268333489041B72FA378C7B7CEE65F13FFC3FB860579E3E62C549CADE22EF9",
+      "bytes": 17880,
+      "path": "docs/validation-v5/Linux/receipt.json"
+    },
+    {
+      "sha256": "30727CA46FCF7813DCBD2C4DF8ADDDB6FB75A676BDDFC4ACC1C02D9BD511E3F1",
+      "bytes": 3739,
+      "path": "docs/validation-v5/Windows-bundle-tests.basic.json"
+    },
+    {
+      "sha256": "829818D1538420735317EE46E9B5D6AECED273CB29C2A47D342734468206C064",
+      "bytes": 6421,
+      "path": "docs/validation-v5/Windows-bundle-tests.json"
+    },
+    {
+      "sha256": "8B4FDB197C1B9BCE35987A3512D5BAA343FA5F1F999E620D29E3120B9FFAD101",
+      "bytes": 780,
+      "path": "docs/validation-v5/Windows/foundation.json"
+    },
+    {
+      "sha256": "76FAFAC53D9C2243BBB4D29C0A236052981775223D596781399AD910F17AB18B",
+      "bytes": 2354,
+      "path": "docs/validation-v5/Windows/grouping/GroupingMigrationAudit.lean"
+    },
+    {
+      "sha256": "007A06BE45D8A1CB6FCCFD0DCCFD8AEB956CE7EB235DD91836EB9AF298D1B560",
+      "bytes": 431,
+      "path": "docs/validation-v5/Windows/grouping/GroupingScalarAudit.lean"
+    },
+    {
+      "sha256": "89CB0A887C3B6E0A79A0F597960524AC0107021F85434424CD239E3741B0621C",
+      "bytes": 29211,
+      "path": "docs/validation-v5/Windows/grouping/grouping-migration-audit.txt"
+    },
+    {
+      "sha256": "845C1A4E44B9A4F90B1986D67136C3B53C65F2B47F1760AE28E8D8080A07A043",
+      "bytes": 472,
+      "path": "docs/validation-v5/Windows/grouping/grouping-migration-tests.txt"
+    },
+    {
+      "sha256": "9D1D4F2E62F062202BCBC468C2463AC421A76810BA40A7BF3A93307ABA319CB6",
+      "bytes": 1585,
+      "path": "docs/validation-v5/Windows/grouping/grouping-runtime.txt"
+    },
+    {
+      "sha256": "0554CFF1FA10B82D87E52AD2D612922C41D91570AD9219FF37D3D2C959C5707D",
+      "bytes": 196,
+      "path": "docs/validation-v5/Windows/grouping/grouping-scalar-audit.txt"
+    },
+    {
+      "sha256": "480787E72B33D4580F90846BD5E78171EB9912506F092E28B4ECEC288A17EB0F",
+      "bytes": 2186,
+      "path": "docs/validation-v5/Windows/grouping/producer-code.json"
+    },
+    {
+      "sha256": "9431B5454BDBAA6273BDE9A1AEC0AACC1C05F2C1C7191A02EA99D688B4E2122A",
+      "bytes": 297,
+      "path": "docs/validation-v5/Windows/logs/ForgottenGlobalIdentityV1.txt"
+    },
+    {
+      "sha256": "4FC55D26C3A60EA960433883E9180EAC194B921D62B75E45839DA03447CD339D",
+      "bytes": 433,
+      "path": "docs/validation-v5/Windows/logs/ForgottenReorderedInputsV1.txt"
+    },
+    {
+      "sha256": "A663BE5937E7439DFB4D18E3B8358C0689EF09AAF9E024FEBF320CE19B2CD800",
+      "bytes": 787,
+      "path": "docs/validation-v5/Windows/logs/ForgottenWrongSortV1.txt"
+    },
+    {
+      "sha256": "253DBC0A112E1F0E2CF62F1F856E124693CC341DDCB7B78AEE2B216F9E588F64",
+      "bytes": 400,
+      "path": "docs/validation-v5/Windows/logs/FutureFromCurrent.txt"
+    },
+    {
+      "sha256": "9E63534E580C53F89855754739CDD423D60FB046465CC8E459C88021C91D25AC",
+      "bytes": 590,
+      "path": "docs/validation-v5/Windows/logs/MergedSourcesEqual.txt"
+    },
+    {
+      "sha256": "EA328302AA07BCE63B3446A5440DB04B3145EBCE61C813F23B579F2FDB9F05A7",
+      "bytes": 369,
+      "path": "docs/validation-v5/Windows/logs/NeutralEffective.txt"
+    },
+    {
+      "sha256": "9E3B8D7C3A8ADF1BA62C8FC312EEFD89A11BF75D0F221DDB92C30B98089A8F7B",
+      "bytes": 390,
+      "path": "docs/validation-v5/Windows/logs/NoRenormalization.txt"
+    },
+    {
+      "sha256": "3DC1CE34C66FDB169A42DE7ACD1B3DAE69BBC8B80215916B3EFDD508D6C31000",
+      "bytes": 1022,
+      "path": "docs/validation-v5/Windows/logs/UniqueTransportFromTarget.txt"
+    },
+    {
+      "sha256": "E47B8849D53C5E10464D31F45A33592243594EBEE0568CAB7ABE647364EFA807",
+      "bytes": 31606,
+      "path": "docs/validation-v5/Windows/logs/certified-grouping.txt"
+    },
+    {
+      "sha256": "A3FF86852785C4BE8338F77024B0254CF8B670941F174699BEDB2269C38B4EEA",
+      "bytes": 1647,
+      "path": "docs/validation-v5/Windows/logs/coordinate-consumers.txt"
+    },
+    {
+      "sha256": "473BAAFC5EA849C45598D17AEC51ACB20A845F82332BA1D68C6532221DB46BBF",
+      "bytes": 190,
+      "path": "docs/validation-v5/Windows/logs/executable-controls.txt"
+    },
+    {
+      "sha256": "DA7C370C75EBDBE03009989D1F159441C3044F038E4967B42249A604FC7B6712",
+      "bytes": 319,
+      "path": "docs/validation-v5/Windows/logs/forbidden-dependency-rejected.txt"
+    },
+    {
+      "sha256": "3318332AB82F44C6D6E5C74B972D11E194598DF12C1A74CA34C87188D86EDCA9",
+      "bytes": 1164,
+      "path": "docs/validation-v5/Windows/logs/forgetting-syntax-and-semantics.txt"
+    },
+    {
+      "sha256": "8B4FDB197C1B9BCE35987A3512D5BAA343FA5F1F999E620D29E3120B9FFAD101",
+      "bytes": 780,
+      "path": "docs/validation-v5/Windows/logs/foundation-and-migration.txt"
+    },
+    {
+      "sha256": "8A1E69C67FC150816D4298591ADC820C3E095ACFC2C7B9F37675138189FED121",
+      "bytes": 56137,
+      "path": "docs/validation-v5/Windows/logs/foundation-build.txt"
+    },
+    {
+      "sha256": "A2AA2EA504FFC9C242CF0271BD871E8A0DB02FBCC847CBF182D4834EB45D0B21",
+      "bytes": 153,
+      "path": "docs/validation-v5/Windows/logs/historical-receipts.txt"
+    },
+    {
+      "sha256": "07B4779F519FF6744C4F9B6C75D408EC18BEAF3492F91C9B95F723BD7898A3BB",
+      "bytes": 953,
+      "path": "docs/validation-v5/Windows/logs/local-replay-controls.txt"
+    },
+    {
+      "sha256": "0101A6D81BE13D320C9935423417C27BB0002130581D7FE36683F9D3C194B2BC",
+      "bytes": 115,
+      "path": "docs/validation-v5/Windows/logs/manifest-integrity-tests.txt"
+    },
+    {
+      "sha256": "E3B33332327286814DBFBC5C3981642EBFD3B462E69F3C2F9E812597AE448F75",
+      "bytes": 739829,
+      "path": "docs/validation-v5/Windows/logs/migration-build.txt"
+    },
+    {
+      "sha256": "6CABA8AC8D9A7B51FA8BD1A0F3E97DA893D8DB8C2B3095B2D4D4BFA3A08ED22E",
+      "bytes": 2701,
+      "path": "docs/validation-v5/Windows/logs/migration-protocol.txt"
+    },
+    {
+      "sha256": "97569E2C64E5BD1E9F86F8B9FA903F63CD673048A23E816F52955FBC70045BFD",
+      "bytes": 657957,
+      "path": "docs/validation-v5/Windows/logs/migration-public-symbols.txt"
+    },
+    {
+      "sha256": "4EE69DD37CF5E185A76FA5C7B92258FB0F3BABF6C044A2D3F6E5A58E9BDC12EF",
+      "bytes": 298,
+      "path": "docs/validation-v5/Windows/logs/shape-rejected.txt"
+    },
+    {
+      "sha256": "44E6EE9AD8640F0FDB8873B8A427922F06691C1A25E69DB505DF931B787EAEEC",
+      "bytes": 66,
+      "path": "docs/validation-v5/Windows/logs/source-audit-blocks.txt"
+    },
+    {
+      "sha256": "6EEE26EC26CBA1B9F363D3866C9A22BDB2B57D5EA1BCC78E24FCFB8D55AF9E29",
+      "bytes": 559,
+      "path": "docs/validation-v5/Windows/migration.json"
+    },
+    {
+      "sha256": "2FE2B9A66AE839EAF43D6ECA6DEA31F959EB53823D1E615867F0F35BADDAEB0E",
+      "bytes": 18734,
+      "path": "docs/validation-v5/Windows/receipt.json"
+    },
+    {
+      "sha256": "F94F17E878A1080F4C06FBD0A73515784347DB50A08FA09DE08212ECD11F4986",
+      "bytes": 13620,
+      "path": "docs/validation-v5/bundle-tested-index.json"
+    },
+    {
+      "sha256": "4AA88C49E6E09F4D37550F67FC88F3F9A6438D9D9C89F15C9C4EFC78F81BED12",
+      "bytes": 133185,
+      "path": "docs/validation-v5/inputs.json"
+    }
+  ],
+  "evidenceCount": 72,
+  "bundleTests": {
+    "testedIndex": "docs/validation-v5/bundle-tested-index.json",
+    "testedIndexSha256": "F94F17E878A1080F4C06FBD0A73515784347DB50A08FA09DE08212ECD11F4986",
+    "casesPerPlatform": 39,
+    "sourceInputsUnchanged": true
+  }
+}

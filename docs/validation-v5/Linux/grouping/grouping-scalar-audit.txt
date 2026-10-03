@@ -1,0 +1,2 @@
+GROUPING_V5_SCALAR_SYNTAX_OK: 3 roots; 186 type/body dependencies; two Nat fields; forbidden-name scan only
+'RelationalFoundations.CertifiedGrouping.Native.bridge' does not depend on any axioms

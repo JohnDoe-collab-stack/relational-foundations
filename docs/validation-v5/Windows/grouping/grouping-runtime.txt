@@ -1,0 +1,16 @@
+"GROUPING_V5_RUNTIME_OK: 5461 mask/profile pairs; dimensions 0..6; normalization and trace bounds"
+'RelationalFoundations.CertifiedGroupingTests.real_peak' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.projections_each_separate' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.nevertheless_connected' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.current_equal_future_distinct' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.fork_no_join' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.cycle_forbids_strict_rank' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.neutral_forbids_strict_rank' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.tagged' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.equal_target_different_transport' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.admissions_mismatch' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.empty_width' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.inhabited_width' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.additionalLicense' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.new_license_requires_renormalization' does not depend on any axioms
+'RelationalFoundations.CertifiedGroupingTests.checkNormalizer' does not depend on any axioms

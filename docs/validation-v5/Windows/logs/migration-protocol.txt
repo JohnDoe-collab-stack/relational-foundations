@@ -1,0 +1,32 @@
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateConstitutiveNormalizerCertificate.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateConstitutiveExtensiveSeparationCertificate.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateExecutedCausalNormalization.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateExactExecutedOperationalRegime.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateExecutedStageOperationalProduction.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/DiscoveredTransportCannotReplaceAuthoritativeInstruction.lean.fail
+EXPECTED_FAILURE_OK	semantic-type	Tests/ExpectedFailure/InstructionIgnoringInterpreterCannotMeetSemanticSpecification.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/ForeignInstructionProfileCannotBeReused.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/RetainedDecisionCannotReplaceTransformedDecision.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/SourceIgnoringNormalizationCannotSupplyTrace.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/PrescribedTargetCannotRecoverTraceAfterwards.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/IndependentUnitRegimeCannotReplaceExecutedRegime.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateActionProducedOperationalTarget.lean.fail
+EXPECTED_FAILURE_OK	privacy	Tests/ExpectedFailure/PrivateExactCausalExponentialTarget.lean.fail
+EXPECTED_FAILURE_OK	semantic-type	Tests/ExpectedFailure/CanonicalSampleCannotPrescribeAction.lean.fail
+EXPECTED_FAILURE_OK	termination	Tests/ExpectedFailure/FutureCannotProduceOwnHead.lean.fail
+EXPECTED_FAILURE_OK	semantic-type	Tests/ExpectedFailure/MissingImageConstitution.lean.fail
+EXPECTED_FAILURE_OK	semantic-type	Tests/ExpectedFailure/MissingImagePreservation.lean.fail
+EXPECTED_FAILURE_OK	dependent-type	Tests/ExpectedFailure/RootCannotReplaceProducedTail.lean.fail
+Verified expected failures: 19 fixtures, each executed once; privacy, dependent-type, semantic-type and termination remain distinct.
+{
+  "status": "PASSED",
+  "checkedAtUtc": "2026-10-03T19:23:59.7022159Z",
+  "sources": 178,
+  "publicSymbols": 806,
+  "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+  "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+  "publicAudits": 3636,
+  "expectedFailures": 19,
+  "stratification": "Verified stratification inventory: 157 production modules, all enforced, no orphan.",
+  "boundaries": "Four transitive import boundary manifests passed"
+}

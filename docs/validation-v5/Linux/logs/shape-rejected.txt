@@ -1,0 +1,2 @@
+/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/WrongShape.lean:8:0: error: Scalar memory must contain exactly position and active
+'RelationalFoundations.NativeForgettingV1.ExpandedMemory' does not depend on any axioms

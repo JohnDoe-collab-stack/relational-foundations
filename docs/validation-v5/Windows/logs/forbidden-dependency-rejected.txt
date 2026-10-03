@@ -1,0 +1,2 @@
+C:\Users\frederick\.codex\worktrees\foundations-certified-grouping\.lake\validation-v5-fixtures\20261003T192329129Z-ecb590de\ForbiddenDependency.lean:3:0: error: Scalar name scan reached a forbidden constant: RelationalFoundations.History
+'RelationalFoundations.NativeForgettingV1.step' does not depend on any axioms

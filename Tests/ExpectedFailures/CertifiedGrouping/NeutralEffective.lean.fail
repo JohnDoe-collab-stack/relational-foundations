@@ -1,0 +1,8 @@
+import Tests.CertifiedGrouping
+open RelationalFoundations.CertifiedGroupingTests
+example : Tagged true true := Tagged.change false
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.CertifiedGrouping.Rules.confluence
+/- AXIOM_AUDIT_END -/
+

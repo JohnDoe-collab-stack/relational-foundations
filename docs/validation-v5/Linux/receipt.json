@@ -1,0 +1,442 @@
+{
+  "status": "PASSED",
+  "protocol": "foundations-audit-validation-v5",
+  "startedAtUtc": "2026-10-03T19:23:29.8139693Z",
+  "platform": "Linux",
+  "runId": "20261003T192329797Z-1e3c70b7",
+  "inputsVerifiedBefore": true,
+  "inputsVerifiedAfter": true,
+  "validationSteps": [
+    {
+      "name": "source-audit-blocks",
+      "source": "scripts/check-source-v5.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-source-v5.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T19:23:31.4480582Z",
+      "completedAtUtc": "2026-10-03T19:23:32.6611618Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "SOURCE_V5_OK:",
+      "log": "logs/source-audit-blocks.txt",
+      "outputSha256": "3181A030B3334E6E5C703EA834C851DF90120A91BF8C889E2AED8960CAC503EE"
+    },
+    {
+      "name": "manifest-integrity-tests",
+      "source": "scripts/test-validation-manifest-v5.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/test-validation-manifest-v5.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T19:23:32.6650585Z",
+      "completedAtUtc": "2026-10-03T19:23:34.0802907Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "VALIDATION_MANIFEST_V5_TESTS_OK:",
+      "log": "logs/manifest-integrity-tests.txt",
+      "outputSha256": "1BAF815F6A19FA16125EF767A6DF532362B0F8E14BD055D9952F75E3C429FBCD"
+    },
+    {
+      "name": "historical-receipts",
+      "source": "scripts/check-historical-receipts-v5.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-historical-receipts-v5.ps1",
+        "-OutputDirectory",
+        "/home/frederick/codex-validation-foundations-v5-results-r3-20261003"
+      ],
+      "startedAtUtc": "2026-10-03T19:23:34.0829685Z",
+      "completedAtUtc": "2026-10-03T19:23:40.3864451Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "HISTORICAL_RECEIPTS_V5_OK:",
+      "log": "logs/historical-receipts.txt",
+      "outputSha256": "B0DFF9BF804776B2E76789CA2254EAA077F2813A12F99D8AD32CAE41AC240963"
+    },
+    {
+      "name": "foundation-and-migration",
+      "source": "scripts/verify-v5.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/verify-v5.ps1",
+        "-SkipComparison",
+        "-SkipReference",
+        "-ReportPath",
+        "/home/frederick/codex-validation-foundations-v5-results-r3-20261003/foundation.json",
+        "-MigrationReportPath",
+        "/home/frederick/codex-validation-foundations-v5-results-r3-20261003/migration.json",
+        "-LogTag",
+        "20261003T192329797Z-1e3c70b7"
+      ],
+      "startedAtUtc": "2026-10-03T19:23:40.3871480Z",
+      "completedAtUtc": "2026-10-03T19:24:12.8314002Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "\"status\": \"PASSED\"",
+      "log": "logs/foundation-and-migration.txt",
+      "outputSha256": "C3381A2D9B5233C760554A2A683CFB406FD31FEEF57A8948FDB61D63CDC2DB87"
+    },
+    {
+      "name": "forgetting-syntax-and-semantics",
+      "source": "scripts/AuditForgettingV4.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "-o",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/build/lib/lean/scripts/AuditForgettingV4.olean",
+        "scripts/AuditForgettingV4.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:12.8525036Z",
+      "completedAtUtc": "2026-10-03T19:24:13.5333085Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "FORGETTING_V4_SEMANTIC_WITNESSES_OK:",
+      "log": "logs/forgetting-syntax-and-semantics.txt",
+      "outputSha256": "9D7FCB2A489BD4555B18C06F76114633FAE0FB10010608344A8DCC981572E1CC"
+    },
+    {
+      "name": "coordinate-consumers",
+      "source": "Tests/FiniteRuleCoordinates.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/FiniteRuleCoordinates.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:13.5348290Z",
+      "completedAtUtc": "2026-10-03T19:24:13.8056729Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "higher_universe.*does not depend on any axioms",
+      "log": "logs/coordinate-consumers.txt",
+      "outputSha256": "37E31478FECD5C3351617596B68A6E00904EECB8477325D3C280A9D947C57A54"
+    },
+    {
+      "name": "local-replay-controls",
+      "source": "Tests/ForgettingAuditScope.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/ForgettingAuditScope.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:13.8064658Z",
+      "completedAtUtc": "2026-10-03T19:24:34.1887066Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "AUDIT_V4_REPLAY_RUNTIME_OK:",
+      "log": "logs/local-replay-controls.txt",
+      "outputSha256": "13B2297F8439D12C91A57624D974F1D00E6481FF22D775B0ABD63EC3107B8745"
+    },
+    {
+      "name": "executable-controls",
+      "source": "Tests/AuditCorrections.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/AuditCorrections.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:34.1894079Z",
+      "completedAtUtc": "2026-10-03T19:24:34.3889606Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "AUDIT_V3_RUNTIME_OK:",
+      "log": "logs/executable-controls.txt",
+      "outputSha256": "85215D11F21788728EABCE2049620214A6A4B38BF94148AACF765C23FE17263B"
+    },
+    {
+      "name": "ForgottenGlobalIdentityV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenGlobalIdentityV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/ForgottenGlobalIdentityV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:34.3952018Z",
+      "completedAtUtc": "2026-10-03T19:24:34.5886427Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenGlobalIdentityV1.txt",
+      "outputSha256": "305D0DAF80FD57D79B2F41F119455FB43755FD24856A71942C6779D63729B62F"
+    },
+    {
+      "name": "ForgottenReorderedInputsV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenReorderedInputsV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/ForgottenReorderedInputsV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:34.5902880Z",
+      "completedAtUtc": "2026-10-03T19:24:34.7616259Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenReorderedInputsV1.txt",
+      "outputSha256": "82556D3EA8D5EF5E9A557E8C77F36B6C7F9681E973A18EA6AA84C3980D9D4EB6"
+    },
+    {
+      "name": "ForgottenWrongSortV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenWrongSortV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/ForgottenWrongSortV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:34.7624194Z",
+      "completedAtUtc": "2026-10-03T19:24:34.9320010Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenWrongSortV1.txt",
+      "outputSha256": "DD0A61DC2368B3A1C25548B6149896820D4B487BD350DBF4F950F60AC9680964"
+    },
+    {
+      "name": "forbidden-dependency-rejected",
+      "source": "Tests/ExpectedFailures/ValidationV4/ForbiddenDependency.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/ForbiddenDependency.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:34.9337244Z",
+      "completedAtUtc": "2026-10-03T19:24:35.4552895Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-forbidden-name",
+      "expectedPattern": "Scalar name scan reached a forbidden constant:",
+      "log": "logs/forbidden-dependency-rejected.txt",
+      "outputSha256": "BB19E868799885102F16C0D02DB847BE477BAB4E4E5D078D25D717AFCE903B6D"
+    },
+    {
+      "name": "shape-rejected",
+      "source": "Tests/ExpectedFailures/ValidationV4/WrongShape.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/WrongShape.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:35.4565972Z",
+      "completedAtUtc": "2026-10-03T19:24:35.9681573Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-shape",
+      "expectedPattern": "Scalar memory must contain exactly position and active",
+      "log": "logs/shape-rejected.txt",
+      "outputSha256": "AFEDE4FBC42F8EBAA92520A28048AF03858B0FADC648FF9188343C726FCF2071"
+    },
+    {
+      "name": "certified-grouping",
+      "source": "scripts/check-grouping-v5.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-grouping-v5.ps1",
+        "-OutputDirectory",
+        "/home/frederick/codex-validation-foundations-v5-results-r3-20261003/grouping"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:35.9687553Z",
+      "completedAtUtc": "2026-10-03T19:24:43.9369561Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "GROUPING_V5_OK:",
+      "log": "logs/certified-grouping.txt",
+      "outputSha256": "D4C96F467E14F7A510A193C1E4C1E51CFA74D499F55BF16C0549D7B826DA3FD3"
+    },
+    {
+      "name": "MergedSourcesEqual",
+      "source": "Tests/ExpectedFailures/CertifiedGrouping/MergedSourcesEqual.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/MergedSourcesEqual.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:43.9384326Z",
+      "completedAtUtc": "2026-10-03T19:24:44.1042838Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch|Not a definitional equality",
+      "log": "logs/MergedSourcesEqual.txt",
+      "outputSha256": "4F0E3FBE0770C2530C50ADA6A5D8100695C98BA53FA3479201D544E6E4D04FAE"
+    },
+    {
+      "name": "UniqueTransportFromTarget",
+      "source": "Tests/ExpectedFailures/CertifiedGrouping/UniqueTransportFromTarget.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/UniqueTransportFromTarget.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:44.1057364Z",
+      "completedAtUtc": "2026-10-03T19:24:44.2929859Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch|Not a definitional equality",
+      "log": "logs/UniqueTransportFromTarget.txt",
+      "outputSha256": "4BBF9DF1FBB6CC2D8B9E1855C58ADD5476DB305377DFD38C1BB85CDF3BBF0A32"
+    },
+    {
+      "name": "FutureFromCurrent",
+      "source": "Tests/ExpectedFailures/CertifiedGrouping/FutureFromCurrent.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/FutureFromCurrent.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:44.2940840Z",
+      "completedAtUtc": "2026-10-03T19:24:44.4676659Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch|Not a definitional equality",
+      "log": "logs/FutureFromCurrent.txt",
+      "outputSha256": "53B4E8051F80B50A16B3382BC7A7A03428DB06C3E41FE87DC4F8D88AB62F4676"
+    },
+    {
+      "name": "NeutralEffective",
+      "source": "Tests/ExpectedFailures/CertifiedGrouping/NeutralEffective.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/NeutralEffective.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:44.4684422Z",
+      "completedAtUtc": "2026-10-03T19:24:44.6437939Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch|Not a definitional equality",
+      "log": "logs/NeutralEffective.txt",
+      "outputSha256": "B2393655827927BF70507FF0573BCF73FA2920325F81D4DADAF3B0EFBCDCE3BE"
+    },
+    {
+      "name": "NoRenormalization",
+      "source": "Tests/ExpectedFailures/CertifiedGrouping/NoRenormalization.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v5-20261003/.lake/validation-v5-fixtures/20261003T192329797Z-1e3c70b7/NoRenormalization.lean"
+      ],
+      "startedAtUtc": "2026-10-03T19:24:44.6451158Z",
+      "completedAtUtc": "2026-10-03T19:24:44.8322543Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch|Not a definitional equality",
+      "log": "logs/NoRenormalization.txt",
+      "outputSha256": "349B95A024DFC14AF559D9B737A086316C85889D69E8E553D1FE0E9819574762"
+    }
+  ],
+  "parameters": {
+    "runtimeHorizons": "0..24",
+    "hiddenEncodingHorizons": "0..6",
+    "proofScope": "All rule states and traces; all finite role histories; all native independently admitted suffixes",
+    "runtimeSeeds": "0..12",
+    "stochasticSeeds": [],
+    "groupingDimensions": "0..6",
+    "hiddenEncodingSeeds": "0..2",
+    "groupingPairs": 5461
+  },
+  "versions": {
+    "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lake": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+    "powershell": "7.6.5",
+    "os": "Ubuntu 22.04.5 LTS"
+  },
+  "inputManifest": {
+    "path": "docs/validation-v5/inputs.json",
+    "sha256": "4AA88C49E6E09F4D37550F67FC88F3F9A6438D9D9C89F15C9C4EFC78F81BED12",
+    "fileCount": 562
+  },
+  "sourceFiles": 88,
+  "axiomAudit": "AUDIT_OK: 6819 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_V4_SYNTAX_OK: 13 executable roots; 139 dependencies; scalar persistent fields; listed forbidden names absent; type/body scan only\n'RelationalFoundations.ReducedHeterogeneous.step' does not depend on any axioms\n'RelationalFoundations.ReducedHeterogeneous.run' does not depend on any axioms",
+  "migration": {
+    "status": "PASSED",
+    "checkedAtUtc": "2026-10-03T19:23:53.2552683Z",
+    "sources": 178,
+    "publicSymbols": 806,
+    "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+    "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+    "publicAudits": 3636,
+    "expectedFailures": 19,
+    "stratification": "Verified stratification inventory: 157 production modules, all enforced, no orphan.",
+    "boundaries": "Four transitive import boundary manifests passed"
+  },
+  "foundationExpectedFailures": 9,
+  "protocolExpectedFailures": 10,
+  "totalExpectedFailures": 38,
+  "additionalOutputs": [
+    {
+      "sha256": "C3381A2D9B5233C760554A2A683CFB406FD31FEEF57A8948FDB61D63CDC2DB87",
+      "path": "foundation.json"
+    },
+    {
+      "sha256": "1461D4A7BBC817DAABE67D19162535233EB90BCE25DBEB4F6AC90E3DB66B4A50",
+      "path": "migration.json"
+    },
+    {
+      "sha256": "66EBE4DD0B2F3A36F68E993A78733D14BC882F2F857158D69F09B10FE0412C65",
+      "path": "logs/foundation-build.txt"
+    },
+    {
+      "sha256": "EC1E20E94F44D7852F96EFE3D4B313EA228FFB580C4BFFBBD502A2DE075377A6",
+      "path": "logs/migration-protocol.txt"
+    },
+    {
+      "sha256": "91369D53376B044E4A7864D8AE9DA9F98810DD1531C762F965FF57E641699E9C",
+      "path": "logs/migration-build.txt"
+    },
+    {
+      "sha256": "D13B25ED3D7467096B66F267856912AE3838AE57E23196A7B27B342FD434E822",
+      "path": "logs/migration-public-symbols.txt"
+    },
+    {
+      "sha256": "681915D960893BDB9B512081B91C725EBAF7AF251859939943966E0AAD16C2D0",
+      "path": "grouping/grouping-migration-audit.txt"
+    },
+    {
+      "sha256": "840BD9E8C653F4E95157FABD3EF04960AC630B08F4A05ABCD06E677ADFD09997",
+      "path": "grouping/grouping-migration-tests.txt"
+    },
+    {
+      "sha256": "3EC7865670C29E189206CCDEE17806FE219E6FC3A147091E6CD1D7B1FC7B75B3",
+      "path": "grouping/grouping-runtime.txt"
+    },
+    {
+      "sha256": "4E9AE366E512D51E4B910CB4D1DC87E5DF82149EA20FEB7AD528453B5CA9262E",
+      "path": "grouping/grouping-scalar-audit.txt"
+    },
+    {
+      "sha256": "CE801BBC684BA9D028F246A68E4E500BD1501067F2150C55B9501706B8F0A94E",
+      "path": "grouping/GroupingMigrationAudit.lean"
+    },
+    {
+      "sha256": "007A06BE45D8A1CB6FCCFD0DCCFD8AEB956CE7EB235DD91836EB9AF298D1B560",
+      "path": "grouping/GroupingScalarAudit.lean"
+    },
+    {
+      "sha256": "382E8B64C3205554BC244591DB9E4B162D12BC8CA73E2B1C47A5A90ACCBB3566",
+      "path": "grouping/producer-code.json"
+    }
+  ],
+  "completedAtUtc": "2026-10-03T19:24:45.1648410Z"
+}
