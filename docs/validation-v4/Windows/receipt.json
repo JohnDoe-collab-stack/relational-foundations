@@ -1,0 +1,308 @@
+{
+  "status": "PASSED",
+  "protocol": "foundations-audit-validation-v4",
+  "startedAtUtc": "2026-10-03T13:11:10.5058412Z",
+  "platform": "Windows",
+  "runId": "20261003T131110487Z-6ee5dcbd",
+  "inputsVerifiedBefore": true,
+  "inputsVerifiedAfter": true,
+  "validationSteps": [
+    {
+      "name": "source-audit-blocks",
+      "source": "scripts/check-source-v4.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-source-v4.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T13:11:11.4880692Z",
+      "completedAtUtc": "2026-10-03T13:11:12.6607785Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "SOURCE_V4_OK:",
+      "log": "logs/source-audit-blocks.txt",
+      "outputSha256": "8C8FF6DBCE36AD0FA81189949F02CD7ED0D07D8484601219CA5753AE07164FD1"
+    },
+    {
+      "name": "manifest-integrity-tests",
+      "source": "scripts/test-validation-manifest-v4.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/test-validation-manifest-v4.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T13:11:12.6671572Z",
+      "completedAtUtc": "2026-10-03T13:11:13.6592369Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "VALIDATION_MANIFEST_V4_TESTS_OK:",
+      "log": "logs/manifest-integrity-tests.txt",
+      "outputSha256": "19A769AD5D242C5EFD73EDA37B2BEDB94023B923C5E308DE0BFBB04F2BA428BC"
+    },
+    {
+      "name": "historical-receipts",
+      "source": "scripts/check-historical-receipts-v4.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-historical-receipts-v4.ps1",
+        "-OutputDirectory",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-implementation-20261003\\confirmation-Windows-r2"
+      ],
+      "startedAtUtc": "2026-10-03T13:11:13.6705526Z",
+      "completedAtUtc": "2026-10-03T13:11:17.1007851Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "HISTORICAL_RECEIPTS_V4_OK:",
+      "log": "logs/historical-receipts.txt",
+      "outputSha256": "A7D061BD3C0B371F2BD32A448A6540E9C94A2AEC0CFC8700B4DEF79B4DEA5E98"
+    },
+    {
+      "name": "foundation-and-migration",
+      "source": "scripts/verify-v4.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/verify-v4.ps1",
+        "-SkipComparison",
+        "-SkipReference",
+        "-ReportPath",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-implementation-20261003\\confirmation-Windows-r2\\foundation.json",
+        "-MigrationReportPath",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-implementation-20261003\\confirmation-Windows-r2\\migration.json",
+        "-LogTag",
+        "20261003T131110487Z-6ee5dcbd"
+      ],
+      "startedAtUtc": "2026-10-03T13:11:17.1061996Z",
+      "completedAtUtc": "2026-10-03T13:19:04.0747010Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "\"status\": \"PASSED\"",
+      "log": "logs/foundation-and-migration.txt",
+      "outputSha256": "00E90BD6520887E1AD48F18313E45E0BD41F31EEBCD27AE53B12691640C100CD"
+    },
+    {
+      "name": "forgetting-syntax-and-semantics",
+      "source": "scripts/AuditForgettingV4.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "-o",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\build\\lib\\lean\\scripts\\AuditForgettingV4.olean",
+        "scripts/AuditForgettingV4.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:04.0949717Z",
+      "completedAtUtc": "2026-10-03T13:19:05.8006665Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "FORGETTING_V4_SEMANTIC_WITNESSES_OK:",
+      "log": "logs/forgetting-syntax-and-semantics.txt",
+      "outputSha256": "3318332AB82F44C6D6E5C74B972D11E194598DF12C1A74CA34C87188D86EDCA9"
+    },
+    {
+      "name": "coordinate-consumers",
+      "source": "Tests/FiniteRuleCoordinates.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/FiniteRuleCoordinates.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:05.8099211Z",
+      "completedAtUtc": "2026-10-03T13:19:06.4597413Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "higher_universe.*does not depend on any axioms",
+      "log": "logs/coordinate-consumers.txt",
+      "outputSha256": "A3FF86852785C4BE8338F77024B0254CF8B670941F174699BEDB2269C38B4EEA"
+    },
+    {
+      "name": "local-replay-controls",
+      "source": "Tests/ForgettingAuditScope.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/ForgettingAuditScope.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:06.4618047Z",
+      "completedAtUtc": "2026-10-03T13:19:25.0125837Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "AUDIT_V4_REPLAY_RUNTIME_OK:",
+      "log": "logs/local-replay-controls.txt",
+      "outputSha256": "07B4779F519FF6744C4F9B6C75D408EC18BEAF3492F91C9B95F723BD7898A3BB"
+    },
+    {
+      "name": "executable-controls",
+      "source": "Tests/AuditCorrections.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/AuditCorrections.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:25.0148977Z",
+      "completedAtUtc": "2026-10-03T13:19:25.6548470Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "AUDIT_V3_RUNTIME_OK:",
+      "log": "logs/executable-controls.txt",
+      "outputSha256": "473BAAFC5EA849C45598D17AEC51ACB20A845F82332BA1D68C6532221DB46BBF"
+    },
+    {
+      "name": "ForgottenGlobalIdentityV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenGlobalIdentityV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\validation-v4-fixtures\\20261003T131110487Z-6ee5dcbd\\ForgottenGlobalIdentityV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:25.6691944Z",
+      "completedAtUtc": "2026-10-03T13:19:26.2673432Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenGlobalIdentityV1.txt",
+      "outputSha256": "0FC3060B002888FBCDB6153F4AA046E3EE59E89197A03469ED329D5383205E56"
+    },
+    {
+      "name": "ForgottenReorderedInputsV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenReorderedInputsV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\validation-v4-fixtures\\20261003T131110487Z-6ee5dcbd\\ForgottenReorderedInputsV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:26.2822582Z",
+      "completedAtUtc": "2026-10-03T13:19:26.8414757Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenReorderedInputsV1.txt",
+      "outputSha256": "C98F237D9F2C5E1B552D617695AA28BBA4FE390CDD6B0A0890B92171F34DD383"
+    },
+    {
+      "name": "ForgottenWrongSortV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenWrongSortV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\validation-v4-fixtures\\20261003T131110487Z-6ee5dcbd\\ForgottenWrongSortV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:26.8506905Z",
+      "completedAtUtc": "2026-10-03T13:19:27.4362671Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenWrongSortV1.txt",
+      "outputSha256": "9F32CB919453B67F29AC85484AAF9CD0461302D6CE6FCBF4D8E1120B5372922F"
+    },
+    {
+      "name": "forbidden-dependency-rejected",
+      "source": "Tests/ExpectedFailures/ValidationV4/ForbiddenDependency.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\validation-v4-fixtures\\20261003T131110487Z-6ee5dcbd\\ForbiddenDependency.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:27.4430298Z",
+      "completedAtUtc": "2026-10-03T13:19:28.9957073Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-forbidden-name",
+      "expectedPattern": "Scalar name scan reached a forbidden constant:",
+      "log": "logs/forbidden-dependency-rejected.txt",
+      "outputSha256": "AC6CC201051FCEDC88D1E2B668A7FA8C7FF57733DB7F2146420607BD9EF7AB60"
+    },
+    {
+      "name": "shape-rejected",
+      "source": "Tests/ExpectedFailures/ValidationV4/WrongShape.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "C:\\Users\\frederick\\.codex\\audits\\v4-confirmation-r2\\.lake\\validation-v4-fixtures\\20261003T131110487Z-6ee5dcbd\\WrongShape.lean"
+      ],
+      "startedAtUtc": "2026-10-03T13:19:29.0052774Z",
+      "completedAtUtc": "2026-10-03T13:19:30.5408520Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-shape",
+      "expectedPattern": "Scalar memory must contain exactly position and active",
+      "log": "logs/shape-rejected.txt",
+      "outputSha256": "678E78ED18938735DAB5FA27737B321723F51D11A351591B6C5EA1E189E04CDF"
+    }
+  ],
+  "parameters": {
+    "stochasticSeeds": [],
+    "runtimeHorizons": "0..24",
+    "hiddenEncodingHorizons": "0..6",
+    "proofScope": "All seed values and all finite independently admitted histories",
+    "hiddenEncodingSeeds": "0..2",
+    "runtimeSeeds": "0..12"
+  },
+  "versions": {
+    "lean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lake": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+    "powershell": "7.6.5",
+    "os": "Microsoft Windows 10.0.26200"
+  },
+  "inputManifest": {
+    "path": "docs/validation-v4/inputs.json",
+    "fileCount": 483,
+    "sha256": "BEEA1098850847C0E0A36E9B141AC9597DCB7DA744C2C1D2FFEBD18FFA996A26"
+  },
+  "sourceFiles": 77,
+  "axiomAudit": "AUDIT_OK: 6018 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_V4_SYNTAX_OK: 13 executable roots; 139 dependencies; scalar persistent fields; listed forbidden names absent; type/body scan only\n'RelationalFoundations.ReducedHeterogeneous.step' does not depend on any axioms\n'RelationalFoundations.ReducedHeterogeneous.run' does not depend on any axioms",
+  "migration": {
+    "status": "PASSED",
+    "checkedAtUtc": "2026-10-03T13:12:26.4030035Z",
+    "sources": 174,
+    "publicSymbols": 806,
+    "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+    "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+    "publicAudits": 3506,
+    "expectedFailures": 19,
+    "stratification": "Verified stratification inventory: 154 production modules, all enforced, no orphan.",
+    "boundaries": "Four transitive import boundary manifests passed"
+  },
+  "foundationExpectedFailures": 9,
+  "protocolExpectedFailures": 5,
+  "totalExpectedFailures": 33,
+  "additionalOutputs": [
+    {
+      "sha256": "00E90BD6520887E1AD48F18313E45E0BD41F31EEBCD27AE53B12691640C100CD",
+      "path": "foundation.json"
+    },
+    {
+      "sha256": "9CC688E8E26A8DBCB94D82ABC0BE9EB9B1BE7EE184D94D48D2C08E9272474DF1",
+      "path": "migration.json"
+    },
+    {
+      "sha256": "6E4B849792D5921869D25473DE51AAA73870DD9ED865B5E48EC24D56EF0C9024",
+      "path": "logs/foundation-build.txt"
+    },
+    {
+      "sha256": "B93F2E810AB22C17728C000B3A22BAD674BAC77A3E36C244B18BB1E15D61C5B1",
+      "path": "logs/migration-protocol.txt"
+    },
+    {
+      "sha256": "91B6DA9289AE7A02A1ADD6694D607840A20E0C551EBDDB22BF365095BCC54130",
+      "path": "logs/migration-build.txt"
+    },
+    {
+      "sha256": "97569E2C64E5BD1E9F86F8B9FA903F63CD673048A23E816F52955FBC70045BFD",
+      "path": "logs/migration-public-symbols.txt"
+    }
+  ],
+  "completedAtUtc": "2026-10-03T13:19:30.9813443Z"
+}

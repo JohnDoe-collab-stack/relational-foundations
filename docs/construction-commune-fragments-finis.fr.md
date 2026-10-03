@@ -55,7 +55,7 @@ L'ordre des quantificateurs reste explicite : la règle puis l'histoire puis sa 
 | Construire le support initial et le successeur | `initialCoverage`, `growCoverage`, `recordedCoverage`, `build` |
 | Certifier toutes les ressources | `advance_certified`, `Execution.certified`, `Coverage.values` |
 | Couvrir toutes les demandes et ressources | `Coverage.coordinates` et ses deux identités de retour ; `requestFinite`, `certify` |
-| Fermer les dépendances ordonnées | `dependencies_covered` : toute entrée retrouve sa demande unique et revient à sa référence exacte, dans le même ordre et avec les mêmes répétitions |
+| Couvrir les entrées déclarées | `dependencies_covered` : toute entrée retrouve sa demande unique et revient à sa référence exacte, dans le même ordre et avec les mêmes répétitions |
 | Réaliser toute histoire admise et caractériser les réalisations | `build`, `complete`, `coverage_iff` |
 | Établir l'admission des histoires produites | `Execution.admissible` |
 | Conserver identités, sortes, valeurs et opérateurs | `old_injective`, `old_new_distinct`, `Execution.embed_injective`, `values_preserved`, `nodes_preserved` |
@@ -63,9 +63,9 @@ L'ordre des quantificateurs reste explicite : la règle puis l'histoire puis sa 
 | Conserver les occurrences opérationnelles | `Execution.history_exact`, avec les témoins de `continuation` |
 | Poursuivre depuis une réalisation existante | `resumeFrom`, `resumeExecutionFrom`, `resumeCompleteFrom`, `resume_expected` |
 | Composer configurations, histoires et transports | `run_add`, `resume_compose`, `Execution.continuation_compose`, `embed_compose`, `compose_associative` |
-| Extraire la garantie indépendante | `Complete.terminal`, `extract_guarantee` |
+| Transférer un invariant prouvé séparément | `Complete.terminal`, `extract_guarantee` reçoivent sa preuve initiale et sa préservation locale ; `HeterogeneousInvariants.extracted` ferme ces preuves pour la cohérence du test et la borne numérique |
 
-La fermeture ordonnée générale porte sur les entrées déclarées par les opérateurs locaux du producteur. Le raccord aux listes de dépendances indépendantes déjà définies dans les deux familles est aussi fermé : le champ `coveredDependencies` des résultats `homogeneousNativeComplete` et `heterogeneousNativeComplete` reprend exactement ces listes sur les supports produits par le constructeur commun.
+La couverture à un pas porte sur les entrées déclarées par les opérateurs locaux du producteur. `DependencyPaths.Coverage.requests`, `ordered_roundtrip` et `enumerated` étendent cette couverture à tout parcours fini, avec ses visites répétées et ses cycles. Le raccord aux listes de dépendances indépendantes déjà définies dans les deux familles est aussi fermé : le champ `coveredDependencies` des résultats `homogeneousNativeComplete` et `heterogeneousNativeComplete` reprend exactement ces listes sur les supports produits par le constructeur commun.
 
 `fragmentSize` additionne les positions de l'origine et celles des fragments de chaque occurrence. `request_count` et `resource_count` démontrent que l'énumération construite possède cette taille. Les instances donnent respectivement `1 + 3 * n` positions et `1 + n` positions après `n` occurrences. Le nombre est lu sur ces positions constituées ; la construction accepte la taille variable déclarée par chaque fragment.
 
@@ -79,7 +79,7 @@ La fermeture ordonnée générale porte sur les entrées déclarées par les op�
 
 ## Reconstruction locale et données persistantes
 
-La configuration conserve les opérateurs constitués, leurs références historiques et le focus requis par la prochaine réaction. Les valeurs peuvent être relues récursivement depuis ce support. Le booléen de décision hétérogène est ainsi produit par lecture de la référence identifiée, puis remis à la réaction.
+La configuration conserve les opérateurs constitués, leurs références historiques et le focus requis par la prochaine réaction. Les valeurs peuvent être relues récursivement depuis ce support ; les lectures réévaluent les opérateurs sans cache partagé et leur coût temporel requiert une étude distincte. Le booléen de décision hétérogène est ainsi produit par lecture de la référence identifiée, puis remis à la réaction.
 
 La validité du focus et les certifications globales sont des propositions. La preuve `advance_valid` reconstruit la première localement ; `advance_certified` reconstruit les secondes depuis les certifications antérieures, les opérations conservées et le nouveau fragment. Le producteur de successeur prend la configuration brute. Les certifications complètes, l'énumération et la correspondance globale des demandes sont des sorties du résultat général.
 
@@ -91,8 +91,12 @@ Les tests exécutent le constructeur général sur les histoires indépendantes 
 
 `CollapsedFragment.lean.fail` impose la distinction entre les positions par les identités de retour du transport exact. `GenericFalseAdmission.lean.fail` vérifie qu'une histoire localement contraire au test numérique fournit une obligation d'admission que le compilateur rejette. Les rejets attendus précédents et tous les tests existants sont conservés.
 
-La commande complète est `pwsh -NoProfile -File scripts/verify.ps1 -SkipComparison -SkipReference`. Elle vérifie compilation, audit de toutes les déclarations, catalogue des rejets attendus et projet migré. Les reçus datés sont [verification-result.json](verification-result.json) et [Migration/verification-result.json](../Migration/verification-result.json). Les comparaisons et empreintes du dépôt historique sont omises explicitement dans le dossier isolé.
+La commande complète est `pwsh -NoProfile -File scripts/verify-v4.ps1 -SkipComparison -SkipReference`. Elle vérifie compilation, audit de toutes les déclarations, catalogue des rejets attendus et projet migré. Les reçus datés sont [verification-result.json](verification-result.json) et [Migration/verification-result.json](../Migration/verification-result.json). Les comparaisons et empreintes du dépôt historique sont omises explicitement dans le dossier isolé.
 
 La vérification du 2 octobre 2026 a réussi : 56 fichiers de fondations et de tests, 5 078 déclarations auditées sans dépendance à des axiomes, 174 sources migrées et 806 symboles publics contrôlés. Les 27 rejets attendus, la stratification des 154 modules de production migrés et les quatre frontières d'import passent.
 
-Le théorème couvre les histoires finies du périmètre déclaré, avec des procédures locales totales et une réaction localement exhaustive depuis les configurations valides. Il établit la fermeture des ressources de chaque histoire. L'arrêt d'une exécution sans horizon, une classe maximale, les stratégies d'oubli, le cache et les performances demandent leurs propres constructions.
+Le théorème couvre les histoires finies du périmètre déclaré, avec des procédures locales totales et une réaction localement exhaustive depuis les configurations valides. Pour chaque système de règles fixé, `FiniteRuleScope.admissible_unique` établit une histoire admise par longueur. Son support fini couvre chaque référence et chaque parcours fini, cycles compris. La certification établit une équation sur la lecture fournie ; chaque instance ferme séparément sa production de valeurs. L'arrêt d'une exécution sans horizon, une classe maximale, les stratégies d'oubli, le cache et les performances demandent leurs propres constructions.
+
+La vérification actuelle et les preuves complémentaires sont décrites dans la [validation V4](audit-corrections-v4.fr.md) et le [bilan des corrections](audit-corrections-v3.fr.md). Les reçus datés ci-dessus restent des références historiques conservées.
+
+La [révision V4](audit-corrections-v4.fr.md#3-accord-général-des-coordonnées) démontre pour toutes les histoires admises que les coordonnées communes et natives désignent la même référence effectivement construite. Elle ferme leurs inverses, opérateurs et dépendances ordonnées ainsi que l'accord pendant les reprises et leur composition. Le séparateur de permutation précise la portée de cet accord aux constructeurs déterminés.

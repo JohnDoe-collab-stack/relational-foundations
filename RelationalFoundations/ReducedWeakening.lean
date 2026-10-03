@@ -202,9 +202,6 @@ theorem cached_reduction (m : Memory) (depth : 4 + digits m.active ≤ m.positio
       Nat.add_lt_add_right (Nat.add_lt_add_left (Nat.lt_succ_self m.position) _) _
     _ = 2 * (m.position + 1) + digits m.origin := by rw [Nat.two_mul]
 
-def historicalNodes (_m : Memory) : Nat := 0
-theorem no_persistent_history (m : Memory) : historicalNodes m = 0 := rfl
-
 /-- Separate, declared operation counters: scalar regeneration and full replay. -/
 def scalarRegenerationSteps (k : Kernel) : Nat := k.position
 def fullReplaySteps (m : Memory) : Nat := m.position
@@ -249,3 +246,10 @@ theorem working_support_bound (m : Memory) (earlier : Nat) (within : earlier ≤
   exact length ▸ Nat.add_le_add_left within 1
 
 end RelationalFoundations.ReducedHeterogeneous
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.ReducedHeterogeneous.inflate_coherent
+#print axioms RelationalFoundations.ReducedHeterogeneous.strict_reduction
+#print axioms RelationalFoundations.ReducedHeterogeneous.scalar_step_count
+#print axioms RelationalFoundations.ReducedHeterogeneous.working_support_bound
+/- AXIOM_AUDIT_END -/

@@ -1,0 +1,17 @@
+{
+  "protocol": "foundations-audit-validation-v3",
+  "createdAtUtc": "2026-10-03T07:46:44.4293606Z",
+  "inputManifestSha256": "67D680BCDC2D355EEDDD54B94ABC608E4B06248915CA3404305CED8F27B7BE68",
+  "receipts": [
+    {
+      "platform": "Windows",
+      "path": "docs/validation-v3/Windows/receipt.json",
+      "sha256": "6F4B6175DF91D35B8B989175ECD27C3FB11DE03FB5879E64EB2BA72BFCA3FCCD"
+    },
+    {
+      "platform": "Linux",
+      "path": "docs/validation-v3/Linux/receipt.json",
+      "sha256": "90B6A97B471F413AD7718A3E42FF17F15FC7FD2BDC6DF67ED759EEBEB9750F18"
+    }
+  ]
+}

@@ -1,8 +1,10 @@
 # Oubli historique certifié pour les continuations natives — V1
 
+Le résultat V1 est conservé, avec les précisions de portée de cette révision. Son protocole original et ses reçus sont historiques. La vérification courante emploie la [V3 portable](validation-v3.fr.md) ; le [bilan des corrections](audit-corrections-v3.fr.md) présente les preuves complémentaires.
+
 ## 1. Résultat et deux contrats
 
-Dans l'instance déterministe Nat/Bool de `HeterogeneousFeedback`, la position atteinte et le nombre actif suffisent pour produire chaque prochain pas natif, ses références typées, son opérateur, ses entrées ordonnées et sa certification locale. Cette représentation permet toutes les continuations finies admises par les règles natives. Elle perd effectivement certaines différences historiques.
+Dans l'instance déterministe Nat/Bool de `HeterogeneousFeedback`, la position atteinte et le nombre actif suffisent pour produire chaque prochain pas natif, ses références typées, son opérateur, ses entrées ordonnées et sa certification locale. Cette représentation permet toutes les continuations finies admises par les règles natives déterministes, avec une histoire par horizon. Elle perd effectivement certaines différences historiques.
 
 Les deux contrats sont conservés et distingués :
 
@@ -131,7 +133,7 @@ Ainsi la différence initiale est effectivement perdue par la représentation V1
 |---|---|---|---|
 | Origine | Restitution initiale ; aucune lecture du prochain producteur natif | Préfixes 0/2 à la position 2 ; accord de tous les suffixes et séparation initiale | Supprimée |
 | Nombre actif | `test`, `adjust`, `reuse` | Même position initiale pour 0/1 ; résultats booléens différents ; `active_not_reconstructible` et `active_consumption_separates` | Conservé |
-| Position | Phase et identité relative des ressources encore lues ou créées | Actif 0 aux positions 0/6 ; nouvelles adresses 1/7 ; `position_not_reconstructible` | Conservée |
+| Position | Adresses absolues des ressources encore lues ou créées | Actif 0 aux positions 0/6 ; nouvelles adresses 1/7 ; `position_not_reconstructible` | Conservée pour ce contrat d’adresses ; `NativeForgettingContract.phase_memory_events` prouve que phase et actif suffisent pour les événements |
 | Phase autonome | Choix de l'opération et de la frontière | `phaseAt position`, raccordé par `phaseMatch` | Recalculée |
 | Booléen autonome | Sélection dans `act` | `test active`, raccordé par la validité locale et `frontierFor_value` | Recalculé |
 | Références complètes du focus | Identités des entrées ordonnées | Ports typés, coordonnées et `frontierFor` ; preuve d'identité conservée | Frontière locale construite à la demande |
@@ -165,7 +167,7 @@ Commande reproductible dans ce dossier isolé :
 pwsh -NoProfile -File scripts/verify-forgetting-v1.ps1
 ```
 
-Le protocole V1 reprend la construction complète du socle et de la migration, les contrôles des sources, les audits axiomatiques exhaustifs, l'audit de l'exécution réduite acquise, les rejets attendus existants et les frontières d'import. Il ajoute l'audit [AuditForgettingV1](../scripts/AuditForgettingV1.lean), qui traverse les types et les corps des producteurs et des structures de sortie : deux champs `Nat`, frontière finie et nouvelles certifications, indépendance à l'égard de l'origine, des supports et du rejeu historique.
+Le protocole V1 reprend la construction complète du socle et de la migration, les contrôles des sources, les audits axiomatiques exhaustifs, l'audit de l'exécution réduite acquise, les rejets attendus existants et les frontières d'import. Il ajoute l'audit [AuditForgettingV1](../scripts/AuditForgettingV1.lean), qui traverse les types et les corps des producteurs et des structures de sortie : deux champs `Nat` et contrôle des noms de dépendances historiques. Ce contrôle est syntaxique. Les pertes d’information sont établies par les séparateurs et théorèmes d’irréconstructibilité. Les [compléments V3](audit-corrections-v3.fr.md) prouvent aussi la perte de la première décision, précisent la consommation de la position et donnent un encodage caché accepté par ce contrôle de forme.
 
 Les tests [NativeForgettingV1](../Tests/NativeForgettingV1.lean) contrôlent les propriétés universelles et les calculs effectifs. Trois rejets supplémentaires vérifient les sortes incompatibles, l'inversion des entrées ordonnées et l'utilisation d'un raccord de preuve appartenant à l'autre préfixe. Ils sont séparés dans `Tests/ExpectedFailures/NativeForgettingV1`.
 

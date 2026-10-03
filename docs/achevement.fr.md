@@ -1,5 +1,7 @@
 # Achèvement du chantier indépendant
 
+Document historique conservant les étapes et commandes de sa livraison. La vérification actuelle des sources corrigées et la liaison des reçus historiques relèvent de la [validation V3](validation-v3.fr.md).
+
 Ce bilan remplace les statuts provisoires de la revérification du 30 septembre. Le résultat livré comprend les fondations et une copie complète migrée du projet, dans `Migration`. Le basculement physique du dépôt original est exclu par la contrainte de conservation : ses sources, son HEAD et sa branche sont contrôlés, sans écriture.
 
 ## Points incomplets désormais traités

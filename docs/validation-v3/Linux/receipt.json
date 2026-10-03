@@ -1,0 +1,255 @@
+{
+  "status": "PASSED",
+  "protocol": "foundations-audit-validation-v3",
+  "startedAtUtc": "2026-10-03T07:37:42.6390439Z",
+  "platform": "Linux",
+  "runId": "20261003T073742611Z-c4ebf82f",
+  "inputsVerifiedBefore": true,
+  "inputsVerifiedAfter": true,
+  "validationSteps": [
+    {
+      "name": "source-audit-blocks",
+      "source": "scripts/check-source-v3.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-source-v3.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T07:37:43.5683305Z",
+      "completedAtUtc": "2026-10-03T07:37:44.2154840Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "SOURCE_V3_OK:",
+      "log": "logs/source-audit-blocks.txt",
+      "outputSha256": "677CC094F64CDC06B1627884D89D11303AEC94CC8A30B066DCD007A99CAC6398"
+    },
+    {
+      "name": "manifest-integrity-tests",
+      "source": "scripts/test-validation-manifest-v3.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/test-validation-manifest-v3.ps1"
+      ],
+      "startedAtUtc": "2026-10-03T07:37:44.2204312Z",
+      "completedAtUtc": "2026-10-03T07:37:45.2339138Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "VALIDATION_MANIFEST_V3_TESTS_OK:",
+      "log": "logs/manifest-integrity-tests.txt",
+      "outputSha256": "2B900FEEF718B8E2129B6AFDE0E3E31D7B5684B48AE3DB2B06696A9345E85E0A"
+    },
+    {
+      "name": "historical-receipts",
+      "source": "scripts/check-historical-receipts-v3.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/check-historical-receipts-v3.ps1",
+        "-OutputDirectory",
+        "/home/frederick/codex-validation-foundations-v3-results-r2-20261003"
+      ],
+      "startedAtUtc": "2026-10-03T07:37:45.2348733Z",
+      "completedAtUtc": "2026-10-03T07:37:48.6507187Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "HISTORICAL_RECEIPTS_V3_OK:",
+      "log": "logs/historical-receipts.txt",
+      "outputSha256": "BC2039B3675177E4F03C41D65CD30A08F9ED38F06742995115DA12F350834EA2"
+    },
+    {
+      "name": "foundation-and-migration",
+      "source": "scripts/verify-v3.ps1",
+      "program": "pwsh",
+      "arguments": [
+        "-NoProfile",
+        "-File",
+        "scripts/verify-v3.ps1",
+        "-SkipComparison",
+        "-SkipReference",
+        "-ReportPath",
+        "/home/frederick/codex-validation-foundations-v3-results-r2-20261003/foundation.json",
+        "-MigrationReportPath",
+        "/home/frederick/codex-validation-foundations-v3-results-r2-20261003/migration.json",
+        "-LogTag",
+        "20261003T073742611Z-c4ebf82f"
+      ],
+      "startedAtUtc": "2026-10-03T07:37:48.6516109Z",
+      "completedAtUtc": "2026-10-03T07:43:35.4646182Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "\"status\": \"PASSED\"",
+      "log": "logs/foundation-and-migration.txt",
+      "outputSha256": "7B9E16CD1C4B2D6D4F201F11E0F880898A0F197BA80C1A133778AF9C1C573B52"
+    },
+    {
+      "name": "forgetting-syntax-and-semantics",
+      "source": "scripts/AuditForgettingV3.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "-o",
+        "/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/build/lib/lean/scripts/AuditForgettingV3.olean",
+        "scripts/AuditForgettingV3.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:35.4778372Z",
+      "completedAtUtc": "2026-10-03T07:43:36.1463011Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "FORGETTING_V3_SEMANTIC_WITNESSES_OK:",
+      "log": "logs/forgetting-syntax-and-semantics.txt",
+      "outputSha256": "C84693A151BEA89DC588E3D2A882687C9D74F0753E8E7FC1623CD43E820DD39B"
+    },
+    {
+      "name": "executable-controls",
+      "source": "Tests/AuditCorrections.lean",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "Tests/AuditCorrections.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:36.1480905Z",
+      "completedAtUtc": "2026-10-03T07:43:36.3373904Z",
+      "exitCode": 0,
+      "expectedExit": "zero",
+      "expectedPattern": "AUDIT_V3_RUNTIME_OK:",
+      "log": "logs/executable-controls.txt",
+      "outputSha256": "85215D11F21788728EABCE2049620214A6A4B38BF94148AACF765C23FE17263B"
+    },
+    {
+      "name": "ForgottenGlobalIdentityV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenGlobalIdentityV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/validation-v3-fixtures/20261003T073742611Z-c4ebf82f/ForgottenGlobalIdentityV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:36.3397094Z",
+      "completedAtUtc": "2026-10-03T07:43:36.5170231Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenGlobalIdentityV1.txt",
+      "outputSha256": "0491C27AC8D1E73F9A7380761355D7A4AD1A40DBFA5CE35464E2DC241CAC742C"
+    },
+    {
+      "name": "ForgottenReorderedInputsV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenReorderedInputsV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/validation-v3-fixtures/20261003T073742611Z-c4ebf82f/ForgottenReorderedInputsV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:36.5185693Z",
+      "completedAtUtc": "2026-10-03T07:43:36.6781378Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenReorderedInputsV1.txt",
+      "outputSha256": "778A377812F06C719343E7BC33D3CCF8C2182D838139EA6E57F79FF49168904A"
+    },
+    {
+      "name": "ForgottenWrongSortV1",
+      "source": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenWrongSortV1.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/validation-v3-fixtures/20261003T073742611Z-c4ebf82f/ForgottenWrongSortV1.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:36.6790204Z",
+      "completedAtUtc": "2026-10-03T07:43:36.8384304Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-type-mismatch",
+      "expectedPattern": "Type mismatch|Application type mismatch",
+      "log": "logs/ForgottenWrongSortV1.txt",
+      "outputSha256": "01EDD9A3C4A5C966B2727CD67561D99C961B57C38D6559FD7E6CEE82921E0170"
+    },
+    {
+      "name": "hidden-replay-rejected",
+      "source": "Tests/ExpectedFailures/ValidationV3/HiddenReplay.lean.fail",
+      "program": "lake",
+      "arguments": [
+        "env",
+        "lean",
+        "/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/validation-v3-fixtures/20261003T073742611Z-c4ebf82f/HiddenReplay.lean"
+      ],
+      "startedAtUtc": "2026-10-03T07:43:36.8392973Z",
+      "completedAtUtc": "2026-10-03T07:43:37.3312768Z",
+      "exitCode": 1,
+      "expectedExit": "nonzero-historical-dependency",
+      "expectedPattern": "Syntactic dependencies retain historical material",
+      "log": "logs/hidden-replay-rejected.txt",
+      "outputSha256": "C5E1E24E58AAA63739131545966ACEC0976E3A85BAA0FC184276E71CA382293D"
+    }
+  ],
+  "parameters": {
+    "hiddenEncodingHorizons": "0..6",
+    "proofScope": "All seed values and all finite independently admitted histories",
+    "stochasticSeeds": [],
+    "runtimeHorizons": "0..24",
+    "runtimeSeeds": "0..12",
+    "hiddenEncodingSeeds": "0..2"
+  },
+  "versions": {
+    "lean": "Lean (version 4.33.1, x86_64-unknown-linux-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+    "lake": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+    "powershell": "7.6.5",
+    "os": "Ubuntu 22.04.5 LTS"
+  },
+  "inputManifest": {
+    "fileCount": 360,
+    "sha256": "67D680BCDC2D355EEDDD54B94ABC608E4B06248915CA3404305CED8F27B7BE68",
+    "path": "docs/validation-v3/inputs.json"
+  },
+  "sourceFiles": 74,
+  "axiomAudit": "AUDIT_OK: 5883 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_EXECUTION_OK: 13 executable roots; 138 dependencies; scalar persistent fields; no history/support/replay dependencies",
+  "migration": {
+    "status": "PASSED",
+    "checkedAtUtc": "2026-10-03T07:38:12.5456658Z",
+    "sources": 174,
+    "publicSymbols": 806,
+    "axiomAudit": "CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies",
+    "recentComputationAudit": "RECENT_COMPUTATION_AUDIT_OK: 1191 declarations across 6 modules, zero axiom dependencies",
+    "publicAudits": 3453,
+    "expectedFailures": 19,
+    "stratification": "Verified stratification inventory: 154 production modules, all enforced, no orphan.",
+    "boundaries": "Four transitive import boundary manifests passed"
+  },
+  "totalExpectedFailures": 32,
+  "additionalOutputs": [
+    {
+      "sha256": "7B9E16CD1C4B2D6D4F201F11E0F880898A0F197BA80C1A133778AF9C1C573B52",
+      "path": "foundation.json"
+    },
+    {
+      "sha256": "9D9249E7554D89461097F75F2A311597D81CE10F4C2CA0D875ECEE12FC32A8CC",
+      "path": "migration.json"
+    },
+    {
+      "sha256": "7F4774E316C5DC239136295B90C80C181D19AD6D557A47FAAD2BE05A00364130",
+      "path": "logs/foundation-build.txt"
+    },
+    {
+      "sha256": "5FA887E5115875625C450F789C965487F59B597BEFBBF61FDD72DE46CDEF8C87",
+      "path": "logs/migration-protocol.txt"
+    },
+    {
+      "sha256": "60EC3DA7D301F48F07564D7840F791FDDAB5FBFA96A9F5C4D4C7D90D4A5B647D",
+      "path": "logs/migration-build.txt"
+    },
+    {
+      "sha256": "D13B25ED3D7467096B66F267856912AE3838AE57E23196A7B27B342FD434E822",
+      "path": "logs/migration-public-symbols.txt"
+    }
+  ],
+  "completedAtUtc": "2026-10-03T07:43:37.5236215Z"
+}

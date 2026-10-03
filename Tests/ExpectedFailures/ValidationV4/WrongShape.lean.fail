@@ -1,0 +1,12 @@
+import scripts.AuditForgettingV4
+namespace RelationalFoundations.NativeForgettingV1
+structure ExpandedMemory where
+  position : Nat
+  active : Nat
+  origin : Nat
+end RelationalFoundations.NativeForgettingV1
+#audit_scalar_v4 RelationalFoundations.NativeForgettingV1.ExpandedMemory [RelationalFoundations.NativeForgettingV1.step] "UNEXPECTED_ACCEPTANCE"
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.NativeForgettingV1.ExpandedMemory
+/- AXIOM_AUDIT_END -/

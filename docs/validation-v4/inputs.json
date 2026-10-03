@@ -1,0 +1,2913 @@
+{
+  "schemaVersion": 4,
+  "protocol": "foundations-audit-validation-v4",
+  "hashAlgorithm": "SHA256",
+  "cataloguePolicy": "all-ordinary-files-v4",
+  "createdAtUtc": "2026-10-03T13:08:00.2809094Z",
+  "fileCount": 483,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "role": "auxiliary-input",
+      "bytes": 163,
+      "sha256": "9400842A3E6C73224F4A788C01E818FCA938D13C735E08B7A95B936DEEE6A920"
+    },
+    {
+      "path": ".github/workflows/validate.yml",
+      "role": "ci-configuration",
+      "bytes": 2260,
+      "sha256": "DFCF7F22B1AE92726CEF2295699AEB0D797ED7E4CC68005F7F81B14D2269C76A"
+    },
+    {
+      "path": ".gitignore",
+      "role": "auxiliary-input",
+      "bytes": 13,
+      "sha256": "6DAB0068C7B2DDCBA335714830CA4609C63F7150CAEC0135600C68006CA08526"
+    },
+    {
+      "path": "AGENTS.md",
+      "role": "auxiliary-input",
+      "bytes": 15947,
+      "sha256": "E4693EE384566768F072378461506F778FB4BC959C6035A80E74D8AED1ABEF8C"
+    },
+    {
+      "path": "AI_AUTHORSHIP.md",
+      "role": "auxiliary-input",
+      "bytes": 3916,
+      "sha256": "4239B16699141078086073EE91B578FF99A36F134FBCB2C6684DE1DA9F1E8F46"
+    },
+    {
+      "path": "Comparison/Legacy.lean",
+      "role": "comparison-source",
+      "bytes": 10346,
+      "sha256": "02814F0194745BFA5B81281289684D521E48220E1A399651657DDFFB15F968EA"
+    },
+    {
+      "path": "LICENSE",
+      "role": "auxiliary-input",
+      "bytes": 11358,
+      "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+    },
+    {
+      "path": "Migration/.gitattributes",
+      "role": "auxiliary-input",
+      "bytes": 75,
+      "sha256": "56932365175437F3DF71B72A795ED0D6B71B2A97ADC6B04A7ADF06633C4D960B"
+    },
+    {
+      "path": "Migration/.github/workflows/constitution-dependency-probes.yml",
+      "role": "auxiliary-input",
+      "bytes": 4084,
+      "sha256": "28BE1EA4CF939C1AD079B37C92271C4027D35E1759CC4ADC111A811ECF2C90AE"
+    },
+    {
+      "path": "Migration/.github/workflows/realized-constitution-implementation.yml",
+      "role": "auxiliary-input",
+      "bytes": 7927,
+      "sha256": "FAB73927441DDDED556A211B127308D6C5A2D40B11CBC97E19EC486BEE19C0FB"
+    },
+    {
+      "path": "Migration/.gitignore",
+      "role": "auxiliary-input",
+      "bytes": 28,
+      "sha256": "C0333908A42A2053A89E15FF12E04BC0A3393B5702D7F7FF47B43ACF77CED7B5"
+    },
+    {
+      "path": "Migration/AI_AUTHORSHIP.md",
+      "role": "auxiliary-input",
+      "bytes": 3916,
+      "sha256": "4239B16699141078086073EE91B578FF99A36F134FBCB2C6684DE1DA9F1E8F46"
+    },
+    {
+      "path": "Migration/ARISTOTLE_CAUSAL_NORMALIZATION_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 6031,
+      "sha256": "3DE5B27C4986EB956CC3FA1CEAA7DCDE397DFCFD88B3B52D1C5E8C0487035717"
+    },
+    {
+      "path": "Migration/ARISTOTLE_CONSTITUTIVE_CONTINUITY_AUDIT_20260930.md",
+      "role": "auxiliary-input",
+      "bytes": 18197,
+      "sha256": "11A26AA87E2360A158F057F59F3377B3407ABC972D47B80E314DC79141C5BC8E"
+    },
+    {
+      "path": "Migration/ARISTOTLE_CONSTITUTIVE_RELATIONAL_CAUSAL_SCIENTIFIC_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 15288,
+      "sha256": "70C842CF15AB062677602E89452B82A3B7045921D419A225A18645F0FE9E72E9"
+    },
+    {
+      "path": "Migration/ARISTOTLE_EXACT_CAUSAL_TARGET_FINAL_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 18586,
+      "sha256": "1827FE35E6478569C20B087652715CF7342947FBD57167E4115CD3B037E705EF"
+    },
+    {
+      "path": "Migration/ARISTOTLE_EXACT_RELATIONAL_CAUSAL_COMPLETION_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 11127,
+      "sha256": "86E21F7D35E4D316A21C62212929AC604BCFF347B379498547554379E8DC5A75"
+    },
+    {
+      "path": "Migration/ARISTOTLE_EXACT_TARGET_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 10943,
+      "sha256": "2CA50783CA40412821A11AA3692D521F2495D9E8517EEA525A9534298436A49D"
+    },
+    {
+      "path": "Migration/ARISTOTLE_EXPONENTIAL_WIDTH_PARAGRAPH_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 15174,
+      "sha256": "7519662B99DE8F496E86C10EF61CE6DE4B4206418960199DEA04601F368E791D"
+    },
+    {
+      "path": "Migration/ARISTOTLE_RELATIONAL_CONSTITUTION_SCIENTIFIC_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 20274,
+      "sha256": "B40678FC5C97B7464B8148F815B5D61FA825390865D1A19E42FC850CBC8467D1"
+    },
+    {
+      "path": "Migration/ARISTOTLE_STAGEWISE_CAUSAL_REGIME_AUDIT_PROMPT.md",
+      "role": "auxiliary-input",
+      "bytes": 22897,
+      "sha256": "37E03A717544E19A9B2842F0F9EA453AF3DB8AC361AF5CB51C0C74D9AEC7E15D"
+    },
+    {
+      "path": "Migration/AbstractSegmentedTurning.lean",
+      "role": "migration-source",
+      "bytes": 29785,
+      "sha256": "7ECFD977C7FA472F469686531DDEA731AED31A5C2CB0F72144562B0AC0F9784E"
+    },
+    {
+      "path": "Migration/CAUSAL_CONSTITUTIVE_END_TO_END_REPAIR.md",
+      "role": "auxiliary-input",
+      "bytes": 15960,
+      "sha256": "66345BA74B5D96D2E58FA692220CD6957A3E21FAE5ABBCCB582AD853226DD247"
+    },
+    {
+      "path": "Migration/Constitution/Audit.lean",
+      "role": "migration-source",
+      "bytes": 24849,
+      "sha256": "7A1A04C9C24C2F139A5565CAE1B4E40E615445B21975328DE5CC5DB19BA262C0"
+    },
+    {
+      "path": "Migration/Constitution/CanonicalDeployment.lean",
+      "role": "migration-source",
+      "bytes": 75586,
+      "sha256": "EF7876573CAE1E7F1FACAEF542BB53E8994AEF5B460B9DFF4A63A7E7B616AD9C"
+    },
+    {
+      "path": "Migration/Constitution/CardinalReadout.lean",
+      "role": "migration-source",
+      "bytes": 4391,
+      "sha256": "6CD5809398212EB7254702260C318F85538EE6A5AADB16BE9A5AE802D170FEBA"
+    },
+    {
+      "path": "Migration/Constitution/ConcreteInterpretation.lean",
+      "role": "migration-source",
+      "bytes": 18661,
+      "sha256": "2ABA405D28F4F2C34ED689F1F1F6B311F11D5758F1589F0B372BA1CFC0E183C2"
+    },
+    {
+      "path": "Migration/Constitution/ConstitutedHistory.lean",
+      "role": "migration-source",
+      "bytes": 19774,
+      "sha256": "A36EAFBE9A3E65AFA835F6B9863D0C4EC31D26BB260AB669A7C0A45050E4BF0A"
+    },
+    {
+      "path": "Migration/Constitution/CoupledTurning.lean",
+      "role": "migration-source",
+      "bytes": 16917,
+      "sha256": "3B249E03CEB4D5BB8D7E4BE39060B66F1333B816AEFD78B8FFA185A4ED5AA77B"
+    },
+    {
+      "path": "Migration/Constitution/ExitDiagnostics.lean",
+      "role": "migration-source",
+      "bytes": 13308,
+      "sha256": "E60943F86249933448F98326081A13D885413D792A9EBDC8A99D597AE67BD667"
+    },
+    {
+      "path": "Migration/Constitution/FinalInterpretation.lean",
+      "role": "migration-source",
+      "bytes": 18537,
+      "sha256": "E77EB73BB1235983329AFC81129634DA2F9D8B89E91B7C2DD6F46010C6B79363"
+    },
+    {
+      "path": "Migration/Constitution/FreeConstitution.lean",
+      "role": "migration-source",
+      "bytes": 46924,
+      "sha256": "22583396FEA1B86EC20246AE7B67341991B01CA8556837D66276B6BCD64941DE"
+    },
+    {
+      "path": "Migration/Constitution/GenericCircularView.lean",
+      "role": "migration-source",
+      "bytes": 5555,
+      "sha256": "414720D1A8D9FF3186892255CF15E2780D75A95C8C92FD3D3E0A438F91D81817"
+    },
+    {
+      "path": "Migration/Constitution/HistoryAPI.lean",
+      "role": "migration-source",
+      "bytes": 16401,
+      "sha256": "A7E5846B6F84F14B43A4EB1545F903ED0AC70067E1703B3698C5E3C62C724872"
+    },
+    {
+      "path": "Migration/Constitution/PerimetralConstitution.lean",
+      "role": "migration-source",
+      "bytes": 26,
+      "sha256": "DA86238570461C1E37BF9BFCB8DB03A181C3DC0BB230381E71C267205FEDDB32"
+    },
+    {
+      "path": "Migration/Constitution/PerimetralExample.lean",
+      "role": "migration-source",
+      "bytes": 28254,
+      "sha256": "BD75A2795137BFFB7E8C8B9AB28B4D82E9261F42824B213A4A25E3B7E3E72D02"
+    },
+    {
+      "path": "Migration/Constitution/Presentation.lean",
+      "role": "migration-source",
+      "bytes": 17749,
+      "sha256": "263FCFC0A5AEEBE963CE3001E7EEC4E9DAB5C6C9E112D722054AF9FDDFFA13BD"
+    },
+    {
+      "path": "Migration/Constitution/Regime.lean",
+      "role": "migration-source",
+      "bytes": 30075,
+      "sha256": "9953F502DCC9C5DC3115340C0CFD55DAA44AB1273869B07B5F37DF3AB18F988F"
+    },
+    {
+      "path": "Migration/Constitution/SemanticTraces.lean",
+      "role": "migration-source",
+      "bytes": 40110,
+      "sha256": "FA43EECCE291C27D802C4A20EB9287AD19BCF38FEA8AD3311F3EF78233BC97B0"
+    },
+    {
+      "path": "Migration/Constitution/Specification.lean",
+      "role": "migration-source",
+      "bytes": 4151,
+      "sha256": "001AB44FF4008BC98AB796BD3DC569C8FD69F7A29984ED780D7CFF23A2D6B28E"
+    },
+    {
+      "path": "Migration/EXACT_TARGET_FEASIBILITY.md",
+      "role": "auxiliary-input",
+      "bytes": 22741,
+      "sha256": "03F338B4F48141E791C7EBBB112B0094A0E8754B1D081947C02A3F3C18ABF78A"
+    },
+    {
+      "path": "Migration/ExactTypeTransport.lean",
+      "role": "migration-source",
+      "bytes": 1698,
+      "sha256": "0FC75BBD3163265FA3F050454B2B42759F18D70B126C6E5481B635F53648856C"
+    },
+    {
+      "path": "Migration/IMPLEMENTATION_PLAN_CONSTITUTIVE_CONTINUITY.md",
+      "role": "auxiliary-input",
+      "bytes": 11697,
+      "sha256": "FD48E314955A2C4792CC86D17B75CC0F81CAEE5E588591F4990050BC26E9A65C"
+    },
+    {
+      "path": "Migration/LICENSE",
+      "role": "auxiliary-input",
+      "bytes": 11358,
+      "sha256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+    },
+    {
+      "path": "Migration/README.md",
+      "role": "auxiliary-input",
+      "bytes": 26249,
+      "sha256": "C8F18E7327E2F3518AEDC669C30FE70D8C66036AC5BF46E8236CB0316E44BEA6"
+    },
+    {
+      "path": "Migration/RelationalPerimeter.lean",
+      "role": "migration-source",
+      "bytes": 6399,
+      "sha256": "4767AF70048C00720BFA0FCB02F53227CE90EFCE65F8AD00C70BD6AE3E25F257"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveGeneration.lean",
+      "role": "migration-source",
+      "bytes": 3944,
+      "sha256": "FDEBE89F5DC680E9D5A8A5E5CDCBBD3050CC40246B5F2DA3EECDA4EF5C7763DD"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontier.lean",
+      "role": "migration-source",
+      "bytes": 9261,
+      "sha256": "6E3308E010D298607842901AEBED1CC36795438C28DBB195C4E4C11DC15079BA"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontierNormalization.lean",
+      "role": "migration-source",
+      "bytes": 13288,
+      "sha256": "AABB4734312638AB6514866D796C6967CCDC3A1EFFA2D6081C4AF94BBB60F6B2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedFrontierPreservation.lean",
+      "role": "migration-source",
+      "bytes": 4130,
+      "sha256": "47AED44D71B630B7D625B2248D76C68873C768B8384BDE70101473532CDD4919"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedRelationalTransport.lean",
+      "role": "migration-source",
+      "bytes": 5109,
+      "sha256": "05F32CD3A34F87C0C6EEBDC3EC34386F88DACE3D38E4DF409D6F76C78554A9C0"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptedSplit.lean",
+      "role": "migration-source",
+      "bytes": 4199,
+      "sha256": "95145557ED2E06D5F4594C97B5042FF086FF1A505DCC17565D0D311970CB80DF"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/AcceptingTransport.lean",
+      "role": "migration-source",
+      "bytes": 3743,
+      "sha256": "DB99B79A3A6CA8508117EA81F822D4FB1BC9F7BBE624FEE8FDEF128D908DC66C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ClosureSearch.lean",
+      "role": "migration-source",
+      "bytes": 7399,
+      "sha256": "A8AD5F909BB52D866DC13FDE9FA0CDCDAD0444E98A6F269BF488379C42C9B58C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ComplexityInterface.lean",
+      "role": "migration-source",
+      "bytes": 5953,
+      "sha256": "9BC781921549950417624EA7B53154660CCA545B48A9736EBD2BDFE9F380ED9E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutedPrimitivePath.lean",
+      "role": "migration-source",
+      "bytes": 9929,
+      "sha256": "A7CB8164C30D19D3CF5451E69A67BA3F7D1FAA3AC67ED37C0A957EB2458B0368"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityComposition.lean",
+      "role": "migration-source",
+      "bytes": 5671,
+      "sha256": "F4FCAC57C38981C9831AF45B4239AA7EC351AF8B356A6EBDED1C951C94C0C273"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityInputPolynomial.lean",
+      "role": "migration-source",
+      "bytes": 14233,
+      "sha256": "91F1EA06EC97F83FADFC2AB992BBB56907F37D1B1310C4E61163F99A1D9BC264"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityPolynomial.lean",
+      "role": "migration-source",
+      "bytes": 7695,
+      "sha256": "DB30473C3DE3DEEB1B40AA0F8680DBD07FF71A3670C6B6B4F45EE363870ACF70"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveComplexityProfile.lean",
+      "role": "migration-source",
+      "bytes": 7700,
+      "sha256": "AB82281634B4C5CAFB66C2FE256944D1CB1D057C2B6BA41A719128DBA63013E2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveProjectionNonFactorization.lean",
+      "role": "migration-source",
+      "bytes": 7759,
+      "sha256": "DE2A2D54DB17F92EE937F2D025C8268198F3CA24D561545758FF28DDE167E1E2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstitutiveWidth.lean",
+      "role": "migration-source",
+      "bytes": 6104,
+      "sha256": "54943A47018CE05B5C767263060B2F8DBF19CE2A61EFF27C90142287FEA9D144"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ConstructivePrelude.lean",
+      "role": "migration-source",
+      "bytes": 20206,
+      "sha256": "6B3B45DBA179CB289B88F0C4921968F9C91E3977EF3A7EED503B27AC20F9E5BB"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ContinuationTransport.lean",
+      "role": "migration-source",
+      "bytes": 6539,
+      "sha256": "78A97090EC26896BED809018D34E48CD71484F9FD1D4711BF2429E72316B186C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/AdaptiveRelationalExecution.lean",
+      "role": "migration-source",
+      "bytes": 43129,
+      "sha256": "FBD417C5D37D7848955DC41489BD95AA86F8CF410ACBCA17AEB6B034E4C99F4F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalConstitutiveExecution.lean",
+      "role": "migration-source",
+      "bytes": 4905,
+      "sha256": "2092AA16D1ACF93A7FBEE8B2C05F6EFF0CEC273FE7ED463D0FEACA5DBD993EB9"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalFoundationBridge.lean",
+      "role": "migration-source",
+      "bytes": 2356,
+      "sha256": "82E766FBE07F1717BB635812CB7624291A2A4E2F96750BECC7A4EB21496607B9"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/CausalOperationalExecution.lean",
+      "role": "migration-source",
+      "bytes": 38250,
+      "sha256": "701373008D5D651EE5ABFF8B2AD5A2BD1D17C63FBAC528187ED201A6A3D2E515"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveExtensiveSeparation.lean",
+      "role": "migration-source",
+      "bytes": 48474,
+      "sha256": "0E152D8F1F84E034D205E4FCE407D79DCADA66B45995CC173F44E79735CF92D0"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveFeedback.lean",
+      "role": "migration-source",
+      "bytes": 165520,
+      "sha256": "1A536FF784C793C409CEADC0B0E2488624F9CF9E835CA106912EA068EFB44AD5"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveFullStep.lean",
+      "role": "migration-source",
+      "bytes": 9011,
+      "sha256": "FE61CCA2968F8872574598C0F2E82CD3997B20489AB2C235404C82AAD42A8440"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveInterface.lean",
+      "role": "migration-source",
+      "bytes": 8379,
+      "sha256": "6164B52491228D663161BC3D4360A57BCF6F97CA3A6E600C3BBA947734FDB45D"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerCore.lean",
+      "role": "migration-source",
+      "bytes": 37033,
+      "sha256": "A03F063C44554DB8E45137DC81ADAFC3A9E91B284789BBE51D36A9096A26B3AE"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerProgram.lean",
+      "role": "migration-source",
+      "bytes": 34361,
+      "sha256": "EC7DDC6ADC53F933B24492F6D64DA8B94EA0A4792FCE9F3A18D092D962546681"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveNormalizerSuccinctness.lean",
+      "role": "migration-source",
+      "bytes": 18276,
+      "sha256": "3B53D00A59F337B743DA44C2A80AE8A355C4433DF3D28A17A867F681D9BD0A75"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveOperationalStage.lean",
+      "role": "migration-source",
+      "bytes": 13896,
+      "sha256": "FB94AEBDF27DD2935C7867E46A7BF074F290D30BAB917C428F6B212EC6C5322E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveResolution.lean",
+      "role": "migration-source",
+      "bytes": 54640,
+      "sha256": "5D4ED8CE538313DAC637AE10836AD8C86DB1E24A4C2C000D498B1AEEDB6B4012"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ConstitutiveRoleCycle.lean",
+      "role": "migration-source",
+      "bytes": 4427,
+      "sha256": "8D9165C929F737D76FC301D2AF019CE8D247C786F0232BD7E056B7C72655E060"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/EndogenousDiscovery.lean",
+      "role": "migration-source",
+      "bytes": 35855,
+      "sha256": "762E90BA0754FCD76C28B08716AD5A0F65B08A13631CB2B9FC84BD66E03E261C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/EndogenousOperationalStability.lean",
+      "role": "migration-source",
+      "bytes": 26088,
+      "sha256": "2758D62B401BA007396E62D348F302EB4AF2C4CE98C3ED1216C9113365F11640"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedCausalNormalization.lean",
+      "role": "migration-source",
+      "bytes": 48856,
+      "sha256": "5DBFB0973249BE4B86A0ADFA952D9331088615913CD7B2F95987A100F2B258AF"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedFeedbackBridge.lean",
+      "role": "migration-source",
+      "bytes": 10204,
+      "sha256": "93D595B8AC08C345834EB222A82A15C9FEE7099D900551123F0B0AFC9CBEC1ED"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedLocalSchedule.lean",
+      "role": "migration-source",
+      "bytes": 5145,
+      "sha256": "67D19099CF2BC54B11BA7874A10DE62A87FC805E99507B3D545987BFA4EB7F6F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOperationalReduction.lean",
+      "role": "migration-source",
+      "bytes": 19063,
+      "sha256": "AFB26A136571C698E7C7D2F3D9D15B88F5534554CEFE7937A5BD6A82DA9FE617"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOperationalReductionHistory.lean",
+      "role": "migration-source",
+      "bytes": 39270,
+      "sha256": "82643F90FFF3DF4CEB1C4D47AD5E0DBC7B2C2CCF8A4CD69E20C10C1F7DD15D2A"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedOutputObligations.lean",
+      "role": "migration-source",
+      "bytes": 8531,
+      "sha256": "B4EFAFAF6E0A823B244525DE449D23203EFC3E762C9CF27125C125505EADFC3D"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExecutedRoleIndexedReduction.lean",
+      "role": "migration-source",
+      "bytes": 59224,
+      "sha256": "C8B63558DE873A9E38F3A69C1C5C2DF34DC2FA8F484AE530A816261C45409A05"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/ExtensionalOperationalStability.lean",
+      "role": "migration-source",
+      "bytes": 27751,
+      "sha256": "4152C2FAF22454FC289A542DFFC63ECA5461FBCFD000E050F4CEBE055F260AA5"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GeneratedHistoryExecution.lean",
+      "role": "migration-source",
+      "bytes": 15060,
+      "sha256": "88E6C1CAF0299D38C40A571C4F8857937CE6E0CE5C9E07DB82269F9DA13DAFC2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GenericConcreteRefinement.lean",
+      "role": "migration-source",
+      "bytes": 12388,
+      "sha256": "F59B203AD5B277CC507ADC6F1BE1A62B8A3B43604FFC20422BD2A88CBC63C44E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/GenericConstitutiveTraversal.lean",
+      "role": "migration-source",
+      "bytes": 7821,
+      "sha256": "7DFD0A449BFEA84F9F40BAFC2E12A578A5FEEB21315207025AE660F2E07D5A86"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/IndependentProfileAddressing.lean",
+      "role": "migration-source",
+      "bytes": 11537,
+      "sha256": "3453FD892E45A649E76E2358348552B0E38CD052FCFB3D83C24724A6F3D94C7C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/InstrumentedExecutionRealization.lean",
+      "role": "migration-source",
+      "bytes": 6853,
+      "sha256": "D838897FB4FC2F146E0E2CCFAB54C6F0FF8BFA169545150AF2609DFB46B7E13F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/IntegratedProjection.lean",
+      "role": "migration-source",
+      "bytes": 25951,
+      "sha256": "B18D160A85937DF2CCE88C04C67B620E42CDB7137B462212CB36763D2ADDE1F2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/LocalOperationalStatus.lean",
+      "role": "migration-source",
+      "bytes": 5522,
+      "sha256": "14024BC3741B02DFBAA0AB6929DC76A29B16264A6C636ADC9841893DD91F9A0D"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAccounting.lean",
+      "role": "migration-source",
+      "bytes": 63380,
+      "sha256": "F18993999836D8AF848633CC5950701689FD9F7685916A2FDA75EEA4DBDEBA9E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAssignment.lean",
+      "role": "migration-source",
+      "bytes": 3310,
+      "sha256": "BE06BE94A651FDFD2A8FBCFC2BEA9513A8B742B26546FD1B44DC244E906F4551"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredAssignmentBounds.lean",
+      "role": "migration-source",
+      "bytes": 13991,
+      "sha256": "A0705A0B5BE52357D833110DC71711C1A90DB0296D58B8699EDBEB93316A1A51"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredComparison.lean",
+      "role": "migration-source",
+      "bytes": 7485,
+      "sha256": "D0582E7214D631D6B895045088836B0F942364335604333A58A332640A98AD4F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredComparisonBounds.lean",
+      "role": "migration-source",
+      "bytes": 7819,
+      "sha256": "35C6EF5CEB212F423FD5ADBF36ADC2C3A855ABCB22B85315EF031C3A90CC1166"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredDiscovery.lean",
+      "role": "migration-source",
+      "bytes": 9811,
+      "sha256": "A58F07F280A0C4E64E0C32CC031B8F32B6CCA379FBBBF89472ED34AF41F209B5"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredDiscoveryBounds.lean",
+      "role": "migration-source",
+      "bytes": 35081,
+      "sha256": "C4B6905D8B8CDFAF51FD8B54332FE222A2B777CE45DCA90ED439EBFF4AC91608"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredGeneration.lean",
+      "role": "migration-source",
+      "bytes": 5755,
+      "sha256": "9C533E122AB4B32DA7FC5ED0BC80508437D32E94E1C0697DD370F094360FFF92"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredRealization.lean",
+      "role": "migration-source",
+      "bytes": 4520,
+      "sha256": "C151EEA3F8267DE9BBC1857816AF1A5ED7E2036FFD27E8D098EC47857AC8E750"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredStateConstruction.lean",
+      "role": "migration-source",
+      "bytes": 4635,
+      "sha256": "D62C5207D8A3985686D92B07935B3CC01669099CCB4820947C363518A6E36EB2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/MeasuredTransformation.lean",
+      "role": "migration-source",
+      "bytes": 4079,
+      "sha256": "E52944056DE1978B946E6CE1B5EA2F3AC92F10F1E6CF724A7475649491B9AB23"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/OperationalProjection.lean",
+      "role": "migration-source",
+      "bytes": 20015,
+      "sha256": "5B068C1327130A2AD147ABFA104723722A1FE4D503A7401F1D96E8CBAD2504D2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/PrefixLocalOperationalProduction.lean",
+      "role": "migration-source",
+      "bytes": 17530,
+      "sha256": "D0357D952EAB6466D0265A6B6BF07238E59379141245C4D5212851E17A418FDE"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/PublicRelationalExtensiveFamily.lean",
+      "role": "migration-source",
+      "bytes": 9875,
+      "sha256": "13F31E82E0EA4F43213E12CDF14DD114294F58424EFFE18034BF624EAED123F1"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RelationalConstitutiveRoles.lean",
+      "role": "migration-source",
+      "bytes": 11956,
+      "sha256": "5FEEA558405D4A19A8183F9923D33B7D13BB21DCE1D7D041174338C57A603302"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProfiles.lean",
+      "role": "migration-source",
+      "bytes": 31114,
+      "sha256": "16AC8DC49E9C00547D4131A57C871EAE8A5636BB5CAF5AFFF25CA3690BB29E56"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleIndexedProgram.lean",
+      "role": "migration-source",
+      "bytes": 20275,
+      "sha256": "19788628C45C70BFEAAFB341B9A5BAC92CC5D87ACB80646B0DCDB06342B8E08F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileArityTransport.lean",
+      "role": "migration-source",
+      "bytes": 8966,
+      "sha256": "2BB87348352C26972D2D77FE813F97AA57BB637E09E8680C02A3530FB0413DA3"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RoleProfileSemantics.lean",
+      "role": "migration-source",
+      "bytes": 16805,
+      "sha256": "8B2DEF00541B38517AB591E50CF25ED2DDEFCFF2D41E3CDDBDCBB2FDD3F0ED1F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseObligationPolicy.lean",
+      "role": "migration-source",
+      "bytes": 13401,
+      "sha256": "31AA0F5EA86C6B6642D193216EF956BAF4A2275DB74EEF5FC0A90E2370172A19"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseObligationRegime.lean",
+      "role": "migration-source",
+      "bytes": 8214,
+      "sha256": "0020981E43E10C89B4831A910B25D08902D48205AAB552C0D38B1D6507A05882"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/RolewiseOperationalStatus.lean",
+      "role": "migration-source",
+      "bytes": 20375,
+      "sha256": "F6CDD1BE32C6BEB1252D1A0CAF6528A1EEC579FB3F87B25DBAA38D233E221F77"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/SequentialHistory.lean",
+      "role": "migration-source",
+      "bytes": 50044,
+      "sha256": "2BCE627BAAE6B96032DBA115826D38D39D409637592866C5DB954B2314811E7A"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/SequentialResolution.lean",
+      "role": "migration-source",
+      "bytes": 55067,
+      "sha256": "F10344AD5D800B007AD3E8E3B5DFAD217C6C65EDF1CBC9151C26A24D639CDDC3"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/StoredLocalSchedule.lean",
+      "role": "migration-source",
+      "bytes": 9379,
+      "sha256": "C7E29BB904AAF635ACA90434978D17E52D9F5F77D3057ECDF8818BED8A221601"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/UnboundedMixedExecution.lean",
+      "role": "migration-source",
+      "bytes": 37808,
+      "sha256": "0F540A5EE2DB4D01F0194D961EE7CD82F1F62617FC96DC763EBD8987C0B94D31"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/VariableOutputComposition.lean",
+      "role": "migration-source",
+      "bytes": 24390,
+      "sha256": "F2012C0BA3E78AE9592CC22392315EC13FD4F9E674FB7509955751A5C975BC56"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/EndogenousDecomposition/VariableRelationalExecution.lean",
+      "role": "migration-source",
+      "bytes": 35451,
+      "sha256": "0E2AFCCD085AD336656AD07DC7DE83F9BE0179F00B9B3CDA0AAB5319CBCCE997"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ExactOperationalImage.lean",
+      "role": "migration-source",
+      "bytes": 22564,
+      "sha256": "F8F9479F5F49E7953816C429B7F1BCD7C281BFE614CC5EA7C7354BA1D74FED65"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/FiniteExtensiveAddressing.lean",
+      "role": "migration-source",
+      "bytes": 26470,
+      "sha256": "8F05BCF5272CF9F186885DA94E9B11152F5CB12D7AE651F54CCAD2AD6DF295B7"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/FrontierReduction.lean",
+      "role": "migration-source",
+      "bytes": 5811,
+      "sha256": "BB7CBD9C7FE75BA0D1A7A007F60FE3AC59E9F073D9F02B51B4300918D38321A6"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/IrreducibleFrontier.lean",
+      "role": "migration-source",
+      "bytes": 8239,
+      "sha256": "9B3F3F7964765974ED0F08BC8AACE48F3EF07199D00BC67BB1CCF0944F304F1C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/LocalSearchableCodeExecution.lean",
+      "role": "migration-source",
+      "bytes": 4341,
+      "sha256": "D6B71658030A3F3DBE25AFE048BD1E6DE1D847699492922B89681DF35EFA9991"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/MachineCostInterface.lean",
+      "role": "migration-source",
+      "bytes": 6762,
+      "sha256": "7C35A951FC2C8DFA1FB2FDEB55DE0EE3B433A3C9F18E271FBCFD126258913D07"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/OperationalFrontierStatus.lean",
+      "role": "migration-source",
+      "bytes": 6819,
+      "sha256": "4A29A2B239087101738AABF4A88A8486E43B191679D25E1B7AD0AE10CFCF6719"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/PolynomialCostEnvelope.lean",
+      "role": "migration-source",
+      "bytes": 7099,
+      "sha256": "AEA0FCC5831AB3171B9A5CF5BB1AC5EDEC775A23E015D123677934F202D9FE34"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/ProducedOutputImage.lean",
+      "role": "migration-source",
+      "bytes": 8120,
+      "sha256": "32A42B1A239860B269DC5124C1F5E1E81C6D0C010EE3AB4DC5A567CEBE24BC10"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileConstitution.lean",
+      "role": "migration-source",
+      "bytes": 32014,
+      "sha256": "413DA38DC3D9B0F7B6018C9A3F41C7FE0B1809924EF76E6B55CB76F0EA9B5F36"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalProfileFiniteCarrier.lean",
+      "role": "migration-source",
+      "bytes": 1705,
+      "sha256": "95E6B854A1CAC188213B43252B9895169EB6AD0E6D74C9499F94A2B749A1491F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalRoleExtensiveFamily.lean",
+      "role": "migration-source",
+      "bytes": 16836,
+      "sha256": "86EF92E6124E86B0F20EE0211D081135806750E5DB182F3D0A3605A411D07F1B"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/RelationalTransport.lean",
+      "role": "migration-source",
+      "bytes": 6987,
+      "sha256": "7A9A721F4903ED652A588F248D63084873C970A82DBB773608C1A0D9D077F310"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/RepresentationCost.lean",
+      "role": "migration-source",
+      "bytes": 2227,
+      "sha256": "B386CC8AC8FAD20FF03FA510982B5E81C40A3B7AC3EB6C48D233C3BF725B54F2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/AcceptedBinaryBranch.lean",
+      "role": "migration-source",
+      "bytes": 7011,
+      "sha256": "964D247E6C1472EF090BB1062590BF63E6B66BE3FEE40AFFD3572BE13054558F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/AcceptedSAT.lean",
+      "role": "migration-source",
+      "bytes": 2307,
+      "sha256": "735586F0E8C5522B9DACAB982992CB591D9F9C93B725CB3280877846419C1BCC"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/BinaryBranch.lean",
+      "role": "migration-source",
+      "bytes": 5505,
+      "sha256": "A32B224E2A842265CA06393AB816B8E652CA9FD07578EFF6330174CE236E8033"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ConstraintTransport.lean",
+      "role": "migration-source",
+      "bytes": 6792,
+      "sha256": "14231A8ECCA9AC034B2D60E6899685CC63198DF3943CA89AED79360CFFFDC3A4"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyBitComplexity.lean",
+      "role": "migration-source",
+      "bytes": 7057,
+      "sha256": "4E03DF7249B69198843C4AC696E129DAA3B6E49C404E1600C6C7AE14D216E125"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyBitCosts.lean",
+      "role": "migration-source",
+      "bytes": 18928,
+      "sha256": "6DCCF4B42AC54D1C92F652CD90EB92C18D4F089FF6F902D74FB4888CEBE60B2A"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyComplexity.lean",
+      "role": "migration-source",
+      "bytes": 6100,
+      "sha256": "B387D0CF606B468997D199441FDA0A46D5BA4DDED82680D40870F28557CDD964"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyCosts.lean",
+      "role": "migration-source",
+      "bytes": 9193,
+      "sha256": "8ECB0BE3A177A009F47756434FF2F7E7FECBD43CF0BAB8B76BDE2FA0DFA9779F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyEqualityCosts.lean",
+      "role": "migration-source",
+      "bytes": 12300,
+      "sha256": "A21D13F0B68E1FB6F0B97B718B5B9E1C522B9866A09EC4C421B3317BE33F91EE"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyInputComplexity.lean",
+      "role": "migration-source",
+      "bytes": 12054,
+      "sha256": "CDA770EC56141C1195452DE3E585ED7522CD5881B7D9354956F60015B1F95DC3"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyNormalizationCosts.lean",
+      "role": "migration-source",
+      "bytes": 10866,
+      "sha256": "01C7F0A25080881832C7E1DD542CB211590928DCC94889369D5F62905985A74E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyPolynomialCosts.lean",
+      "role": "migration-source",
+      "bytes": 15379,
+      "sha256": "37159265C46DFE6F640BF41576396E842243713517FE7B6D0D27B08110E7EB80"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyProvenance.lean",
+      "role": "migration-source",
+      "bytes": 6121,
+      "sha256": "A2523C4BF682BBA63E4E97B3F52E61139D5FDDDA7AA878CE7FBF2E4E860AE074"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyRelationCosts.lean",
+      "role": "migration-source",
+      "bytes": 12476,
+      "sha256": "D65E554931BD0EF3F263174A6DFEC17F5F10A1100EEA828361A70783D482ABA2"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyResources.lean",
+      "role": "migration-source",
+      "bytes": 15722,
+      "sha256": "8251254CC0F0283FBC2E705CDFC77EB3B758599D9EA20EC090B90A68ECB5DC6C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitFamilyTransportCosts.lean",
+      "role": "migration-source",
+      "bytes": 7783,
+      "sha256": "0A02E9586CFD37CFF7AEB756C84528FF64E4713D043E3C46C7F791CA1F6B6734"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ExplicitStackedSymmetricFamily.lean",
+      "role": "migration-source",
+      "bytes": 24914,
+      "sha256": "A74BB094E44D59E87C0A386061B82E542D67D04C7A633540C38DCBFA4BD6F3E9"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GeneratedStructuralContext.lean",
+      "role": "migration-source",
+      "bytes": 13275,
+      "sha256": "3DCA8BB406F8D8DAFCA0C922722575053809D0F112BA129B8386E5263D709EC4"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GrowingDiscoveryBenchmark.lean",
+      "role": "migration-source",
+      "bytes": 49262,
+      "sha256": "8E73F5CF3F1149AC10C1ECC78DEB19D1F939B1002EB5B596D225A6DC17192718"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/GrowingDiscoveryFamily.lean",
+      "role": "migration-source",
+      "bytes": 3333,
+      "sha256": "0A8420D488C26FC5A61712BC5D2889CBF9847CDE22D02B2FEE97ADA353C8A0AA"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ParametricSymmetricFamily.lean",
+      "role": "migration-source",
+      "bytes": 13038,
+      "sha256": "705603D28D91C577FBA5D7FFA40249509A61AF80830B3E4212187E44C7FBDBF1"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ParametricSymmetricTrajectory.lean",
+      "role": "migration-source",
+      "bytes": 7183,
+      "sha256": "0FD634435F14160CC873CAE2233E710E4364BB7EE058FD67560208850EEE6014"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/ResidualFlipTransport.lean",
+      "role": "migration-source",
+      "bytes": 9893,
+      "sha256": "1AAEE562BDC9DF32D20B7A4AB6368AF8BA73BA4809D4475773010956B3B83FC0"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/RestrictionTransport.lean",
+      "role": "migration-source",
+      "bytes": 11896,
+      "sha256": "D5222EE2995051E1D2A3024BDA18207B596968628B38E4DDF6D98490D71A5E5C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/SecondAuditCausalBenchmark.lean",
+      "role": "migration-source",
+      "bytes": 58209,
+      "sha256": "4D49AA7E132543CFCDD44824888476659A43ECDA6B9A0ADCA93A60FD98E444BA"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralBranchContext.lean",
+      "role": "migration-source",
+      "bytes": 9765,
+      "sha256": "13D51CF6346A86DEBC3AE3D89F906BFB3126C07F60E5B10C1263E899CA3D399B"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralGlobalContextRelation.lean",
+      "role": "migration-source",
+      "bytes": 9535,
+      "sha256": "24200B2B49F44535795943DCE5E61ECB8755EC452385E0D2ECD27689B2C55C1E"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/StructuralProgress.lean",
+      "role": "migration-source",
+      "bytes": 12619,
+      "sha256": "9ABE926F5A7E36E00027456F4BBC70DBDEC2CC65B3D706B187ED1724D489DB94"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryConstitutedLocalSchedule.lean",
+      "role": "migration-source",
+      "bytes": 8537,
+      "sha256": "6ADC994FDC89CD181279FA628305E019CAF3BF4D2278377CFA8127467909BD1D"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryConstitutedLocalScheduleCore.lean",
+      "role": "migration-source",
+      "bytes": 22255,
+      "sha256": "88CFBC1548DBCCD8D737A186D1E8CBE0AAA73A1FA7B70B2C777FC677A76D059D"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryDerivedClosure.lean",
+      "role": "migration-source",
+      "bytes": 3216,
+      "sha256": "1F17329886A4FB82A143D60E3467518CC07D191E284DBA52F8F261E6BE5F68FB"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SAT/TrajectoryDerivedClosureCore.lean",
+      "role": "migration-source",
+      "bytes": 14528,
+      "sha256": "92359A943C7EC5174AA80AC3D12A9E3647C350089F45A2B7F77E377A77C6AA61"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SearchSystem.lean",
+      "role": "migration-source",
+      "bytes": 2143,
+      "sha256": "588DAFFC2D16F68DE28A88B01B8C830AA6313C6D7AD563AD3F98A42E49177894"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCode.lean",
+      "role": "migration-source",
+      "bytes": 7284,
+      "sha256": "AECF3F258F6E2FD2C54DE8BA96377D07492820B84C3C1ECA8A82003B918A570F"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCodeValidation.lean",
+      "role": "migration-source",
+      "bytes": 2468,
+      "sha256": "8DADF2C6A21A1DDD7DF1EF112A9A01A0F5AACEC4DE42CEDB4E27280B8D55DFD6"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SearchableTransportCodeValidationCore.lean",
+      "role": "migration-source",
+      "bytes": 9415,
+      "sha256": "9B90B4715C2048D6AA9EBE5C54FA058EA9747DFA0EB60F686FCA2ED80AF5BF39"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SemanticImage.lean",
+      "role": "migration-source",
+      "bytes": 7418,
+      "sha256": "B905902B7AB1A9B8751F16F04EB4A085FB957860BA5E8EB489987654082DF98C"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/SequentialPrimitiveExecution.lean",
+      "role": "migration-source",
+      "bytes": 35079,
+      "sha256": "DC2513A9A2B56D3CCFD21A49910203D5248604D418770EB5DBC50C615A2DB934"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/TransportClosure.lean",
+      "role": "migration-source",
+      "bytes": 2846,
+      "sha256": "88E7E0456C379383930B8C332E4E4C4B1AE2F400370D32825B099583304A1B98"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/ConstitutiveSearch/TransportCode.lean",
+      "role": "migration-source",
+      "bytes": 3234,
+      "sha256": "734703B267DD142A6DE0DB307012953D1E7F468587DEF1FB11806193C8593493"
+    },
+    {
+      "path": "Migration/RelationalPerimeter/Computation/EndogenousOperationalDecomposition.lean",
+      "role": "migration-source",
+      "bytes": 69671,
+      "sha256": "E68561879BC06B9AB36F896FBB02C1D57E06CCDAC11E5CE8658258EFA2227C7D"
+    },
+    {
+      "path": "Migration/SegmentedResidualRole.lean",
+      "role": "migration-source",
+      "bytes": 20341,
+      "sha256": "69A7E8081F3BAACAF2E7EF25DF63BBB76BF17A2B590ECBB0FA2A86221C3E738A"
+    },
+    {
+      "path": "Migration/StrongPerimetralTurning.lean",
+      "role": "migration-source",
+      "bytes": 43,
+      "sha256": "FEE873729858375C81BFBAB452A7A283C7E3F0B8613F3ED42277350F444788E7"
+    },
+    {
+      "path": "Migration/Tests/AdaptiveRelationalExecutionRegression.lean",
+      "role": "migration-source",
+      "bytes": 6614,
+      "sha256": "CF748F1CC6AE0CF901E03D2696476217719CCFFB080881CE09B6BAE80969DC06"
+    },
+    {
+      "path": "Migration/Tests/AristotleCorrectionRegression.lean",
+      "role": "migration-source",
+      "bytes": 7307,
+      "sha256": "6A3CFA5B9F025ABA8CEF6B0A4B39ABE14AB412C7207343290EBF2747ED026933"
+    },
+    {
+      "path": "Migration/Tests/ComputationalPhenomenonRegression.lean",
+      "role": "migration-source",
+      "bytes": 11417,
+      "sha256": "6006EDDB6E41ADB685DA426C168ECD35F7ADA84DE112D746BD11A2AF02FB4397"
+    },
+    {
+      "path": "Migration/Tests/ConstitutiveComplexityHierarchyRegression.lean",
+      "role": "migration-source",
+      "bytes": 13117,
+      "sha256": "507526C27D88863E78171424AC06B31580AF00F829C7EF1D0E5FBF71EB5DA9FF"
+    },
+    {
+      "path": "Migration/Tests/ConstitutiveContinuityRegression.lean",
+      "role": "migration-source",
+      "bytes": 12032,
+      "sha256": "AE3942C3244DD3E45EBF194A0227B9C9E927155ED435FDE2687B7807EC0059F6"
+    },
+    {
+      "path": "Migration/Tests/ConstitutiveExecutionRegression.lean",
+      "role": "migration-source",
+      "bytes": 59412,
+      "sha256": "AA289DED33ED2367DAEAA0DD4B7FDBAF7B1621EFAB887764D7881B31BC5B2C79"
+    },
+    {
+      "path": "Migration/Tests/ConstitutiveNormalizerSuccinctnessRegression.lean",
+      "role": "migration-source",
+      "bytes": 11565,
+      "sha256": "D2976BD186594BD29E6CB0CE458FA3A3D53900CCCA12A4CB84F37920149BA654"
+    },
+    {
+      "path": "Migration/Tests/ConstitutiveObjectiveRegression.lean",
+      "role": "migration-source",
+      "bytes": 3767,
+      "sha256": "93A91E6FA2D9ECC97FCC9B3C35813243AF76134E254D2622200BC28F35949A42"
+    },
+    {
+      "path": "Migration/Tests/DeepPreservationRegression.lean",
+      "role": "migration-source",
+      "bytes": 3327,
+      "sha256": "F072B1DC6ACC6F1BD331E21EE7E51A7F5D834502B633747E57B5AE12F73BE0E1"
+    },
+    {
+      "path": "Migration/Tests/EndogenousOperationalStabilityRegression.lean",
+      "role": "migration-source",
+      "bytes": 27623,
+      "sha256": "9D9B3DFA38899F3B9D6F249DA4BB00823CA817C2468A982698D2DD476435CBF0"
+    },
+    {
+      "path": "Migration/Tests/EndogenousWidthBridgeRegression.lean",
+      "role": "migration-source",
+      "bytes": 3688,
+      "sha256": "54E52A89BC135381B301BE75D821BF99392FD439BD51D20BB63AAF6379F27BF4"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/CanonicalSampleCannotPrescribeAction.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 449,
+      "sha256": "1FB65F9CA787DC80C74FC25106D244C1E310C31BC04D501C44D2D5837D6D1330"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/DiscoveredTransportCannotReplaceAuthoritativeInstruction.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 936,
+      "sha256": "A95864125BE9C75476458CAB77136DA0D021D0016D0DB94B803DBA6B0CE6EB27"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/ForeignInstructionProfileCannotBeReused.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 1171,
+      "sha256": "B1CB9DDC74AD8403C03144DC39299D59F2177F987FBA3CDE362853D60757C005"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/FutureCannotProduceOwnHead.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 1389,
+      "sha256": "F89A11AD93E51912AC172A96BCC69B3B4D894DD57B5EA2757D0BD46C9EE4739F"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/IndependentUnitRegimeCannotReplaceExecutedRegime.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 1229,
+      "sha256": "D6309D7D576645F1A7413BF964E2F584E7D468002C769F3EAFEFCD8E15DE017F"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/InstructionIgnoringInterpreterCannotMeetSemanticSpecification.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 1340,
+      "sha256": "775976217D662664EB803AC5BD91665DDA2152A261CF886711886FEEBC9834CF"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/MissingImageConstitution.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 193,
+      "sha256": "B11D95C53FC3DD15EC612ACE5B93B52215B5BB9FD61E98EC308F6AA08767ED15"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/MissingImagePreservation.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 350,
+      "sha256": "CF08939C2687CBA1F53E38B7D439171F6C4292F561C0769ED8D992CCF20A6B1D"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrescribedTargetCannotRecoverTraceAfterwards.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 812,
+      "sha256": "271A0CDB5E524B2F7737686DC870FE5560E3CFE1EC3445BB50748BEA735F1DA3"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateActionProducedOperationalTarget.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 212,
+      "sha256": "05760474D55B4D05439501C3B826D5A1706533AD0DE9C4F9B8B367C4659B9434"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateConstitutiveExtensiveSeparationCertificate.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 336,
+      "sha256": "2B105A9689AC90CC61351A3F381657AE6E5476E6A0063876904B8E27E9B242BE"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateConstitutiveNormalizerCertificate.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 184,
+      "sha256": "E4213D418C07F8277FA9B683B715BD54D0A4D4C90E6BBE7E40B4DE4A2C0ED35E"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateExactCausalExponentialTarget.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 236,
+      "sha256": "E002BF2B048CDD1BC701D167C4B521B13914ADD04CF8950724629A76B6FAD43A"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateExactExecutedOperationalRegime.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 238,
+      "sha256": "ACABFEB99335844B7F9B250BD424FEBB235F2C65C4CF0CBD059B49E474070997"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateExecutedCausalNormalization.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 243,
+      "sha256": "D3372F99DB7C3369F68F75E8FD0D443C12D01586E8D1AB2AED7F70D526D82ACD"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/PrivateExecutedStageOperationalProduction.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 281,
+      "sha256": "1AD373846B6AF2F65BD58E63F53743031BC03F923BBC2DE105900E89C4A09165"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/RetainedDecisionCannotReplaceTransformedDecision.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 835,
+      "sha256": "824D7F20075ED77CE41E185CFEFFC9E03B55CFA6C165A7C21E751291408684DC"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/RootCannotReplaceProducedTail.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 637,
+      "sha256": "F68D6E0E879EA05E7EDBF903A7BD3BE9732A4E115F1376CE2EE5102EB81CB35F"
+    },
+    {
+      "path": "Migration/Tests/ExpectedFailure/SourceIgnoringNormalizationCannotSupplyTrace.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 819,
+      "sha256": "EA31948969C7B0C05AAC17E6CF3308A1F4B36D61267FEF51467F269CC8957DFA"
+    },
+    {
+      "path": "Migration/Tests/FoundationMigration.lean",
+      "role": "migration-source",
+      "bytes": 3189,
+      "sha256": "886B06B16D0D5BB998D8E2CD1394420912167E9DCC36AF961F229033E24A6A38"
+    },
+    {
+      "path": "Migration/Tests/ProductionTimelineRegression.lean",
+      "role": "migration-source",
+      "bytes": 4563,
+      "sha256": "1326848BFEF8E31C72EF7DA86D053965CF8346093F483989DDB74B0A609E5D9C"
+    },
+    {
+      "path": "Migration/Tests/PublicRootImport.lean",
+      "role": "migration-source",
+      "bytes": 2225,
+      "sha256": "6A153A32A6485A05CF793DD4EEDE5327A4BE8566E0E4EB3389B070595B9688C8"
+    },
+    {
+      "path": "Migration/Tests/RealizedConstitutionRegression.lean",
+      "role": "migration-source",
+      "bytes": 3865,
+      "sha256": "393EDE748D4024CEADD06CA46C7D4608B5C0A7F9ED4E6CCC24DD64EE71C7CD55"
+    },
+    {
+      "path": "Migration/Tests/RelationalExtensiveIffRegression.lean",
+      "role": "migration-source",
+      "bytes": 28452,
+      "sha256": "1B9D1EBA60F12B25E7E99E770DF8635D84D4A1047D8424FDFC00CC5673776DCE"
+    },
+    {
+      "path": "Migration/Tests/SemanticImageRegression.lean",
+      "role": "migration-source",
+      "bytes": 2769,
+      "sha256": "B89D7A1928EC47976F7F56CDE10A458F0418B8674F46B131BAA229E9A49093F4"
+    },
+    {
+      "path": "Migration/Tests/UnboundedMixedExecutionRegression.lean",
+      "role": "migration-source",
+      "bytes": 4646,
+      "sha256": "E86881F40894F30F7253DE0290D65C3A1F385619135053D158F59C75D7123965"
+    },
+    {
+      "path": "Migration/Tests/VariableOutputCompositionRegression.lean",
+      "role": "migration-source",
+      "bytes": 3362,
+      "sha256": "BC945432072D874E7B52ACF2398B3E6AE9CDE0EE23C33ABA86AE354F20020C5B"
+    },
+    {
+      "path": "Migration/Tests/VariableRelationalExecutionRegression.lean",
+      "role": "migration-source",
+      "bytes": 4117,
+      "sha256": "9AA60875E4A79003D73383F1EE6ED08FE03179B7E5CA335AD260C5D22C6754C9"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/PROMPT_AUDIT_ADVERSARIAL.md",
+      "role": "auxiliary-input",
+      "bytes": 42557,
+      "sha256": "CBD0EC61516A6F421C8BAFBFECF20B03C393F0A2EA8EC94629A67F4B0B675764"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/correction-0291998/Correction_Aristotle_0291998.zip",
+      "role": "auxiliary-input",
+      "bytes": 3061464,
+      "sha256": "BCD8AF9D13291B118E5AB7C94B1060BB216B9C39F77732EF1B0253C4B8CA3F14"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/correction-0291998/historique/RAPPORT_1ca8e89_ARISTOTLE.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 53591,
+      "sha256": "C4CA2269FC450AE1A46DEA89E42B8FB97A5A96F8A5D1D9FD91E31B111138C61E"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/correction-0291998/historique/results-1ca8e89.json",
+      "role": "auxiliary-input",
+      "bytes": 18912,
+      "sha256": "A4378A511292E1561D01BAB0990F4631F690969AD1355C12AE2BF0027475A09B"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/correction-0291998/manifest.json",
+      "role": "auxiliary-input",
+      "bytes": 1039,
+      "sha256": "5F569EAE218D229A987C05648E7B9AF3903A9D046B510893495399487FA65523"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/correction-0291998/results.json",
+      "role": "auxiliary-input",
+      "bytes": 146499,
+      "sha256": "231EF377788EBB43A093CCBE3A6DB62005C8C11C7B5076E263CE054D0DFDCAC3"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/evidence/bridge-verification.json",
+      "role": "auxiliary-input",
+      "bytes": 7331,
+      "sha256": "018F226970A9D6BA7F23BC5DE0660FE96359D7B8E8E497294BE592AE9C281AA9"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/evidence/verified-source-sha256.json",
+      "role": "auxiliary-input",
+      "bytes": 30652,
+      "sha256": "6F7ED95B6E5DCD53DF6F4D13858F64C0CD6CEE1B16EDE969E672715AEB90A6B2"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/applied.patch",
+      "role": "auxiliary-input",
+      "bytes": 2382,
+      "sha256": "3CFF53B2EB3F90777C9001951493CBC301D3F1CF7C93827E01FA783C0D90B2F6"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/case.json",
+      "role": "auxiliary-input",
+      "bytes": 188,
+      "sha256": "674731916263F2D0746C8BBA7897D54167D31505F77416F853D1D444460D11C7"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/mutation.patch",
+      "role": "auxiliary-input",
+      "bytes": 1812,
+      "sha256": "908A08ACA7242B8D34A08E64DFC7D607A98FDF03CC6E731ABCB30AAB4215F71E"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A5-store-but-ignore-evidence/result.json",
+      "role": "auxiliary-input",
+      "bytes": 6809,
+      "sha256": "DDC5A02EC83C66F0ADD3E34321A506E18E30E1802A66E2F2282BCEFF63A6090C"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/applied.patch",
+      "role": "auxiliary-input",
+      "bytes": 5869,
+      "sha256": "42E4D1895F786D5FF595159022F1E60215E64FBFF7E36096AFD8A67ADABA9201"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/case.json",
+      "role": "auxiliary-input",
+      "bytes": 237,
+      "sha256": "ADBE2E08614260431B540EACFB2EB88D04F4827F3BCD6A91E166CE97B51EBC88"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/mutation.patch",
+      "role": "auxiliary-input",
+      "bytes": 5199,
+      "sha256": "B2EF11606B6D9F739209B592296A841A863E58ECDF9CD5E667444CFE716F32B2"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/historical-mutations-ded0e8e/A6-public-four-families-Unit/result.json",
+      "role": "auxiliary-input",
+      "bytes": 6857,
+      "sha256": "185675978AA6A3E1ACB2B534D8673673E32E31DA151CB747D841DDACFCA5D381"
+    },
+    {
+      "path": "Migration/audit/aristotle-20260929/preparation.json",
+      "role": "auxiliary-input",
+      "bytes": 1552,
+      "sha256": "D405BA1E8912539478E64A6DA56C5C55FF568A92B2E9D53861EE656C910959BD"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/IMPLEMENTATION.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 12907,
+      "sha256": "967A7963AF85B76DBDF0E2262D842EBE7D4B5018E1C59DF609D86B9482250440"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/dependency-probes.json",
+      "role": "auxiliary-input",
+      "bytes": 29939,
+      "sha256": "A9FF9095C8FBC2AACDECE610BA44438E5B99DE3894D5091E3737BF2E2C05BB3E"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/patches/FormationRecoveredFromRealization.patch",
+      "role": "auxiliary-input",
+      "bytes": 803,
+      "sha256": "EEA18FDC98DF2E6222C27C473E1AF899CDA6C9241563BE6A72F40D3FBAAB0F5D"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/patches/FormationTransportIgnored.patch",
+      "role": "auxiliary-input",
+      "bytes": 772,
+      "sha256": "9E2B589CFC168BA5C923513644BFA484B9D97D3246E504FA93E1E3FFF03200BE"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/patches/RawFormationErased.patch",
+      "role": "auxiliary-input",
+      "bytes": 1193,
+      "sha256": "706620FF739A55EDAEAF8F5BD895CCED1FAA811E54B980A0CF07103B8D676978"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/patches/RealizationReturnLawIgnored.patch",
+      "role": "auxiliary-input",
+      "bytes": 752,
+      "sha256": "A0324E700D54BE21B74D062AA6952285065FD1F3AE92E4778CEC499CADD257C8"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/toolchain.txt",
+      "role": "auxiliary-input",
+      "bytes": 99,
+      "sha256": "39D03AACB50C6C17A897F733DD33C8F4B2822E62B7A08C19F1E30A17CEA719CF"
+    },
+    {
+      "path": "Migration/audit/realized-constitution/verification.json",
+      "role": "auxiliary-input",
+      "bytes": 37899,
+      "sha256": "8B9B9802CDEDF116698F5EB1D60E6357EE2C3E223C33C8D861BFE22677139891"
+    },
+    {
+      "path": "Migration/docs/conclusion-largeur-exponentielle-conservation-identites.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 14814,
+      "sha256": "F218E569F337D08D7CBB54EFBC0E07B92EF8B9EA460F6998EC73351A73B61764"
+    },
+    {
+      "path": "Migration/docs/decomposition-executee-variable.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 3313,
+      "sha256": "AD9D5100345115EF53810080350485545EBFA4DC79B6625397E4AFC40F65DF98"
+    },
+    {
+      "path": "Migration/docs/decomposition-operationnelle-endogene.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 28077,
+      "sha256": "156F355E8BC265B96C5EBDD1C66A3EC3D93BBA595E7F2FBF573D53162EA66D77"
+    },
+    {
+      "path": "Migration/docs/endogenous-operational-decomposition.en.md",
+      "role": "auxiliary-input",
+      "bytes": 24776,
+      "sha256": "15FECA301683ED65424D8EA61595968779DF99FB9C55453A75E7996C8D77E3F0"
+    },
+    {
+      "path": "Migration/docs/figures/constitutive-complexity-hierarchy.svg",
+      "role": "auxiliary-input",
+      "bytes": 8629,
+      "sha256": "580FA4CAC8729DF87484B6652E884DAE1EAABFC6F98E69DCAB6317997EA1C70D"
+    },
+    {
+      "path": "Migration/docs/figures/constitutive-normalizer-succinctness.svg",
+      "role": "auxiliary-input",
+      "bytes": 8032,
+      "sha256": "16880B8156342F816855AC59FEAD1FCECF94D59221B54885269377F45D0698B9"
+    },
+    {
+      "path": "Migration/docs/figures/endogenous-operational-decomposition.svg",
+      "role": "auxiliary-input",
+      "bytes": 17429,
+      "sha256": "E59A2693686EAAF8620AF275BB9E36BE414BF0D23AB2041AC0484F5B2D2827DC"
+    },
+    {
+      "path": "Migration/docs/figures/endogenous-operational-stability.svg",
+      "role": "auxiliary-input",
+      "bytes": 8756,
+      "sha256": "79AE8A24F7AABC63614921E769B5D51BA0EB6EE16B71E45CA5D01571E92F83EE"
+    },
+    {
+      "path": "Migration/docs/figures/relational-extensive-iff.svg",
+      "role": "auxiliary-input",
+      "bytes": 6918,
+      "sha256": "28999BB4488424718295D9B5B3CE62A5D3734BC2DE7CEADD4783C8FC06C91AA2"
+    },
+    {
+      "path": "Migration/docs/figures/relational-perimeter-formal-architecture.svg",
+      "role": "auxiliary-input",
+      "bytes": 15398,
+      "sha256": "574F5DF0872F4F6FE0B30BFA6F31A86AB989D4C958A81883943C5AA2D83ACCC2"
+    },
+    {
+      "path": "Migration/docs/plan-reconstruction-fondations-relationnelles.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 76231,
+      "sha256": "0FFC3B41DD49F701DA7566C98DFDFC935E370F1C662467F0383E4964CBC22088"
+    },
+    {
+      "path": "Migration/docs/positioning-and-scope.en.md",
+      "role": "auxiliary-input",
+      "bytes": 7867,
+      "sha256": "D4C9CCE99413E1CDB08889F9F3F2E91F2B1E5E738B0FE44D2C61EB43A934819B"
+    },
+    {
+      "path": "Migration/docs/positionnement-et-portee.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 8628,
+      "sha256": "9CA079D0A4C1830431C71D929AC00DF1C16DDB01D6B09144D286B35889E086BB"
+    },
+    {
+      "path": "Migration/docs/primitive-relations-and-perimeter-constitution.en.md",
+      "role": "auxiliary-input",
+      "bytes": 29052,
+      "sha256": "701BE3F87D6565E957025CED92FC12110A52C9524DFFEC2F293B71F1FC140288"
+    },
+    {
+      "path": "Migration/docs/relations-primitives-constitution-perimetre.fr.md",
+      "role": "auxiliary-input",
+      "bytes": 31211,
+      "sha256": "2A11BDC57527256E614AD9E228FA1EA9496220FE54C1BBB3C39F74119F7A28FA"
+    },
+    {
+      "path": "Migration/docs/variable-executed-decomposition.en.md",
+      "role": "auxiliary-input",
+      "bytes": 3002,
+      "sha256": "8F4FCD4D6E5EB470B63942CCD4FCAF7571958D96593777453C76D703A244BF83"
+    },
+    {
+      "path": "Migration/lake-manifest.json",
+      "role": "build-configuration",
+      "bytes": 354,
+      "sha256": "F381E66C6EAC675D1AA1C2DD45E07C5596D18BA068796698D8FF8341799D7410"
+    },
+    {
+      "path": "Migration/lakefile.toml",
+      "role": "build-configuration",
+      "bytes": 657,
+      "sha256": "E8661CFD32C28718D8EB24440AA20365EC2BC40F2A1B5B6C01FBCF28339B737D"
+    },
+    {
+      "path": "Migration/lean-toolchain",
+      "role": "build-configuration",
+      "bytes": 25,
+      "sha256": "3AAC669C7A910EC2389F4E4F921B605ADF6EBF2D1E0C9B9CD0BE4D33F3F5DB71"
+    },
+    {
+      "path": "Migration/scripts/Audit.lean",
+      "role": "validation-script",
+      "bytes": 2538,
+      "sha256": "56320C5C4CD7F5616357C4997B84A7615FE9AA585D147A6D728F9C48E7254241"
+    },
+    {
+      "path": "Migration/scripts/CheckPublicSymbols.lean",
+      "role": "validation-script",
+      "bytes": 104986,
+      "sha256": "3E09571809252ADA22B4FF153605ABAB29F385DFE8D3C74C15D10DFD7BAA843C"
+    },
+    {
+      "path": "Migration/scripts/check-expected-failures.ps1",
+      "role": "validation-script",
+      "bytes": 2463,
+      "sha256": "2AE6AF008EFCBB9DC519852FA95943546771CE5529C26A74F960217E92892A49"
+    },
+    {
+      "path": "Migration/scripts/check-expected-failures.sh",
+      "role": "validation-script",
+      "bytes": 2776,
+      "sha256": "D5BEBCA868F7AD9FF0295F656F5196E551808FBD8B7D745D8B22BD3A5E0D822F"
+    },
+    {
+      "path": "Migration/scripts/check-import-boundaries-v3.ps1",
+      "role": "validation-script",
+      "bytes": 4698,
+      "sha256": "99031173B47F2A9DAD1B178261EB3EE1B3E8587712DAC36B7E6E1E42080A7E05"
+    },
+    {
+      "path": "Migration/scripts/check-import-boundaries.ps1",
+      "role": "validation-script",
+      "bytes": 4664,
+      "sha256": "4789B748881B44889DB9DFE12C90BB8598AD1B5DCA6DBD305913FAD20A4CC634"
+    },
+    {
+      "path": "Migration/scripts/check-import-boundaries.sh",
+      "role": "validation-script",
+      "bytes": 3927,
+      "sha256": "02E0CD3D3369D0E8AF94C5977D38BF24FE88B6F4425D8738C191F40BB0C714CC"
+    },
+    {
+      "path": "Migration/scripts/check-stratification-v3.ps1",
+      "role": "validation-script",
+      "bytes": 8134,
+      "sha256": "A9D2D1AF6F6FFAF2A641CA9D07BEC7647F228867AC697D050871621104FBE562"
+    },
+    {
+      "path": "Migration/scripts/check-stratification.ps1",
+      "role": "validation-script",
+      "bytes": 8083,
+      "sha256": "217392799867FC8BBB08A85975CFFE10DB85461114E77E647033BD0E45FC4E77"
+    },
+    {
+      "path": "Migration/scripts/check-stratification.sh",
+      "role": "validation-script",
+      "bytes": 7716,
+      "sha256": "B4408FB800B3CCB1D03EE59FD42AFBEDFEF62F6E9F4625024F1C159CEFCC2627"
+    },
+    {
+      "path": "Migration/scripts/constitutive-normalizer-core-import-boundaries.txt",
+      "role": "validation-script",
+      "bytes": 935,
+      "sha256": "C1CB1DE2EC424F75CFA860607AAEC118FC1DCBD60196D10E8D26631B2916D4F5"
+    },
+    {
+      "path": "Migration/scripts/executed-history-import-boundaries.txt",
+      "role": "validation-script",
+      "bytes": 880,
+      "sha256": "2AC33361EC8BC727028228DA447377D8B952F096C9A993CC0E8FDD55E82ACAFD"
+    },
+    {
+      "path": "Migration/scripts/expected-failures.tsv",
+      "role": "validation-script",
+      "bytes": 2752,
+      "sha256": "E98BD30D5BC80F948ED9AB064B99A7BBFEDE608B23F1D5529BB7499573A13CA9"
+    },
+    {
+      "path": "Migration/scripts/implement-realized-constitution.py",
+      "role": "validation-script",
+      "bytes": 22937,
+      "sha256": "58274E8E72C7621BAECC279CC4F57C0D2C011136454B5E739A2984C0793F1630"
+    },
+    {
+      "path": "Migration/scripts/import-boundaries.txt",
+      "role": "validation-script",
+      "bytes": 928,
+      "sha256": "DECB9681437D9699FD53F1D4C185DF2DB4A77B4A93BA889FD2AC50B4BB9CB20C"
+    },
+    {
+      "path": "Migration/scripts/measured-accounting-import-boundaries.txt",
+      "role": "validation-script",
+      "bytes": 1170,
+      "sha256": "9D616F1D230BCA618BFFB74210D7C903483AC8AD6E07055FDF4331DA241C7BEE"
+    },
+    {
+      "path": "Migration/scripts/run-focused-constitution-probes.py",
+      "role": "validation-script",
+      "bytes": 5592,
+      "sha256": "E8761530E07E0868512BD9A5B2889078BF0C14A3E56FC6BC88E0C3084FFA01E5"
+    },
+    {
+      "path": "Migration/scripts/stratification.tsv",
+      "role": "validation-script",
+      "bytes": 22485,
+      "sha256": "7B9913739DD39220FA87BC119EDD6B25C65223732B6EE20FD384D0C2435E233D"
+    },
+    {
+      "path": "Migration/scripts/test-expected-failure-gates.py",
+      "role": "validation-script",
+      "bytes": 4804,
+      "sha256": "C6DE565BCF52D9D9982C8461480EAB05E0B2CA6FE13828E1F989FC5588F99A92"
+    },
+    {
+      "path": "Migration/scripts/verify.ps1",
+      "role": "validation-script",
+      "bytes": 184,
+      "sha256": "E74F66DC7A694DEA5EFE37FBEE7125DAEAE2079BBA4948D753351289513B7962"
+    },
+    {
+      "path": "Migration/scripts/verify.sh",
+      "role": "validation-script",
+      "bytes": 182,
+      "sha256": "070C31E4ECD7900ED7F958D462882AF5BBA3B65A17B2906FEC829D3A513A27E2"
+    },
+    {
+      "path": "Migration/verification-forgetting-v1.json",
+      "role": "auxiliary-input",
+      "bytes": 598,
+      "sha256": "6BA55E4C4BE717E01E052FF65E158A89A036509567778BE92D8AC80EF59136E0"
+    },
+    {
+      "path": "Migration/verification-forgetting-v2.json",
+      "role": "auxiliary-input",
+      "bytes": 842,
+      "sha256": "815499701BA0D152165831F274A1413F8EA2E6C2F02BF1DEC8CC520CD9B4F160"
+    },
+    {
+      "path": "Migration/verification-result.json",
+      "role": "auxiliary-input",
+      "bytes": 559,
+      "sha256": "14C88861DAF0790AB11C054A9AB720861F9A864451E2581C69281F8E24E0DF59"
+    },
+    {
+      "path": "README.md",
+      "role": "auxiliary-input",
+      "bytes": 9097,
+      "sha256": "75F65E8EB1E01AE3B7FCB9ABCDF8F87331299F547FC0668E93FD2D44C32A91DF"
+    },
+    {
+      "path": "RelationalFoundations.lean",
+      "role": "foundation-source",
+      "bytes": 3025,
+      "sha256": "4A8A5456451A3C22ADA94EBE16045F7A86CB03C9525E5C9C0AB4A8465199B931"
+    },
+    {
+      "path": "RelationalFoundations/BoundaryInterpretation.lean",
+      "role": "foundation-source",
+      "bytes": 1888,
+      "sha256": "DACBF2C93715A43D12AD55D17EC7AC43A8D80B67D8A622BDFC83C1FF0E96F4D7"
+    },
+    {
+      "path": "RelationalFoundations/Cardinalization.lean",
+      "role": "foundation-source",
+      "bytes": 3183,
+      "sha256": "A002946886B495DAD01016C1BA1D63166DF5BF3C22922206D667BFA654D9569D"
+    },
+    {
+      "path": "RelationalFoundations/CircularSignature.lean",
+      "role": "foundation-source",
+      "bytes": 14756,
+      "sha256": "5B6575964CF6C2D0BF2CF11D2D72EE17A4A106FB612650D9EAA0157B78D57994"
+    },
+    {
+      "path": "RelationalFoundations/CircularSpecification.lean",
+      "role": "foundation-source",
+      "bytes": 5252,
+      "sha256": "DF1D0826E69DB1A52C9E87F3399F106C597AF905CD4A98EA9FFFB1742FC8E1E1"
+    },
+    {
+      "path": "RelationalFoundations/CompositionOrder.lean",
+      "role": "foundation-source",
+      "bytes": 2583,
+      "sha256": "A094FB94CF43D52DEF09678E4CC971882AB2F8561C7AC253B596AF9E4E05BE4A"
+    },
+    {
+      "path": "RelationalFoundations/ConstitutiveGeneration.lean",
+      "role": "foundation-source",
+      "bytes": 2777,
+      "sha256": "4EEC580B349D8F9D0CB68FFE245F005B0F39F8DA40A3AB4CEF80501AEA3A4059"
+    },
+    {
+      "path": "RelationalFoundations/Continuation.lean",
+      "role": "foundation-source",
+      "bytes": 3853,
+      "sha256": "E2F5DDA1434A8B2ED2D955A80F990BE70D74114B2BE6A44F2FF5DB363B398321"
+    },
+    {
+      "path": "RelationalFoundations/DemandClosure.lean",
+      "role": "foundation-source",
+      "bytes": 12442,
+      "sha256": "2463B2104E544B65CB19CA2BF9EA8C36C9856484F9CEE37CB48B046DA0F4171C"
+    },
+    {
+      "path": "RelationalFoundations/DependencyPaths.lean",
+      "role": "foundation-source",
+      "bytes": 9971,
+      "sha256": "1A9EE43C2453DB63783C9B801A9D7ED190E54DCDA00B6DEF59751A0A5B29AEF3"
+    },
+    {
+      "path": "RelationalFoundations/Diagnostics.lean",
+      "role": "foundation-source",
+      "bytes": 53986,
+      "sha256": "15031D8C5EB8CE87A37CC695352D8C0AFCAA0C02DE93C0922CBEB82876F8CCCF"
+    },
+    {
+      "path": "RelationalFoundations/EquippedQuantity.lean",
+      "role": "foundation-source",
+      "bytes": 3573,
+      "sha256": "215E078F0E65F1A3E0BF0F81A22AB85B1A452B24B2C29921A9AEFDD1108FD71C"
+    },
+    {
+      "path": "RelationalFoundations/ExactRealization.lean",
+      "role": "foundation-source",
+      "bytes": 2037,
+      "sha256": "318441ED55EAF31E1AC14203EF1DB70663BE0C68766323D1E737B99957BBB85F"
+    },
+    {
+      "path": "RelationalFoundations/ExactTransport.lean",
+      "role": "foundation-source",
+      "bytes": 4383,
+      "sha256": "217394CAA6B48E9ADFFA2BDAF8F677D55A36AB3F3A0CFC8ADFE4F3561D5C9668"
+    },
+    {
+      "path": "RelationalFoundations/FaithfulContinuation.lean",
+      "role": "foundation-source",
+      "bytes": 3201,
+      "sha256": "EB47469A60649B526ED10BA65EC956EB560C33A81F96D4B1D0529E2431137ABB"
+    },
+    {
+      "path": "RelationalFoundations/FaithfulTurning.lean",
+      "role": "foundation-source",
+      "bytes": 1439,
+      "sha256": "F95B2DA7BC41E6EB7F3D2BFF33C6D71AB29F5AB7C0F785E1DB976587CF10370C"
+    },
+    {
+      "path": "RelationalFoundations/FeedbackCoverage.lean",
+      "role": "foundation-source",
+      "bytes": 32371,
+      "sha256": "1EA80427F4BB8DB88942686C746CF03DFA44DE8BEE4358D3DE8F99F9C5C0FF1B"
+    },
+    {
+      "path": "RelationalFoundations/FiberTransport.lean",
+      "role": "foundation-source",
+      "bytes": 4006,
+      "sha256": "4B8794D7E1450E300987485BC60FA1FBE340863D38FAA67629739D52D6DF343A"
+    },
+    {
+      "path": "RelationalFoundations/FiniteInvariance.lean",
+      "role": "foundation-source",
+      "bytes": 4362,
+      "sha256": "50D2115F8D03DFB923737F4E0E2C0D97ECE324BF4EFA513DD96B0BDE7BBFDFB6"
+    },
+    {
+      "path": "RelationalFoundations/FiniteRuleConstruction.lean",
+      "role": "foundation-source",
+      "bytes": 36501,
+      "sha256": "379C5B870CB25D8905965712367DFC77A28D5ECDC18D288EFFB7F65ECB65CAFB"
+    },
+    {
+      "path": "RelationalFoundations/FiniteRuleCoordinates.lean",
+      "role": "foundation-source",
+      "bytes": 47845,
+      "sha256": "6EF6F0776555819D72F0A9E346DC06CCDA1883FC701423F46147400251B60A3A"
+    },
+    {
+      "path": "RelationalFoundations/FiniteRuleInstances.lean",
+      "role": "foundation-source",
+      "bytes": 35973,
+      "sha256": "31ABAE7E98238489A5B62C54AD3F9CD51B7B031D2B75908832D6668C85E0011B"
+    },
+    {
+      "path": "RelationalFoundations/FiniteRuleScope.lean",
+      "role": "foundation-source",
+      "bytes": 2976,
+      "sha256": "76EDD0F46484D7F22CFDD826C2AD358A97407236F30641AF8A75E395512424C5"
+    },
+    {
+      "path": "RelationalFoundations/FormationAtOccurrence.lean",
+      "role": "foundation-source",
+      "bytes": 1087,
+      "sha256": "7D48518FB0DB7CBAFFD1D535091553219706BDBE6600DD301CE8EFCDFC6E4BF6"
+    },
+    {
+      "path": "RelationalFoundations/Generation.lean",
+      "role": "foundation-source",
+      "bytes": 5455,
+      "sha256": "82DB6332B0CE85A136F19F657F7591874BC85FDE094573698A67B5C79D7937A1"
+    },
+    {
+      "path": "RelationalFoundations/HeterogeneousFeedback.lean",
+      "role": "foundation-source",
+      "bytes": 39530,
+      "sha256": "D49A694FE497101A8C942A0EA4D0F3A5A0539AD2F60A956F81E705F0BA89E6EF"
+    },
+    {
+      "path": "RelationalFoundations/HeterogeneousInvariants.lean",
+      "role": "foundation-source",
+      "bytes": 5480,
+      "sha256": "77BC739A559C2F8DF302BBFFBF64680641516FCF6AD00E0042F99CBC25C869A4"
+    },
+    {
+      "path": "RelationalFoundations/HistoricalFeedback.lean",
+      "role": "foundation-source",
+      "bytes": 5677,
+      "sha256": "8F04FF190F92BC33B50BD720DEC1D78A45BF25B76D5808D4E49D69D0DF9D96B8"
+    },
+    {
+      "path": "RelationalFoundations/HistoricalSupport.lean",
+      "role": "foundation-source",
+      "bytes": 14990,
+      "sha256": "DE3A6CFDE60FAFD638F5AF45DA2EEE69E584D3DD391D9EA71CBF08B9FFA8CC28"
+    },
+    {
+      "path": "RelationalFoundations/History.lean",
+      "role": "foundation-source",
+      "bytes": 20484,
+      "sha256": "AF5C9B3C8DAE78E77A53985CC79226BF4743B91F5A470CD00E963F77C1B54941"
+    },
+    {
+      "path": "RelationalFoundations/HistoryTransport.lean",
+      "role": "foundation-source",
+      "bytes": 3561,
+      "sha256": "A52A9A66A911F479191DD820934809A2344BE4181A4C77D4D42D0DE7DE12AE4B"
+    },
+    {
+      "path": "RelationalFoundations/InteriorDelimitation.lean",
+      "role": "foundation-source",
+      "bytes": 2543,
+      "sha256": "8575616C9EF62E07CACCBEE76CBDCB4B9F296503E5DC04E983CA5AAE70FA4FC4"
+    },
+    {
+      "path": "RelationalFoundations/Interpretation.lean",
+      "role": "foundation-source",
+      "bytes": 3014,
+      "sha256": "CD36DD2A9351ACD728D6E9BD4F522E4D41A704AB61B29E4AD4D56944A91D8BCC"
+    },
+    {
+      "path": "RelationalFoundations/MarkedQuantity.lean",
+      "role": "foundation-source",
+      "bytes": 2117,
+      "sha256": "035100C41C3F64BC789170951B2085D4E1C41F2B42C41402EB3C8721269F7C09"
+    },
+    {
+      "path": "RelationalFoundations/NativeForgettingBridgeV1.lean",
+      "role": "foundation-source",
+      "bytes": 26355,
+      "sha256": "FD002287A0941FBA579D715E02B0A822A61D4F59EF88A2AF04063E68DA1CA742"
+    },
+    {
+      "path": "RelationalFoundations/NativeForgettingContinuationV1.lean",
+      "role": "foundation-source",
+      "bytes": 13313,
+      "sha256": "E2339C3D043712A3AC4ABB2C4370DAC22D8F8B02CF8C4E22C2B47B18AC95DACF"
+    },
+    {
+      "path": "RelationalFoundations/NativeForgettingContract.lean",
+      "role": "foundation-source",
+      "bytes": 4254,
+      "sha256": "AF147DE69FA9B98D17C6459F462C311991A8CBBEDA05374A8AC7EACC9E175CCF"
+    },
+    {
+      "path": "RelationalFoundations/NativeForgettingSeparationV1.lean",
+      "role": "foundation-source",
+      "bytes": 5781,
+      "sha256": "9FC07D605C6628A389B9481DAB0AA8A66DE577CC841F8230982DDEF29A2ECF50"
+    },
+    {
+      "path": "RelationalFoundations/NativeForgettingV1.lean",
+      "role": "foundation-source",
+      "bytes": 8746,
+      "sha256": "D96ABC3F066A6803FE9FB199BA077E7E5A8E404FB96504048CC62FB52F284860"
+    },
+    {
+      "path": "RelationalFoundations/NormativeAdequacy.lean",
+      "role": "foundation-source",
+      "bytes": 1535,
+      "sha256": "E4F39597F6CD32626868F75148B4B58E17617EFE7FA51FEBB9AEAAB8CCF29E22"
+    },
+    {
+      "path": "RelationalFoundations/Obstructions.lean",
+      "role": "foundation-source",
+      "bytes": 2196,
+      "sha256": "2C3CD9AB9021C1C9BE5779EB7B3A75C90FF5255A2AF2F498D19C6293EFC7583D"
+    },
+    {
+      "path": "RelationalFoundations/OutputDriven.lean",
+      "role": "foundation-source",
+      "bytes": 9193,
+      "sha256": "5DAB1C1A70E852AA91746D97E582FB3379C3ECED382DCFFDCFDF0DAEC77C4AB8"
+    },
+    {
+      "path": "RelationalFoundations/Perimetral.lean",
+      "role": "foundation-source",
+      "bytes": 5196,
+      "sha256": "F14ED1A7D90A3F35C7940EC2FB02AEA8481A007619E0F1F8E4AB24EDB6B13B09"
+    },
+    {
+      "path": "RelationalFoundations/PerimetralSignature.lean",
+      "role": "foundation-source",
+      "bytes": 8797,
+      "sha256": "234A17026B8DBCF30BBD24EE8FC1AF0D2EDD6F9C46D95DD6BE1CDDF4DA9BF898"
+    },
+    {
+      "path": "RelationalFoundations/Presentation.lean",
+      "role": "foundation-source",
+      "bytes": 2891,
+      "sha256": "80A1C746CE1A86E042870CE0EC8D3EE3D183252E4CB6D656650C82A3A2035084"
+    },
+    {
+      "path": "RelationalFoundations/Quantity.lean",
+      "role": "foundation-source",
+      "bytes": 5402,
+      "sha256": "0490008FCAB3E1563FB7147915FCDA4DF5E8DD0099B5168572A5BBAC70A171EA"
+    },
+    {
+      "path": "RelationalFoundations/ReducedContinuation.lean",
+      "role": "foundation-source",
+      "bytes": 12847,
+      "sha256": "5506FA43CA23004A502840D31DB361F920DD900BC5D2C4104EADF63A97360FA4"
+    },
+    {
+      "path": "RelationalFoundations/ReducedHeterogeneous.lean",
+      "role": "foundation-source",
+      "bytes": 13430,
+      "sha256": "2726E396858AEE55ADF3A53D15244B5AE5B166A0CADBD1513658004BEAD00A5E"
+    },
+    {
+      "path": "RelationalFoundations/ReducedWeakening.lean",
+      "role": "foundation-source",
+      "bytes": 13380,
+      "sha256": "9D319D9D431075BD61E464B67E9EDCADC3DBC8278A17DDF2C39C761553ED1631"
+    },
+    {
+      "path": "RelationalFoundations/Regime.lean",
+      "role": "foundation-source",
+      "bytes": 2877,
+      "sha256": "04B0CB03CEBAEED09A35499395C2A8404087CF42B3747B431DD4A9599704BC53"
+    },
+    {
+      "path": "RelationalFoundations/Residual.lean",
+      "role": "foundation-source",
+      "bytes": 35013,
+      "sha256": "4F923876FA4EB80002433182AABAC86783182F2659BF0DA6234FDD9FF98A0D98"
+    },
+    {
+      "path": "RelationalFoundations/ResourceGraph.lean",
+      "role": "foundation-source",
+      "bytes": 21398,
+      "sha256": "B4D1C69B1066703E1E90FA1350FE29F03195B9EFF20D2152711FA41AFD6A09C2"
+    },
+    {
+      "path": "RelationalFoundations/Signature.lean",
+      "role": "foundation-source",
+      "bytes": 4561,
+      "sha256": "5F07826F40A9E5FD479AE76AB07F3B3AA07AF2BE88397168340FB69412DEB199"
+    },
+    {
+      "path": "RelationalFoundations/Spine.lean",
+      "role": "foundation-source",
+      "bytes": 7446,
+      "sha256": "59268587C8CF014CCD7EDB63A142969BBE683E8B23CC14915DC679ADC9E25D55"
+    },
+    {
+      "path": "RelationalFoundations/TransportLaws.lean",
+      "role": "foundation-source",
+      "bytes": 5669,
+      "sha256": "6DF2E0F37D3F2BFC0B4D06D911E60585CA114EEDE8B54E0BBDA618FB8C542775"
+    },
+    {
+      "path": "RelationalFoundations/Turning.lean",
+      "role": "foundation-source",
+      "bytes": 1987,
+      "sha256": "1A76FE449F91F2F52C7960E063E6E9D5142B7ADDF4CDC69790A87F6F9699C445"
+    },
+    {
+      "path": "RelationalFoundations/TurningDiagnostics.lean",
+      "role": "foundation-source",
+      "bytes": 2580,
+      "sha256": "31CF91DB46F9BC00BCEF06E5D5F7530A159CA615C6B98FB50E6A311B046AE8BD"
+    },
+    {
+      "path": "RelationalFoundations/TypedResourceOrder.lean",
+      "role": "foundation-source",
+      "bytes": 3013,
+      "sha256": "424906B9ED5002613A135AF1884A4A343BA392556E26690788A75CB24CB97BE5"
+    },
+    {
+      "path": "RelationalFoundations/TypedResources.lean",
+      "role": "foundation-source",
+      "bytes": 13787,
+      "sha256": "BAFE36470B5BBBEAE9A4D9855094896A288D4DB4BC0945E043325357BC6A772D"
+    },
+    {
+      "path": "RelationalFoundations/WordSupport.lean",
+      "role": "foundation-source",
+      "bytes": 6670,
+      "sha256": "488D7CE9ACD443A33D033D5F4E61CB96050A83BDA52AFED3295A95E5D46D7AFB"
+    },
+    {
+      "path": "Tests/AuditCorrections.lean",
+      "role": "foundation-source",
+      "bytes": 1332,
+      "sha256": "D7D5BCC88C4CE19D674FC738F9564F4B2BDD44CBAED0C893EC12EF5296A9963A"
+    },
+    {
+      "path": "Tests/Completion.lean",
+      "role": "foundation-source",
+      "bytes": 3793,
+      "sha256": "F7D0E667CB75B8BC73371DF60044CE2AA152BB2E7430D09D54CF14DC7686FB81"
+    },
+    {
+      "path": "Tests/CyclicSupport.lean",
+      "role": "foundation-source",
+      "bytes": 5976,
+      "sha256": "3A4681F45607BE1487BE8C12987C4183875AFF75F52FEAC9DD2CB259B2CCC46D"
+    },
+    {
+      "path": "Tests/ExpectedFailures/BareEquivalence.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 185,
+      "sha256": "01BAE2CFB8AEF2519F488A7B6D8356274511094EE2AB69CAF4BF26BED4AF3178"
+    },
+    {
+      "path": "Tests/ExpectedFailures/BoundaryPositivity.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 216,
+      "sha256": "5A4CF263609DAFA5E0956F799290337ACB412F2803C8AEEB1242BEF34E139419"
+    },
+    {
+      "path": "Tests/ExpectedFailures/CollapsedFragment.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 422,
+      "sha256": "D87E2D7DC9B6B0C17388BF139E4E37B90F307C0B8B6EBAE6534DB8A1BA3876DE"
+    },
+    {
+      "path": "Tests/ExpectedFailures/GenericFalseAdmission.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 417,
+      "sha256": "D153967EF1779EE5C9EAD39365BE205CCDE9D463963CEEAD73DFABE0860A26B7"
+    },
+    {
+      "path": "Tests/ExpectedFailures/JunctionAsGeneratedStep.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 172,
+      "sha256": "1412D7B2D2258EB4ED591FB7BF0A1450C388CB8AE879702C59ED6F384FCC1A23"
+    },
+    {
+      "path": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenGlobalIdentityV1.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 188,
+      "sha256": "9B67B154B6EB37ADB5DA0D48B8B0279166DE81183EA7E3DE8E7B4676DC7EBB1C"
+    },
+    {
+      "path": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenReorderedInputsV1.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 337,
+      "sha256": "49A1E131309D4E29FFBCEBC032BE3DE9A83D749FB31C4E6E12145F71C6AAC680"
+    },
+    {
+      "path": "Tests/ExpectedFailures/NativeForgettingV1/ForgottenWrongSortV1.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 252,
+      "sha256": "49DAE78A5EE5FF30B6B2AC065D093D8B72AA88EE36A916586F728A160F970D1F"
+    },
+    {
+      "path": "Tests/ExpectedFailures/RegimeFromJunction.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 163,
+      "sha256": "DD2DCB043482BCF3DC80B81003D4CDF649755D7F77628EBFF1D24C292EDDEA67"
+    },
+    {
+      "path": "Tests/ExpectedFailures/Rigidity.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 155,
+      "sha256": "A7459B775D4867D65CCBC18669F51BBE2165974588B90A22B87DFAB676D92BA9"
+    },
+    {
+      "path": "Tests/ExpectedFailures/TypedNumericInput.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 183,
+      "sha256": "1E1BE6EFA0A0EC2E233F6BCD749C0315ED96E1839EED957BD382AFB04CAB118E"
+    },
+    {
+      "path": "Tests/ExpectedFailures/UnreachableReducedMemory.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 193,
+      "sha256": "2EBAB073A77FE6E2697ED4032BBD2924FAB0F3030E40846C01EB9FFD29B21727"
+    },
+    {
+      "path": "Tests/ExpectedFailures/ValidationV3/HiddenReplay.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 528,
+      "sha256": "734BB695D8D99B81A6F7C1EAA33CC7F3B2F54EECD502F82AB45ACAD92A6FF66B"
+    },
+    {
+      "path": "Tests/ExpectedFailures/ValidationV4/ForbiddenDependency.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 313,
+      "sha256": "8106420703112F24232843197165558FF49D4F060F8975B6D8448F35093BE76B"
+    },
+    {
+      "path": "Tests/ExpectedFailures/ValidationV4/WrongShape.lean.fail",
+      "role": "rejection-fixture",
+      "bytes": 469,
+      "sha256": "786FA725B503D062E0B9A7FAA7957514BA55A83766F9419A0EFD2E94A1D3C9BA"
+    },
+    {
+      "path": "Tests/FeedbackCoverage.lean",
+      "role": "foundation-source",
+      "bytes": 8342,
+      "sha256": "1DC7F4BB60F7B9FC97FDD71B230CACFFAA89F370F22EDF56DD04C292B8388428"
+    },
+    {
+      "path": "Tests/FiniteRuleConstruction.lean",
+      "role": "foundation-source",
+      "bytes": 11015,
+      "sha256": "7B41C8CDD6BD4865C18CC1D4985BE69F2A96AD7F11E5A785A9B721DC13A33350"
+    },
+    {
+      "path": "Tests/FiniteRuleCoordinates.lean",
+      "role": "foundation-source",
+      "bytes": 7654,
+      "sha256": "B59E63DA70A4928D6BD1250529B459B4B2296CCC85877F3619A8FEF798522E9B"
+    },
+    {
+      "path": "Tests/ForgettingAuditScope.lean",
+      "role": "foundation-source",
+      "bytes": 6244,
+      "sha256": "C98ACC84286B39D1CDB22AA68D094B5685B8307D484CA81E599B5905F4A71AC9"
+    },
+    {
+      "path": "Tests/FoundationTests.lean",
+      "role": "foundation-source",
+      "bytes": 979,
+      "sha256": "BA757A9E4F3ABC1D39341D29CCEEC61882048A0226F70E0ABF4571844290DF4C"
+    },
+    {
+      "path": "Tests/HeterogeneousFeedback.lean",
+      "role": "foundation-source",
+      "bytes": 7767,
+      "sha256": "88D490DD513EBAA2904518A2C89D510C1681ED3575791EB46D3ADB9FEC15CC44"
+    },
+    {
+      "path": "Tests/HiddenEncoding.lean",
+      "role": "foundation-source",
+      "bytes": 6198,
+      "sha256": "3A1D412F7E21F40783C2A3FA095938C42D5E61CE108C56AAD1E5DE5F89CB003E"
+    },
+    {
+      "path": "Tests/HistoricalSupport.lean",
+      "role": "foundation-source",
+      "bytes": 4402,
+      "sha256": "5A5160940BD0E5F17DEEB8E412A03EA2E641C35B8BC9A4B0239CFDFB036CF231"
+    },
+    {
+      "path": "Tests/NativeForgettingV1.lean",
+      "role": "foundation-source",
+      "bytes": 7948,
+      "sha256": "04E6E1DE6315B5D6CE996B5DE226323A347154129B08717D3B7A96B9708857F3"
+    },
+    {
+      "path": "Tests/OutputDriven.lean",
+      "role": "foundation-source",
+      "bytes": 4306,
+      "sha256": "88C3CA8FEF6319870726CFB0D36F58153CE868FA88E19216EF6BDB09B6A2BFE6"
+    },
+    {
+      "path": "Tests/QuantityLaws.lean",
+      "role": "foundation-source",
+      "bytes": 4470,
+      "sha256": "F8E50D35A4EC7BBC7A893DA3D635EED628A5EE120EB80AA194A5CF90070E07E6"
+    },
+    {
+      "path": "Tests/ReducedHeterogeneous.lean",
+      "role": "foundation-source",
+      "bytes": 6908,
+      "sha256": "A7F110D9D578F5BE84E5B34916A77BB4B56012385731CE7FF75701AD6E2FEDFC"
+    },
+    {
+      "path": "Tests/RuleScope.lean",
+      "role": "foundation-source",
+      "bytes": 1980,
+      "sha256": "1005F42F12225F126B61043004B2F7EB0B5BA261C1D4EF7A196CD352B8B4CDA6"
+    },
+    {
+      "path": "Tests/Separators.lean",
+      "role": "foundation-source",
+      "bytes": 8634,
+      "sha256": "FD77F47AE084A58008534EAE481E2E690C4CD6E8A251903C1CA8152A914A2D65"
+    },
+    {
+      "path": "docs/achevement.fr.md",
+      "role": "delivery-document",
+      "bytes": 13230,
+      "sha256": "96AF18FA022967B99613A1AE8B76D27C50B3A19EB5596A7C78B27E0FCCBD468C"
+    },
+    {
+      "path": "docs/analyse-continuite-constitutive-4e0febf.fr.md",
+      "role": "delivery-document",
+      "bytes": 16749,
+      "sha256": "342FD6E7C5D2CC0CFDB5F6431ADAF1DA0B43DFE92C4CECF39600499ED064A073"
+    },
+    {
+      "path": "docs/architecture-et-portee.fr.md",
+      "role": "delivery-document",
+      "bytes": 16016,
+      "sha256": "27F34008D5DC1BC4F0D374703047124ADDA86B4A8844504AD1AE9A4B91FC42CB"
+    },
+    {
+      "path": "docs/audit-baseline-v3.json",
+      "role": "delivery-document",
+      "bytes": 4291,
+      "sha256": "780BF72924A3527FF686A8EE45932B69C48ECCFE2608A7DD5AB922EFF5C9F4BC"
+    },
+    {
+      "path": "docs/audit-corrections-v3.fr.md",
+      "role": "delivery-document",
+      "bytes": 10034,
+      "sha256": "EF2861A4AEA68A36B6DD6D6C97ABCFF21090F20B52707610C3A01E535D0AF3AF"
+    },
+    {
+      "path": "docs/audit-corrections-v4.en.md",
+      "role": "delivery-document",
+      "bytes": 8823,
+      "sha256": "D5853B0368A3BF768A3A88DFD525F00AF19F2E7AA315B524FB8245244F818079"
+    },
+    {
+      "path": "docs/audit-corrections-v4.fr.md",
+      "role": "delivery-document",
+      "bytes": 11244,
+      "sha256": "316FEABFA8EFE5B1806A8F2124A9D5F38ACA8A968DB533181516360F1076072B"
+    },
+    {
+      "path": "docs/calcul-heterogene-historique.fr.md",
+      "role": "delivery-document",
+      "bytes": 8604,
+      "sha256": "5DD796B4AC04DD083A0CB51561C134FC8EF83E59743F8722B2B00912BC10FC62"
+    },
+    {
+      "path": "docs/calcul-sortie-reemploi-historique.fr.md",
+      "role": "delivery-document",
+      "bytes": 18892,
+      "sha256": "665A72B34688D711550461DB04486DD8D6BBBA6E40D4955BE22BF9162CDB042D"
+    },
+    {
+      "path": "docs/conceptual-source.fr.md",
+      "role": "delivery-document",
+      "bytes": 36418,
+      "sha256": "648FAB63AFCDD9DB80FB9AF12A2728EBD23F9556F02D9992B5453AA49AF129F3"
+    },
+    {
+      "path": "docs/construction-commune-fragments-finis.fr.md",
+      "role": "delivery-document",
+      "bytes": 18668,
+      "sha256": "51BC620BD0225F31583AD6189577CF75D9F11E50280A207BC8C41D5D4038B900"
+    },
+    {
+      "path": "docs/execution-reduite-restitution-exacte.fr.md",
+      "role": "delivery-document",
+      "bytes": 16859,
+      "sha256": "489EF8C745F4199CEC4ED3D0D790558FEFB787FF537F67411A00C1C1126BB5FD"
+    },
+    {
+      "path": "docs/fermeture-support-historique.fr.md",
+      "role": "delivery-document",
+      "bytes": 11810,
+      "sha256": "2BBF620FED5F8B091EBD7175BBDF5E30036F0F3A2E84BE0B31A199BD98865326"
+    },
+    {
+      "path": "docs/github-publication.fr.md",
+      "role": "delivery-document",
+      "bytes": 3474,
+      "sha256": "CFF89BCF89D93FDD8966AD6FDC2FBE197ED6A98EC7495F2F7ED8061D03FB461C"
+    },
+    {
+      "path": "docs/manifest-forgetting-v2.json",
+      "role": "delivery-document",
+      "bytes": 75604,
+      "sha256": "787EC2B0645ED3AF453DDDE4764A4E5122055299FE090DF93AF0A231141327E6"
+    },
+    {
+      "path": "docs/migration-symbols.csv",
+      "role": "delivery-document",
+      "bytes": 175579,
+      "sha256": "5C3CBC382761907A95B9CA405A5C408CF1149B2FA72F5BADDB3CDFFAB7482AFD"
+    },
+    {
+      "path": "docs/oubli-certifie-continuations-natives-v1.fr.md",
+      "role": "delivery-document",
+      "bytes": 18474,
+      "sha256": "2D378D87EE88BB31A4B0B53781CD66EEB0CB62C0BBBCD7CD2EEA5D1C767D6DA4"
+    },
+    {
+      "path": "docs/reconstruction-plan.fr.md",
+      "role": "delivery-document",
+      "bytes": 76948,
+      "sha256": "1545DC13CE8A1919342E609EEC521059DB96C32368A65B0BDA0664CE9B1EAF14"
+    },
+    {
+      "path": "docs/reverification.fr.md",
+      "role": "delivery-document",
+      "bytes": 5969,
+      "sha256": "3471FA67B1A791D26A15624D4004607700C356CC353272FC1DEF015CFEA9C9F8"
+    },
+    {
+      "path": "docs/source-baseline.json",
+      "role": "delivery-document",
+      "bytes": 48193,
+      "sha256": "ED2BBAA77458246C5BA36D07770EDB1A2E4634EB988BECFA70378BEE4594D4A6"
+    },
+    {
+      "path": "docs/validation-oubli-natif-v2.fr.md",
+      "role": "delivery-document",
+      "bytes": 5648,
+      "sha256": "1E13DEA24EE4278112C6E0D4887E64C1A7693FF1DF1B72DECFF2557152432A5C"
+    },
+    {
+      "path": "docs/validation-v3.fr.md",
+      "role": "delivery-document",
+      "bytes": 6232,
+      "sha256": "AF37051E03A54815A658B7E2CCEA30FC81225E2ED36515C46B2D324592701865"
+    },
+    {
+      "path": "docs/validation-v3/Linux/foundation.json",
+      "role": "historical-evidence",
+      "bytes": 595,
+      "sha256": "7B9E16CD1C4B2D6D4F201F11E0F880898A0F197BA80C1A133778AF9C1C573B52"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/ForgottenGlobalIdentityV1.txt",
+      "role": "historical-evidence",
+      "bytes": 284,
+      "sha256": "0491C27AC8D1E73F9A7380761355D7A4AD1A40DBFA5CE35464E2DC241CAC742C"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/ForgottenReorderedInputsV1.txt",
+      "role": "historical-evidence",
+      "bytes": 420,
+      "sha256": "778A377812F06C719343E7BC33D3CCF8C2182D838139EA6E57F79FF49168904A"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/ForgottenWrongSortV1.txt",
+      "role": "historical-evidence",
+      "bytes": 757,
+      "sha256": "01EDD9A3C4A5C966B2727CD67561D99C961B57C38D6559FD7E6CEE82921E0170"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/executable-controls.txt",
+      "role": "historical-evidence",
+      "bytes": 188,
+      "sha256": "85215D11F21788728EABCE2049620214A6A4B38BF94148AACF765C23FE17263B"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/forgetting-syntax-and-semantics.txt",
+      "role": "historical-evidence",
+      "bytes": 711,
+      "sha256": "C84693A151BEA89DC588E3D2A882687C9D74F0753E8E7FC1623CD43E820DD39B"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/foundation-and-migration.txt",
+      "role": "historical-evidence",
+      "bytes": 595,
+      "sha256": "7B9E16CD1C4B2D6D4F201F11E0F880898A0F197BA80C1A133778AF9C1C573B52"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/foundation-build.txt",
+      "role": "historical-evidence",
+      "bytes": 30884,
+      "sha256": "7F4774E316C5DC239136295B90C80C181D19AD6D557A47FAAD2BE05A00364130"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/hidden-replay-rejected.txt",
+      "role": "historical-evidence",
+      "bytes": 250,
+      "sha256": "C5E1E24E58AAA63739131545966ACEC0976E3A85BAA0FC184276E71CA382293D"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/historical-receipts.txt",
+      "role": "historical-evidence",
+      "bytes": 128,
+      "sha256": "BC2039B3675177E4F03C41D65CD30A08F9ED38F06742995115DA12F350834EA2"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/manifest-integrity-tests.txt",
+      "role": "historical-evidence",
+      "bytes": 204,
+      "sha256": "2B900FEEF718B8E2129B6AFDE0E3E31D7B5684B48AE3DB2B06696A9345E85E0A"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/migration-build.txt",
+      "role": "historical-evidence",
+      "bytes": 705615,
+      "sha256": "60EC3DA7D301F48F07564D7840F791FDDAB5FBFA96A9F5C4D4C7D90D4A5B647D"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/migration-protocol.txt",
+      "role": "historical-evidence",
+      "bytes": 2669,
+      "sha256": "5FA887E5115875625C450F789C965487F59B597BEFBBF61FDD72DE46CDEF8C87"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/migration-public-symbols.txt",
+      "role": "historical-evidence",
+      "bytes": 650048,
+      "sha256": "D13B25ED3D7467096B66F267856912AE3838AE57E23196A7B27B342FD434E822"
+    },
+    {
+      "path": "docs/validation-v3/Linux/logs/source-audit-blocks.txt",
+      "role": "historical-evidence",
+      "bytes": 65,
+      "sha256": "677CC094F64CDC06B1627884D89D11303AEC94CC8A30B066DCD007A99CAC6398"
+    },
+    {
+      "path": "docs/validation-v3/Linux/migration.json",
+      "role": "historical-evidence",
+      "bytes": 547,
+      "sha256": "9D9249E7554D89461097F75F2A311597D81CE10F4C2CA0D875ECEE12FC32A8CC"
+    },
+    {
+      "path": "docs/validation-v3/Linux/receipt.json",
+      "role": "historical-evidence",
+      "bytes": 9994,
+      "sha256": "90B6A97B471F413AD7718A3E42FF17F15FC7FD2BDC6DF67ED759EEBEB9750F18"
+    },
+    {
+      "path": "docs/validation-v3/Windows/foundation.json",
+      "role": "historical-evidence",
+      "bytes": 607,
+      "sha256": "EC74F807A71D13767106E04DA34C97552C25F1FE1CAB11219F39C4B40E65A67A"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/ForgottenGlobalIdentityV1.txt",
+      "role": "historical-evidence",
+      "bytes": 287,
+      "sha256": "C346B3C14985AA69A172569F063BCA928A825CDC8F0D1895758E5199B9315E2B"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/ForgottenReorderedInputsV1.txt",
+      "role": "historical-evidence",
+      "bytes": 423,
+      "sha256": "458A5E40A976A35241A8F04CFFD6C1B134FD10AA0D2740DB75475B25902B245A"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/ForgottenWrongSortV1.txt",
+      "role": "historical-evidence",
+      "bytes": 767,
+      "sha256": "7570D5728D8B532D13DA923B55F1CC2E1DB480AAEBAB393FEC34E1B24FBB3745"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/executable-controls.txt",
+      "role": "historical-evidence",
+      "bytes": 190,
+      "sha256": "473BAAFC5EA849C45598D17AEC51ACB20A845F82332BA1D68C6532221DB46BBF"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/forgetting-syntax-and-semantics.txt",
+      "role": "historical-evidence",
+      "bytes": 717,
+      "sha256": "CA9242D54B865F555E97CF9DF6F69BEF8F70EFD9B726A652C5A438AD45E57400"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/foundation-and-migration.txt",
+      "role": "historical-evidence",
+      "bytes": 607,
+      "sha256": "EC74F807A71D13767106E04DA34C97552C25F1FE1CAB11219F39C4B40E65A67A"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/foundation-build.txt",
+      "role": "historical-evidence",
+      "bytes": 27419,
+      "sha256": "D1866ECB8073D78E632DA70219440271BAA7562D9D9DD1EE429BDD909B27C583"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/hidden-replay-rejected.txt",
+      "role": "historical-evidence",
+      "bytes": 248,
+      "sha256": "B6EBAF491D831FF5AE5F5EC42FE1D8C4A21BCC74069840B09254C5CD4DD9BC68"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/historical-receipts.txt",
+      "role": "historical-evidence",
+      "bytes": 129,
+      "sha256": "1E12FC01E53B31FFF29B091AA895813A58F55E8AE16EDF1A5A19A93CF8D41A9D"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/manifest-integrity-tests.txt",
+      "role": "historical-evidence",
+      "bytes": 205,
+      "sha256": "FFD00B391A26DD7A211FD82257CD1D5254D1E5ED78A1CE6F465AF165805CDAF3"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/migration-build.txt",
+      "role": "historical-evidence",
+      "bytes": 707359,
+      "sha256": "D7113A2948208BF610A94CF071F0F7E69859D18A4EDF5680DBA937CDAE1B48D7"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/migration-protocol.txt",
+      "role": "historical-evidence",
+      "bytes": 2701,
+      "sha256": "D8CB964049298B9B13C4400F97BB08FCD68009199DBA69A61D726EBC6BCCCA2E"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/migration-public-symbols.txt",
+      "role": "historical-evidence",
+      "bytes": 657957,
+      "sha256": "97569E2C64E5BD1E9F86F8B9FA903F63CD673048A23E816F52955FBC70045BFD"
+    },
+    {
+      "path": "docs/validation-v3/Windows/logs/source-audit-blocks.txt",
+      "role": "historical-evidence",
+      "bytes": 66,
+      "sha256": "16954A099BEF602B7DD2CB00DB73B4F73CAD10107DDE49F414A98771D39E8100"
+    },
+    {
+      "path": "docs/validation-v3/Windows/migration.json",
+      "role": "historical-evidence",
+      "bytes": 559,
+      "sha256": "D751A587DDED534C186CEE2BCA6A0A86EDB543D346D4B88D2EEF4E0C78990C75"
+    },
+    {
+      "path": "docs/validation-v3/Windows/receipt.json",
+      "role": "historical-evidence",
+      "bytes": 10311,
+      "sha256": "6F4B6175DF91D35B8B989175ECD27C3FB11DE03FB5879E64EB2BA72BFCA3FCCD"
+    },
+    {
+      "path": "docs/validation-v3/index.json",
+      "role": "historical-evidence",
+      "bytes": 592,
+      "sha256": "52C6ACB7F0F9CF1913F9B5AC24AE7805F07207695FCF3EBDF9887B2F166E2423"
+    },
+    {
+      "path": "docs/validation-v3/inputs.json",
+      "role": "historical-evidence",
+      "bytes": 86979,
+      "sha256": "67D680BCDC2D355EEDDD54B94ABC608E4B06248915CA3404305CED8F27B7BE68"
+    },
+    {
+      "path": "docs/verification-forgetting-v1.json",
+      "role": "delivery-document",
+      "bytes": 1562,
+      "sha256": "D1D425A3C41C48DD9BE21C685C41CCF0DB443472C3BA347AF800D25887169325"
+    },
+    {
+      "path": "docs/verification-forgetting-v2.json",
+      "role": "delivery-document",
+      "bytes": 5903,
+      "sha256": "B8FF6D0DF57BB4CD7CF769F448C85239F4CCE839D9C93AF634240F22E41C50FE"
+    },
+    {
+      "path": "docs/verification-result.json",
+      "role": "delivery-document",
+      "bytes": 607,
+      "sha256": "595A7EECAAD6D94D0FA90A90D7A65B47BA4BFD505B82D0E132D16EA55F034A0E"
+    },
+    {
+      "path": "lake-manifest.json",
+      "role": "build-configuration",
+      "bytes": 168,
+      "sha256": "70D91AA69305AE9FD261F2B700610AC67E3CF72D075EDE209D1AD8479C048393"
+    },
+    {
+      "path": "lakefile.toml",
+      "role": "build-configuration",
+      "bytes": 355,
+      "sha256": "6BEF19A51F8581F2DB404FE434DE7E0D1CF988690843FD5CE3691676AA3097F1"
+    },
+    {
+      "path": "lean-toolchain",
+      "role": "build-configuration",
+      "bytes": 25,
+      "sha256": "3AAC669C7A910EC2389F4E4F921B605ADF6EBF2D1E0C9B9CD0BE4D33F3F5DB71"
+    },
+    {
+      "path": "reference/git-status.txt",
+      "role": "reference-material",
+      "bytes": 507,
+      "sha256": "4EE7970299982484A1E696431DBD1F9BFFD77D2ECFE9FD4FAA6156A244AB0DDE"
+    },
+    {
+      "path": "reference/index.patch",
+      "role": "reference-material",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "reference/source.zip",
+      "role": "reference-material",
+      "bytes": 3968430,
+      "sha256": "E26F784A94D450C1BEFB9405CEEA0FB27573304AD1B0C5D8E7EF1BE450741A67"
+    },
+    {
+      "path": "reference/worktree.patch",
+      "role": "reference-material",
+      "bytes": 0,
+      "sha256": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855"
+    },
+    {
+      "path": "scripts/Audit.lean",
+      "role": "validation-script",
+      "bytes": 959,
+      "sha256": "11C0A256B8277E4028A1B9306B3732F4B40A7FD4A325A383D0D75A16FA8B6ED4"
+    },
+    {
+      "path": "scripts/AuditForgettingV1.lean",
+      "role": "validation-script",
+      "bytes": 4154,
+      "sha256": "F4112EC43B45FF6E4C43ADB9A46FD693B3FE7AAED83686003FE08ADAD2ED4597"
+    },
+    {
+      "path": "scripts/AuditForgettingV3.lean",
+      "role": "validation-script",
+      "bytes": 6209,
+      "sha256": "207D6D835977A27802EA5F68143390958B4B180DA7CD2A229D1E32CDD402600A"
+    },
+    {
+      "path": "scripts/AuditForgettingV4.lean",
+      "role": "validation-script",
+      "bytes": 7237,
+      "sha256": "9CE71B03D1607B2AE69AA12CCA894C30CD470D5B0FC434B98134C10BD74CB848"
+    },
+    {
+      "path": "scripts/AuditReduced.lean",
+      "role": "validation-script",
+      "bytes": 3192,
+      "sha256": "925E278E5400A350F7AA552F8064DD1B545AA63C16B306E725BE8BBD962162A4"
+    },
+    {
+      "path": "scripts/AuditReducedV4.lean",
+      "role": "validation-script",
+      "bytes": 3419,
+      "sha256": "4E23B2FAAEC311444A32DB30FC003E10F7D22AE4E3D19BF3CB8A20F139FF246D"
+    },
+    {
+      "path": "scripts/GenerateMigrationAliases.lean",
+      "role": "validation-script",
+      "bytes": 2472,
+      "sha256": "BABA1349BDCF7AD0587EC74F1FF874AA7F56F15B61D4A528A9C0A1ACCECC69E9"
+    },
+    {
+      "path": "scripts/LeanSource.ps1",
+      "role": "validation-script",
+      "bytes": 2288,
+      "sha256": "9FA4724B0381CA05FE254E6EAC7CD8FA6F9AEB3DBABB3C40B5762A9BC6788A06"
+    },
+    {
+      "path": "scripts/ValidationManifestV2.ps1",
+      "role": "validation-script",
+      "bytes": 10079,
+      "sha256": "4B9790AB211B5B356C747488832F854A2E0E14B060FBC5B8B5F1BC334259E797"
+    },
+    {
+      "path": "scripts/ValidationManifestV3.ps1",
+      "role": "validation-script",
+      "bytes": 9531,
+      "sha256": "AF9E8AF0CD4EBEE26E00BBC54600F62A00BCD57A74D28B87C34FBCE7CD6859B4"
+    },
+    {
+      "path": "scripts/ValidationManifestV4.ps1",
+      "role": "validation-script",
+      "bytes": 11676,
+      "sha256": "567BC0C5E9C1D275F3633AC95CB5FD02067FA4362E45A356FA01165D9854000A"
+    },
+    {
+      "path": "scripts/check-forgetting-v2.ps1",
+      "role": "validation-script",
+      "bytes": 192,
+      "sha256": "642801D3DE07A555DF18F82D22F68FD663EF22DA704C5557AA314013891934B7"
+    },
+    {
+      "path": "scripts/check-historical-receipts-v3.ps1",
+      "role": "validation-script",
+      "bytes": 1551,
+      "sha256": "E04090DFCB9C5581FA8E90698095795840E96618524F3DB20350717F1E8EF4B0"
+    },
+    {
+      "path": "scripts/check-historical-receipts-v4.ps1",
+      "role": "validation-script",
+      "bytes": 1551,
+      "sha256": "A64A14AE3A4847BB126E9DCCA8C66A493CD31176ADD3A02A8A3C3073C4CBBE3F"
+    },
+    {
+      "path": "scripts/check-source-v3.ps1",
+      "role": "validation-script",
+      "bytes": 1470,
+      "sha256": "A097A5B599E7C90D69CD04CE13D8E26095144ACD4EC136EAD1787AFDF7F3EFCE"
+    },
+    {
+      "path": "scripts/check-source-v4.ps1",
+      "role": "validation-script",
+      "bytes": 1725,
+      "sha256": "FEE8472983EC77BCDC308AB1052A271CC78AB22D7E587032466F9D67B4307BBD"
+    },
+    {
+      "path": "scripts/check-validation-v3.ps1",
+      "role": "validation-script",
+      "bytes": 164,
+      "sha256": "C79DBE0B7A2DE75FC04B2A807E3D9EFF05912F94BFA4D610F2EF246E75EDC0A1"
+    },
+    {
+      "path": "scripts/check-validation-v4.ps1",
+      "role": "validation-script",
+      "bytes": 199,
+      "sha256": "CE28A7E42367A88B08AD17B4CD1466FB1C1F2A02BBD37A3CC3B773C73B65873B"
+    },
+    {
+      "path": "scripts/test-validation-bundle-v3.ps1",
+      "role": "validation-script",
+      "bytes": 3176,
+      "sha256": "9C38C4E6493A184CC452AD0679865BDD7372387D64EFC27001B2B5E6963328EB"
+    },
+    {
+      "path": "scripts/test-validation-bundle-v4-coverage.ps1",
+      "role": "validation-script",
+      "bytes": 9449,
+      "sha256": "7613269E94CB28B061A24C03FF261E3DF7CA05E7EBFA3BF5AC6C57CD8474D02E"
+    },
+    {
+      "path": "scripts/test-validation-bundle-v4-r2.ps1",
+      "role": "validation-script",
+      "bytes": 5013,
+      "sha256": "509A2C6894799427A7F4F4543DE77C1BE9989E4161BA28557118F3BCE1865FF7"
+    },
+    {
+      "path": "scripts/test-validation-bundle-v4.ps1",
+      "role": "validation-script",
+      "bytes": 5006,
+      "sha256": "85F915CBECB86EC3F2C226563DB4641E4764BA41D16782815BA34E1E2B9F0E8A"
+    },
+    {
+      "path": "scripts/test-validation-manifest-v2.ps1",
+      "role": "validation-script",
+      "bytes": 4163,
+      "sha256": "EAE1F977B34C8A93512ED8EEA9AC9E14F8BC0FF94DF44B67E91340363E45ADFB"
+    },
+    {
+      "path": "scripts/test-validation-manifest-v3.ps1",
+      "role": "validation-script",
+      "bytes": 4163,
+      "sha256": "72DD69C13397291201735B5B8A54E84CCD2DC4A735278AC8246A0BC120D9CE6D"
+    },
+    {
+      "path": "scripts/test-validation-manifest-v4.ps1",
+      "role": "validation-script",
+      "bytes": 4417,
+      "sha256": "AC5E321A437F52D9EEFEF6731A0AC4711004A06105CA0BECDBDCF342D9BE22C3"
+    },
+    {
+      "path": "scripts/verify-forgetting-v1.ps1",
+      "role": "validation-script",
+      "bytes": 5180,
+      "sha256": "8173FE70446F36341AD1E3473E296A6E3E84C69D5B9ECA34EFA4800AAB1EC2F2"
+    },
+    {
+      "path": "scripts/verify-forgetting-v2.ps1",
+      "role": "validation-script",
+      "bytes": 9047,
+      "sha256": "12DFDF716E35138466E7288060705447EC29FD192B798CE6950FEE54A049B693"
+    },
+    {
+      "path": "scripts/verify-migration-v3.ps1",
+      "role": "validation-script",
+      "bytes": 4766,
+      "sha256": "9540620B33C11875662DAC20A5DDF94970C60E4257883714EAC9EE0EBCBB4F7C"
+    },
+    {
+      "path": "scripts/verify-migration-v4.ps1",
+      "role": "validation-script",
+      "bytes": 4797,
+      "sha256": "B38E56A52AA5C29F3EC1ADAEAA00BA16248D29AE46F7A1702C9EE76F946859BA"
+    },
+    {
+      "path": "scripts/verify-migration.ps1",
+      "role": "validation-script",
+      "bytes": 4622,
+      "sha256": "B8DAA086439A0C95AA3B0BE87C6A643FBEE0571FA3312DC77AACCA955BC194D4"
+    },
+    {
+      "path": "scripts/verify-v3.ps1",
+      "role": "validation-script",
+      "bytes": 11466,
+      "sha256": "1C5B7E78511718626E1051C0204718EFCF84DA7400547B25FE6A25CC8AE8272C"
+    },
+    {
+      "path": "scripts/verify-v4.ps1",
+      "role": "validation-script",
+      "bytes": 11481,
+      "sha256": "FD4FB88A7D69E4B05F850B98559A9083A1FEAE9093DF9C0E230527791EB47B1A"
+    },
+    {
+      "path": "scripts/verify-validation-v3.ps1",
+      "role": "validation-script",
+      "bytes": 8729,
+      "sha256": "05BB788FB5662F151353BBD8F9872F39A8D1E2A54A2E425E3D20FF7833F1BF54"
+    },
+    {
+      "path": "scripts/verify-validation-v4.ps1",
+      "role": "validation-script",
+      "bytes": 9730,
+      "sha256": "32694C46B4A5E91850D17319B9E71EDEEA9C93E35B8E4CCE9296B9CF9AC47CC5"
+    },
+    {
+      "path": "scripts/verify.ps1",
+      "role": "validation-script",
+      "bytes": 11377,
+      "sha256": "9029529D028D6DE29A5C4B19686A42A27F85977073E9971B73FCEA24165962FC"
+    }
+  ],
+  "git": {
+    "baseHead": "99f0801e0f91b6821944f8a4a09dedf7810fdf14",
+    "sourceIdentity": "Frozen revision r2 includes versioned bundle-test correction and V4.1 coverage supplement; not a new commit",
+    "branch": "codex/audit-corrections-v3"
+  }
+}

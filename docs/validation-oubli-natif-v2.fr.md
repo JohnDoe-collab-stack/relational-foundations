@@ -1,5 +1,7 @@
 # Validation V2 : liaison des preuves aux sources et aux scripts
 
+Ce document décrit le protocole historique livré dans l’instantané public `99f0801`. Ses scripts, manifeste et reçus conservent leurs octets. La validation actuelle des sources corrigées utilise la [V4 portable](audit-corrections-v4.fr.md), qui vérifie séparément la liaison historique V2 dans une extraction de cet instantané. Les précisions ci-dessous corrigent la reproduction et le statut de publication du texte initial.
+
 ## Résultat concerné
 
 Cette livraison complète la traçabilité de l'[oubli historique certifié V1](oubli-certifie-continuations-natives-v1.fr.md). Les quatre modules mathématiques V1, l'admission native, les deux contrats et leurs preuves sont conservés. V2 désigne le protocole de validation avec manifeste ; le résultat mathématique reste celui de `NativeForgettingV1`.
@@ -46,13 +48,13 @@ Ces essais utilisent un dossier temporaire dédié. Ils éprouvent la liaison do
 
 ## Commandes reproductibles
 
-Pour exécuter la validation complète et produire les nouveaux reçus :
+Sur l’instantané historique V2, sous Windows après une première compilation `lake build` créant `.lake`, la commande originale est :
 
 ```powershell
 pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1
 ```
 
-Pour contrôler les contenus et l'association des fichiers déjà livrés :
+Sur ce même instantané, pour contrôler les contenus et l'association des fichiers historiques livrés :
 
 ```powershell
 pwsh -NoProfile -File scripts/check-forgetting-v2.ps1
@@ -62,4 +64,4 @@ Les reçus précisent les dates et les résultats effectivement obtenus. Le pér
 
 V2 apporte une liaison vérifiable entre une exécution de validation et son ensemble exact de fichiers. Une nouvelle modification de ces fichiers appelle une nouvelle validation. Le manifeste et les reçus conservent la trace du contenu auquel leurs résultats se rapportent.
 
-Ce chantier demeure dans son dossier isolé, sans commit, push ou merge.
+Les reçus V2 ont été produits sur une révision de travail `0edc6135` puis publiés. Leur correspondance avec l’instantané public `99f0801` est vérifiée par les empreintes des fichiers. Les filtres de chemins des anciens scripts de migration supposent les séparateurs Windows ; la V3 fournit les scripts versionnés et la confirmation Linux.

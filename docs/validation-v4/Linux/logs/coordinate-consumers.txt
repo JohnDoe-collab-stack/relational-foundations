@@ -1,0 +1,16 @@
+'RelationalFoundations.FiniteRuleCoordinatesTests.homogeneous_all' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.heterogeneous_all' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.higher_universe' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.thirteen_coordinates' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.seven_coordinates' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.thirteen_ordered_dependencies' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.seven_ordered_dependencies' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.all_resumed_coordinates' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.all_composed_coordinates' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.real_resumed_coordinates' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.native_homogeneous_reprise' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.native_heterogeneous_reprise' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.swap' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.permuted' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.permuted_changes_identity' does not depend on any axioms
+'RelationalFoundations.FiniteRuleCoordinatesTests.values_still_agree' does not depend on any axioms

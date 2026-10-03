@@ -98,3 +98,5 @@ Le document méthodologique demande de conserver les mêmes déterminations sém
 Le développement présent fournit des constructions et des preuves réutilisables pour ce travail. Son application au vérificateur devra justifier la déclaration des demandes et leurs producteurs. L'absence d'une règle de ce vérificateur dans le périmètre examiné ne constitue pas une preuve d'impossibilité de sa fermeture.
 
 La taille produite est une lecture du support construit. Une borne optimale, une minimalité du support et une complexité particulière demanderaient des résultats supplémentaires.
+
+La vérification actuelle et les preuves complémentaires sont décrites dans la [validation V4](audit-corrections-v4.fr.md) et le [bilan des corrections](audit-corrections-v3.fr.md). Les reçus datés ci-dessus restent des références historiques conservées.

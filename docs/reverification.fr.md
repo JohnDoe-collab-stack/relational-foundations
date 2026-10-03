@@ -1,5 +1,7 @@
 > État historique de la première revérification. Les points laissés ouverts ici sont traités dans [le bilan d’achèvement](achevement.fr.md). Les rapports JSON donnent les résultats actuels.
 
+Document historique conservant les étapes et commandes de sa livraison. La vérification actuelle des sources corrigées et la liaison des reçus historiques relèvent de la [validation V4](audit-corrections-v4.fr.md).
+
 # Revérification du 30 septembre 2026
 
 La terminologie actuelle est **tournant constitutif affirmatif** ; « tournant » en est la forme courte. La [définition et la distinction de sa version avec sortie](architecture-et-portee.fr.md#tournant-constitutif-affirmatif) sont précisées dans l’architecture. Ce choix de terme ne modifie pas les résultats historiques rapportés ici.

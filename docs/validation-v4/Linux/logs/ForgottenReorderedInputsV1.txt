@@ -1,0 +1,6 @@
+/home/frederick/codex-validation-foundations-v4-r2-20261003/.lake/validation-v4-fixtures/20261003T131111224Z-548a5676/ForgottenReorderedInputsV1.lean:6:2: error: Type mismatch
+  rfl
+has type
+  (observation { position := 1, active := 0 }).inputs = (observation { position := 1, active := 0 }).inputs
+but is expected to have type
+  (observation { position := 1, active := 0 }).inputs = [(Kind.number, 0), (Kind.truth, 1)]

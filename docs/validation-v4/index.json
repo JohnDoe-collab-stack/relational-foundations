@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 4,
+  "protocol": "foundations-audit-validation-v4",
+  "createdAtUtc": "2026-10-03T13:26:35.669202+00:00",
+  "inputManifestSha256": "BEEA1098850847C0E0A36E9B141AC9597DCB7DA744C2C1D2FFEBD18FFA996A26",
+  "receipts": [
+    {
+      "platform": "Windows",
+      "path": "docs/validation-v4/Windows/receipt.json",
+      "sha256": "62DFE59816C8421F919C4BC636D1AE0A7BA720CC4DC4CE126D3ED78FCC3CADC1"
+    },
+    {
+      "platform": "Linux",
+      "path": "docs/validation-v4/Linux/receipt.json",
+      "sha256": "ACD39286760675FCEC7CAAF98794EC3538F73C5379A5A873049BD54100790C2B"
+    }
+  ],
+  "evidenceCount": 41,
+  "files": [
+    {
+      "path": "docs/validation-v4/inputs.json",
+      "bytes": 115252,
+      "sha256": "BEEA1098850847C0E0A36E9B141AC9597DCB7DA744C2C1D2FFEBD18FFA996A26"
+    },
+    {
+      "path": "docs/validation-v4/Linux/foundation.json",
+      "bytes": 768,
+      "sha256": "EAB9D1E023CD3FA90B66037C42A0E1AD85EE4748D4FCF41C92E88FF599E3813E"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/coordinate-consumers.txt",
+      "bytes": 1631,
+      "sha256": "37E31478FECD5C3351617596B68A6E00904EECB8477325D3C280A9D947C57A54"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/executable-controls.txt",
+      "bytes": 188,
+      "sha256": "85215D11F21788728EABCE2049620214A6A4B38BF94148AACF765C23FE17263B"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/forbidden-dependency-rejected.txt",
+      "bytes": 310,
+      "sha256": "EA3E42947C9204FD691F6729C6D3241E53124E6DEFDAC4E2A4B2DD34E3DCCA3A"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/forgetting-syntax-and-semantics.txt",
+      "bytes": 1154,
+      "sha256": "9D7FCB2A489BD4555B18C06F76114633FAE0FB10010608344A8DCC981572E1CC"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/ForgottenGlobalIdentityV1.txt",
+      "bytes": 284,
+      "sha256": "F9DB7901BD9FF90792454E588E007C91882DE30894BC081EB7D39CD1B5E84E11"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/ForgottenReorderedInputsV1.txt",
+      "bytes": 420,
+      "sha256": "70DF970701159315C9DC44C73F746779BA3ADB96C36ADC9FD7AED2002412FB97"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/ForgottenWrongSortV1.txt",
+      "bytes": 757,
+      "sha256": "53338494E85875F2DFFCC3BDD4E6CFF02C447AED76E23228215CA5330901E7EB"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/foundation-and-migration.txt",
+      "bytes": 768,
+      "sha256": "EAB9D1E023CD3FA90B66037C42A0E1AD85EE4748D4FCF41C92E88FF599E3813E"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/foundation-build.txt",
+      "bytes": 43559,
+      "sha256": "5948713468A1A094A5747C0FDA9BCBA746D4FF15C1EC76F91C89A6014E832868"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/historical-receipts.txt",
+      "bytes": 128,
+      "sha256": "4890BB0DBBFE2B4092B00B1F3AFAEECEA4C5C8005EF57A5547EDC6C2BF4FFA17"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/local-replay-controls.txt",
+      "bytes": 943,
+      "sha256": "13B2297F8439D12C91A57624D974F1D00E6481FF22D775B0ABD63EC3107B8745"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/manifest-integrity-tests.txt",
+      "bytes": 114,
+      "sha256": "54F82E5A34166C8B48B0368C2529BE547B184FB05203FB7727880A85EF7DDD95"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/migration-build.txt",
+      "bytes": 714004,
+      "sha256": "C3BC2DFC61F522DBFBC7B30B176E78103C875F2C0D5102BB7A609A4138C17FAA"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/migration-protocol.txt",
+      "bytes": 2669,
+      "sha256": "9113D0CE1AFD27677B488952766B433D0139A018E950E897C1AD8F0473BCEF15"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/migration-public-symbols.txt",
+      "bytes": 650048,
+      "sha256": "D13B25ED3D7467096B66F267856912AE3838AE57E23196A7B27B342FD434E822"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/shape-rejected.txt",
+      "bytes": 289,
+      "sha256": "F74AB38E19B89F5F333A39F78D3531E78D91A7256F7189EF1D59B392C92EF646"
+    },
+    {
+      "path": "docs/validation-v4/Linux/logs/source-audit-blocks.txt",
+      "bytes": 65,
+      "sha256": "F58A1977C05661CE33CDD8371358EDF73BA87F938EB3680F0C5FFEB0099B2866"
+    },
+    {
+      "path": "docs/validation-v4/Linux/migration.json",
+      "bytes": 547,
+      "sha256": "CFA4C8FD410A6B32B0FD9E1AA8EF8C5F4095F228C6467571138D1E3EEA819422"
+    },
+    {
+      "path": "docs/validation-v4/Linux/receipt.json",
+      "bytes": 12173,
+      "sha256": "ACD39286760675FCEC7CAAF98794EC3538F73C5379A5A873049BD54100790C2B"
+    },
+    {
+      "path": "docs/validation-v4/Windows/foundation.json",
+      "bytes": 780,
+      "sha256": "00E90BD6520887E1AD48F18313E45E0BD41F31EEBCD27AE53B12691640C100CD"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/coordinate-consumers.txt",
+      "bytes": 1647,
+      "sha256": "A3FF86852785C4BE8338F77024B0254CF8B670941F174699BEDB2269C38B4EEA"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/executable-controls.txt",
+      "bytes": 190,
+      "sha256": "473BAAFC5EA849C45598D17AEC51ACB20A845F82332BA1D68C6532221DB46BBF"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/forbidden-dependency-rejected.txt",
+      "bytes": 304,
+      "sha256": "AC6CC201051FCEDC88D1E2B668A7FA8C7FF57733DB7F2146420607BD9EF7AB60"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/forgetting-syntax-and-semantics.txt",
+      "bytes": 1164,
+      "sha256": "3318332AB82F44C6D6E5C74B972D11E194598DF12C1A74CA34C87188D86EDCA9"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/ForgottenGlobalIdentityV1.txt",
+      "bytes": 282,
+      "sha256": "0FC3060B002888FBCDB6153F4AA046E3EE59E89197A03469ED329D5383205E56"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/ForgottenReorderedInputsV1.txt",
+      "bytes": 418,
+      "sha256": "C98F237D9F2C5E1B552D617695AA28BBA4FE390CDD6B0A0890B92171F34DD383"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/ForgottenWrongSortV1.txt",
+      "bytes": 757,
+      "sha256": "9F32CB919453B67F29AC85484AAF9CD0461302D6CE6FCBF4D8E1120B5372922F"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/foundation-and-migration.txt",
+      "bytes": 780,
+      "sha256": "00E90BD6520887E1AD48F18313E45E0BD41F31EEBCD27AE53B12691640C100CD"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/foundation-build.txt",
+      "bytes": 43869,
+      "sha256": "6E4B849792D5921869D25473DE51AAA73870DD9ED865B5E48EC24D56EF0C9024"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/historical-receipts.txt",
+      "bytes": 129,
+      "sha256": "A7D061BD3C0B371F2BD32A448A6540E9C94A2AEC0CFC8700B4DEF79B4DEA5E98"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/local-replay-controls.txt",
+      "bytes": 953,
+      "sha256": "07B4779F519FF6744C4F9B6C75D408EC18BEAF3492F91C9B95F723BD7898A3BB"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/manifest-integrity-tests.txt",
+      "bytes": 115,
+      "sha256": "19A769AD5D242C5EFD73EDA37B2BEDB94023B923C5E308DE0BFBB04F2BA428BC"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/migration-build.txt",
+      "bytes": 717625,
+      "sha256": "91B6DA9289AE7A02A1ADD6694D607840A20E0C551EBDDB22BF365095BCC54130"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/migration-protocol.txt",
+      "bytes": 2701,
+      "sha256": "B93F2E810AB22C17728C000B3A22BAD674BAC77A3E36C244B18BB1E15D61C5B1"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/migration-public-symbols.txt",
+      "bytes": 657957,
+      "sha256": "97569E2C64E5BD1E9F86F8B9FA903F63CD673048A23E816F52955FBC70045BFD"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/shape-rejected.txt",
+      "bytes": 283,
+      "sha256": "678E78ED18938735DAB5FA27737B321723F51D11A351591B6C5EA1E189E04CDF"
+    },
+    {
+      "path": "docs/validation-v4/Windows/logs/source-audit-blocks.txt",
+      "bytes": 66,
+      "sha256": "8C8FF6DBCE36AD0FA81189949F02CD7ED0D07D8484601219CA5753AE07164FD1"
+    },
+    {
+      "path": "docs/validation-v4/Windows/migration.json",
+      "bytes": 559,
+      "sha256": "9CC688E8E26A8DBCB94D82ABC0BE9EB9B1BE7EE184D94D48D2C08E9272474DF1"
+    },
+    {
+      "path": "docs/validation-v4/Windows/receipt.json",
+      "bytes": 12567,
+      "sha256": "62DFE59816C8421F919C4BC636D1AE0A7BA720CC4DC4CE126D3ED78FCC3CADC1"
+    }
+  ]
+}

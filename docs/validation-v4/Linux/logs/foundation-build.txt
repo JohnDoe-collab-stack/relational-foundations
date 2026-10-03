@@ -1,0 +1,341 @@
+ℹ [2/80] Built RelationalFoundations.ExactTransport (1.1s)
+info: RelationalFoundations/ExactTransport.lean:122:0: 'RelationalFoundations.ExactTransport' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:123:0: 'RelationalFoundations.ExactTransport.reflexive' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:124:0: 'RelationalFoundations.ExactTransport.ofEquality' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:125:0: 'RelationalFoundations.ExactTransport.reverse' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:126:0: 'RelationalFoundations.ExactTransport.compose' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:127:0: 'RelationalFoundations.ExactTransport.sumUnit' does not depend on any axioms
+info: RelationalFoundations/ExactTransport.lean:128:0: 'RelationalFoundations.ExactTransport.backward_eq_of_forward_eq' does not depend on any axioms
+✔ [3/80] Built RelationalFoundations.ExactRealization (230ms)
+ℹ [4/80] Built RelationalFoundations.Residual (1.4s)
+info: RelationalFoundations/Residual.lean:792:0: 'RelationalFoundations.Residual.ExactInternalRealization' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:793:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:794:0: 'RelationalFoundations.Residual.ResidualDeterminationCore' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:795:0: 'RelationalFoundations.Residual.ResidualDeterminationCore.label_is_residual' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:796:0: 'RelationalFoundations.Residual.ResidualDeterminationCore.occurrences_unique' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:797:0: 'RelationalFoundations.Residual.CoreUniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:798:0: 'RelationalFoundations.Residual.positiveCore_hasUniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:799:0: 'RelationalFoundations.Residual.CoreUniqueResidualOccurrence.toKernel' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:800:0: 'RelationalFoundations.Residual.FaithfulExtension.toResidualUniquenessKernel' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:801:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.newOccurrence_cannotReuseInternalRole' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:802:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.toDeterminationCore' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:803:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.newOccurrence_label_is_residual' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:804:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.newOccurrences_unique' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:805:0: 'RelationalFoundations.Residual.FaithfulExtension.newOccurrence_cannotReuseInternalRole' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:806:0: 'RelationalFoundations.Residual.FaithfulExtension.newOccurrence_label_is_residual' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:807:0: 'RelationalFoundations.Residual.FaithfulExtension.newOccurrences_unique' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:808:0: 'RelationalFoundations.Residual.KernelUniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:809:0: 'RelationalFoundations.Residual.positiveKernel_hasUniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:810:0: 'RelationalFoundations.Residual.OldLabelsInternal' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:811:0: 'RelationalFoundations.Residual.ExactInternalCompletion' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:812:0: 'RelationalFoundations.Residual.ExactReconstructionConditions' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:813:0: 'RelationalFoundations.Residual.ExactReconstructionConditions.toExactInternalCompletion' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:814:0: 'RelationalFoundations.Residual.ExactInternalCompletion.toExactInternalRealization' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:815:0: 'RelationalFoundations.Residual.ExactInternalCompletion.toReconstructionConditions' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:816:0: 'RelationalFoundations.Residual.ExactInternalCompletion.occurrenceToRole_pointwise_unique' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:817:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.oldLabelsInternal_of_positive' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:818:0: 'RelationalFoundations.Residual.ResidualUniquenessKernel.toExactInternalCompletion_of_positive' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:819:0: 'RelationalFoundations.Residual.FaithfulExtension.internalCompletion' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:820:0: 'RelationalFoundations.Residual.FaithfulExtension.embedOld_injective' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:821:0: 'RelationalFoundations.Residual.FaithfulExtension.reconstructInternalCompletion' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:822:0: 'RelationalFoundations.Residual.FaithfulExtension.reconstructed_roleToOccurrence_eq' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:823:0: 'RelationalFoundations.Residual.FaithfulExtension.reconstructed_roleToOccurrence_agrees' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:824:0: 'RelationalFoundations.Residual.FaithfulExtension.reconstructed_occurrenceToRole_agrees' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:825:0: 'RelationalFoundations.Residual.positiveExtension_hasUniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:826:0: 'RelationalFoundations.Residual.CoreUniqueResidualOccurrence.toRich' does not depend on any axioms
+info: RelationalFoundations/Residual.lean:827:0: 'RelationalFoundations.Residual.positiveExtension_result_occurrence' does not depend on any axioms
+✔ [5/80] Built RelationalFoundations.Signature (314ms)
+✔ [6/80] Built RelationalFoundations.Quantity (288ms)
+✔ [7/80] Built RelationalFoundations.History (714ms)
+✔ [8/80] Built RelationalFoundations.FiberTransport (283ms)
+✔ [9/80] Built RelationalFoundations.DemandClosure (937ms)
+✔ [10/80] Built RelationalFoundations.HistoryTransport (315ms)
+✔ [11/80] Built RelationalFoundations.Regime (321ms)
+✔ [12/80] Built RelationalFoundations.Interpretation (351ms)
+✔ [13/80] Built RelationalFoundations.EquippedQuantity (366ms)
+✔ [14/80] Built RelationalFoundations.NormativeAdequacy (183ms)
+ℹ [15/80] Built RelationalFoundations.Diagnostics (896ms)
+info: RelationalFoundations/Diagnostics.lean:1178:0: 'RelationalFoundations.Diagnostics.BoundaryGenerator.continuation_ne_boundary' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1179:0: 'RelationalFoundations.Diagnostics.ObstructedRegime.exactClassification' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1180:0: 'RelationalFoundations.Diagnostics.ObstructedRegime.continuation_outside_regime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1181:0: 'RelationalFoundations.Diagnostics.ObstructedRegime.no_strict_regime_extension' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1182:0: 'RelationalFoundations.Diagnostics.CoreSegmentedBoundary' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1183:0: 'RelationalFoundations.Diagnostics.SegmentedBoundary.toCoreBoundary' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1184:0: 'RelationalFoundations.Diagnostics.CoreTurningConclusion' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1185:0: 'RelationalFoundations.Diagnostics.coreTurning' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1186:0: 'RelationalFoundations.Diagnostics.CorePositiveResidualBoundary' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1187:0: 'RelationalFoundations.Diagnostics.CorePositiveResidualBoundary.uniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1188:0: 'RelationalFoundations.Diagnostics.PositiveResidualBoundary.toCoreBoundary' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1189:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1190:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime.exactClassification' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1191:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime.toObstructedRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1192:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime.admittedPositiveBoundary_rejected' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1193:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime.continuation_outside_regime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1194:0: 'RelationalFoundations.Diagnostics.CoreCoupledObstructedRegime.no_strict_regime_extension' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1195:0: 'RelationalFoundations.Diagnostics.CoreCoupledTurningConclusion' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1196:0: 'RelationalFoundations.Diagnostics.coreCoupledTurning' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1197:0: 'RelationalFoundations.Diagnostics.CoupledObstructedRegime.toCoreCoupled' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1198:0: 'RelationalFoundations.Diagnostics.abstractTurning' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1199:0: 'RelationalFoundations.Diagnostics.PositiveResidualBoundary.uniqueResidualOccurrence' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1200:0: 'RelationalFoundations.Diagnostics.CoupledObstructedRegime.exactClassification' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1201:0: 'RelationalFoundations.Diagnostics.CoupledObstructedRegime.toObstructedRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1202:0: 'RelationalFoundations.Diagnostics.CoupledObstructedRegime.admittedPositiveBoundary_rejected' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1203:0: 'RelationalFoundations.Diagnostics.coupledTurning' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1204:0: 'RelationalFoundations.Diagnostics.RegimeExit' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1205:0: 'RelationalFoundations.Diagnostics.RegimeExit.mapFaithful' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1206:0: 'RelationalFoundations.Diagnostics.RegimeExit.restrictRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1207:0: 'RelationalFoundations.Diagnostics.RegimeExit.refutesFaithfulToRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1208:0: 'RelationalFoundations.Diagnostics.RegimeExit.mapFaithful_id' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1209:0: 'RelationalFoundations.Diagnostics.RegimeExit.mapFaithful_comp' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1210:0: 'RelationalFoundations.Diagnostics.RegimeExit.restrictRegime_id' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1211:0: 'RelationalFoundations.Diagnostics.RegimeExit.restrictRegime_comp' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1212:0: 'RelationalFoundations.Diagnostics.RegimeExit.mapFaithful_restrictRegime' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1213:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1214:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit.atImplementation' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1215:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit.reindexImplementation' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1216:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit.reindex_id' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1217:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit.reindex_comp' does not depend on any axioms
+info: RelationalFoundations/Diagnostics.lean:1218:0: 'RelationalFoundations.Diagnostics.UniformRegimeExit.reindex_at' does not depend on any axioms
+✔ [16/80] Built RelationalFoundations.Spine (470ms)
+✔ [17/80] Built RelationalFoundations.MarkedQuantity (267ms)
+✔ [18/80] Built RelationalFoundations.CompositionOrder (230ms)
+✔ [19/80] Built RelationalFoundations.ResourceGraph (799ms)
+✔ [20/80] Built RelationalFoundations.Presentation (277ms)
+✔ [21/80] Built RelationalFoundations.TransportLaws (295ms)
+✔ [22/80] Built RelationalFoundations.HistoricalSupport (890ms)
+✔ [23/80] Built RelationalFoundations.Generation (429ms)
+✔ [24/80] Built RelationalFoundations.InteriorDelimitation (248ms)
+✔ [25/80] Built RelationalFoundations.FormationAtOccurrence (227ms)
+✔ [26/80] Built RelationalFoundations.Obstructions (247ms)
+✔ [27/80] Built RelationalFoundations.ConstitutiveGeneration (274ms)
+✔ [28/80] Built RelationalFoundations.TypedResources (504ms)
+✔ [29/80] Built RelationalFoundations.Continuation (358ms)
+✔ [30/80] Built RelationalFoundations.BoundaryInterpretation (184ms)
+✔ [31/80] Built RelationalFoundations.Turning (199ms)
+✔ [32/80] Built RelationalFoundations.CircularSignature (598ms)
+✔ [33/80] Built RelationalFoundations.FaithfulContinuation (240ms)
+✔ [34/80] Built RelationalFoundations.Cardinalization (218ms)
+✔ [35/80] Built RelationalFoundations.FaithfulTurning (283ms)
+✔ [36/80] Built RelationalFoundations.CircularSpecification (343ms)
+✔ [37/80] Built RelationalFoundations.FiniteInvariance (311ms)
+✔ [38/80] Built RelationalFoundations.Perimetral (492ms)
+✔ [39/80] Built RelationalFoundations.TurningDiagnostics (232ms)
+✔ [40/80] Built RelationalFoundations.OutputDriven (492ms)
+✔ [41/80] Built RelationalFoundations.WordSupport (646ms)
+✔ [42/80] Built RelationalFoundations.PerimetralSignature (445ms)
+✔ [43/80] Built RelationalFoundations.HistoricalFeedback (283ms)
+✔ [44/80] Built Tests.HistoricalSupport (309ms)
+✔ [45/80] Built Tests.OutputDriven (340ms)
+✔ [46/80] Built RelationalFoundations.FiniteRuleConstruction (1.4s)
+ℹ [47/80] Built RelationalFoundations.FiniteRuleScope (230ms)
+info: RelationalFoundations/FiniteRuleScope.lean:50:0: 'RelationalFoundations.FiniteRuleScope.admissible_unique' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleScope.lean:51:0: 'RelationalFoundations.FiniteRuleScope.realization_at_horizon' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleScope.lean:52:0: 'RelationalFoundations.FiniteRuleScope.every_horizon_admitted' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleScope.lean:53:0: 'RelationalFoundations.FiniteRuleScope.run_length' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleScope.lean:54:0: 'RelationalFoundations.FiniteRuleScope.recorded_horizon' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleScope.lean:55:0: 'RelationalFoundations.FiniteRuleScope.terminal_predicate_iff' does not depend on any axioms
+ℹ [48/80] Built RelationalFoundations.DependencyPaths (457ms)
+info: RelationalFoundations/DependencyPaths.lean:172:0: 'RelationalFoundations.DependencyPaths.Walk.map' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:173:0: 'RelationalFoundations.DependencyPaths.transport' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:174:0: 'RelationalFoundations.DependencyPaths.reflected' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:175:0: 'RelationalFoundations.DependencyPaths.cycle_preserved' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:176:0: 'RelationalFoundations.DependencyPaths.cycle_reflected' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:177:0: 'RelationalFoundations.DependencyPaths.transport_composition_nodes' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:178:0: 'RelationalFoundations.DependencyPaths.Coverage.requests' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:179:0: 'RelationalFoundations.DependencyPaths.Coverage.ordered_roundtrip' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:180:0: 'RelationalFoundations.DependencyPaths.Coverage.enumerated' does not depend on any axioms
+info: RelationalFoundations/DependencyPaths.lean:181:0: 'RelationalFoundations.DependencyPaths.Coverage.values' does not depend on any axioms
+✔ [49/80] Built RelationalFoundations.FeedbackCoverage (1.1s)
+✔ [50/80] Built Tests.FeedbackCoverage (380ms)
+✔ [51/80] Built RelationalFoundations.HeterogeneousFeedback (2.0s)
+✔ [52/80] Built Tests.HeterogeneousFeedback (526ms)
+✔ [53/80] Built RelationalFoundations.FiniteRuleInstances (1.4s)
+ℹ [54/80] Built Tests.RuleScope (301ms)
+info: Tests/RuleScope.lean:34:0: 'RelationalFoundations.RuleScopeTests.fragment_identity_required' does not depend on any axioms
+info: Tests/RuleScope.lean:35:0: 'RelationalFoundations.RuleScopeTests.false_observation_unrealizable' does not depend on any axioms
+info: Tests/RuleScope.lean:36:0: 'RelationalFoundations.RuleScopeTests.homogeneous_unique' does not depend on any axioms
+ℹ [55/80] Built Tests.CyclicSupport (489ms)
+info: Tests/CyclicSupport.lean:125:0: 'RelationalFoundations.CyclicSupportTests.Step' does not depend on any axioms
+info: Tests/CyclicSupport.lean:126:0: 'RelationalFoundations.CyclicSupportTests.hist' does not depend on any axioms
+info: Tests/CyclicSupport.lean:127:0: 'RelationalFoundations.CyclicSupportTests.Slot' does not depend on any axioms
+info: Tests/CyclicSupport.lean:128:0: 'RelationalFoundations.CyclicSupportTests.readS' does not depend on any axioms
+info: Tests/CyclicSupport.lean:129:0: 'RelationalFoundations.CyclicSupportTests.cyclic' does not depend on any axioms
+info: Tests/CyclicSupport.lean:130:0: 'RelationalFoundations.CyclicSupportTests.admitted' does not depend on any axioms
+info: Tests/CyclicSupport.lean:131:0: 'RelationalFoundations.CyclicSupportTests.cyclic_self_dependency' does not depend on any axioms
+info: Tests/CyclicSupport.lean:132:0: 'RelationalFoundations.CyclicSupportTests.oneStep' does not depend on any axioms
+info: Tests/CyclicSupport.lean:133:0: 'RelationalFoundations.CyclicSupportTests.frameOne' does not depend on any axioms
+info: Tests/CyclicSupport.lean:134:0: 'RelationalFoundations.CyclicSupportTests.freshRef' does not depend on any axioms
+info: Tests/CyclicSupport.lean:135:0: 'RelationalFoundations.CyclicSupportTests.certification_does_not_determine_values' does not depend on any axioms
+info: Tests/CyclicSupport.lean:136:0: 'RelationalFoundations.CyclicSupportTests.cyclicComplete' does not depend on any axioms
+info: Tests/CyclicSupport.lean:137:0: 'RelationalFoundations.CyclicSupportTests.loop' does not depend on any axioms
+info: Tests/CyclicSupport.lean:138:0: 'RelationalFoundations.CyclicSupportTests.repeated_visits_covered' does not depend on any axioms
+info: Tests/CyclicSupport.lean:139:0: 'RelationalFoundations.CyclicSupportTests.cycle_continues' does not depend on any axioms
+✔ [56/80] Built RelationalFoundations.ReducedHeterogeneous (569ms)
+✔ [57/80] Built Tests.FiniteRuleConstruction (883ms)
+ℹ [58/80] Built RelationalFoundations.ReducedContinuation (382ms)
+info: RelationalFoundations/ReducedContinuation.lean:202:0: 'RelationalFoundations.ReducedHeterogeneous.continuation_terminal' does not depend on any axioms
+info: RelationalFoundations/ReducedContinuation.lean:203:0: 'RelationalFoundations.ReducedHeterogeneous.extract' does not depend on any axioms
+info: RelationalFoundations/ReducedContinuation.lean:204:0: 'RelationalFoundations.ReducedHeterogeneous.continueFrom' does not depend on any axioms
+ℹ [59/80] Built RelationalFoundations.ReducedWeakening (406ms)
+info: RelationalFoundations/ReducedWeakening.lean:251:0: 'RelationalFoundations.ReducedHeterogeneous.inflate_coherent' does not depend on any axioms
+info: RelationalFoundations/ReducedWeakening.lean:252:0: 'RelationalFoundations.ReducedHeterogeneous.strict_reduction' does not depend on any axioms
+info: RelationalFoundations/ReducedWeakening.lean:253:0: 'RelationalFoundations.ReducedHeterogeneous.scalar_step_count' does not depend on any axioms
+info: RelationalFoundations/ReducedWeakening.lean:254:0: 'RelationalFoundations.ReducedHeterogeneous.working_support_bound' does not depend on any axioms
+ℹ [60/80] Built RelationalFoundations.FiniteRuleCoordinates (1.8s)
+info: RelationalFoundations/FiniteRuleCoordinates.lean:647:0: 'RelationalFoundations.FiniteRuleCoordinates.cast_cancel' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:648:0: 'RelationalFoundations.FiniteRuleCoordinates.execution_heq' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:649:0: 'RelationalFoundations.FiniteRuleCoordinates.realization_eq' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:650:0: 'RelationalFoundations.FiniteRuleCoordinates.grow_old' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:651:0: 'RelationalFoundations.FiniteRuleCoordinates.freshAt' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:652:0: 'RelationalFoundations.FiniteRuleCoordinates.grow_new' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:653:0: 'RelationalFoundations.FiniteRuleCoordinates.complete_old' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:654:0: 'RelationalFoundations.FiniteRuleCoordinates.complete_new' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:655:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_cast_old' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:656:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_fresh' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:657:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_cast_fresh' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:658:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:659:0: 'RelationalFoundations.FiniteRuleCoordinates.refCast' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:660:0: 'RelationalFoundations.FiniteRuleCoordinates.refCast_trans' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:661:0: 'RelationalFoundations.FiniteRuleCoordinates.refCast_old' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:662:0: 'RelationalFoundations.FiniteRuleCoordinates.refCast_head' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:663:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_context' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:664:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_next_context' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:665:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_old' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:666:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_fresh' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:667:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_coordinates_declared' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:668:0: 'RelationalFoundations.FiniteRuleCoordinates.frame_backward' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:669:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_native_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:670:0: 'RelationalFoundations.FiniteRuleCoordinates.refCast_back' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:671:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_native_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:672:0: 'RelationalFoundations.FiniteRuleCoordinates.backward_agreement' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:673:0: 'RelationalFoundations.FiniteRuleCoordinates.native_frame_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:674:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:675:0: 'RelationalFoundations.FiniteRuleCoordinates.liftRequests' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:676:0: 'RelationalFoundations.FiniteRuleCoordinates.extendExecution' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:677:0: 'RelationalFoundations.FiniteRuleCoordinates.extendExecution_length' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:678:0: 'RelationalFoundations.FiniteRuleCoordinates.extended_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:679:0: 'RelationalFoundations.FiniteRuleCoordinates.execution_embed_same' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:680:0: 'RelationalFoundations.FiniteRuleCoordinates.run_length' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:681:0: 'RelationalFoundations.FiniteRuleCoordinates.certified_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:682:0: 'RelationalFoundations.FiniteRuleCoordinates.resumed_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:683:0: 'RelationalFoundations.FiniteRuleCoordinates.resumed_composed_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:684:0: 'RelationalFoundations.FiniteRuleCoordinates.liftRequests_append' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:685:0: 'RelationalFoundations.FiniteRuleCoordinates.compose_length' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:686:0: 'RelationalFoundations.FiniteRuleCoordinates.composed_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:687:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_inverse' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:688:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_inverse' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:689:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_operators' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:690:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_dependencies' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:691:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_operators' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:692:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_dependencies' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:693:0: 'RelationalFoundations.FiniteRuleCoordinates.resumed_operators' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:694:0: 'RelationalFoundations.FiniteRuleCoordinates.resumed_dependencies' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:695:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_resumed_coordinates' does not depend on any axioms
+info: RelationalFoundations/FiniteRuleCoordinates.lean:696:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_resumed_coordinates' does not depend on any axioms
+✔ [61/80] Built RelationalFoundations.NativeForgettingV1 (395ms)
+✔ [62/80] Built Tests.ReducedHeterogeneous (449ms)
+ℹ [63/80] Built Tests.FiniteRuleCoordinates (291ms)
+info: Tests/FiniteRuleCoordinates.lean:101:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.homogeneous_all' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:102:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.heterogeneous_all' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:103:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.higher_universe' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:104:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.thirteen_coordinates' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:105:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.seven_coordinates' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:106:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.thirteen_ordered_dependencies' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:107:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.seven_ordered_dependencies' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:108:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.all_resumed_coordinates' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:109:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.all_composed_coordinates' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:110:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.real_resumed_coordinates' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:111:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.native_homogeneous_reprise' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:112:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.native_heterogeneous_reprise' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:113:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.swap' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:114:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.permuted' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:115:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.permuted_changes_identity' does not depend on any axioms
+info: Tests/FiniteRuleCoordinates.lean:116:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.values_still_agree' does not depend on any axioms
+✔ [64/80] Built RelationalFoundations.NativeForgettingBridgeV1 (473ms)
+ℹ [65/80] Built RelationalFoundations.TypedResourceOrder (214ms)
+info: RelationalFoundations/TypedResourceOrder.lean:62:0: 'RelationalFoundations.TypedResourceOrder.anyAddress' does not depend on any axioms
+info: RelationalFoundations/TypedResourceOrder.lean:63:0: 'RelationalFoundations.TypedResourceOrder.old_address' does not depend on any axioms
+info: RelationalFoundations/TypedResourceOrder.lean:64:0: 'RelationalFoundations.TypedResourceOrder.pack_address' does not depend on any axioms
+info: RelationalFoundations/TypedResourceOrder.lean:65:0: 'RelationalFoundations.TypedResourceOrder.operation_inputs_bounded' does not depend on any axioms
+info: RelationalFoundations/TypedResourceOrder.lean:66:0: 'RelationalFoundations.TypedResourceOrder.inputs_precede' does not depend on any axioms
+✔ [66/80] Built RelationalFoundations.NativeForgettingContinuationV1 (291ms)
+ℹ [67/80] Built RelationalFoundations.HeterogeneousInvariants (203ms)
+info: RelationalFoundations/HeterogeneousInvariants.lean:86:0: 'RelationalFoundations.HeterogeneousInvariants.Invariant' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:87:0: 'RelationalFoundations.HeterogeneousInvariants.adjust_bounded' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:88:0: 'RelationalFoundations.HeterogeneousInvariants.step_preserves' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:89:0: 'RelationalFoundations.HeterogeneousInvariants.admitted_preserves' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:90:0: 'RelationalFoundations.HeterogeneousInvariants.extracted' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:91:0: 'RelationalFoundations.HeterogeneousInvariants.native_run' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:92:0: 'RelationalFoundations.HeterogeneousInvariants.forgotten_suffix' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:93:0: 'RelationalFoundations.HeterogeneousInvariants.forgotten_run' does not depend on any axioms
+info: RelationalFoundations/HeterogeneousInvariants.lean:94:0: 'RelationalFoundations.HeterogeneousInvariants.constructed_then_forgotten' does not depend on any axioms
+✔ [68/80] Built RelationalFoundations.NativeForgettingSeparationV1 (365ms)
+ℹ [69/80] Built RelationalFoundations.NativeForgettingContract (360ms)
+info: RelationalFoundations/NativeForgettingContract.lean:85:0: 'RelationalFoundations.NativeForgettingContract.pstep' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:86:0: 'RelationalFoundations.NativeForgettingContract.prun' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:87:0: 'RelationalFoundations.NativeForgettingContract.phase_memory_runs' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:88:0: 'RelationalFoundations.NativeForgettingContract.pevents' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:89:0: 'RelationalFoundations.NativeForgettingContract.phase_memory_events' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:90:0: 'RelationalFoundations.NativeForgettingContract.phase_memory_view' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:91:0: 'RelationalFoundations.NativeForgettingContract.same_phase_active_different_observation' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:92:0: 'RelationalFoundations.NativeForgettingContract.decision_boolean_also_forgotten' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:93:0: 'RelationalFoundations.NativeForgettingContract.both_prefixes_match' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:94:0: 'RelationalFoundations.NativeForgettingContract.unreachable_memory_incoherent' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:95:0: 'RelationalFoundations.NativeForgettingContract.reordered_inputs_false' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:96:0: 'RelationalFoundations.NativeForgettingContract.firstDecision' does not depend on any axioms
+info: RelationalFoundations/NativeForgettingContract.lean:97:0: 'RelationalFoundations.NativeForgettingContract.first_decision_irrecoverable' does not depend on any axioms
+ℹ [70/80] Built Tests.HiddenEncoding (363ms)
+info: Tests/HiddenEncoding.lean:119:0: 'RelationalFoundations.HiddenEncodingTests.half' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:120:0: 'RelationalFoundations.HiddenEncodingTests.half_even' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:121:0: 'RelationalFoundations.HiddenEncodingTests.half_odd' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:122:0: 'RelationalFoundations.HiddenEncodingTests.strip' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:123:0: 'RelationalFoundations.HiddenEncodingTests.enc' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:124:0: 'RelationalFoundations.HiddenEncodingTests.decO' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:125:0: 'RelationalFoundations.HiddenEncodingTests.decA' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:126:0: 'RelationalFoundations.HiddenEncodingTests.strip_odd' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:127:0: 'RelationalFoundations.HiddenEncodingTests.enc_succ' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:128:0: 'RelationalFoundations.HiddenEncodingTests.strip_enc' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:129:0: 'RelationalFoundations.HiddenEncodingTests.enc_pos' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:130:0: 'RelationalFoundations.HiddenEncodingTests.fuel_enough' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:131:0: 'RelationalFoundations.HiddenEncodingTests.decO_enc' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:132:0: 'RelationalFoundations.HiddenEncodingTests.decA_enc' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:133:0: 'RelationalFoundations.HiddenEncodingTests.toV1' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:134:0: 'RelationalFoundations.HiddenEncodingTests.hinit' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:135:0: 'RelationalFoundations.HiddenEncodingTests.hstep' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:136:0: 'RelationalFoundations.HiddenEncodingTests.hrun' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:137:0: 'RelationalFoundations.HiddenEncodingTests.hidden_tracks' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:138:0: 'RelationalFoundations.HiddenEncodingTests.hidden_tracks_v1' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:139:0: 'RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable' does not depend on any axioms
+info: Tests/HiddenEncoding.lean:140:0: 'RelationalFoundations.HiddenEncodingTests.hidden_separating_horizon' does not depend on any axioms
+✔ [71/80] Built Tests.NativeForgettingV1 (384ms)
+ℹ [72/80] Built RelationalFoundations (149ms)
+info: RelationalFoundations.lean:57:0: 'RelationalFoundations.FiniteRuleCoordinates.resumed_composed_coordinates' does not depend on any axioms
+info: RelationalFoundations.lean:58:0: 'RelationalFoundations.FiniteRuleCoordinates.homogeneous_native_coordinates' does not depend on any axioms
+info: RelationalFoundations.lean:59:0: 'RelationalFoundations.FiniteRuleCoordinates.heterogeneous_native_coordinates' does not depend on any axioms
+info: RelationalFoundations.lean:60:0: 'RelationalFoundations.DependencyPaths.Coverage.ordered_roundtrip' does not depend on any axioms
+info: RelationalFoundations.lean:61:0: 'RelationalFoundations.HeterogeneousInvariants.constructed_then_forgotten' does not depend on any axioms
+info: RelationalFoundations.lean:62:0: 'RelationalFoundations.NativeForgettingContract.first_decision_irrecoverable' does not depend on any axioms
+ℹ [74/80] Built Tests.AuditCorrections (211ms)
+info: Tests/AuditCorrections.lean:28:0: "AUDIT_V3_RUNTIME_OK: 325 value-bound checks; 21 hidden-origin checks; cyclic visits and lost decisions"
+info: Tests/AuditCorrections.lean:33:0: 'RelationalFoundations.AuditCorrectionsTests.checks' does not depend on any axioms
+✔ [75/80] Built Tests.Completion (235ms)
+✔ [76/80] Built Tests.QuantityLaws (237ms)
+✔ [77/80] Built Tests.Separators (445ms)
+ℹ [78/80] Built Tests.ForgettingAuditScope (21s)
+info: Tests/ForgettingAuditScope.lean:103:0: "AUDIT_V4_REPLAY_RUNTIME_OK: seeds 0..12; horizons 0..24; native projection agrees and origin is retained"
+info: Tests/ForgettingAuditScope.lean:108:0: 'RelationalFoundations.ForgettingAuditScopeTests.replay' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:109:0: 'RelationalFoundations.ForgettingAuditScopeTests.initial' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:110:0: 'RelationalFoundations.ForgettingAuditScopeTests.step' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:111:0: 'RelationalFoundations.ForgettingAuditScopeTests.run' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:112:0: 'RelationalFoundations.ForgettingAuditScopeTests.replay_tracks' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:113:0: 'RelationalFoundations.ForgettingAuditScopeTests.origin_recoverable' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:114:0: 'RelationalFoundations.ForgettingAuditScopeTests.replay_separates' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:115:0: 'RelationalFoundations.ForgettingAuditScopeTests.colliding_prefixes_continue' does not depend on any axioms
+info: Tests/ForgettingAuditScope.lean:116:0: 'RelationalFoundations.ForgettingAuditScopeTests.replayControl' does not depend on any axioms
+ℹ [79/80] Built Tests.FoundationTests (142ms)
+info: Tests/FoundationTests.lean:21:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.higher_universe' does not depend on any axioms
+info: Tests/FoundationTests.lean:22:0: 'RelationalFoundations.FiniteRuleCoordinatesTests.permuted_changes_identity' does not depend on any axioms
+info: Tests/FoundationTests.lean:23:0: 'RelationalFoundations.ForgettingAuditScopeTests.replay_tracks' does not depend on any axioms
+info: Tests/FoundationTests.lean:24:0: 'RelationalFoundations.CyclicSupportTests.cyclicComplete' does not depend on any axioms
+info: Tests/FoundationTests.lean:25:0: 'RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable' does not depend on any axioms
+Build completed successfully (80 jobs).

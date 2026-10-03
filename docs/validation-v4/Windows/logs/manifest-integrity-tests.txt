@@ -1,0 +1,1 @@
+VALIDATION_MANIFEST_V4_TESTS_OK: 18 explicit cases; hidden/auxiliary inputs, collisions, links and byte integrity

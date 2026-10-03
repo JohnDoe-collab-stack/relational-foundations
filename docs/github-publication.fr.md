@@ -1,5 +1,7 @@
 # Relational Foundations : dépôt autonome de publication
 
+Document historique conservant les étapes et commandes de sa livraison. La vérification actuelle des sources corrigées et la liaison des reçus historiques relèvent de la [validation V3](validation-v3.fr.md).
+
 Ce dépôt rassemble le socle relationnel constructif, le projet computationnel migré, le constructeur commun de fragments finis, l'exécution réduite avec restitution historique et l'oubli certifié relativement aux continuations natives. Les sources, tests, documentations, archives et reçus acquis sont livrés ensemble.
 
 Le dépôt est accessible à [JohnDoe-collab-stack/relational-foundations](https://github.com/JohnDoe-collab-stack/relational-foundations). Le développement d'origine demeure dans [relational-perimeter](https://github.com/JohnDoe-collab-stack/relational-perimeter).

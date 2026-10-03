@@ -1,0 +1,16 @@
+import scripts.AuditForgettingV3
+
+namespace HiddenReplayControl
+
+structure Memory where
+  position : Nat
+  active : Nat
+
+def step (memory : Memory) : Memory :=
+  let frame := (RelationalFoundations.HeterogeneousFeedback.run
+    (RelationalFoundations.HeterogeneousFeedback.initial memory.active) memory.position).1
+  ⟨memory.position + 1, RelationalFoundations.ReducedHeterogeneous.number frame.1⟩
+
+#audit_scalar_v3 HiddenReplayControl.Memory [HiddenReplayControl.step] "REPLAY_CONTROL_MUST_REJECT"
+
+end HiddenReplayControl

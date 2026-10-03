@@ -85,7 +85,7 @@ theorem continuation_terminal (m : Memory) (coherent : Coherent m) {target : Het
   (terminal _ (run_coherent m coherent following.length)).symm.trans
     (continuationCertificate m following allowed).terminal
 
-/-- Independent terminal predicates are preserved, with the same shared history witness. -/
+/-- A predicate proved for the admitted target holds of the reduced terminal view by continuation_terminal. -/
 theorem extract (m : Memory) (coherent : Coherent m) {target : HeterogeneousFeedback.State}
     (following : History HeterogeneousFeedback.Step (reconstruct m).1 target)
     (allowed : HeterogeneousFeedback.Admissible following)
@@ -197,3 +197,9 @@ theorem common_constructor_round_trip {seed : Nat} {target : HeterogeneousFeedba
     (FiniteRuleInstances.heterogeneousComplete history allowed).realization.execution)
 
 end RelationalFoundations.ReducedHeterogeneous
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.ReducedHeterogeneous.continuation_terminal
+#print axioms RelationalFoundations.ReducedHeterogeneous.extract
+#print axioms RelationalFoundations.ReducedHeterogeneous.continueFrom
+/- AXIOM_AUDIT_END -/

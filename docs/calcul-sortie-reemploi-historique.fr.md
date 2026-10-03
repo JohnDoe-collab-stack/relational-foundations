@@ -142,3 +142,5 @@ Une application à d'autres jugements sémantiques doit déclarer ses propres co
 La vérification est consignée dans [verification-result.json](verification-result.json) et [le rapport de migration](../Migration/verification-result.json). Elle couvre compilation, audit exhaustif des axiomes, rejets attendus et cohérence du projet migré dans notre dossier isolé.
 
 La vérification du 2 octobre 2026 a réussi : 50 fichiers de fondations et de tests, 3 951 déclarations auditées sans axiomes, 174 sources migrées et 806 symboles publics contrôlés. Les 24 rejets attendus, la stratification des 154 modules de production migrés et les quatre frontières d'import passent. Commande utilisée : `pwsh -NoProfile -File scripts/verify.ps1 -SkipComparison -SkipReference`. Les comparaisons et empreintes du dépôt historique sont explicitement omises dans cette vérification du dossier isolé.
+
+La vérification actuelle et les preuves complémentaires sont décrites dans la [validation V4](audit-corrections-v4.fr.md) et le [bilan des corrections](audit-corrections-v3.fr.md). Les reçus datés ci-dessus restent des références historiques conservées.

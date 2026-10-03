@@ -1,0 +1,6 @@
+FORGETTING_V3_SYNTAX_OK: 22 roots; 199 type/body dependencies; two Nat fields; forbidden-name scan only
+HIDDEN_ENCODING_SYNTAX_ACCEPTED: 11 roots; 185 type/body dependencies; two Nat fields; forbidden-name scan only
+FORGETTING_V3_SEMANTIC_WITNESSES_OK: 7 axiom-free declarations; two actual prefixes collide, their origin and first decision are irrecoverable; hidden encoding retains its origin
+'RelationalFoundations.NativeForgettingV1.origin_irrecoverable_from_prefixes' does not depend on any axioms
+'RelationalFoundations.NativeForgettingContract.first_decision_irrecoverable' does not depend on any axioms
+'RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable' does not depend on any axioms

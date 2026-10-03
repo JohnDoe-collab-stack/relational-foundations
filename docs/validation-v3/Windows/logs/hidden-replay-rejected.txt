@@ -1,0 +1,1 @@
+C:\Users\frederick\.codex\worktrees\foundations-audit-v3\.lake\validation-v3-fixtures\20261003T073650217Z-65beb81a\HiddenReplay.lean:14:0: error: Syntactic dependencies retain historical material: RelationalFoundations.HeterogeneousFeedback.Frame

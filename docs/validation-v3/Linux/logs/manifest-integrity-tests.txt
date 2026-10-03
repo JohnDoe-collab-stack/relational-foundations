@@ -1,0 +1,1 @@
+VALIDATION_MANIFEST_V3_TESTS_OK: valid input/link accepted; 9 integrity rejections; equal-length source/script changes, missing/added files, duplicate/traversal/role and manifest-link corruption detected

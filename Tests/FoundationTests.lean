@@ -9,4 +9,18 @@ import Tests.HeterogeneousFeedback
 import Tests.FiniteRuleConstruction
 import Tests.ReducedHeterogeneous
 import Tests.NativeForgettingV1
+import Tests.CyclicSupport
+import Tests.HiddenEncoding
+import Tests.RuleScope
+import Tests.AuditCorrections
+import Tests.ForgettingAuditScope
+import Tests.FiniteRuleCoordinates
 set_option genInjectivity false
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.FiniteRuleCoordinatesTests.higher_universe
+#print axioms RelationalFoundations.FiniteRuleCoordinatesTests.permuted_changes_identity
+#print axioms RelationalFoundations.ForgettingAuditScopeTests.replay_tracks
+#print axioms RelationalFoundations.CyclicSupportTests.cyclicComplete
+#print axioms RelationalFoundations.HiddenEncodingTests.hidden_origin_recoverable
+/- AXIOM_AUDIT_END -/

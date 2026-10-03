@@ -1,0 +1,113 @@
+{
+  "protocol": "independent-local-audit-verification-v1",
+  "status": "PASSED",
+  "targetCommit": "99f0801e0f91b6821944f8a4a09dedf7810fdf14",
+  "startedAtUtc": "2026-10-03T06:47:33.5277851Z",
+  "completedAtUtc": "2026-10-03T06:48:31.2124657Z",
+  "originalResultArchiveSha256": "3D4DE3DD332DF84B0F67010665DE99B521FF2176EAC1C232DDF8F0240E54FA2C",
+  "runnerSha256": "97688326D338F8FE00EBFF838FB9B441BACD3D0A806DDCAB5B26907841FC2E95",
+  "actualLean": "Lean (version 4.33.1, x86_64-w64-windows-gnu, commit 819816b2e0a3bf405af45ae5c7af2491d8f5bee6, Release)",
+  "actualLake": "Lake version 5.0.0-src+819816b (Lean version 4.33.1)",
+  "checks": [
+    {
+      "name": "E0_AxiomSpotCheck",
+      "inputSha256": "3A7231C83D5A59D8720DF67C16F3B399785CBEBC2DE27424F95DF122B2B40BDE",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "7BB3DC1062A3A70289FF972C06909EFDCE2CD970B74758CAE3F0297C74FE41EC",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E1_CyclicGenericInstance",
+      "inputSha256": "DC283F6109C73F01333FAE2CD3B71B24AD9A9E2B12B892B696271965477088C3",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "D007E21F9C8E6D62671305B258A575BD663A4616A15C8D194C2D29C430545AE2",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E2_GenericScope",
+      "inputSha256": "92D32A9CDF49EBFEFC3A7D7AE3DBAF99E45C3D012A286F98D5D008769FAAD730",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "DA1DA01DC1B7BD7AC0294B3832950DB4F270D4528CC28DAB66E546D3516FA478",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E3_NativeForgettingScope",
+      "inputSha256": "6FE7BACA62D92754AF9A4FF9B8A1DE8CCB2921931570972DCE2874FC5CF2E2CB",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "8E2E2C386B9FDBBFDE0A13F50918AAEBF0DA72AB4A8EB17DE19F1718DF52C022",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E4_HiddenOriginPassesAudit",
+      "inputSha256": "69A412B8C0220F93A8F8D5958DB72E62BA55FC33DFD2A3787E2F99E1BBDAF2EB",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "C2BD6226C6F761BC02F8648FD589ED7F1E31F39A5A89E54A333B184E4CC0A06D",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E5_ConcreteAcyclicity",
+      "inputSha256": "36EFFA9ADD1EB1FC70C9F2C5627CC20A1C19EE35F8BF4C806448ABA3F7A8E7F8",
+      "exitCode": 0,
+      "expectedFailure": false,
+      "passed": true,
+      "outputSha256": "6C207C9CC441BC48C002AE5EC9A504FD6504769582EF431FA73937E96C419BD9",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    },
+    {
+      "name": "E4b_AuditNegativeControl",
+      "inputSha256": "44094926A813360AD066AE0EAD0982D167429F547C66B3E49A88CE20D6093D73",
+      "exitCode": 1,
+      "expectedFailure": true,
+      "passed": true,
+      "outputSha256": "63A59FF290D13ADC41FF6F2082403AB5AF71FB7BFC16CD8631AC71D833A4EB60",
+      "commandTemplate": [
+        "lake",
+        "env",
+        "lean",
+        "<reviewed-experiment-input-or-temporary-negative-fixture>"
+      ]
+    }
+  ],
+  "scope": "Independent verification of external experiments on the exact public snapshot before local edits; original inputs and complete logs retained in the local audit archive",
+  "currentReproduction": "The corresponding constructions are integrated under local names; use verify-validation-v3.ps1 for the corrected source bundle"
+}

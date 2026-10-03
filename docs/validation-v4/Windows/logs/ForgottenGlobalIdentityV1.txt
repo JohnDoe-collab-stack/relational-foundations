@@ -1,0 +1,6 @@
+C:\Users\frederick\.codex\audits\v4-confirmation-r2\.lake\validation-v4-fixtures\20261003T131110487Z-6ee5dcbd\ForgottenGlobalIdentityV1.lean:5:38: error: Type mismatch
+  zero_matches
+has type
+  Matches shared prefixZero
+but is expected to have type
+  Matches shared prefixTwo

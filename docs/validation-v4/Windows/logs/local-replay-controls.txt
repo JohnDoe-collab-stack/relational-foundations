@@ -1,0 +1,10 @@
+"AUDIT_V4_REPLAY_RUNTIME_OK: seeds 0..12; horizons 0..24; native projection agrees and origin is retained"
+'RelationalFoundations.ForgettingAuditScopeTests.replay' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.initial' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.step' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.run' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.replay_tracks' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.origin_recoverable' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.replay_separates' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.colliding_prefixes_continue' does not depend on any axioms
+'RelationalFoundations.ForgettingAuditScopeTests.replayControl' does not depend on any axioms

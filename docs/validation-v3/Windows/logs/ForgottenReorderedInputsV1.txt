@@ -1,0 +1,6 @@
+C:\Users\frederick\.codex\worktrees\foundations-audit-v3\.lake\validation-v3-fixtures\20261003T073650217Z-65beb81a\ForgottenReorderedInputsV1.lean:6:2: error: Type mismatch
+  rfl
+has type
+  (observation { position := 1, active := 0 }).inputs = (observation { position := 1, active := 0 }).inputs
+but is expected to have type
+  (observation { position := 1, active := 0 }).inputs = [(Kind.number, 0), (Kind.truth, 1)]

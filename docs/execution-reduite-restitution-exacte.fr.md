@@ -145,7 +145,7 @@ L’oubli véritable, la mémoire minimale, une borne physique en octets et la t
 Commandes reproductibles :
 
 ```powershell
-pwsh -NoProfile -File scripts/verify.ps1 -SkipComparison -SkipReference
+pwsh -NoProfile -File scripts/verify-v4.ps1 -SkipComparison -SkipReference
 ```
 
 Le script construit les modules publics et les tests, audite exhaustivement leurs dépendances axiomatiques, contrôle les dépendances du producteur réduit et le type de ses champs persistants, exige les neuf rejets attendus du socle, puis vérifie le projet migré et ses dix-neuf rejets attendus. Les comparaisons et empreintes du dossier historique sont explicitement écartées de cette commande autonome. Les résultats datés sont dans `verification-result.json` et `../Migration/verification-result.json`.
@@ -153,3 +153,5 @@ Le script construit les modules publics et les tests, audite exhaustivement leur
 La vérification du 2 octobre 2026 est réussie : 60 fichiers sources du socle et des tests, 5 341 déclarations sans dépendance axiomatique, 13 fonctions exécutables et 138 dépendances contrôlées pour l’exécution réduite. La migration passe également : 174 sources, 3 095 déclarations constitutives et 1 191 déclarations computationnelles récentes sans dépendance axiomatique, 806 symboles publics, 3 400 audits publics et quatre frontières d’import. Les 28 rejets attendus sont confirmés.
 
 Les nouveaux modules sont `ReducedHeterogeneous.lean`, `ReducedContinuation.lean` et `ReducedWeakening.lean`. Les tests sont dans `Tests/ReducedHeterogeneous.lean`. Le rejet `UnreachableReducedMemory.lean.fail` contrôle qu’une mémoire dont l’actif contredit l’origine et la position exige sa propre preuve de cohérence.
+
+La vérification actuelle et les preuves complémentaires sont décrites dans la [validation V4](audit-corrections-v4.fr.md) et le [bilan des corrections](audit-corrections-v3.fr.md). Les reçus datés ci-dessus restent des références historiques conservées.

@@ -1,0 +1,7 @@
+import scripts.AuditForgettingV4
+open RelationalFoundations Lean
+#audit_scalar_v4 RelationalFoundations.NativeForgettingV1.Memory [RelationalFoundations.HeterogeneousFeedback.build] "UNEXPECTED_ACCEPTANCE"
+
+/- AXIOM_AUDIT_BEGIN -/
+#print axioms RelationalFoundations.NativeForgettingV1.step
+/- AXIOM_AUDIT_END -/

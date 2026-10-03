@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "checkedAtUtc": "2026-10-03T13:11:17.7446592Z",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "sourceFiles": 77,
+  "axiomAudit": "AUDIT_OK: 6018 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_V4_SYNTAX_OK: 13 executable roots; 139 dependencies; scalar persistent fields; listed forbidden names absent; type/body scan only\n'RelationalFoundations.ReducedHeterogeneous.step' does not depend on any axioms\n'RelationalFoundations.ReducedHeterogeneous.run' does not depend on any axioms",
+  "expectedFailures": 9,
+  "comparison": "Skipped explicitly",
+  "migration": "MIGRATION_OK: 174 sources; CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies; 19 expected failures",
+  "reference": "Skipped explicitly"
+}

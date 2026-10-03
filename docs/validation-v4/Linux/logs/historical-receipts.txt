@@ -1,0 +1,1 @@
+HISTORICAL_RECEIPTS_V4_OK: 306 V2 input hashes match public snapshot 99f0801; seven historical manifest/receipt files unchanged

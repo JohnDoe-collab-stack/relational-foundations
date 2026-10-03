@@ -1,0 +1,12 @@
+{
+  "status": "PASSED",
+  "checkedAtUtc": "2026-10-03T07:37:49.2616491Z",
+  "toolchain": "leanprover/lean4:v4.33.1",
+  "sourceFiles": 74,
+  "axiomAudit": "AUDIT_OK: 5883 declarations, zero axiom dependencies",
+  "reducedExecution": "REDUCED_EXECUTION_OK: 13 executable roots; 138 dependencies; scalar persistent fields; no history/support/replay dependencies",
+  "expectedFailures": 9,
+  "comparison": "Skipped explicitly",
+  "migration": "MIGRATION_OK: 174 sources; CONSTITUTION_AUDIT_OK: 3095 declarations, zero axiom dependencies; 19 expected failures",
+  "reference": "Skipped explicitly"
+}

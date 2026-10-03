@@ -11,17 +11,25 @@ permissions:
 
 jobs:
   validate:
-    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
     timeout-minutes: 45
     steps:
       - name: Check out the exact publication bytes
         uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
         with:
           persist-credentials: false
+          fetch-depth: 0
 
-      - name: Check the delivered V2 manifest and receipts
+      - name: Check the delivered V4 manifest, receipts and outputs
         shell: pwsh
-        run: pwsh -NoProfile -File scripts/check-forgetting-v2.ps1
+        run: |
+          pwsh -NoProfile -File scripts/check-validation-v4.ps1
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          pwsh -NoProfile -File scripts/test-validation-bundle-v4-coverage.ps1
 
       - name: Install the declared Lean toolchain
         uses: leanprover/lean-action@f061402b660e0c34644504b324e830f2991d4865 # v1
@@ -32,30 +40,28 @@ jobs:
           lint: false
           use-github-cache: false
 
-      - name: Prepare the Windows toolchain path and validation logs
+      - name: Prepare the declared toolchain path
         shell: pwsh
         run: |
-          $elanBin = Join-Path $env:USERPROFILE '.elan/bin'
-          if (-not (Test-Path -LiteralPath (Join-Path $elanBin 'lake.exe'))) {
-            throw 'The declared Lean installation did not provide lake.exe'
+          $profileDirectory = [Environment]::GetFolderPath('UserProfile')
+          $elanBin = Join-Path $profileDirectory '.elan/bin'
+          $lakeName = if ($IsWindows) { 'lake.exe' } else { 'lake' }
+          if (-not (Test-Path -LiteralPath (Join-Path $elanBin $lakeName))) {
+            throw 'The declared Lean installation did not provide Lake'
           }
           Add-Content -LiteralPath $env:GITHUB_PATH -Value $elanBin -Encoding utf8
-          New-Item -ItemType Directory -Path .lake -Force | Out-Null
 
       - name: Compile and verify foundations, migration and native forgetting
         shell: pwsh
-        run: pwsh -NoProfile -File scripts/verify-forgetting-v2.ps1
+        run: pwsh -NoProfile -File scripts/verify-validation-v4.ps1 -FrozenManifest docs/validation-v4/inputs.json
 
       - name: Save the validation receipts and diagnostics
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
-          name: certified-lean-validation-${{ github.sha }}
+          name: certified-lean-validation-${{ matrix.os }}-${{ github.sha }}
           if-no-files-found: warn
           include-hidden-files: true
           path: |
-            docs/manifest-forgetting-v2.json
-            docs/verification-forgetting-v2.json
-            Migration/verification-forgetting-v2.json
-            .lake/*forgetting-v2*.log
-            Migration/*forgetting-v2*.log
+            docs/validation-v4/
+            .lake/validation-v4/

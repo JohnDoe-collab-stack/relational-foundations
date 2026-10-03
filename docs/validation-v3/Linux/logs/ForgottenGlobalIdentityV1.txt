@@ -1,0 +1,6 @@
+/home/frederick/codex-validation-foundations-v3-r2-20261003/.lake/validation-v3-fixtures/20261003T073742611Z-c4ebf82f/ForgottenGlobalIdentityV1.lean:5:38: error: Type mismatch
+  zero_matches
+has type
+  Matches shared prefixZero
+but is expected to have type
+  Matches shared prefixTwo
